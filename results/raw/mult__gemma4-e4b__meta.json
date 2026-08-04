@@ -1,0 +1,23 @@
+{
+ "runs": [
+  {
+   "at": "2026-08-04T01:58:48Z",
+   "model": "gemma4:e4b",
+   "task": "mult",
+   "new": 11112,
+   "errors": 0,
+   "already_done": 0,
+   "seconds": 1496.5,
+   "calls_per_second": 7.43
+  }
+ ],
+ "task": "mult",
+ "model": "gemma4:e4b",
+ "options": {
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "seed": 20260803,
+  "num_predict": 200
+ },
+ "items": 24
+}

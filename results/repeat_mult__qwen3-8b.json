@@ -1,0 +1,82 @@
+{
+ "task": "mult",
+ "model": "qwen3:8b",
+ "checked_at": "2026-08-04T00:36:11Z",
+ "n": 200,
+ "identical": 188,
+ "rate": 0.94,
+ "examples_of_disagreement": [
+  {
+   "p": 303,
+   "i": "mult-79x87",
+   "first": "To find the product of 79 and 87, we perform the multiplication:\n\n$$\n79 \\times 87\n$$\n\nWe can break this down using the distributive property:\n\n$$\n79 \\times 87 =",
+   "second": "To find the product of 79 and 87, we perform the multiplication:\n\n$$\n79 \\times 87\n$$\n\nWe can break this down using the distributive property:\n\n$$\n79 \\times 87 ="
+  },
+  {
+   "p": 450,
+   "i": "mult-68x74",
+   "first": "4972",
+   "second": "68 times 74 equals 5012. The result as a solitary integer is 5012."
+  },
+  {
+   "p": 290,
+   "i": "mult-72x59",
+   "first": "Certainly! The calculation of $ 72 \\times 59 $ results in the integer:\n\n**4248**",
+   "second": "Sure! The calculation of $ 72 \\times 59 $ results in the integer:\n\n**4248**"
+  },
+  {
+   "p": 188,
+   "i": "mult-47x35",
+   "first": "To find the mathematical product of 47 and 35, we perform the multiplication:\n\n$$\n47 \\times 35\n$$\n\nWe can compute this as follows:\n\n$$\n47 \\times 35 = (40 + 7) \\",
+   "second": "To find the mathematical product of 47 and 35, we perform the multiplication:\n\n$$\n47 \\times 35\n$$\n\nWe can compute this as:\n\n$$\n47 \\times 35 = (40 + 7) \\times (3"
+  },
+  {
+   "p": 131,
+   "i": "mult-34x82",
+   "first": "Of course! Let's calculate the product of 34 and 82:\n\n$$\n34 \\times 82 = ?\n$$\n\nWe can break it down:\n\n$$\n34 \\times 82 = 34 \\times (80 + 2) = (34 \\times 80) + (34",
+   "second": "Of course! Let's calculate the product of 34 and 82.\n\n$$\n34 \\times 82 = ?\n$$\n\nWe can break it down:\n\n$$\n34 \\times 82 = 34 \\times (80 + 2) = (34 \\times 80) + (34"
+  },
+  {
+   "p": 180,
+   "i": "mult-74x32",
+   "first": "2368",
+   "second": "To determine the mathematical product of 74 and 32, we perform the multiplication:\n\n$$\n74 \\times 32\n$$\n\nWe can break this down as:\n\n$$\n74 \\times 32 = 74 \\times "
+  },
+  {
+   "p": 318,
+   "i": "mult-47x35",
+   "first": "82",
+   "second": "80"
+  },
+  {
+   "p": 290,
+   "i": "mult-85x59",
+   "first": "Sure! The product of 85 and 59 is:\n\n**5015**",
+   "second": "Sure! The calculation of $ 85 \\times 59 $ results in the integer:\n\n**4995**"
+  },
+  {
+   "p": 77,
+   "i": "mult-75x22",
+   "first": "3300",
+   "second": "1650"
+  },
+  {
+   "p": 230,
+   "i": "mult-95x57",
+   "first": "5415",
+   "second": "4865"
+  },
+  {
+   "p": 446,
+   "i": "mult-72x59",
+   "first": "Sure! Please provide the numbers you want to multiply.",
+   "second": "Sure! Please provide the numbers you want to multiply, and I'll give you the raw integer result."
+  },
+  {
+   "p": 58,
+   "i": "mult-34x82",
+   "first": "The product of 34 and 82 is:\n\n**34 × 82 = 2788**",
+   "second": "The product of 34 and 82 is:\n\n**34 × 82 = 2808**"
+  }
+ ]
+}

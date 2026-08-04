@@ -104,12 +104,20 @@ for run in analysis["runs"]:
         by_pid.setdefault(r["p"], set()).add(r["i"])
     complete = [p for p, ks in by_pid.items() if len(ks) == len(task.items)]
     partial = len(by_pid) - len(complete)
-    if len(complete) != run["paraphrases_scored"]:
+    # Compared against the PRE-filter count. The equivalence judge removes wordings after the
+    # responses are collected, so complete-on-disk is expected to exceed paraphrases_scored,
+    # and comparing against the post-filter number made this check fail on a correct pipeline.
+    if len(complete) != run["paraphrases_before_equivalence_filter"]:
         sys.exit(f"{run['task']}/{run['model']}: {len(complete)} complete paraphrases on disk, "
-                 f"analysis.json scored {run['paraphrases_scored']}")
+                 f"analysis.json counted {run['paraphrases_before_equivalence_filter']} before "
+                 f"the equivalence filter")
+    if run["paraphrases_scored"] > len(complete):
+        sys.exit(f"{run['task']}/{run['model']}: scored {run['paraphrases_scored']} paraphrases "
+                 f"from only {len(complete)} complete ones")
     missing_text = sum(1 for r in records if r.get("r") is None)
     lines.append(f"{run['task']:7s} {run['model']:12s} {len(records):6,d} responses, "
-                 f"{len(complete)} complete wordings, {partial} partial and excluded, "
+                 f"{len(complete)} complete wordings, {run['paraphrases_scored']} of them "
+                 f"equivalence-verified, {partial} partial and excluded, "
                  f"{missing_text} failed calls")
 print("\n".join(lines))
 PY
@@ -228,7 +236,9 @@ a = json.loads(pathlib.Path("results/analysis.json").read_text())
 mult = [r for r in a["runs"] if r["task"] == "mult"]
 if not mult:
     sys.exit("no mult run to check the page against")
-widest = max(mult, key=lambda r: r["strict"]["range"])
+# Picked by standard deviation. Two models both span the full 0..1 range here, so
+# max-by-range is decided by list order rather than by the data.
+widest = max(mult, key=lambda r: r["strict"]["sd"])
 # Checked on the mean, the standard deviation and the two tail percentiles rather than on the
 # min and the max. "0%" is a substring of "100%", so a check on the extremes passes on a page
 # that contains only one of them, and a check that cannot fail is not a check.
@@ -400,10 +410,24 @@ import json, pathlib, re, sys
 readme = pathlib.Path("README.md").read_text()
 a = json.loads(pathlib.Path("results/analysis.json").read_text())
 mult = [r for r in a["runs"] if r["task"] == "mult"]
-widest = max(mult, key=lambda r: r["strict"]["range"])
+# Picked by standard deviation. Two models both span the full 0..1 range here, so
+# max-by-range is decided by list order rather than by the data.
+widest = max(mult, key=lambda r: r["strict"]["sd"])
 n = widest["strict"]["n"]
-if re.search(r"\b1,?000 paraphrases\b", readme) and n < 1000:
-    sys.exit(f"the README says 1,000 paraphrases and only {n} were run")
+# The guard is on the lede, everything before the first section heading, because that is where
+# a reader takes the headline number from. Naming 1,000 there is legal only when the same
+# sentence disclaims it: "not 1,000", "rather than 1,000". Anything else is the overclaim this
+# check exists to stop. Cutting the lede at a fixed character count was the first version and
+# it passed or failed on where a line wrapped, which is not a property of the claim.
+lede = readme.split("\n## ", 1)[0]
+if str(n) not in lede:
+    sys.exit(f"the README lede does not state the real number of wordings ({n})")
+if n < 1000:
+    for m in re.finditer(r"\b1,?000\b", lede):
+        before = lede[max(0, m.start() - 40):m.start()].lower()
+        if not re.search(r"\b(not|rather than|instead of|asked for|short of)\b\s*$", before):
+            sys.exit(f"the README lede claims 1,000 while only {n} wordings were run, at: "
+                     f"...{lede[max(0, m.start() - 60):m.end() + 20]}...")
 # Same reason as on the page: the extremes are not distinguishable as substrings, so the
 # README is pinned to figures that are.
 need = {"paraphrase count": str(n),

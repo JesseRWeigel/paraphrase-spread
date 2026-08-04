@@ -252,8 +252,10 @@ def build(analysis, repeat_checks, equivalence, pool_meta):
     mult = [r for r in analysis["runs"] if r["task"] == "mult"]
     entail = [r for r in analysis["runs"] if r["task"] == "entail"]
     mult.sort(key=lambda r: r["model"])
-    primary = max(mult, key=lambda r: r["strict"]["range"]) if mult else None
-    widest = primary["strict"]["range"] if primary else 0
+    # The model with the widest spread leads the page. Chosen by standard deviation
+    # rather than by range: two models here span the full 0..1 range, and a tie on
+    # range would be broken by list order instead of by the data.
+    primary = max(mult, key=lambda r: r["strict"]["sd"]) if mult else None
 
     n_par = mult[0]["strict"]["n"] if mult else 0
     total_responses = sum(r["responses"] for r in analysis["runs"])
@@ -361,10 +363,10 @@ def build(analysis, repeat_checks, equivalence, pool_meta):
     out.append(f"<li><strong>{primary['paraphrases_before_equivalence_filter']} wordings "
                f"survived generation, and {primary['strict']['n']} of them are in the "
                f"distribution above.</strong> {esc(primary['equivalence_note'])}. Without that "
-               f"filter the range on <code>{esc(primary['model'])}</code> would read "
-               f"{pct(primary['unfiltered']['range'], 0)} rather than "
-               f"{pct(primary['strict']['range'], 0)}, and the extra width would come from "
-               f"prompts that changed the question rather than the wording.</li>")
+               f"filter the standard deviation on <code>{esc(primary['model'])}</code> "
+               f"would read {pct(primary['unfiltered']['sd'])} rather than "
+               f"{pct(primary['strict']['sd'])}, and the extra width would come from prompts "
+               f"that changed the question rather than the wording.</li>")
     out.append(f"<li>The wordings were written by <code>{esc(pool_meta['generator']['model'])}</code> "
                f"under {len(pool_meta['generator']['styles'])} style directives crossed with "
                f"{len(pool_meta['generator'].get('axes', []))} structural directives, all chosen "
@@ -395,10 +397,15 @@ def build(analysis, repeat_checks, equivalence, pool_meta):
                "presented on its own.</li>")
     out.append("</ul>")
 
-    out.append(f"<footer>Built from <code>results/analysis.json</code> on "
-               f"{esc(analysis['generated_at'])}. Every raw model response is in "
+    # No timestamp on the page. The verify script rebuilds this file and requires it to match
+    # the committed copy byte for byte, and a build time would make that comparison fail on
+    # every run for a reason that says nothing about the results.
+    out.append(f"<footer>Built from <code>results/analysis.json</code> over "
+               f"{total_responses:,} graded responses. Every raw model response is in "
                f"<code>results/raw/</code>, so these numbers can be re-derived without running "
-               f"a model. Catalog task RSCH-046. "
+               f"a model. Task RSCH-046 from "
+               f"<a href='https://github.com/JesseRWeigel/722-things-to-build'>722 things to "
+               f"build</a>. "
                f"<a href='https://github.com/JesseRWeigel/paraphrase-spread'>Source</a>."
                f"</footer>")
     out.append("</main>")

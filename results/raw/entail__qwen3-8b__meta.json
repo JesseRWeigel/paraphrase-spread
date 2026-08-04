@@ -1,0 +1,23 @@
+{
+ "runs": [
+  {
+   "at": "2026-08-04T00:58:37Z",
+   "model": "qwen3:8b",
+   "task": "entail",
+   "new": 2904,
+   "errors": 0,
+   "already_done": 0,
+   "seconds": 1345.7,
+   "calls_per_second": 2.16
+  }
+ ],
+ "task": "entail",
+ "model": "qwen3:8b",
+ "options": {
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "seed": 20260803,
+  "num_predict": 200
+ },
+ "items": 24
+}

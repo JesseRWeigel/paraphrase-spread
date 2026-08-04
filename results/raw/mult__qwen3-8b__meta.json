@@ -2,5 +2,36 @@
  "task": "mult",
  "model": "qwen3:8b",
  "items": 24,
- "runs": []
+ "runs": [
+  {
+   "at": "2026-08-04T00:35:18Z",
+   "model": "qwen3:8b",
+   "task": "mult",
+   "new": 9551,
+   "errors": 0,
+   "already_done": 1561,
+   "seconds": 1930.2,
+   "calls_per_second": 4.95
+  },
+  {
+   "at": "2026-08-04T00:35:23Z",
+   "model": "qwen3:8b",
+   "task": "mult",
+   "new": 0,
+   "already_done": 11112
+  },
+  {
+   "at": "2026-08-04T00:36:11Z",
+   "model": "qwen3:8b",
+   "task": "mult",
+   "new": 0,
+   "already_done": 11112
+  }
+ ],
+ "options": {
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "seed": 20260803,
+  "num_predict": 200
+ }
 }

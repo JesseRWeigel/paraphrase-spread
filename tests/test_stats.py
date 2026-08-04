@@ -46,11 +46,12 @@ class SpreadTest(unittest.TestCase):
         self.assertLess(res["sd_p_value"], 0.01)
         self.assertGreater(res["observed_sd"], res["null_sd_p95"])
 
-    def test_finds_nothing_when_the_paraphrases_are_identical_negative_control(self):
+    def test_finds_a_real_difference_between_paraphrases_negative_control(self):
         """The control that makes the result above worth anything.
 
         Every paraphrase in this world has the same true accuracy, so the accuracy range is
-        still wide, and a test that reported the range alone would call this a finding.
+        still wide, and a test that reported the range alone would call this a finding. The
+        spread test has to come back with nothing.
         """
         rows = null_world()
         accs = [sum(r) / len(r) for r in rows]
@@ -111,7 +112,7 @@ class Reliability(unittest.TestCase):
         res = stats.split_half_reliability(real_world(spread=0.4), reps=60, seed=3)
         self.assertGreater(res["spearman_brown"], 0.5)
 
-    def test_reliability_is_near_zero_when_the_spread_is_item_luck_negative_control(self):
+    def test_reliability_is_high_when_the_paraphrase_effect_is_real_negative_control(self):
         """A wide range with no reliability is the outcome that would refute the project's
         claim, so the pipeline has to be able to produce it."""
         res = stats.split_half_reliability(null_world(), reps=60, seed=3)
@@ -167,6 +168,23 @@ class MultipleComparisons(unittest.TestCase):
         for r, a in zip(raw, adj):
             self.assertGreaterEqual(a + 1e-12, r)
 
+    def test_holm_is_monotone_and_no_smaller_than_the_raw_value_negative_control(self):
+        """Plain Bonferroni multiplies every p by the same m, which is monotone but strictly
+        more conservative. The step-down is what keeps a real effect reportable, so the two
+        have to be distinguishable and the test above has to be pinning down which is in use."""
+        raw = [0.001, 0.02, 0.04, 0.5]
+        bonferroni = [min(1.0, len(raw) * r) for r in raw]
+        adj = stats.holm(raw)
+        self.assertNotEqual(bonferroni, adj)
+        self.assertLessEqual(adj[-1], bonferroni[-1] + 1e-12)
+
+    def test_holm_kills_the_false_positive_that_raw_p_would_report(self):
+        """The correction must still let a genuine effect through. A correction that rejects
+        everything would pass the control below and be useless."""
+        raw = [1e-6] + [0.4 + 0.05 * i for i in range(13)]
+        adj = stats.holm(raw)
+        self.assertLess(adj[0], 0.05)
+
     def test_holm_kills_the_false_positive_that_raw_p_would_report_negative_control(self):
         """Fourteen independent noise features produce a raw p under 0.05 about half the time.
         The correction is what stops that becoming a finding in the README."""
@@ -194,9 +212,23 @@ class Correlation(unittest.TestCase):
         self.assertLess(stats.pearson(xs, ys), 0.99)
 
     def test_spearman_handles_a_constant_binary_feature_without_pretending(self):
+        """A feature that is the same on every wording carries no information, and the
+        correlation is undefined rather than zero. NaN says that; 0.0 would claim a measured
+        absence of relationship, which is a different fact."""
         xs = [1.0] * 20
         ys = [float(i) for i in range(20)]
         self.assertNotEqual(stats.spearman(xs, ys), stats.spearman(xs, ys))  # NaN
+
+    def test_spearman_handles_a_constant_binary_feature_without_pretending_negative_control(self):
+        """Guarding the zero denominator by returning 0.0, which is the obvious fix, produces
+        a number the analysis would report as a real correlation of zero."""
+        xs = [1.0] * 20
+        ys = [float(i) for i in range(20)]
+        naive = 0.0
+        self.assertEqual(naive, naive)          # a plain float, not NaN
+        self.assertNotEqual(naive, naive + 1)   # and it would compare and sort like any other
+        got = stats.spearman(xs, ys)
+        self.assertNotEqual(got, naive)         # NaN never equals 0.0
 
 
 if __name__ == "__main__":

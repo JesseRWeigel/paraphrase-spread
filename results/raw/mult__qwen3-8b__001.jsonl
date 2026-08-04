@@ -4415,3 +4415,697 @@
 {"p": 433, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 209}
 {"p": 434, "i": "mult-79x92", "r": "Sure! Let's solve the multiplication of **79 × 92** step by step.\n\n---\n\n### Step 1: Break it down using the distributive property\n\nWe can write:\n\n$$\n79 \\times 92 = 79 \\times (90 + 2) = (79 \\times 90) + (79 \\times 2)\n$$\n\n---\n\n### Step 2: Calculate each part\n\n#### a) $ 79 \\times 90 $\n\n$$\n79 \\times 90 = 79 \\times 9 \\times 10\n$$\n\nFirst, calculate $ 79 \\times 9 $:\n\n$$\n79 \\times 9 = 711\n$$\n\nNow multiply by 10:\n\n$$\n711 \\times 10 = 7110\n$$\n\n#### b) $ 79 \\times 2 $\n\n$$\n7", "n": 200, "ms": 1440}
 {"p": 434, "i": "mult-59x54", "r": "Sure! Let's solve the multiplication of **59 × 54** step by step.\n\n---\n\n### Step 1: Break it down using the distributive property\n\nWe can write:\n\n$$\n59 \\times 54 = (60 - 1) \\times 54\n$$\n\nNow distribute:\n\n$$\n= 60 \\times 54 - 1 \\times 54\n$$\n\n---\n\n### Step 2: Calculate each part\n\n- $60 \\times 54 = 3240$\n- $1 \\times 54 = 54$\n\n---\n\n### Step 3: Subtract\n\n$$\n3240 - 54 = 3186\n$$\n\n---\n\n### ✅ Final Answer:\n\n$$\n\\boxed{3186}\n$$", "n": 174, "ms": 2354}
+{"p": 434, "i": "mult-47x35", "r": "Sure! Let's solve the multiplication of **47 × 35** step by step.\n\n---\n\n### Step 1: Break it down using the distributive property\n\nWe can write:\n\n$$\n47 \\times 35 = 47 \\times (30 + 5)\n$$\n\nNow distribute:\n\n$$\n= (47 \\times 30) + (47 \\times 5)\n$$\n\n---\n\n### Step 2: Calculate each part\n\n- $ 47 \\times 30 = 1,410 $\n- $ 47 \\times 5 = 235 $\n\n---\n\n### Step 3: Add the results\n\n$$\n1,410 + 235 = 1,645\n$$\n\n---\n\n### ✅ Final Answer:\n\n$$\n\\boxed{1645}\n$$", "n": 183, "ms": 4044}
+{"p": 434, "i": "mult-37x87", "r": "Sure! Let's solve the multiplication of **37 × 87** step by step.\n\n---\n\n### Step 1: Break it down using the distributive property\n\nWe can write:\n\n$$\n37 \\times 87 = 37 \\times (80 + 7)\n$$\n\nNow distribute:\n\n$$\n= (37 \\times 80) + (37 \\times 7)\n$$\n\n---\n\n### Step 2: Calculate each part\n\n- $ 37 \\times 80 = 2960 $\n- $ 37 \\times 7 = 259 $\n\n---\n\n### Step 3: Add the results\n\n$$\n2960 + 259 = 3219\n$$\n\n---\n\n### ✅ Final Answer:\n\n$$\n\\boxed{3219}\n$$", "n": 180, "ms": 5039}
+{"p": 434, "i": "mult-85x59", "r": "Sure! Let's solve the multiplication of **85 × 59** step by step.\n\n---\n\n### Step 1: Break it down using the distributive property\n\nWe can write:\n\n$$\n85 \\times 59 = 85 \\times (60 - 1) = (85 \\times 60) - (85 \\times 1)\n$$\n\n---\n\n### Step 2: Calculate each part\n\n- $ 85 \\times 60 = 5100 $\n- $ 85 \\times 1 = 85 $\n\n---\n\n### Step 3: Subtract\n\n$$\n5100 - 85 = 5015\n$$\n\n---\n\n### ✅ Final Answer:\n\n$$\n\\boxed{5015}\n$$", "n": 169, "ms": 5689}
+{"p": 434, "i": "mult-14x83", "r": "Sure! Let's solve the multiplication of **14** and **83** step by step.\n\n### Step 1: Break down the multiplication\nWe can use the **distributive property** of multiplication:\n\n$$\n14 \\times 83 = 14 \\times (80 + 3)\n$$\n\n### Step 2: Distribute the multiplication\n$$\n= (14 \\times 80) + (14 \\times 3)\n$$\n\n### Step 3: Calculate each part\n- $14 \\times 80 = 1120$\n- $14 \\times 3 = 42$\n\n### Step 4: Add the results\n$$\n1120 + 42 = 1162\n$$\n\n### ✅ Final Answer:\n$$\n\\boxed{1162}\n$$", "n": 185, "ms": 5711}
+{"p": 434, "i": "mult-25x96", "r": "Sure! Let's solve the multiplication of **25** and **96** step by step.\n\n### Step 1: Break it down\nWe can make this easier by using the distributive property:\n\n$$\n25 \\times 96 = 25 \\times (100 - 4)\n$$\n\n### Step 2: Distribute\n$$\n= 25 \\times 100 - 25 \\times 4\n$$\n\n### Step 3: Multiply\n$$\n= 2500 - 100\n$$\n\n### Step 4: Subtract\n$$\n= 2400\n$$\n\n### ✅ Final Answer:\n$$\n\\boxed{2400}\n$$", "n": 157, "ms": 5054}
+{"p": 434, "i": "mult-19x27", "r": "Sure! Let's solve the multiplication of **19** and **27** step by step.\n\n### Step 1: Break it down using the distributive property\nWe can write:\n\n$$\n19 \\times 27 = 19 \\times (20 + 7)\n$$\n\n### Step 2: Distribute the multiplication\n$$\n= (19 \\times 20) + (19 \\times 7)\n$$\n\n### Step 3: Calculate each part\n- $19 \\times 20 = 380$\n- $19 \\times 7 = 133$\n\n### Step 4: Add the results\n$$\n380 + 133 = 513\n$$\n\n### ✅ Final Answer:\n$$\n\\boxed{513}\n$$", "n": 178, "ms": 5092}
+{"p": 434, "i": "mult-95x17", "r": "Sure! Let's solve the multiplication of **95 × 17** step by step.\n\n---\n\n### Step 1: Break it down using the distributive property\n\nWe can write:\n\n$$\n95 \\times 17 = 95 \\times (10 + 7) = (95 \\times 10) + (95 \\times 7)\n$$\n\n---\n\n### Step 2: Multiply each part\n\n- $ 95 \\times 10 = 950 $\n- $ 95 \\times 7 = 665 $\n\n---\n\n### Step 3: Add the results\n\n$$\n950 + 665 = 1615\n$$\n\n---\n\n### ✅ Final Answer:\n\n$$\n\\boxed{1615}\n$$", "n": 171, "ms": 4936}
+{"p": 434, "i": "mult-67x62", "r": "Sure! Let's solve the multiplication of **67 × 62** step by step.\n\n---\n\n### Step 1: Break it down using the distributive property\n\nWe can write:\n\n$$\n67 \\times 62 = 67 \\times (60 + 2)\n$$\n\nNow distribute:\n\n$$\n= (67 \\times 60) + (67 \\times 2)\n$$\n\n---\n\n### Step 2: Calculate each part\n\n- $ 67 \\times 60 = 4020 $\n- $ 67 \\times 2 = 134 $\n\n---\n\n### Step 3: Add the results\n\n$$\n4020 + 134 = 4154\n$$\n\n---\n\n### ✅ Final Answer:\n\n$$\n\\boxed{4154}\n$$", "n": 180, "ms": 5304}
+{"p": 434, "i": "mult-74x32", "r": "Sure! Let's solve the multiplication of **74 × 32** step by step.\n\n---\n\n### Step 1: Break it down using the distributive property\n\nWe can write:\n\n$$\n74 \\times 32 = 74 \\times (30 + 2) = (74 \\times 30) + (74 \\times 2)\n$$\n\n---\n\n### Step 2: Multiply each part\n\n- $ 74 \\times 30 = 2220 $\n- $ 74 \\times 2 = 148 $\n\n---\n\n### Step 3: Add the results\n\n$$\n2220 + 148 = 2368\n$$\n\n---\n\n### ✅ Final Answer:\n\n$$\n\\boxed{2368}\n$$", "n": 173, "ms": 5577}
+{"p": 434, "i": "mult-79x87", "r": "Sure! Let's solve the multiplication of **79 × 87** step by step.\n\n---\n\n### Step 1: Break it down using the distributive property\n\nWe can write:\n\n$$\n79 \\times 87 = (80 - 1) \\times 87\n$$\n\nNow distribute:\n\n$$\n= 80 \\times 87 - 1 \\times 87\n$$\n\n---\n\n### Step 2: Calculate each part\n\n- $ 80 \\times 87 = 6960 $\n- $ 1 \\times 87 = 87 $\n\n---\n\n### Step 3: Subtract\n\n$$\n6960 - 87 = 6873\n$$\n\n---\n\n### ✅ Final Answer:\n\n$$\n\\boxed{6873}\n$$", "n": 176, "ms": 5851}
+{"p": 434, "i": "mult-19x85", "r": "Sure! Let's solve the multiplication of **19** and **85** step by step.\n\n### Step 1: Break it down using the distributive property\nWe can write:\n\n$$\n19 \\times 85 = (20 - 1) \\times 85\n$$\n\n### Step 2: Distribute the multiplication\n$$\n= 20 \\times 85 - 1 \\times 85\n$$\n\n### Step 3: Calculate each part\n- $ 20 \\times 85 = 1700 $\n- $ 1 \\times 85 = 85 $\n\n### Step 4: Subtract\n$$\n1700 - 85 = 1615\n$$\n\n### ✅ Final Answer:\n$$\n\\boxed{1615}\n$$", "n": 180, "ms": 5599}
+{"p": 434, "i": "mult-75x22", "r": "Sure! Let's solve the multiplication of **75** and **22** step by step.\n\n### Step 1: Break it down\nWe can use the distributive property of multiplication:\n\n$$\n75 \\times 22 = 75 \\times (20 + 2)\n$$\n\n### Step 2: Multiply each part\n$$\n75 \\times 20 = 1500\n$$\n$$\n75 \\times 2 = 150\n$$\n\n### Step 3: Add the results\n$$\n1500 + 150 = 1650\n$$\n\n### ✅ Final Answer:\n$$\n\\boxed{1650}\n$$", "n": 154, "ms": 4788}
+{"p": 434, "i": "mult-63x87", "r": "Sure! Let's solve the multiplication of **63 × 87** step by step.\n\n---\n\n### Step 1: Break it down using the distributive property\n\nWe can write:\n\n$$\n63 \\times 87 = 63 \\times (80 + 7)\n$$\n\nNow distribute:\n\n$$\n= (63 \\times 80) + (63 \\times 7)\n$$\n\n---\n\n### Step 2: Calculate each part\n\n**First part: 63 × 80**\n\n$$\n63 \\times 80 = (60 \\times 80) + (3 \\times 80) = 4800 + 240 = 5040\n$$\n\n**Second part: 63 × 7**\n\n$$\n63 \\times 7 = (60 \\times 7) + (3 \\times 7) = 420", "n": 200, "ms": 4656}
+{"p": 434, "i": "mult-82x78", "r": "Sure! Let's solve the multiplication of **82 × 78** step by step.\n\n---\n\n### Step 1: Use the standard multiplication method\n\nWe can break it down using the **distributive property**:\n\n$$\n82 \\times 78 = 82 \\times (80 - 2) = 82 \\times 80 - 82 \\times 2\n$$\n\n---\n\n### Step 2: Calculate each part\n\n- $ 82 \\times 80 = 6560 $\n- $ 82 \\times 2 = 164 $\n\n---\n\n### Step 3: Subtract\n\n$$\n6560 - 164 = 6396\n$$\n\n---\n\n### ✅ Final Answer:\n\n$$\n\\boxed{6396}\n$$", "n": 177, "ms": 4700}
+{"p": 434, "i": "mult-77x49", "r": "Sure! Let's solve the multiplication of **77 × 49** step by step.\n\n---\n\n### Step 1: Use the distributive property\n\nWe can break down the multiplication like this:\n\n$$\n77 \\times 49 = 77 \\times (50 - 1)\n$$\n\n$$\n= 77 \\times 50 - 77 \\times 1\n$$\n\n---\n\n### Step 2: Calculate each part\n\n- $ 77 \\times 50 = 3850 $\n- $ 77 \\times 1 = 77 $\n\n---\n\n### Step 3: Subtract\n\n$$\n3850 - 77 = 3773\n$$\n\n---\n\n### ✅ Final Answer:\n\n$$\n\\boxed{3773}\n$$", "n": 174, "ms": 4534}
+{"p": 434, "i": "mult-73x65", "r": "Sure! Let's solve the multiplication of **73 × 65** step by step.\n\n---\n\n### Step 1: Break it down using the distributive property\n\nWe can write:\n\n$$\n73 \\times 65 = 73 \\times (60 + 5) = (73 \\times 60) + (73 \\times 5)\n$$\n\n---\n\n### Step 2: Calculate each part\n\n**First part: $ 73 \\times 60 $**\n\n$$\n73 \\times 60 = 73 \\times 6 \\times 10 = 438 \\times 10 = 4380\n$$\n\n**Second part: $ 73 \\times 5 $**\n\n$$\n73 \\times 5 = 365\n$$\n\n---\n\n### Step 3: Add the two results\n\n$$\n4380 + 365", "n": 200, "ms": 4258}
+{"p": 434, "i": "mult-13x42", "r": "Sure! Let's solve the multiplication of **13** and **42** step by step.\n\n### Step 1: Break it down\nWe can use the distributive property of multiplication:\n\n$$\n13 \\times 42 = 13 \\times (40 + 2)\n$$\n\n### Step 2: Multiply each part\n$$\n13 \\times 40 = 520\n$$\n$$\n13 \\times 2 = 26\n$$\n\n### Step 3: Add the results\n$$\n520 + 26 = 546\n$$\n\n### ✅ Final Answer:\n$$\n\\boxed{546}\n$$", "n": 148, "ms": 3909}
+{"p": 434, "i": "mult-38x28", "r": "Sure! Let's solve the multiplication of **38 × 28** step by step.\n\n### Step 1: Break it down using the distributive property\nWe can write:\n\n$$\n38 \\times 28 = 38 \\times (20 + 8)\n$$\n\nNow distribute:\n\n$$\n= (38 \\times 20) + (38 \\times 8)\n$$\n\n### Step 2: Calculate each part\n\n- $ 38 \\times 20 = 760 $\n- $ 38 \\times 8 = 304 $\n\n### Step 3: Add the results\n\n$$\n760 + 304 = 1064\n$$\n\n### ✅ Final Answer:\n$$\n\\boxed{1064}\n$$", "n": 174, "ms": 4638}
+{"p": 434, "i": "mult-95x57", "r": "Sure! Let's solve the multiplication of **95 × 57** step by step.\n\n---\n\n### Step 1: Break it down using the distributive property\n\nWe can write:\n\n$$\n95 \\times 57 = (90 + 5) \\times (50 + 7)\n$$\n\nNow use the distributive property:\n\n$$\n= 90 \\times 50 + 90 \\times 7 + 5 \\times 50 + 5 \\times 7\n$$\n\n---\n\n### Step 2: Calculate each part\n\n- $ 90 \\times 50 = 4500 $\n- $ 90 \\times 7 = 630 $\n- $ 5 \\times 50 = 250 $\n- $ 5 \\times 7 = 35 $\n\n---\n\n### Step 3: Add them all together\n\n$$\n4500 + ", "n": 200, "ms": 4201}
+{"p": 434, "i": "mult-72x59", "r": "Sure! Let's solve the multiplication of **72 × 59** step by step.\n\n---\n\n### Step 1: Break it down using the distributive property\n\nWe can write:\n\n$$\n72 \\times 59 = 72 \\times (60 - 1) = 72 \\times 60 - 72 \\times 1\n$$\n\n---\n\n### Step 2: Calculate each part\n\n- $ 72 \\times 60 = 4320 $\n- $ 72 \\times 1 = 72 $\n\n---\n\n### Step 3: Subtract\n\n$$\n4320 - 72 = 4248\n$$\n\n---\n\n### ✅ Final Answer:\n\n$$\n\\boxed{4248}\n$$", "n": 168, "ms": 4284}
+{"p": 434, "i": "mult-68x74", "r": "Sure! Let's solve the multiplication of **68 × 74** step by step.\n\n---\n\n### Step 1: Break it down using the distributive property\n\nWe can write:\n\n$$\n68 \\times 74 = 68 \\times (70 + 4)\n$$\n\nNow distribute:\n\n$$\n= (68 \\times 70) + (68 \\times 4)\n$$\n\n---\n\n### Step 2: Calculate each part\n\n**First part: 68 × 70**\n\n$$\n68 \\times 70 = 68 \\times 7 \\times 10 = 476 \\times 10 = 4760\n$$\n\n**Second part: 68 × 4**\n\n$$\n68 \\times 4 = 272\n$$\n\n---\n\n### Step 3: Add the two results\n\n$$\n4760 + 27", "n": 200, "ms": 5081}
+{"p": 434, "i": "mult-34x82", "r": "Sure! Let's solve the multiplication of **34 × 82** step by step.\n\n---\n\n### Step 1: Break it down using the distributive property\n\nWe can write:\n\n$$\n34 \\times 82 = 34 \\times (80 + 2)\n$$\n\nNow distribute:\n\n$$\n= (34 \\times 80) + (34 \\times 2)\n$$\n\n---\n\n### Step 2: Calculate each part\n\n- $ 34 \\times 80 = 2720 $\n- $ 34 \\times 2 = 68 $\n\n---\n\n### Step 3: Add the results\n\n$$\n2720 + 68 = 2788\n$$\n\n---\n\n### ✅ Final Answer:\n\n$$\n\\boxed{2788}\n$$", "n": 178, "ms": 5756}
+{"p": 435, "i": "mult-79x92", "r": "7268", "n": 5, "ms": 4313}
+{"p": 435, "i": "mult-59x54", "r": "2986", "n": 5, "ms": 1894}
+{"p": 435, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 233}
+{"p": 435, "i": "mult-37x87", "r": "3219", "n": 5, "ms": 237}
+{"p": 435, "i": "mult-85x59", "r": "4415", "n": 5, "ms": 215}
+{"p": 435, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 179}
+{"p": 435, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 238}
+{"p": 435, "i": "mult-19x27", "r": "513", "n": 4, "ms": 304}
+{"p": 435, "i": "mult-95x17", "r": "1615", "n": 5, "ms": 362}
+{"p": 435, "i": "mult-67x62", "r": "4164", "n": 5, "ms": 315}
+{"p": 435, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 259}
+{"p": 435, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 226}
+{"p": 435, "i": "mult-19x85", "r": "1515", "n": 5, "ms": 211}
+{"p": 435, "i": "mult-75x22", "r": "1650", "n": 5, "ms": 223}
+{"p": 435, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 203}
+{"p": 435, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 182}
+{"p": 435, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 199}
+{"p": 435, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 232}
+{"p": 435, "i": "mult-13x42", "r": "546", "n": 4, "ms": 236}
+{"p": 435, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 205}
+{"p": 435, "i": "mult-95x57", "r": "4815", "n": 5, "ms": 209}
+{"p": 435, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 261}
+{"p": 435, "i": "mult-68x74", "r": "4992", "n": 5, "ms": 271}
+{"p": 435, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 265}
+{"p": 436, "i": "mult-79x92", "r": "7028", "n": 5, "ms": 236}
+{"p": 436, "i": "mult-59x54", "r": "3186", "n": 5, "ms": 235}
+{"p": 436, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 230}
+{"p": 436, "i": "mult-37x87", "r": "3119", "n": 5, "ms": 234}
+{"p": 436, "i": "mult-85x59", "r": "4415", "n": 5, "ms": 229}
+{"p": 436, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 233}
+{"p": 436, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 231}
+{"p": 436, "i": "mult-19x27", "r": "486", "n": 4, "ms": 242}
+{"p": 436, "i": "mult-95x17", "r": "1615", "n": 5, "ms": 269}
+{"p": 436, "i": "mult-67x62", "r": "4164", "n": 5, "ms": 271}
+{"p": 436, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 266}
+{"p": 436, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 237}
+{"p": 436, "i": "mult-19x85", "r": "1515", "n": 5, "ms": 217}
+{"p": 436, "i": "mult-75x22", "r": "1650", "n": 5, "ms": 180}
+{"p": 436, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 216}
+{"p": 436, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 228}
+{"p": 436, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 273}
+{"p": 436, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 241}
+{"p": 436, "i": "mult-13x42", "r": "546", "n": 4, "ms": 232}
+{"p": 436, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 189}
+{"p": 436, "i": "mult-95x57", "r": "5415", "n": 5, "ms": 196}
+{"p": 436, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 215}
+{"p": 436, "i": "mult-68x74", "r": "4992", "n": 5, "ms": 248}
+{"p": 436, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 233}
+{"p": 437, "i": "mult-79x92", "r": "To find the product of **79** and **92**, we can perform the multiplication directly:\n\n$$\n79 \\times 92\n$$\n\nLet's compute it step by step:\n\n### Step 1: Break down the multiplication\nWe can use the distributive property:\n\n$$\n79 \\times 92 = 79 \\times (90 + 2) = (79 \\times 90) + (79 \\times 2)\n$$\n\n### Step 2: Compute each part\n- $ 79 \\times 90 = 7110 $\n- $ 79 \\times 2 = 158 $\n\n### Step 3: Add the results\n$$\n7110 + 158 = 7268\n$$\n\n### ✅ Final Answer:\n**7268**", "n": 185, "ms": 2245}
+{"p": 437, "i": "mult-59x54", "r": "To find the product of **59** and **54**, we can perform the multiplication directly:\n\n$$\n59 \\times 54\n$$\n\nLet's compute it step by step:\n\n### Step 1: Break it down\n$$\n59 \\times 54 = 59 \\times (50 + 4) = (59 \\times 50) + (59 \\times 4)\n$$\n\n### Step 2: Compute each part\n- $ 59 \\times 50 = 2950 $\n- $ 59 \\times 4 = 236 $\n\n### Step 3: Add them together\n$$\n2950 + 236 = 3186\n$$\n\n### ✅ Final Answer:\n**3186**", "n": 176, "ms": 3957}
+{"p": 437, "i": "mult-47x35", "r": "To find the product of **47** and **35**, we can perform the multiplication directly:\n\n$$\n47 \\times 35\n$$\n\nWe can break it down using the distributive property:\n\n$$\n47 \\times 35 = 47 \\times (30 + 5) = (47 \\times 30) + (47 \\times 5)\n$$\n\nNow calculate each part:\n\n- $ 47 \\times 30 = 1410 $\n- $ 47 \\times 5 = 235 $\n\nNow add them together:\n\n$$\n1410 + 235 = 1645\n$$\n\n### ✅ Final Answer: **1645**", "n": 162, "ms": 5551}
+{"p": 437, "i": "mult-37x87", "r": "To find the product of **37** and **87**, we can perform the multiplication directly:\n\n$$\n37 \\times 87\n$$\n\nLet's compute it step by step:\n\n$$\n37 \\times 87 = 37 \\times (80 + 7) = (37 \\times 80) + (37 \\times 7)\n$$\n\n$$\n37 \\times 80 = 2960\n$$\n$$\n37 \\times 7 = 259\n$$\n\nNow add them:\n\n$$\n2960 + 259 = 3219\n$$\n\n### ✅ Final Answer: **3219**", "n": 155, "ms": 4933}
+{"p": 437, "i": "mult-85x59", "r": "To find the product of **85** and **59**, using only a single integer (without commas or other characters), we simply perform the multiplication:\n\n$$\n85 \\times 59\n$$\n\nLet's compute it step by step:\n\n$$\n85 \\times 59 = 85 \\times (60 - 1) = (85 \\times 60) - (85 \\times 1)\n$$\n\n$$\n85 \\times 60 = 5100\n$$\n$$\n85 \\times 1 = 85\n$$\n\n$$\n5100 - 85 = 5015\n$$\n\n### ✅ Final Answer: **5015**", "n": 160, "ms": 4711}
+{"p": 437, "i": "mult-14x83", "r": "To find the product of **14** and **83**, we simply multiply them:\n\n$$\n14 \\times 83\n$$\n\nLet's compute it step by step:\n\n$$\n14 \\times 83 = 14 \\times (80 + 3) = (14 \\times 80) + (14 \\times 3)\n$$\n\n$$\n14 \\times 80 = 1120\n$$\n$$\n14 \\times 3 = 42\n$$\n\nNow add them:\n\n$$\n1120 + 42 = 1162\n$$\n\n### ✅ Final Answer: **1162**", "n": 151, "ms": 4518}
+{"p": 437, "i": "mult-25x96", "r": "To find the product of **25** and **96**, we simply multiply them:\n\n$$\n25 \\times 96\n$$\n\nWe can break this down for easier calculation:\n\n$$\n25 \\times 96 = 25 \\times (100 - 4) = 25 \\times 100 - 25 \\times 4 = 2500 - 100 = 2400\n$$\n\n### Final Answer: **2400**", "n": 112, "ms": 4059}
+{"p": 437, "i": "mult-19x27", "r": "To find the product of **19** and **27**, we simply multiply them:\n\n$$\n19 \\times 27\n$$\n\nLet's compute it step by step:\n\n$$\n19 \\times 27 = 19 \\times (20 + 7) = (19 \\times 20) + (19 \\times 7)\n$$\n\n$$\n19 \\times 20 = 380\n$$\n$$\n19 \\times 7 = 133\n$$\n\nNow add them:\n\n$$\n380 + 133 = 513\n$$\n\n### ✅ Final Answer: **513**", "n": 149, "ms": 3964}
+{"p": 437, "i": "mult-95x17", "r": "To find the product of **95** and **17**, using only a single integer (without commas or other characters), we simply perform the multiplication:\n\n$$\n95 \\times 17\n$$\n\nLet's compute it step by step:\n\n$$\n95 \\times 17 = 95 \\times (10 + 7) = (95 \\times 10) + (95 \\times 7)\n$$\n\n$$\n= 950 + 665 = 1615\n$$\n\n### ✅ Final Answer: **1615**", "n": 129, "ms": 3817}
+{"p": 437, "i": "mult-67x62", "r": "To find the product of **67** and **62**, we simply multiply them:\n\n$$\n67 \\times 62\n$$\n\nLet's compute it step by step:\n\n$$\n67 \\times 62 = 67 \\times (60 + 2) = (67 \\times 60) + (67 \\times 2)\n$$\n\n$$\n67 \\times 60 = 4020\n$$\n$$\n67 \\times 2 = 134\n$$\n\nNow add them:\n\n$$\n4020 + 134 = 4154\n$$\n\n### ✅ Final Answer: **4154**", "n": 153, "ms": 4339}
+{"p": 437, "i": "mult-74x32", "r": "To find the product of **74** and **32**, we simply multiply them:\n\n$$\n74 \\times 32\n$$\n\nLet's compute it step by step:\n\n$$\n74 \\times 32 = 74 \\times (30 + 2) = (74 \\times 30) + (74 \\times 2)\n$$\n\n$$\n74 \\times 30 = 2220\n$$\n$$\n74 \\times 2 = 148\n$$\n\nNow add them:\n\n$$\n2220 + 148 = 2368\n$$\n\n### ✅ Final Answer: **2368**", "n": 153, "ms": 4444}
+{"p": 437, "i": "mult-79x87", "r": "To find the product of **79** and **87**, we can perform the multiplication directly:\n\n$$\n79 \\times 87\n$$\n\nLet's compute it step by step:\n\n### Step 1: Break it down using the distributive property\n$$\n79 \\times 87 = 79 \\times (80 + 7) = (79 \\times 80) + (79 \\times 7)\n$$\n\n### Step 2: Compute each part\n- $ 79 \\times 80 = 6320 $\n- $ 79 \\times 7 = 553 $\n\n### Step 3: Add the results\n$$\n6320 + 553 = 6873\n$$\n\n### ✅ Final Answer:\n**6873**", "n": 181, "ms": 5104}
+{"p": 437, "i": "mult-19x85", "r": "To find the product of **19** and **85**, using only a single integer (without commas or other characters), we simply perform the multiplication:\n\n$$\n19 \\times 85\n$$\n\nLet's compute it step by step:\n\n$$\n19 \\times 85 = 19 \\times (80 + 5) = (19 \\times 80) + (19 \\times 5)\n$$\n\n$$\n19 \\times 80 = 1520\n$$\n$$\n19 \\times 5 = 95\n$$\n\n$$\n1520 + 95 = 1615\n$$\n\n### ✅ Final Answer: **1615**", "n": 160, "ms": 5266}
+{"p": 437, "i": "mult-75x22", "r": "To find the product of **75** and **22**, we simply multiply them:\n\n$$\n75 \\times 22\n$$\n\nLet's compute it step by step:\n\n$$\n75 \\times 22 = 75 \\times (20 + 2) = (75 \\times 20) + (75 \\times 2)\n$$\n\n$$\n75 \\times 20 = 1500\n$$\n$$\n75 \\times 2 = 150\n$$\n\n$$\n1500 + 150 = 1650\n$$\n\n### ✅ Final Answer: **1650**", "n": 149, "ms": 5240}
+{"p": 437, "i": "mult-63x87", "r": "To find the product of **63** and **87**, we can use the standard multiplication method or a clever algebraic trick.\n\n### Step-by-step multiplication:\n\n```\n     63\n   × 87\n   ------\n     441   (63 × 7)\n   5040    (63 × 80, shifted one position to the left)\n   ------\n    5481\n```\n\n### Final Answer:\n**5481**\n\nSo, the product of **63** and **87** is **5481**.", "n": 130, "ms": 4300}
+{"p": 437, "i": "mult-82x78", "r": "To find the product of **82** and **78**, we can use the standard multiplication method or a clever algebraic trick.\n\n### Step-by-step multiplication:\n\nWe can compute:\n\n$$\n82 \\times 78\n$$\n\nUse the identity:\n\n$$\n(a + b)(a - b) = a^2 - b^2\n$$\n\nLet’s rewrite 82 and 78 as:\n\n$$\n82 = 80 + 2 \\\\\n78 = 80 - 2\n$$\n\nSo:\n\n$$\n82 \\times 78 = (80 + 2)(80 - 2) = 80^2 - 2^2 = 6400 - 4 = 6396\n$$\n\n### ✅ Final Answer: **6396**", "n": 178, "ms": 3563}
+{"p": 437, "i": "mult-77x49", "r": "To find the product of **77** and **49**, using only a single integer (without commas or other characters), we simply perform the multiplication:\n\n$$\n77 \\times 49\n$$\n\nLet's compute it step by step:\n\n$$\n77 \\times 49 = 77 \\times (50 - 1) = (77 \\times 50) - (77 \\times 1)\n$$\n\n$$\n77 \\times 50 = 3850\n$$\n$$\n77 \\times 1 = 77\n$$\n\n$$\n3850 - 77 = 3773\n$$\n\n### ✅ Final Answer: **3773**", "n": 160, "ms": 2877}
+{"p": 437, "i": "mult-73x65", "r": "To find the product of **73** and **65**, we can perform the multiplication directly:\n\n$$\n73 \\times 65\n$$\n\nLet's compute it step by step:\n\n### Step 1: Break down the multiplication\nWe can use the distributive property:\n\n$$\n73 \\times 65 = 73 \\times (60 + 5) = (73 \\times 60) + (73 \\times 5)\n$$\n\n### Step 2: Compute each part\n- $ 73 \\times 60 = 4380 $\n- $ 73 \\times 5 = 365 $\n\n### Step 3: Add the results\n$$\n4380 + 365 = 4745\n$$\n\n### ✅ Final Answer:\n**4745**", "n": 185, "ms": 4315}
+{"p": 437, "i": "mult-13x42", "r": "To find the product of **13** and **42**, using only a single integer (without commas or other characters), we simply perform the multiplication:\n\n$$\n13 \\times 42 = 546\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{546}\n$$", "n": 67, "ms": 3970}
+{"p": 437, "i": "mult-38x28", "r": "To find the product of **38** and **28**, we can perform the multiplication directly:\n\n$$\n38 \\times 28\n$$\n\nWe can break it down:\n\n$$\n38 \\times 28 = 38 \\times (30 - 2) = (38 \\times 30) - (38 \\times 2)\n$$\n\n$$\n38 \\times 30 = 1140\n$$\n$$\n38 \\times 2 = 76\n$$\n\n$$\n1140 - 76 = 1064\n$$\n\n### ✅ Final Answer: **1064**", "n": 147, "ms": 4604}
+{"p": 437, "i": "mult-95x57", "r": "To find the product of **95** and **57**, we can perform the multiplication directly:\n\n$$\n95 \\times 57\n$$\n\nLet's compute it step by step:\n\n### Step 1: Break it down\n$$\n95 \\times 57 = 95 \\times (50 + 7) = (95 \\times 50) + (95 \\times 7)\n$$\n\n### Step 2: Compute each part\n- $ 95 \\times 50 = 4750 $\n- $ 95 \\times 7 = 665 $\n\n### Step 3: Add them together\n$$\n4750 + 665 = 5415\n$$\n\n### ✅ Final Answer:\n**5415**", "n": 176, "ms": 3867}
+{"p": 437, "i": "mult-72x59", "r": "To find the product of **72** and **59**, using only a single integer (without commas or other characters), we simply perform the multiplication:\n\n$$\n72 \\times 59\n$$\n\nLet's compute it step by step:\n\n$$\n72 \\times 59 = 72 \\times (60 - 1) = 72 \\times 60 - 72 \\times 1\n$$\n\n$$\n= 4320 - 72 = 4248\n$$\n\n### ✅ Final Answer: **4248**", "n": 128, "ms": 4625}
+{"p": 437, "i": "mult-68x74", "r": "To find the product of **68** and **74**, we can perform the multiplication directly:\n\n$$\n68 \\times 74\n$$\n\nLet's compute it step by step:\n\n### Step 1: Break it down\n$$\n68 \\times 74 = 68 \\times (70 + 4) = (68 \\times 70) + (68 \\times 4)\n$$\n\n### Step 2: Compute each part\n- $68 \\times 70 = 4760$\n- $68 \\times 4 = 272$\n\n### Step 3: Add them together\n$$\n4760 + 272 = 5032\n$$\n\n### ✅ Final Answer:\n**5032**", "n": 174, "ms": 4939}
+{"p": 437, "i": "mult-34x82", "r": "To find the product of **34** and **82**, we simply multiply them:\n\n$$\n34 \\times 82\n$$\n\nLet's compute it step by step:\n\n$$\n34 \\times 82 = 34 \\times (80 + 2) = (34 \\times 80) + (34 \\times 2)\n$$\n\n$$\n34 \\times 80 = 2720\n$$\n$$\n34 \\times 2 = 68\n$$\n\nNow add them:\n\n$$\n2720 + 68 = 2788\n$$\n\n### ✅ Final Answer: **2788**", "n": 151, "ms": 4753}
+{"p": 438, "i": "mult-79x92", "r": "7268", "n": 5, "ms": 3459}
+{"p": 438, "i": "mult-59x54", "r": "3186", "n": 5, "ms": 1728}
+{"p": 438, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 245}
+{"p": 438, "i": "mult-37x87", "r": "3119", "n": 5, "ms": 249}
+{"p": 438, "i": "mult-85x59", "r": "4415", "n": 5, "ms": 249}
+{"p": 438, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 252}
+{"p": 438, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 234}
+{"p": 438, "i": "mult-19x27", "r": "513", "n": 4, "ms": 236}
+{"p": 438, "i": "mult-95x17", "r": "1615", "n": 5, "ms": 231}
+{"p": 438, "i": "mult-67x62", "r": "4164", "n": 5, "ms": 237}
+{"p": 438, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 230}
+{"p": 438, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 228}
+{"p": 438, "i": "mult-19x85", "r": "1515", "n": 5, "ms": 228}
+{"p": 438, "i": "mult-75x22", "r": "1650", "n": 5, "ms": 237}
+{"p": 438, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 241}
+{"p": 438, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 250}
+{"p": 438, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 253}
+{"p": 438, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 256}
+{"p": 438, "i": "mult-13x42", "r": "546", "n": 4, "ms": 237}
+{"p": 438, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 219}
+{"p": 438, "i": "mult-95x57", "r": "5415", "n": 5, "ms": 207}
+{"p": 438, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 241}
+{"p": 438, "i": "mult-68x74", "r": "4992", "n": 5, "ms": 259}
+{"p": 438, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 268}
+{"p": 439, "i": "mult-79x92", "r": "7168", "n": 5, "ms": 243}
+{"p": 439, "i": "mult-59x54", "r": "3186", "n": 5, "ms": 236}
+{"p": 439, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 243}
+{"p": 439, "i": "mult-37x87", "r": "3219", "n": 5, "ms": 238}
+{"p": 439, "i": "mult-85x59", "r": "4995", "n": 5, "ms": 240}
+{"p": 439, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 253}
+{"p": 439, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 329}
+{"p": 439, "i": "mult-19x27", "r": "513", "n": 4, "ms": 348}
+{"p": 439, "i": "mult-95x17", "r": "1615", "n": 5, "ms": 335}
+{"p": 439, "i": "mult-67x62", "r": "4164", "n": 5, "ms": 263}
+{"p": 439, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 242}
+{"p": 439, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 241}
+{"p": 439, "i": "mult-19x85", "r": "1615", "n": 5, "ms": 254}
+{"p": 439, "i": "mult-75x22", "r": "1650", "n": 5, "ms": 260}
+{"p": 439, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 254}
+{"p": 439, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 245}
+{"p": 439, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 229}
+{"p": 439, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 215}
+{"p": 439, "i": "mult-13x42", "r": "546", "n": 4, "ms": 214}
+{"p": 439, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 219}
+{"p": 439, "i": "mult-95x57", "r": "5415", "n": 5, "ms": 229}
+{"p": 439, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 229}
+{"p": 439, "i": "mult-68x74", "r": "4992", "n": 5, "ms": 242}
+{"p": 439, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 239}
+{"p": 440, "i": "mult-79x92", "r": "6268", "n": 5, "ms": 254}
+{"p": 440, "i": "mult-59x54", "r": "2986", "n": 5, "ms": 243}
+{"p": 440, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 242}
+{"p": 440, "i": "mult-37x87", "r": "2919", "n": 5, "ms": 229}
+{"p": 440, "i": "mult-85x59", "r": "4415", "n": 5, "ms": 235}
+{"p": 440, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 248}
+{"p": 440, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 241}
+{"p": 440, "i": "mult-19x27", "r": "423", "n": 4, "ms": 227}
+{"p": 440, "i": "mult-95x17", "r": "1615", "n": 5, "ms": 222}
+{"p": 440, "i": "mult-67x62", "r": "4764", "n": 5, "ms": 226}
+{"p": 440, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 237}
+{"p": 440, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 237}
+{"p": 440, "i": "mult-19x85", "r": "1515", "n": 5, "ms": 245}
+{"p": 440, "i": "mult-75x22", "r": "1650", "n": 5, "ms": 237}
+{"p": 440, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 237}
+{"p": 440, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 233}
+{"p": 440, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 232}
+{"p": 440, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 233}
+{"p": 440, "i": "mult-13x42", "r": "546", "n": 4, "ms": 230}
+{"p": 440, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 250}
+{"p": 440, "i": "mult-95x57", "r": "11115", "n": 6, "ms": 273}
+{"p": 440, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 277}
+{"p": 440, "i": "mult-68x74", "r": "4292", "n": 5, "ms": 265}
+{"p": 440, "i": "mult-34x82", "r": "2786", "n": 5, "ms": 238}
+{"p": 441, "i": "mult-79x92", "r": "To find the product of 79 and 92, we perform the multiplication:\n\n$$\n79 \\times 92\n$$\n\nWe can break this down using the distributive property:\n\n$$\n79 \\times 92 = 79 \\times (90 + 2) = (79 \\times 90) + (79 \\times 2)\n$$\n\nNow calculate each part:\n\n$$\n79 \\times 90 = 7110\n$$\n$$\n79 \\times 2 = 158\n$$\n\nNow add them together:\n\n$$\n7110 + 158 = 7268\n$$\n\nSo, the product of 79 and 92 is:\n\n$$\n\\boxed{7268}\n$$", "n": 174, "ms": 1864}
+{"p": 441, "i": "mult-59x54", "r": "To find the product of 59 and 54, we perform the multiplication:\n\n$$\n59 \\times 54\n$$\n\nWe can break this down using the distributive property:\n\n$$\n59 \\times 54 = 59 \\times (50 + 4) = (59 \\times 50) + (59 \\times 4)\n$$\n\nNow calculate each part:\n\n$$\n59 \\times 50 = 2950\n$$\n$$\n59 \\times 4 = 236\n$$\n\nNow add them together:\n\n$$\n2950 + 236 = 3186\n$$\n\nSo, the product of 59 and 54 is:\n\n**3186**", "n": 169, "ms": 3567}
+{"p": 441, "i": "mult-47x35", "r": "To find the product of 47 and 35, we perform the multiplication:\n\n$$\n47 \\times 35\n$$\n\nWe can break this down using the distributive property:\n\n$$\n47 \\times 35 = 47 \\times (30 + 5) = (47 \\times 30) + (47 \\times 5)\n$$\n\nNow calculate each part:\n\n$$\n47 \\times 30 = 1410\n$$\n$$\n47 \\times 5 = 235\n$$\n\nNow add them together:\n\n$$\n1410 + 235 = 1645\n$$\n\nSo, the product of 47 and 35 is:\n\n**1645**", "n": 169, "ms": 5411}
+{"p": 441, "i": "mult-37x87", "r": "To find the product of 37 and 87, we multiply them directly:\n\n$$\n37 \\times 87\n$$\n\nWe can break this down using the distributive property:\n\n$$\n37 \\times 87 = 37 \\times (80 + 7) = (37 \\times 80) + (37 \\times 7)\n$$\n\nNow calculate each part:\n\n$$\n37 \\times 80 = 2960\n$$\n$$\n37 \\times 7 = 259\n$$\n\nNow add them together:\n\n$$\n2960 + 259 = 3219\n$$\n\nSo, the product of 37 and 87 is:\n\n**3219**", "n": 169, "ms": 5375}
+{"p": 441, "i": "mult-85x59", "r": "To find the product of 85 and 59, we perform the multiplication:\n\n$$\n85 \\times 59\n$$\n\nWe can use the standard multiplication algorithm:\n\n$$\n\\begin{array}{r}\n  85 \\\\\n\\times 59 \\\\\n\\hline\n 765 \\quad \\text{(85 × 9)} \\\\\n4250 \\quad \\text{(85 × 50, shifted one position to the left)} \\\\\n\\hline\n4965 \\\\\n\\end{array}\n$$\n\nSo, the product of 85 and 59 is:\n\n$$\n\\boxed{4965}\n$$", "n": 144, "ms": 5206}
+{"p": 441, "i": "mult-14x83", "r": "To find the product of 14 and 83, we multiply them:\n\n$$\n14 \\times 83\n$$\n\nWe can break this down:\n\n$$\n14 \\times 83 = 14 \\times (80 + 3) = (14 \\times 80) + (14 \\times 3)\n$$\n\n$$\n14 \\times 80 = 1120\n$$\n$$\n14 \\times 3 = 42\n$$\n\nNow add them together:\n\n$$\n1120 + 42 = 1162\n$$\n\nSo, the product of 14 and 83 is:\n\n**1162**", "n": 156, "ms": 4871}
+{"p": 441, "i": "mult-25x96", "r": "To find the product of 25 and 96, we multiply them:\n\n$$\n25 \\times 96\n$$\n\nWe can break this down for easier calculation:\n\n$$\n25 \\times 96 = 25 \\times (100 - 4) = 25 \\times 100 - 25 \\times 4 = 2500 - 100 = 2400\n$$\n\nSo, the product of 25 and 96 is:\n\n**2400**", "n": 120, "ms": 4544}
+{"p": 441, "i": "mult-19x27", "r": "To find the product of 19 and 27, we multiply them:\n\n$$\n19 \\times 27\n$$\n\nWe can break this down:\n\n$$\n19 \\times 27 = 19 \\times (20 + 7) = (19 \\times 20) + (19 \\times 7)\n$$\n\n$$\n19 \\times 20 = 380\n$$\n$$\n19 \\times 7 = 133\n$$\n\nNow add them together:\n\n$$\n380 + 133 = 513\n$$\n\nSo, the product of 19 and 27 is:\n\n**513**", "n": 154, "ms": 4505}
+{"p": 441, "i": "mult-95x17", "r": "To find the product of 95 and 17, we can perform the multiplication directly:\n\n$$\n95 \\times 17\n$$\n\nWe can break this down using the distributive property:\n\n$$\n95 \\times 17 = 95 \\times (10 + 7) = (95 \\times 10) + (95 \\times 7)\n$$\n\n$$\n= 950 + 665 = 1615\n$$\n\nSo, the product of 95 and 17 is:\n\n$$\n1615\n$$", "n": 130, "ms": 4047}
+{"p": 441, "i": "mult-67x62", "r": "To find the product of 67 and 62, we multiply them directly:\n\n$$\n67 \\times 62\n$$\n\nWe can break this down using the distributive property:\n\n$$\n67 \\times 62 = 67 \\times (60 + 2) = (67 \\times 60) + (67 \\times 2)\n$$\n\nNow calculate each part:\n\n$$\n67 \\times 60 = 4020\n$$\n$$\n67 \\times 2 = 134\n$$\n\nNow add them together:\n\n$$\n4020 + 134 = 4154\n$$\n\nSo, the product of 67 and 62 is:\n\n**4154**", "n": 169, "ms": 4417}
+{"p": 441, "i": "mult-74x32", "r": "To find the product of 74 and 32, we perform the multiplication:\n\n$$\n74 \\times 32\n$$\n\nWe can break this down:\n\n$$\n74 \\times 32 = 74 \\times (30 + 2) = (74 \\times 30) + (74 \\times 2)\n$$\n\n$$\n74 \\times 30 = 2220\n$$\n$$\n74 \\times 2 = 148\n$$\n\nNow add them together:\n\n$$\n2220 + 148 = 2368\n$$\n\nSo, the product of 74 and 32 is:\n\n**2368**", "n": 159, "ms": 5015}
+{"p": 441, "i": "mult-79x87", "r": "To find the product of 79 and 87, we can multiply them directly:\n\n$$\n79 \\times 87\n$$\n\nWe can break this down using the distributive property:\n\n$$\n79 \\times 87 = 79 \\times (80 + 7) = (79 \\times 80) + (79 \\times 7)\n$$\n\nNow calculate each part:\n\n$$\n79 \\times 80 = 6320\n$$\n$$\n79 \\times 7 = 553\n$$\n\nNow add them together:\n\n$$\n6320 + 553 = 6873\n$$\n\nSo, the product of 79 and 87 is:\n\n$$\n6873\n$$", "n": 172, "ms": 5261}
+{"p": 441, "i": "mult-19x85", "r": "To find the product of 19 and 85, we multiply them:\n\n$$\n19 \\times 85\n$$\n\nWe can break this down:\n\n$$\n19 \\times 85 = 19 \\times (80 + 5) = (19 \\times 80) + (19 \\times 5)\n$$\n\n$$\n19 \\times 80 = 1520\n$$\n$$\n19 \\times 5 = 95\n$$\n\nNow add them together:\n\n$$\n1520 + 95 = 1615\n$$\n\nSo, the product of 19 and 85 is:\n\n**1615**", "n": 156, "ms": 4386}
+{"p": 441, "i": "mult-75x22", "r": "To find the product of 75 and 22, we multiply them:\n\n$$\n75 \\times 22 = 1650\n$$\n\nSo, the product is:\n\n**1650**", "n": 48, "ms": 2498}
+{"p": 441, "i": "mult-63x87", "r": "To find the product of 63 and 87, we can multiply them directly:\n\n$$\n63 \\times 87\n$$\n\nWe can use the standard multiplication method or break it down:\n\n$$\n63 \\times 87 = 63 \\times (80 + 7) = (63 \\times 80) + (63 \\times 7)\n$$\n\n$$\n63 \\times 80 = 5040\n$$\n$$\n63 \\times 7 = 441\n$$\n\nNow add them together:\n\n$$\n5040 + 441 = 5481\n$$\n\nSo, the product of 63 and 87 is:\n\n**5481**", "n": 166, "ms": 2484}
+{"p": 441, "i": "mult-82x78", "r": "To find the product of 82 and 78, we can use the standard multiplication algorithm:\n\n$$\n\\begin{array}{r}\n  82 \\\\\n\\times 78 \\\\\n\\hline\n  656 \\quad \\text{(82 × 8)} \\\\\n+ 5740 \\quad \\text{(82 × 70)} \\\\\n\\hline\n 6396 \\\\\n\\end{array}\n$$\n\nSo, the product of 82 and 78 is:\n\n**6396**", "n": 119, "ms": 2674}
+{"p": 441, "i": "mult-77x49", "r": "To find the product of 77 and 49, we can multiply them directly:\n\n$$\n77 \\times 49\n$$\n\nWe can break this down using the distributive property:\n\n$$\n77 \\times 49 = 77 \\times (50 - 1) = 77 \\times 50 - 77 \\times 1\n$$\n\n$$\n= 3850 - 77 = 3773\n$$\n\nSo, the product of 77 and 49 is:\n\n**3773**", "n": 126, "ms": 3072}
+{"p": 441, "i": "mult-73x65", "r": "To find the product of 73 and 65, we can use the standard multiplication algorithm:\n\n$$\n\\begin{array}{r}\n  73 \\\\\n\\times 65 \\\\\n\\hline\n 365 \\quad \\text{(73 × 5)} \\\\\n4380 \\quad \\text{(73 × 60, shifted one position to the left)} \\\\\n\\hline\n4745 \\\\\n\\end{array}\n$$\n\nSo, the product of 73 and 65 is:\n\n**4745**", "n": 122, "ms": 2379}
+{"p": 441, "i": "mult-13x42", "r": "The product of 13 and 42 is calculated as follows:\n\n$$\n13 \\times 42 = 546\n$$\n\nSo, the product is **546**.", "n": 44, "ms": 1599}
+{"p": 441, "i": "mult-38x28", "r": "To find the product of 38 and 28, we multiply them:\n\n$$\n38 \\times 28\n$$\n\nWe can break this down using the distributive property:\n\n$$\n38 \\times 28 = 38 \\times (30 - 2) = 38 \\times 30 - 38 \\times 2\n$$\n\n$$\n= 1140 - 76 = 1064\n$$\n\nSo, the product of 38 and 28 is:\n\n**1064**", "n": 124, "ms": 1750}
+{"p": 441, "i": "mult-95x57", "r": "To find the product of 95 and 57, we perform the multiplication:\n\n$$\n95 \\times 57\n$$\n\nWe can break this down using the distributive property:\n\n$$\n95 \\times 57 = 95 \\times (50 + 7) = (95 \\times 50) + (95 \\times 7)\n$$\n\nNow calculate each part:\n\n$$\n95 \\times 50 = 4750\n$$\n$$\n95 \\times 7 = 665\n$$\n\nNow add them together:\n\n$$\n4750 + 665 = 5415\n$$\n\nSo, the product of 95 and 57 is:\n\n**5415**", "n": 169, "ms": 2610}
+{"p": 441, "i": "mult-72x59", "r": "To find the product of 72 and 59, we perform the multiplication:\n\n$$\n72 \\times 59\n$$\n\nWe can break this down using the distributive property:\n\n$$\n72 \\times 59 = 72 \\times (60 - 1) = 72 \\times 60 - 72 \\times 1\n$$\n\n$$\n= 4320 - 72 = 4248\n$$\n\nSo, the product of 72 and 59 is:\n\n**4248**", "n": 125, "ms": 3664}
+{"p": 441, "i": "mult-68x74", "r": "To find the product of 68 and 74, we multiply them directly:\n\n$$\n68 \\times 74\n$$\n\nWe can break this down using the distributive property:\n\n$$\n68 \\times 74 = 68 \\times (70 + 4) = (68 \\times 70) + (68 \\times 4)\n$$\n\nNow calculate each part:\n\n$$\n68 \\times 70 = 4760\n$$\n$$\n68 \\times 4 = 272\n$$\n\nNow add them together:\n\n$$\n4760 + 272 = 5032\n$$\n\nSo, the product of 68 and 74 is:\n\n**5032**", "n": 169, "ms": 4473}
+{"p": 441, "i": "mult-34x82", "r": "To find the product of 34 and 82, we multiply them directly:\n\n$$\n34 \\times 82\n$$\n\nWe can break this down:\n\n$$\n34 \\times 82 = 34 \\times (80 + 2) = (34 \\times 80) + (34 \\times 2)\n$$\n\n$$\n34 \\times 80 = 2720\n$$\n$$\n34 \\times 2 = 68\n$$\n\nNow add them together:\n\n$$\n2720 + 68 = 2788\n$$\n\nSo, the product of 34 and 82 is:\n\n**2788**", "n": 157, "ms": 4558}
+{"p": 442, "i": "mult-79x92", "r": "7268", "n": 5, "ms": 3329}
+{"p": 442, "i": "mult-59x54", "r": "3186", "n": 5, "ms": 1773}
+{"p": 442, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 235}
+{"p": 442, "i": "mult-37x87", "r": "3219", "n": 5, "ms": 227}
+{"p": 442, "i": "mult-85x59", "r": "4415", "n": 5, "ms": 289}
+{"p": 442, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 356}
+{"p": 442, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 432}
+{"p": 442, "i": "mult-19x27", "r": "513", "n": 4, "ms": 415}
+{"p": 442, "i": "mult-95x17", "r": "1615", "n": 5, "ms": 355}
+{"p": 442, "i": "mult-67x62", "r": "4164", "n": 5, "ms": 292}
+{"p": 442, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 241}
+{"p": 442, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 232}
+{"p": 442, "i": "mult-19x85", "r": "1515", "n": 5, "ms": 228}
+{"p": 442, "i": "mult-75x22", "r": "1650", "n": 5, "ms": 219}
+{"p": 442, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 219}
+{"p": 442, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 238}
+{"p": 442, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 269}
+{"p": 442, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 286}
+{"p": 442, "i": "mult-13x42", "r": "546", "n": 4, "ms": 281}
+{"p": 442, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 251}
+{"p": 442, "i": "mult-95x57", "r": "5415", "n": 5, "ms": 245}
+{"p": 442, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 237}
+{"p": 442, "i": "mult-68x74", "r": "4992", "n": 5, "ms": 255}
+{"p": 442, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 251}
+{"p": 443, "i": "mult-79x92", "r": "7992", "n": 5, "ms": 254}
+{"p": 443, "i": "mult-59x54", "r": "3564", "n": 5, "ms": 248}
+{"p": 443, "i": "mult-47x35", "r": "1715", "n": 5, "ms": 252}
+{"p": 443, "i": "mult-37x87", "r": "37 multiplied by 87 is 3219.", "n": 15, "ms": 350}
+{"p": 443, "i": "mult-85x59", "r": "144", "n": 4, "ms": 338}
+{"p": 443, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 332}
+{"p": 443, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 241}
+{"p": 443, "i": "mult-19x27", "r": "459", "n": 4, "ms": 239}
+{"p": 443, "i": "mult-95x17", "r": "1870", "n": 5, "ms": 246}
+{"p": 443, "i": "mult-67x62", "r": "89", "n": 3, "ms": 218}
+{"p": 443, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 232}
+{"p": 443, "i": "mult-79x87", "r": "7987", "n": 5, "ms": 187}
+{"p": 443, "i": "mult-19x85", "r": "1449", "n": 5, "ms": 238}
+{"p": 443, "i": "mult-75x22", "r": "1950", "n": 5, "ms": 234}
+{"p": 443, "i": "mult-63x87", "r": "567", "n": 4, "ms": 250}
+{"p": 443, "i": "mult-82x78", "r": "6216", "n": 5, "ms": 201}
+{"p": 443, "i": "mult-77x49", "r": "3136", "n": 5, "ms": 198}
+{"p": 443, "i": "mult-73x65", "r": "968", "n": 4, "ms": 209}
+{"p": 443, "i": "mult-13x42", "r": "557", "n": 4, "ms": 189}
+{"p": 443, "i": "mult-38x28", "r": "646", "n": 4, "ms": 151}
+{"p": 443, "i": "mult-95x57", "r": "153", "n": 4, "ms": 150}
+{"p": 443, "i": "mult-72x59", "r": "7259", "n": 5, "ms": 229}
+{"p": 443, "i": "mult-68x74", "r": "4488", "n": 5, "ms": 340}
+{"p": 443, "i": "mult-34x82", "r": "2378", "n": 5, "ms": 430}
+{"p": 444, "i": "mult-79x92", "r": "7988", "n": 5, "ms": 400}
+{"p": 444, "i": "mult-59x54", "r": "59 multiplied by 54 is 3186. Displayed as a comma-free integer, the result is 3186.", "n": 32, "ms": 616}
+{"p": 444, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 540}
+{"p": 444, "i": "mult-37x87", "r": "3787", "n": 5, "ms": 508}
+{"p": 444, "i": "mult-85x59", "r": "8559", "n": 5, "ms": 184}
+{"p": 444, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 154}
+{"p": 444, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 129}
+{"p": 444, "i": "mult-19x27", "r": "19*27=513", "n": 10, "ms": 155}
+{"p": 444, "i": "mult-95x17", "r": "95*17=1615", "n": 11, "ms": 190}
+{"p": 444, "i": "mult-67x62", "r": "4154", "n": 5, "ms": 190}
+{"p": 444, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 168}
+{"p": 444, "i": "mult-79x87", "r": "7987", "n": 5, "ms": 124}
+{"p": 444, "i": "mult-19x85", "r": "1515", "n": 5, "ms": 129}
+{"p": 444, "i": "mult-75x22", "r": "16500", "n": 6, "ms": 131}
+{"p": 444, "i": "mult-63x87", "r": "63 multiplied by 87 is 5481. Displayed as a comma-free integer, the result is 5481.", "n": 32, "ms": 274}
+{"p": 444, "i": "mult-82x78", "r": "8278", "n": 5, "ms": 272}
+{"p": 444, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 267}
+{"p": 444, "i": "mult-73x65", "r": "7365", "n": 5, "ms": 127}
+{"p": 444, "i": "mult-13x42", "r": "3776", "n": 5, "ms": 125}
+{"p": 444, "i": "mult-38x28", "r": "38 multiplied by 28 is 1064. Displayed as a comma-free integer, the result is 1064.", "n": 32, "ms": 269}
+{"p": 444, "i": "mult-95x57", "r": "95 multiplied by 57 is 5415. Displayed as a comma-free integer, the result is 5415.", "n": 32, "ms": 412}
+{"p": 444, "i": "mult-72x59", "r": "7259", "n": 5, "ms": 411}
+{"p": 444, "i": "mult-68x74", "r": "68 multiplied by 74 is 5032. Displayed as a comma-free integer, the result is 5032.", "n": 32, "ms": 405}
+{"p": 444, "i": "mult-34x82", "r": "3468", "n": 5, "ms": 263}
+{"p": 445, "i": "mult-79x92", "r": "80", "n": 3, "ms": 252}
+{"p": 445, "i": "mult-59x54", "r": "55", "n": 3, "ms": 104}
+{"p": 445, "i": "mult-47x35", "r": "28", "n": 3, "ms": 92}
+{"p": 445, "i": "mult-37x87", "r": "Sure! Here is the result as an integer only, between 37 and 87:\n\n**53**", "n": 25, "ms": 204}
+{"p": 445, "i": "mult-85x59", "r": "8559", "n": 5, "ms": 215}
+{"p": 445, "i": "mult-14x83", "r": "Please provide the specific calculation or expression you'd like me to evaluate. Without additional context, I cannot determine the exact integer result between 14 and 83.", "n": 35, "ms": 382}
+{"p": 445, "i": "mult-25x96", "r": "Sure! Please provide the calculation or expression you'd like me to evaluate, and I'll give you the result as an integer between 25 and 96, without commas or labels.", "n": 40, "ms": 465}
+{"p": 445, "i": "mult-19x27", "r": "23", "n": 3, "ms": 453}
+{"p": 445, "i": "mult-95x17", "r": "15", "n": 3, "ms": 286}
+{"p": 445, "i": "mult-67x62", "r": "There are no integers between 67 and 62.", "n": 14, "ms": 149}
+{"p": 445, "i": "mult-74x32", "r": "29", "n": 3, "ms": 151}
+{"p": 445, "i": "mult-79x87", "r": "85", "n": 3, "ms": 154}
+{"p": 445, "i": "mult-19x85", "r": "Please provide the specific calculation or question you'd like me to solve.", "n": 15, "ms": 160}
+{"p": 445, "i": "mult-75x22", "r": "2275", "n": 5, "ms": 168}
+{"p": 445, "i": "mult-63x87", "r": "85", "n": 3, "ms": 168}
+{"p": 445, "i": "mult-82x78", "r": "85", "n": 3, "ms": 100}
+{"p": 445, "i": "mult-77x49", "r": "28", "n": 3, "ms": 91}
+{"p": 445, "i": "mult-73x65", "r": "73", "n": 3, "ms": 86}
+{"p": 445, "i": "mult-13x42", "r": "To provide the result as an integer only, between 13 and 42, I need a specific question or calculation to perform. Could you please clarify what you're asking for? For example:\n\n- Are you looking for a random integer between 13 and 42?\n- Is there a specific calculation or operation you want performed?\n- Are you asking for a range of integers between 13 and 42?\n\nLet me know, and I’ll provide the result as an integer only, without commas or labels.", "n": 109, "ms": 649}
+{"p": 445, "i": "mult-38x28", "r": "29", "n": 3, "ms": 650}
+{"p": 445, "i": "mult-95x57", "r": "48", "n": 3, "ms": 650}
+{"p": 445, "i": "mult-72x59", "r": "73", "n": 3, "ms": 91}
+{"p": 445, "i": "mult-68x74", "r": "70", "n": 3, "ms": 92}
+{"p": 445, "i": "mult-34x82", "r": "Sure! Here is the result as an integer only, between 34 and 82:\n\n**53**", "n": 25, "ms": 204}
+{"p": 446, "i": "mult-79x92", "r": "Sure! Please provide the numbers you'd like to multiply.", "n": 13, "ms": 257}
+{"p": 446, "i": "mult-59x54", "r": "Sure! Please provide the numbers you want to multiply, and I'll give you the product as a raw integer without any commas or explanations.", "n": 29, "ms": 391}
+{"p": 446, "i": "mult-47x35", "r": "Sure! Please provide the numbers you'd like to multiply.", "n": 13, "ms": 332}
+{"p": 446, "i": "mult-37x87", "r": "Sure! Please provide the numbers you want to multiply.", "n": 12, "ms": 332}
+{"p": 446, "i": "mult-85x59", "r": "Sure! Please provide the numbers you want to multiply.", "n": 12, "ms": 246}
+{"p": 446, "i": "mult-14x83", "r": "Sure! Please provide the numbers you want to multiply.", "n": 12, "ms": 242}
+{"p": 446, "i": "mult-25x96", "r": "Sure! Please provide the numbers you want to multiply.", "n": 12, "ms": 235}
+{"p": 446, "i": "mult-19x27", "r": "Sure! Please provide the numbers you want to multiply.", "n": 12, "ms": 232}
+{"p": 446, "i": "mult-95x17", "r": "Sure! Please provide the numbers you want to multiply.", "n": 12, "ms": 231}
+{"p": 446, "i": "mult-67x62", "r": "Sure! Please provide the numbers you want to multiply, and I'll give you the product as a raw integer.", "n": 24, "ms": 297}
+{"p": 446, "i": "mult-74x32", "r": "Sure! Please provide the numbers you'd like to multiply.", "n": 13, "ms": 303}
+{"p": 446, "i": "mult-79x87", "r": "Sure! Please provide the numbers you want to multiply, and I'll give you the product as a raw integer without any commas or explanations.", "n": 29, "ms": 459}
+{"p": 446, "i": "mult-19x85", "r": "Sure! Please provide the numbers you want to multiply.", "n": 12, "ms": 468}
+{"p": 446, "i": "mult-75x22", "r": "Sure! Please provide the numbers you want to multiply.", "n": 12, "ms": 528}
+{"p": 446, "i": "mult-63x87", "r": "Sure! Please provide the numbers you want to multiply.", "n": 12, "ms": 442}
+{"p": 446, "i": "mult-82x78", "r": "Sure! Please provide the numbers you want to multiply.", "n": 12, "ms": 436}
+{"p": 446, "i": "mult-77x49", "r": "Sure! Please provide the numbers you want to multiply.", "n": 12, "ms": 473}
+{"p": 446, "i": "mult-73x65", "r": "Sure! Please provide the numbers you'd like to multiply.", "n": 13, "ms": 479}
+{"p": 446, "i": "mult-13x42", "r": "Sure! Please provide the numbers you want to multiply.", "n": 12, "ms": 465}
+{"p": 446, "i": "mult-38x28", "r": "Sure! Please provide the numbers you want to multiply.", "n": 12, "ms": 422}
+{"p": 446, "i": "mult-95x57", "r": "Sure! Please provide the numbers you want to multiply.", "n": 12, "ms": 422}
+{"p": 446, "i": "mult-72x59", "r": "Sure! Please provide the numbers you want to multiply.", "n": 12, "ms": 454}
+{"p": 446, "i": "mult-68x74", "r": "Sure! Please provide the numbers you want to multiply.", "n": 12, "ms": 468}
+{"p": 446, "i": "mult-34x82", "r": "Sure! Please provide the numbers you want to multiply.", "n": 12, "ms": 468}
+{"p": 447, "i": "mult-79x92", "r": "7268", "n": 5, "ms": 383}
+{"p": 447, "i": "mult-59x54", "r": "3186", "n": 5, "ms": 321}
+{"p": 447, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 259}
+{"p": 447, "i": "mult-37x87", "r": "3219", "n": 5, "ms": 271}
+{"p": 447, "i": "mult-85x59", "r": "4415", "n": 5, "ms": 264}
+{"p": 447, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 240}
+{"p": 447, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 233}
+{"p": 447, "i": "mult-19x27", "r": "513", "n": 4, "ms": 219}
+{"p": 447, "i": "mult-95x17", "r": "1615", "n": 5, "ms": 240}
+{"p": 447, "i": "mult-67x62", "r": "4154", "n": 5, "ms": 226}
+{"p": 447, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 234}
+{"p": 447, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 226}
+{"p": 447, "i": "mult-19x85", "r": "1515", "n": 5, "ms": 249}
+{"p": 447, "i": "mult-75x22", "r": "1650", "n": 5, "ms": 267}
+{"p": 447, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 269}
+{"p": 447, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 269}
+{"p": 447, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 256}
+{"p": 447, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 246}
+{"p": 447, "i": "mult-13x42", "r": "546", "n": 4, "ms": 261}
+{"p": 447, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 253}
+{"p": 447, "i": "mult-95x57", "r": "5415", "n": 5, "ms": 262}
+{"p": 447, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 211}
+{"p": 447, "i": "mult-68x74", "r": "5032", "n": 5, "ms": 191}
+{"p": 447, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 189}
+{"p": 448, "i": "mult-79x92", "r": "7268", "n": 5, "ms": 192}
+{"p": 448, "i": "mult-59x54", "r": "3186", "n": 5, "ms": 195}
+{"p": 448, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 164}
+{"p": 448, "i": "mult-37x87", "r": "3119", "n": 5, "ms": 151}
+{"p": 448, "i": "mult-85x59", "r": "4465", "n": 5, "ms": 135}
+{"p": 448, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 133}
+{"p": 448, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 125}
+{"p": 448, "i": "mult-19x27", "r": "513", "n": 4, "ms": 122}
+{"p": 448, "i": "mult-95x17", "r": "1615", "n": 5, "ms": 118}
+{"p": 448, "i": "mult-67x62", "r": "4164", "n": 5, "ms": 119}
+{"p": 448, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 130}
+{"p": 448, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 127}
+{"p": 448, "i": "mult-19x85", "r": "1615", "n": 5, "ms": 127}
+{"p": 448, "i": "mult-75x22", "r": "1650", "n": 5, "ms": 122}
+{"p": 448, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 129}
+{"p": 448, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 126}
+{"p": 448, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 130}
+{"p": 448, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 125}
+{"p": 448, "i": "mult-13x42", "r": "558", "n": 4, "ms": 123}
+{"p": 448, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 120}
+{"p": 448, "i": "mult-95x57", "r": "5415", "n": 5, "ms": 119}
+{"p": 448, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 124}
+{"p": 448, "i": "mult-68x74", "r": "4992", "n": 5, "ms": 137}
+{"p": 448, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 133}
+{"p": 449, "i": "mult-79x92", "r": "7988", "n": 5, "ms": 135}
+{"p": 449, "i": "mult-59x54", "r": "2686", "n": 5, "ms": 121}
+{"p": 449, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 127}
+{"p": 449, "i": "mult-37x87", "r": "37 multiplied by 87 is 3219.", "n": 15, "ms": 188}
+{"p": 449, "i": "mult-85x59", "r": "4415", "n": 5, "ms": 190}
+{"p": 449, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 187}
+{"p": 449, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 125}
+{"p": 449, "i": "mult-19x27", "r": "486", "n": 4, "ms": 118}
+{"p": 449, "i": "mult-95x17", "r": "1615", "n": 5, "ms": 119}
+{"p": 449, "i": "mult-67x62", "r": "4164", "n": 5, "ms": 118}
+{"p": 449, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 124}
+{"p": 449, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 123}
+{"p": 449, "i": "mult-19x85", "r": "1565", "n": 5, "ms": 125}
+{"p": 449, "i": "mult-75x22", "r": "1650", "n": 5, "ms": 124}
+{"p": 449, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 125}
+{"p": 449, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 124}
+{"p": 449, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 126}
+{"p": 449, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 126}
+{"p": 449, "i": "mult-13x42", "r": "546", "n": 4, "ms": 120}
+{"p": 449, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 118}
+{"p": 449, "i": "mult-95x57", "r": "5415", "n": 5, "ms": 120}
+{"p": 449, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 135}
+{"p": 449, "i": "mult-68x74", "r": "5000", "n": 5, "ms": 134}
+{"p": 449, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 133}
+{"p": 450, "i": "mult-79x92", "r": "7268", "n": 5, "ms": 131}
+{"p": 450, "i": "mult-59x54", "r": "3186", "n": 5, "ms": 131}
+{"p": 450, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 131}
+{"p": 450, "i": "mult-37x87", "r": "3219", "n": 5, "ms": 122}
+{"p": 450, "i": "mult-85x59", "r": "4995", "n": 5, "ms": 127}
+{"p": 450, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 126}
+{"p": 450, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 128}
+{"p": 450, "i": "mult-19x27", "r": "4863", "n": 5, "ms": 124}
+{"p": 450, "i": "mult-95x17", "r": "1615", "n": 5, "ms": 125}
+{"p": 450, "i": "mult-67x62", "r": "4154", "n": 5, "ms": 127}
+{"p": 450, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 126}
+{"p": 450, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 125}
+{"p": 450, "i": "mult-19x85", "r": "1515", "n": 5, "ms": 123}
+{"p": 450, "i": "mult-75x22", "r": "1650", "n": 5, "ms": 123}
+{"p": 450, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 124}
+{"p": 450, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 126}
+{"p": 450, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 129}
+{"p": 450, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 128}
+{"p": 450, "i": "mult-13x42", "r": "546", "n": 4, "ms": 129}
+{"p": 450, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 125}
+{"p": 450, "i": "mult-95x57", "r": "5415", "n": 5, "ms": 129}
+{"p": 450, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 125}
+{"p": 450, "i": "mult-68x74", "r": "4972", "n": 5, "ms": 126}
+{"p": 450, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 126}
+{"p": 451, "i": "mult-79x92", "r": "7268", "n": 5, "ms": 132}
+{"p": 451, "i": "mult-59x54", "r": "3186", "n": 5, "ms": 137}
+{"p": 451, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 132}
+{"p": 451, "i": "mult-37x87", "r": "3219", "n": 5, "ms": 126}
+{"p": 451, "i": "mult-85x59", "r": "4995", "n": 5, "ms": 121}
+{"p": 451, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 124}
+{"p": 451, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 124}
+{"p": 451, "i": "mult-19x27", "r": "486", "n": 4, "ms": 119}
+{"p": 451, "i": "mult-95x17", "r": "1615", "n": 5, "ms": 118}
+{"p": 451, "i": "mult-67x62", "r": "4154", "n": 5, "ms": 120}
+{"p": 451, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 126}
+{"p": 451, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 125}
+{"p": 451, "i": "mult-19x85", "r": "1515", "n": 5, "ms": 127}
+{"p": 451, "i": "mult-75x22", "r": "1650", "n": 5, "ms": 129}
+{"p": 451, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 129}
+{"p": 451, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 126}
+{"p": 451, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 123}
+{"p": 451, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 123}
+{"p": 451, "i": "mult-13x42", "r": "546", "n": 4, "ms": 118}
+{"p": 451, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 117}
+{"p": 451, "i": "mult-95x57", "r": "5415", "n": 5, "ms": 122}
+{"p": 451, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 125}
+{"p": 451, "i": "mult-68x74", "r": "4992", "n": 5, "ms": 125}
+{"p": 451, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 121}
+{"p": 452, "i": "mult-79x92", "r": "7992", "n": 5, "ms": 129}
+{"p": 452, "i": "mult-59x54", "r": "3186", "n": 5, "ms": 128}
+{"p": 452, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 128}
+{"p": 452, "i": "mult-37x87", "r": "3787", "n": 5, "ms": 123}
+{"p": 452, "i": "mult-85x59", "r": "4415", "n": 5, "ms": 125}
+{"p": 452, "i": "mult-14x83", "r": "4662", "n": 5, "ms": 126}
+{"p": 452, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 124}
+{"p": 452, "i": "mult-19x27", "r": "413", "n": 4, "ms": 116}
+{"p": 452, "i": "mult-95x17", "r": "9517", "n": 5, "ms": 121}
+{"p": 452, "i": "mult-67x62", "r": "4164", "n": 5, "ms": 121}
+{"p": 452, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 132}
+{"p": 452, "i": "mult-79x87", "r": "7987", "n": 5, "ms": 125}
+{"p": 452, "i": "mult-19x85", "r": "951", "n": 4, "ms": 159}
+{"p": 452, "i": "mult-75x22", "r": "16500", "n": 6, "ms": 268}
+{"p": 452, "i": "mult-63x87", "r": "4521", "n": 5, "ms": 372}
+{"p": 452, "i": "mult-82x78", "r": "8278", "n": 5, "ms": 439}
+{"p": 452, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 403}
+{"p": 452, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 337}
+{"p": 452, "i": "mult-13x42", "r": "546", "n": 4, "ms": 771}
+{"p": 452, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 743}
+{"p": 452, "i": "mult-95x57", "r": "9557", "n": 5, "ms": 733}
+{"p": 452, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 236}
+{"p": 452, "i": "mult-68x74", "r": "4992", "n": 5, "ms": 217}
+{"p": 452, "i": "mult-34x82", "r": "3482", "n": 5, "ms": 234}
+{"p": 453, "i": "mult-79x92", "r": "7076", "n": 5, "ms": 225}
+{"p": 453, "i": "mult-59x54", "r": "3206", "n": 5, "ms": 226}
+{"p": 453, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 233}
+{"p": 453, "i": "mult-37x87", "r": "3159", "n": 5, "ms": 238}
+{"p": 453, "i": "mult-85x59", "r": "4995", "n": 5, "ms": 252}
+{"p": 453, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 246}
+{"p": 453, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 244}
+{"p": 453, "i": "mult-19x27", "r": "486", "n": 4, "ms": 221}
+{"p": 453, "i": "mult-95x17", "r": "5455", "n": 5, "ms": 176}
+{"p": 453, "i": "mult-67x62", "r": "4164", "n": 5, "ms": 163}
+{"p": 453, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 181}
+{"p": 453, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 207}
+{"p": 453, "i": "mult-19x85", "r": "1445", "n": 5, "ms": 223}
+{"p": 453, "i": "mult-75x22", "r": "1650", "n": 5, "ms": 217}
+{"p": 453, "i": "mult-63x87", "r": "5511", "n": 5, "ms": 228}
+{"p": 453, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 226}
+{"p": 453, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 194}
+{"p": 453, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 156}
+{"p": 453, "i": "mult-13x42", "r": "546", "n": 4, "ms": 117}
+{"p": 453, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 164}
+{"p": 453, "i": "mult-95x57", "r": "5465", "n": 5, "ms": 205}
+{"p": 453, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 257}
+{"p": 453, "i": "mult-68x74", "r": "4952", "n": 5, "ms": 257}
+{"p": 453, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 263}
+{"p": 454, "i": "mult-79x92", "r": "70728", "n": 6, "ms": 256}
+{"p": 454, "i": "mult-59x54", "r": "3186", "n": 5, "ms": 264}
+{"p": 454, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 245}
+{"p": 454, "i": "mult-37x87", "r": "3159", "n": 5, "ms": 238}
+{"p": 454, "i": "mult-85x59", "r": "4415", "n": 5, "ms": 219}
+{"p": 454, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 220}
+{"p": 454, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 248}
+{"p": 454, "i": "mult-19x27", "r": "459", "n": 4, "ms": 249}
+{"p": 454, "i": "mult-95x17", "r": "1615", "n": 5, "ms": 249}
+{"p": 454, "i": "mult-67x62", "r": "4164", "n": 5, "ms": 217}
+{"p": 454, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 199}
+{"p": 454, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 182}
+{"p": 454, "i": "mult-19x85", "r": "15175", "n": 6, "ms": 201}
+{"p": 454, "i": "mult-75x22", "r": "16500", "n": 6, "ms": 222}
+{"p": 454, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 252}
+{"p": 454, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 256}
+{"p": 454, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 246}
+{"p": 454, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 232}
+{"p": 454, "i": "mult-13x42", "r": "546", "n": 4, "ms": 206}
+{"p": 454, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 204}
+{"p": 454, "i": "mult-95x57", "r": "4865", "n": 5, "ms": 203}
+{"p": 454, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 212}
+{"p": 454, "i": "mult-68x74", "r": "4992", "n": 5, "ms": 219}
+{"p": 454, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 229}
+{"p": 455, "i": "mult-79x92", "r": "To perform the multiplication of 79 and 92:\n\n$$\n79 \\times 92 = 7268\n$$\n\nThe result is:\n\n**7268**", "n": 42, "ms": 605}
+{"p": 455, "i": "mult-59x54", "r": "To perform the multiplication of 59 and 54, we calculate:\n\n$$\n59 \\times 54 = 3186\n$$\n\nThe result is:\n\n**3186**", "n": 45, "ms": 976}
+{"p": 455, "i": "mult-47x35", "r": "To perform the multiplication of 47 and 35:\n\n$$\n47 \\times 35 = 1645\n$$\n\nThe result is:\n\n**1645**", "n": 42, "ms": 1315}
+{"p": 455, "i": "mult-37x87", "r": "To perform the multiplication of 37 and 87:\n\n$$\n37 \\times 87 = 3219\n$$\n\nThe result is:\n\n**3219**", "n": 42, "ms": 1264}
+{"p": 455, "i": "mult-85x59", "r": "To perform the multiplication of 85 and 59, we calculate:\n\n$$\n85 \\times 59 = 5015\n$$\n\nThe result is:\n\n**5015**", "n": 45, "ms": 1291}
+{"p": 455, "i": "mult-14x83", "r": "To perform the multiplication of 14 and 83, we calculate:\n\n$$\n14 \\times 83 = 1162\n$$\n\nThe result is:\n\n**1162**", "n": 45, "ms": 1430}
+{"p": 455, "i": "mult-25x96", "r": "25 multiplied by 96 is 2400.", "n": 15, "ms": 1205}
+{"p": 455, "i": "mult-19x27", "r": "To perform the multiplication of 19 and 27:\n\n$$\n19 \\times 27 = 513\n$$\n\nThe result is:\n\n**513**", "n": 40, "ms": 1168}
+{"p": 455, "i": "mult-95x17", "r": "To perform the multiplication of 95 and 17:\n\n$$\n95 \\times 17 = 1615\n$$\n\nThe result is:\n\n**1615**", "n": 42, "ms": 1089}
+{"p": 455, "i": "mult-67x62", "r": "To perform the multiplication of 67 and 62, we calculate:\n\n$$\n67 \\times 62 = 4164\n$$\n\nThe result is:\n\n**4164**", "n": 45, "ms": 1380}
+{"p": 455, "i": "mult-74x32", "r": "To perform the multiplication of 74 and 32, we calculate:\n\n$$\n74 \\times 32 = 2368\n$$\n\nThe result is:\n\n**2368**", "n": 45, "ms": 1487}
+{"p": 455, "i": "mult-79x87", "r": "To perform the multiplication of 79 and 87:\n\n$$\n79 \\times 87 = 6873\n$$\n\nThe result is:\n\n**6873**", "n": 42, "ms": 1452}
+{"p": 455, "i": "mult-19x85", "r": "To perform the multiplication of 19 and 85, we calculate:\n\n$$\n19 \\times 85 = 1615\n$$\n\nThe result is:\n\n**1615**", "n": 45, "ms": 1432}
+{"p": 455, "i": "mult-75x22", "r": "To perform the multiplication of 75 and 22:\n\n$$\n75 \\times 22 = 1650\n$$\n\nThe result is:\n\n**1650**", "n": 42, "ms": 1294}
+{"p": 455, "i": "mult-63x87", "r": "To perform the multiplication of 63 and 87:\n\n$$\n63 \\times 87 = 5481\n$$\n\nThe result is:\n\n**5481**", "n": 42, "ms": 1090}
+{"p": 455, "i": "mult-82x78", "r": "To perform the multiplication of 82 and 78:\n\n$$\n82 \\times 78 = 6396\n$$\n\nThe result is:\n\n**6396**", "n": 42, "ms": 877}
+{"p": 455, "i": "mult-77x49", "r": "To perform the multiplication of 77 and 49, we calculate:\n\n$$\n77 \\times 49 = 3773\n$$\n\nThe result as a plain integer is:\n\n**3773**", "n": 49, "ms": 741}
+{"p": 455, "i": "mult-73x65", "r": "To perform the multiplication of 73 and 65, we calculate:\n\n$$\n73 \\times 65 = 4745\n$$\n\nThe result is:\n\n**4745**", "n": 45, "ms": 885}
+{"p": 455, "i": "mult-13x42", "r": "To perform the multiplication of 13 and 42:\n\n$$\n13 \\times 42 = 546\n$$\n\nThe result is:\n\n**546**", "n": 40, "ms": 1062}
+{"p": 455, "i": "mult-38x28", "r": "To perform the multiplication of 38 and 28:\n\n$$\n38 \\times 28 = 1064\n$$\n\nThe result is:\n\n**1064**", "n": 42, "ms": 1217}
+{"p": 455, "i": "mult-95x57", "r": "To perform the multiplication of 95 and 57, we calculate:\n\n$$\n95 \\times 57 = 5415\n$$\n\nThe result is:\n\n**5415**", "n": 45, "ms": 1280}
+{"p": 455, "i": "mult-72x59", "r": "To perform the multiplication of 72 and 59, we calculate:\n\n$$\n72 \\times 59 = 4248\n$$\n\nThe result is:\n\n**4248**", "n": 45, "ms": 1293}
+{"p": 455, "i": "mult-68x74", "r": "To multiply 68 and 74, we perform the calculation:\n\n$$\n68 \\times 74 = 5032\n$$\n\nThe result is:\n\n**5032**", "n": 44, "ms": 1277}
+{"p": 455, "i": "mult-34x82", "r": "To perform the multiplication of 34 and 82:\n\n$$\n34 \\times 82 = 2788\n$$\n\nThe result is:\n\n**2788**", "n": 42, "ms": 1173}
+{"p": 456, "i": "mult-79x92", "r": "7168", "n": 5, "ms": 822}
+{"p": 456, "i": "mult-59x54", "r": "3186", "n": 5, "ms": 487}
+{"p": 456, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 217}
+{"p": 456, "i": "mult-37x87", "r": "3159", "n": 5, "ms": 235}
+{"p": 456, "i": "mult-85x59", "r": "4415", "n": 5, "ms": 239}
+{"p": 456, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 211}
+{"p": 456, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 202}
+{"p": 456, "i": "mult-19x27", "r": "513", "n": 4, "ms": 197}
+{"p": 456, "i": "mult-95x17", "r": "1615", "n": 5, "ms": 245}
+{"p": 456, "i": "mult-67x62", "r": "4164", "n": 5, "ms": 222}
+{"p": 456, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 191}
+{"p": 456, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 142}
+{"p": 456, "i": "mult-19x85", "r": "1515", "n": 5, "ms": 123}
+{"p": 456, "i": "mult-75x22", "r": "16500", "n": 6, "ms": 132}
+{"p": 456, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 191}
+{"p": 456, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 227}
+{"p": 456, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 257}
+{"p": 456, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 242}
+{"p": 456, "i": "mult-13x42", "r": "546", "n": 4, "ms": 243}
+{"p": 456, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 262}
+{"p": 456, "i": "mult-95x57", "r": "4365", "n": 5, "ms": 259}
+{"p": 456, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 267}
+{"p": 456, "i": "mult-68x74", "r": "4992", "n": 5, "ms": 229}
+{"p": 456, "i": "mult-34x82", "r": "2786", "n": 5, "ms": 225}
+{"p": 457, "i": "mult-79x92", "r": "7088", "n": 5, "ms": 216}
+{"p": 457, "i": "mult-59x54", "r": "3186", "n": 5, "ms": 218}
+{"p": 457, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 215}
+{"p": 457, "i": "mult-37x87", "r": "3219", "n": 5, "ms": 213}
+{"p": 457, "i": "mult-85x59", "r": "4415", "n": 5, "ms": 222}
+{"p": 457, "i": "mult-14x83", "r": "11622", "n": 6, "ms": 231}
+{"p": 457, "i": "mult-25x96", "r": "24000", "n": 6, "ms": 253}
+{"p": 457, "i": "mult-19x27", "r": "513", "n": 4, "ms": 236}
+{"p": 457, "i": "mult-95x17", "r": "16150", "n": 6, "ms": 240}
+{"p": 457, "i": "mult-67x62", "r": "4164", "n": 5, "ms": 229}
+{"p": 457, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 252}
+{"p": 457, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 250}
+{"p": 457, "i": "mult-19x85", "r": "1515", "n": 5, "ms": 245}
+{"p": 457, "i": "mult-75x22", "r": "16500", "n": 6, "ms": 245}
+{"p": 457, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 224}
+{"p": 457, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 215}
+{"p": 457, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 207}
+{"p": 457, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 224}
+{"p": 457, "i": "mult-13x42", "r": "546", "n": 4, "ms": 216}
+{"p": 457, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 219}
+{"p": 457, "i": "mult-95x57", "r": "5415", "n": 5, "ms": 217}
+{"p": 457, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 233}
+{"p": 457, "i": "mult-68x74", "r": "4992", "n": 5, "ms": 215}
+{"p": 457, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 204}
+{"p": 458, "i": "mult-79x92", "r": "7268", "n": 5, "ms": 227}
+{"p": 458, "i": "mult-59x54", "r": "3186", "n": 5, "ms": 235}
+{"p": 458, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 238}
+{"p": 458, "i": "mult-37x87", "r": "3219", "n": 5, "ms": 220}
+{"p": 458, "i": "mult-85x59", "r": "4995", "n": 5, "ms": 222}
+{"p": 458, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 198}
+{"p": 458, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 177}
+{"p": 458, "i": "mult-19x27", "r": "513", "n": 4, "ms": 206}
+{"p": 458, "i": "mult-95x17", "r": "1615", "n": 5, "ms": 234}
+{"p": 458, "i": "mult-67x62", "r": "4164", "n": 5, "ms": 246}
+{"p": 458, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 226}
+{"p": 458, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 242}
+{"p": 458, "i": "mult-19x85", "r": "1515", "n": 5, "ms": 261}
+{"p": 458, "i": "mult-75x22", "r": "1650", "n": 5, "ms": 255}
+{"p": 458, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 243}
+{"p": 458, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 232}
+{"p": 458, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 246}
+{"p": 458, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 255}
+{"p": 458, "i": "mult-13x42", "r": "546", "n": 4, "ms": 258}
+{"p": 458, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 259}
+{"p": 458, "i": "mult-95x57", "r": "5415", "n": 5, "ms": 242}
+{"p": 458, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 235}
+{"p": 458, "i": "mult-68x74", "r": "5032", "n": 5, "ms": 224}
+{"p": 458, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 224}
+{"p": 459, "i": "mult-79x92", "r": "7988", "n": 5, "ms": 224}
+{"p": 459, "i": "mult-59x54", "r": "2986", "n": 5, "ms": 246}
+{"p": 459, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 239}
+{"p": 459, "i": "mult-37x87", "r": "3119", "n": 5, "ms": 239}
+{"p": 459, "i": "mult-85x59", "r": "4415", "n": 5, "ms": 215}
+{"p": 459, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 225}
+{"p": 459, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 228}
+{"p": 459, "i": "mult-19x27", "r": "486", "n": 4, "ms": 226}
+{"p": 459, "i": "mult-95x17", "r": "1615", "n": 5, "ms": 237}
+{"p": 459, "i": "mult-67x62", "r": "4164", "n": 5, "ms": 233}
+{"p": 459, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 229}
+{"p": 459, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 244}
+{"p": 459, "i": "mult-19x85", "r": "1515", "n": 5, "ms": 250}
+{"p": 459, "i": "mult-75x22", "r": "1650", "n": 5, "ms": 269}
+{"p": 459, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 238}
+{"p": 459, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 202}
+{"p": 459, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 205}
+{"p": 459, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 212}
+{"p": 459, "i": "mult-13x42", "r": "546", "n": 4, "ms": 231}
+{"p": 459, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 218}
+{"p": 459, "i": "mult-95x57", "r": "4815", "n": 5, "ms": 216}
+{"p": 459, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 227}
+{"p": 459, "i": "mult-68x74", "r": "4992", "n": 5, "ms": 200}
+{"p": 459, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 166}
+{"p": 460, "i": "mult-79x92", "r": "7988", "n": 5, "ms": 134}
+{"p": 460, "i": "mult-59x54", "r": "2986", "n": 5, "ms": 126}
+{"p": 460, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 127}
+{"p": 460, "i": "mult-37x87", "r": "37 times 87 is 3219.", "n": 14, "ms": 168}
+{"p": 460, "i": "mult-85x59", "r": "4465", "n": 5, "ms": 169}
+{"p": 460, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 166}
+{"p": 460, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 123}
+{"p": 460, "i": "mult-19x27", "r": "423", "n": 4, "ms": 118}
+{"p": 460, "i": "mult-95x17", "r": "1615", "n": 5, "ms": 118}
+{"p": 460, "i": "mult-67x62", "r": "4164", "n": 5, "ms": 124}
+{"p": 460, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 130}
+{"p": 460, "i": "mult-79x87", "r": "7983", "n": 5, "ms": 130}
+{"p": 460, "i": "mult-19x85", "r": "1515", "n": 5, "ms": 123}
+{"p": 460, "i": "mult-75x22", "r": "1650", "n": 5, "ms": 217}
+{"p": 460, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 314}
+{"p": 460, "i": "mult-82x78", "r": "8286", "n": 5, "ms": 365}
+{"p": 460, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 300}
+{"p": 460, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 232}
+{"p": 460, "i": "mult-13x42", "r": "546", "n": 4, "ms": 210}
+{"p": 460, "i": "mult-38x28", "r": "984", "n": 4, "ms": 208}
+{"p": 460, "i": "mult-95x57", "r": "4815", "n": 5, "ms": 218}
+{"p": 460, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 224}
+{"p": 460, "i": "mult-68x74", "r": "4972", "n": 5, "ms": 247}
+{"p": 460, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 246}
+{"p": 461, "i": "mult-79x92", "r": "7048", "n": 5, "ms": 256}
+{"p": 461, "i": "mult-59x54", "r": "3206", "n": 5, "ms": 249}
+{"p": 461, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 251}
+{"p": 461, "i": "mult-37x87", "r": "3119", "n": 5, "ms": 263}
+{"p": 461, "i": "mult-85x59", "r": "4465", "n": 5, "ms": 318}
+{"p": 461, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 359}
+{"p": 461, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 345}
+{"p": 461, "i": "mult-19x27", "r": "459", "n": 4, "ms": 263}
+{"p": 461, "i": "mult-95x17", "r": "1615", "n": 5, "ms": 234}
+{"p": 461, "i": "mult-67x62", "r": "4164", "n": 5, "ms": 231}
+{"p": 461, "i": "mult-74x32", "r": "2368", "n": 5, "ms": 255}
+{"p": 461, "i": "mult-79x87", "r": "6873", "n": 5, "ms": 241}
+{"p": 461, "i": "mult-19x85", "r": "1515", "n": 5, "ms": 230}
+{"p": 461, "i": "mult-75x22", "r": "16500", "n": 6, "ms": 195}
+{"p": 461, "i": "mult-63x87", "r": "5481", "n": 5, "ms": 220}
+{"p": 461, "i": "mult-82x78", "r": "6396", "n": 5, "ms": 300}
+{"p": 461, "i": "mult-77x49", "r": "3773", "n": 5, "ms": 356}
+{"p": 461, "i": "mult-73x65", "r": "4745", "n": 5, "ms": 326}
+{"p": 461, "i": "mult-13x42", "r": "5592", "n": 5, "ms": 262}
+{"p": 461, "i": "mult-38x28", "r": "1064", "n": 5, "ms": 237}
+{"p": 461, "i": "mult-95x57", "r": "4815", "n": 5, "ms": 231}
+{"p": 461, "i": "mult-72x59", "r": "4248", "n": 5, "ms": 217}
+{"p": 461, "i": "mult-68x74", "r": "4912", "n": 5, "ms": 206}
+{"p": 461, "i": "mult-34x82", "r": "2788", "n": 5, "ms": 179}
+{"p": 462, "i": "mult-79x92", "r": "To find the product of 79 and 92, we perform the multiplication:\n\n$$\n79 \\times 92\n$$\n\nWe can break this down using the distributive property:\n\n$$\n79 \\times 92 = 79 \\times (90 + 2) = (79 \\times 90) + (79 \\times 2)\n$$\n\nNow calculate each part:\n\n$$\n79 \\times 90 = 7110\n$$\n$$\n79 \\times 2 = 158\n$$\n\nNow add them together:\n\n$$\n7110 + 158 = 7268\n$$\n\nSo, the product of 79 and 92 is:\n\n**7268**", "n": 169, "ms": 1668}
+{"p": 462, "i": "mult-59x54", "r": "To find the product of 59 and 54, we perform the multiplication:\n\n$$\n59 \\times 54\n$$\n\nWe can break this down:\n\n$$\n59 \\times 54 = 59 \\times (50 + 4) = (59 \\times 50) + (59 \\times 4)\n$$\n\n$$\n59 \\times 50 = 2950\n$$\n$$\n59 \\times 4 = 236\n$$\n\nNow add them together:\n\n$$\n2950 + 236 = 3186\n$$\n\nSo, the product of 59 and 54 is:\n\n**3186**", "n": 159, "ms": 2993}
+{"p": 462, "i": "mult-47x35", "r": "1645", "n": 5, "ms": 2996}
+{"p": 462, "i": "mult-37x87", "r": "To find the product of 37 and 87, we perform the multiplication:\n\n$$\n37 \\times 87\n$$\n\nWe can break this down using the distributive property:\n\n$$\n37 \\times 87 = 37 \\times (80 + 7) = (37 \\times 80) + (37 \\times 7)\n$$\n\nNow calculate each part:\n\n$$\n37 \\times 80 = 2960\n$$\n$$\n37 \\times 7 = 259\n$$\n\nNow add them together:\n\n$$\n2960 + 259 = 3219\n$$\n\nSo, the product of 37 and 87 is:\n\n**3219**", "n": 169, "ms": 2998}
+{"p": 462, "i": "mult-85x59", "r": "To find the product of 85 and 59, we perform the multiplication:\n\n$$\n85 \\times 59\n$$\n\nWe can break this down using the distributive property:\n\n$$\n85 \\times 59 = 85 \\times (60 - 1) = (85 \\times 60) - (85 \\times 1)\n$$\n\n$$\n85 \\times 60 = 5100\n$$\n$$\n85 \\times 1 = 85\n$$\n\n$$\n5100 - 85 = 5015\n$$\n\nSo, the product of 85 and 59 is:\n\n**5015**", "n": 157, "ms": 3125}
+{"p": 462, "i": "mult-14x83", "r": "1162", "n": 5, "ms": 3154}
+{"p": 462, "i": "mult-25x96", "r": "2400", "n": 5, "ms": 1672}
+{"p": 462, "i": "mult-19x27", "r": "413", "n": 4, "ms": 220}
+{"p": 462, "i": "mult-95x17", "r": "To find the product of 95 and 17, we perform the multiplication:\n\n$$\n95 \\times 17\n$$\n\nWe can break this down:\n\n$$\n95 \\times 17 = 95 \\times (10 + 7) = (95 \\times 10) + (95 \\times 7)\n$$\n\n$$\n= 950 + 665 = 1615\n$$\n\nSo, the product of 95 and 17 is:\n\n**1615**", "n": 121, "ms": 1385}
+{"p": 462, "i": "mult-67x62", "r": "To find the product of 67 and 62, we perform the multiplication:\n\n$$\n67 \\times 62\n$$\n\nWe can break this down:\n\n$$\n67 \\times 62 = 67 \\times (60 + 2) = (67 \\times 60) + (67 \\times 2)\n$$\n\n$$\n67 \\times 60 = 4020\n$$\n$$\n67 \\times 2 = 134\n$$\n\nNow add them together:\n\n$$\n4020 + 134 = 4154\n$$\n\nSo, the product of 67 and 62 is:\n\n**4154**", "n": 159, "ms": 3536}
+{"p": 462, "i": "mult-74x32", "r": "To find the product of 74 and 32, we perform the multiplication:\n\n$$\n74 \\times 32\n$$\n\nWe can break this down:\n\n$$\n74 \\times 32 = 74 \\times (30 + 2) = (74 \\times 30) + (74 \\times 2)\n$$\n\n$$\n74 \\times 30 = 2220\n$$\n$$\n74 \\times 2 = 148\n$$\n\nNow add them:\n\n$$\n2220 + 148 = 2368\n$$\n\nSo, the product of 74 and 32 is:\n\n**2368**", "n": 158, "ms": 4932}
+{"p": 462, "i": "mult-79x87", "r": "To find the product of 79 and 87, we perform the multiplication:\n\n$$\n79 \\times 87\n$$\n\nWe can break this down using the distributive property:\n\n$$\n79 \\times 87 = 79 \\times (80 + 7) = (79 \\times 80) + (79 \\times 7)\n$$\n\nNow calculate each part:\n\n$$\n79 \\times 80 = 6320\n$$\n$$\n79 \\times 7 = 553\n$$\n\nNow add them together:\n\n$$\n6320 + 553 = 6873\n$$\n\nSo, the product of 79 and 87 is:\n\n**6873**", "n": 169, "ms": 5551}
+{"p": 462, "i": "mult-19x85", "r": "1615", "n": 5, "ms": 3406}
+{"p": 462, "i": "mult-75x22", "r": "To find the product of 75 and 22, we multiply:\n\n$$\n75 \\times 22 = 1650\n$$\n\nSo, the product expressed as a plain integer is:\n\n**1650**", "n": 52, "ms": 2484}
+{"p": 462, "i": "mult-63x87", "r": "To find the product of 63 and 87, we can multiply them directly:\n\n$$\n63 \\times 87\n$$\n\nWe can break this down using the distributive property:\n\n$$\n63 \\times 87 = 63 \\times (80 + 7) = (63 \\times 80) + (63 \\times 7)\n$$\n\nNow calculate each part:\n\n$$\n63 \\times 80 = 5040\n$$\n$$\n63 \\times 7 = 441\n$$\n\nNow add them together:\n\n$$\n5040 + 441 = 5481\n$$\n\nSo, the product of 63 and 87 is:\n\n**5481**", "n": 170, "ms": 2392}
+{"p": 462, "i": "mult-82x78", "r": "To find the product of 82 and 78, we can use the standard multiplication method or recognize a pattern for easier calculation.\n\n### Step-by-step multiplication:\n\n```\n     82\n   × 78\n   ------\n     656  (82 × 8)\n  5740    (82 × 70, shifted one position to the left)\n  ------\n  6396\n```\n\n### Final result:\n**6396**", "n": 108, "ms": 3361}
+{"p": 462, "i": "mult-77x49", "r": "To find the product of 77 and 49, we can perform the multiplication directly:\n\n$$\n77 \\times 49\n$$\n\nWe can break this down using the distributive property:\n\n$$\n77 \\times 49 = 77 \\times (50 - 1) = 77 \\times 50 - 77 \\times 1\n$$\n\n$$\n= 3850 - 77 = 3773\n$$\n\nSo, the product of 77 and 49 is:\n\n**3773**", "n": 127, "ms": 4120}
+{"p": 462, "i": "mult-73x65", "r": "To find the product of 73 and 65, we perform the multiplication:\n\n$$\n73 \\times 65\n$$\n\nWe can break this down using the distributive property:\n\n$$\n73 \\times 65 = 73 \\times (60 + 5) = (73 \\times 60) + (73 \\times 5)\n$$\n\nNow calculate each part:\n\n$$\n73 \\times 60 = 4380\n$$\n$$\n73 \\times 5 = 365\n$$\n\nNow add them together:\n\n$$\n4380 + 365 = 4745\n$$\n\nSo, the product of 73 and 65 is:\n\n**4745**", "n": 169, "ms": 4157}
+{"p": 462, "i": "mult-13x42", "r": "678", "n": 4, "ms": 3164}
+{"p": 462, "i": "mult-38x28", "r": "To find the product of 38 and 28, we perform the multiplication:\n\n$$\n38 \\times 28\n$$\n\nWe can break this down as:\n\n$$\n38 \\times 28 = 38 \\times (30 - 2) = (38 \\times 30) - (38 \\times 2)\n$$\n\n$$\n38 \\times 30 = 1140\n$$\n$$\n38 \\times 2 = 76\n$$\n$$\n1140 - 76 = 1064\n$$\n\nSo, the product of 38 and 28 is:\n\n**1064**", "n": 153, "ms": 3363}
+{"p": 462, "i": "mult-95x57", "r": "To find the product of 95 and 57, we perform the multiplication:\n\n$$\n95 \\times 57\n$$\n\nWe can break this down using the distributive property:\n\n$$\n95 \\times 57 = 95 \\times (50 + 7) = (95 \\times 50) + (95 \\times 7)\n$$\n\nNow calculate each part:\n\n$$\n95 \\times 50 = 4750\n$$\n$$\n95 \\times 7 = 665\n$$\n\nNow add them together:\n\n$$\n4750 + 665 = 5415\n$$\n\nSo, the product of 95 and 57 is:\n\n**5415**", "n": 169, "ms": 3210}
+{"p": 462, "i": "mult-72x59", "r": "To find the product of 72 and 59, we perform the multiplication:\n\n$$\n72 \\times 59\n$$\n\nWe can break this down using the distributive property:\n\n$$\n72 \\times 59 = 72 \\times (60 - 1) = 72 \\times 60 - 72 \\times 1\n$$\n\n$$\n= 4320 - 72 = 4248\n$$\n\nSo, the product of 72 and 59 is:\n\n**4248**", "n": 125, "ms": 4503}
+{"p": 462, "i": "mult-68x74", "r": "To find the product of 68 and 74, we perform the multiplication:\n\n$$\n68 \\times 74\n$$\n\nWe can break this down as:\n\n$$\n68 \\times 74 = 68 \\times (70 + 4) = (68 \\times 70) + (68 \\times 4)\n$$\n\nNow calculate each part:\n\n$$\n68 \\times 70 = 4760\n$$\n$$\n68 \\times 4 = 272\n$$\n\nNow add them together:\n\n$$\n4760 + 272 = 5032\n$$\n\nSo, the product of 68 and 74 is:\n\n**5032**", "n": 165, "ms": 4784}
+{"p": 462, "i": "mult-34x82", "r": "To find the product of 34 and 82, we perform the multiplication:\n\n$$\n34 \\times 82\n$$\n\nWe can break it down:\n\n$$\n34 \\times 82 = 34 \\times (80 + 2) = (34 \\times 80) + (34 \\times 2)\n$$\n\n$$\n34 \\times 80 = 2720\n$$\n$$\n34 \\times 2 = 68\n$$\n\nNow add them:\n\n$$\n2720 + 68 = 2788\n$$\n\nSo, the product of 34 and 82 is:\n\n**2788**", "n": 156, "ms": 4749}

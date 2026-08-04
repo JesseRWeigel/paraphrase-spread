@@ -16,6 +16,7 @@ import json
 import os
 import pathlib
 import queue
+import random
 import threading
 import time
 import urllib.error
@@ -27,6 +28,10 @@ SHARD_BYTES = 600_000  # keeps every tracked raw file well under a megabyte
 # Fixed for every call. Temperature 0 means the only randomness left in a paraphrase's score is
 # which 24 items it was asked, which is exactly the noise the analysis has to separate out.
 OPTIONS = {"temperature": 0.0, "top_p": 1.0, "seed": 20260803, "num_predict": 200}
+
+# Fixes the order paraphrases are asked in, so an interrupted run is a random
+# subset of the pool rather than a prefix of it.
+ORDER_SEED = 4242
 
 
 def model_slug(model):
@@ -121,8 +126,15 @@ def unload(model):
 def run(task, paraphrases, model, raw_dir, workers=6, limit=None, progress=None):
     """Fill in every missing (paraphrase, item) response. Returns a summary dict."""
     done, _ = load_done(raw_dir, task.name, model)
+    # Paraphrases are visited in a fixed shuffled order, and all 24 items of one paraphrase are
+    # queued together. Only paraphrases with a complete set of responses are analysed, so a run
+    # that is cut short still yields complete rows, and shuffling makes that partial set a
+    # random subset of the pool rather than the lowest ids. Paraphrase id correlates with the
+    # style directive that produced it, so taking the first N would sample styles unevenly.
+    order = list(paraphrases)
+    random.Random(ORDER_SEED).shuffle(order)
     jobs = []
-    for pid, template in paraphrases:
+    for pid, template in order:
         for item in task.items:
             if (pid, item.key) in done:
                 continue

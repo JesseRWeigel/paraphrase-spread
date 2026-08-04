@@ -201,18 +201,21 @@ def strip_svg(runs, width=880):
 
 def summary_table(runs):
     head = ("<thead><tr><th>model</th><th>wordings</th><th>responses</th><th>mean</th>"
-            "<th>median</th><th>sd</th><th>min</th><th>max</th><th>range</th><th>IQR</th>"
-            "<th>Cochran Q p</th><th>reliability</th></tr></thead>")
+            "<th>median</th><th>sd</th><th>min</th><th>5th pct</th><th>95th pct</th>"
+            "<th>max</th><th>range</th><th>IQR</th><th>Cochran Q p</th>"
+            "<th>reliability</th></tr></thead>")
     rows = []
     for r in runs:
         s = r["strict"]
         st = r["spread_test"]
+        q_p = "undefined" if st["q_p_value"] is None else f"{st['q_p_value']:.4f}"
         rows.append(
             f"<tr><td>{esc(r['model'])}</td><td>{s['n']}</td><td>{r['responses']:,}</td>"
             f"<td>{pct(s['mean'])}</td><td>{pct(s['median'])}</td><td>{pct(s['sd'])}</td>"
-            f"<td>{pct(s['min'])}</td><td>{pct(s['max'])}</td>"
+            f"<td>{pct(s['min'])}</td><td>{pct(s['p05'])}</td><td>{pct(s['p95'])}</td>"
+            f"<td>{pct(s['max'])}</td>"
             f"<td><strong>{pct(s['range'])}</strong></td><td>{pct(s['iqr'])}</td>"
-            f"<td>{st['q_p_value']:.4f}</td>"
+            f"<td>{q_p}</td>"
             f"<td>{r['reliability']['spearman_brown']:.2f}</td></tr>")
     return f"<div class='scroll'><table>{head}<tbody>{''.join(rows)}</tbody></table></div>"
 
@@ -257,8 +260,10 @@ def build(analysis, repeat_checks, equivalence, pool_meta):
 
     out = [f"<title>The accuracy distribution over {n_par} paraphrases of one task</title>",
            f"<style>{CSS}</style>", "<main>"]
-    out.append(f"<h1>One task, {n_par} wordings, and an accuracy range of "
-               f"{pct(widest, 0)}</h1>")
+    s = primary["strict"]
+    st = primary["spread_test"]
+    out.append(f"<h1>One task, {n_par} wordings, and accuracy from "
+               f"{pct(s['p05'], 0)} to {pct(s['p95'], 0)} in the middle 90%</h1>")
     out.append(f"<p class='sub'>Every wording asks for the same thing. The same 24 "
                f"multiplication problems go through all of them, at temperature 0. "
                f"{total_responses:,} model responses, all saved to disk.</p>")
@@ -266,16 +271,23 @@ def build(analysis, repeat_checks, equivalence, pool_meta):
     out.append("<div class='cards'>")
     for k, v in [
         ("wordings tested", f"{n_par}"),
-        ("worst wording", pct(primary["strict"]["min"], 0)),
-        ("best wording", pct(primary["strict"]["max"], 0)),
-        ("spread", pct(widest, 0)),
+        ("mean accuracy", pct(s["mean"])),
+        ("standard deviation", pct(s["sd"])),
+        ("middle 90%", f"{pct(s['p05'], 0)} to {pct(s['p95'], 0)}"),
+        ("full range", f"{pct(s['min'], 0)} to {pct(s['max'], 0)}"),
     ]:
         out.append(f"<div class='card'><div class='k'>{esc(k)}</div>"
                    f"<div class='v'>{esc(v)}</div></div>")
     out.append("</div>")
-    out.append(f"<p>The widest range is on <code>{esc(primary['model'])}</code>. A benchmark "
-               f"that reports one number for this task and this model is reporting one draw "
-               f"from that range, and nothing in the number says which draw it was.</p>")
+    out.append(f"<p>On <code>{esc(primary['model'])}</code>. A benchmark that reports one number "
+               f"for this task and this model is reporting one draw from that spread, and "
+               f"nothing in the number says which draw it was.</p>")
+    out.append(f"<p>The headline is the middle 90% rather than the full range on purpose. With "
+               f"{s['n']} wordings scored on 24 items, item luck alone produces a range of about "
+               f"{pct(st['null_range_mean'], 0)} even when every wording is equally good, so the "
+               f"full {pct(s['range'], 0)} range is not by itself evidence of anything. The "
+               f"standard deviation is: {pct(s['sd'])} observed against "
+               f"{pct(st['null_sd_mean'])} under that null.</p>")
 
     out.append("<h2>The distribution</h2>")
     out.append("<figure><div class='chart'>" + histogram_svg(mult) + "</div>"

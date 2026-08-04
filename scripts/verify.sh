@@ -229,9 +229,12 @@ mult = [r for r in a["runs"] if r["task"] == "mult"]
 if not mult:
     sys.exit("no mult run to check the page against")
 widest = max(mult, key=lambda r: r["strict"]["range"])
-need = [f"{100 * widest['strict']['min']:.0f}%", f"{100 * widest['strict']['max']:.0f}%",
-        f"{100 * widest['strict']['range']:.0f}%", str(widest["strict"]["n"]),
-        widest["model"]]
+# Checked on the mean, the standard deviation and the two tail percentiles rather than on the
+# min and the max. "0%" is a substring of "100%", so a check on the extremes passes on a page
+# that contains only one of them, and a check that cannot fail is not a check.
+need = [f"{100 * widest['strict']['mean']:.1f}%", f"{100 * widest['strict']['sd']:.1f}%",
+        f"{100 * widest['strict']['p05']:.1f}%", f"{100 * widest['strict']['p95']:.1f}%",
+        str(widest["strict"]["n"]), widest["model"]]
 absent = [n for n in need if n not in page]
 if absent:
     sys.exit(f"the page does not contain {absent}, so it is not showing these results")
@@ -251,8 +254,8 @@ if loose:
 if "max-width: 100%" not in page or "viewBox" not in page:
     sys.exit("the SVGs are not set up to scale down, so the charts will overflow on mobile")
 bars = page.count("<polyline") + page.count("<rect")
-print(f"the page carries min {need[0]}, max {need[1]}, range {need[2]} over {need[3]} "
-      f"wordings, drawn with {bars} SVG shapes and no JavaScript")
+print(f"the page carries mean {need[0]}, sd {need[1]}, 5th-95th {need[2]} to {need[3]} "
+      f"over {need[4]} wordings, drawn with {bars} SVG shapes and no JavaScript")
 PY
     sed 's/^/        /' "$TMP/pg.log"; ok "the page shows the real numbers"
   else bad "$(cat "$TMP/pg.log")"; fi
@@ -401,15 +404,22 @@ widest = max(mult, key=lambda r: r["strict"]["range"])
 n = widest["strict"]["n"]
 if re.search(r"\b1,?000 paraphrases\b", readme) and n < 1000:
     sys.exit(f"the README says 1,000 paraphrases and only {n} were run")
+# Same reason as on the page: the extremes are not distinguishable as substrings, so the
+# README is pinned to figures that are.
 need = {"paraphrase count": str(n),
-        "widest range": f"{100 * widest['strict']['range']:.0f}%",
-        "worst wording": f"{100 * widest['strict']['min']:.0f}%",
-        "best wording": f"{100 * widest['strict']['max']:.0f}%"}
+        "mean accuracy": f"{100 * widest['strict']['mean']:.1f}%",
+        "standard deviation": f"{100 * widest['strict']['sd']:.1f}%",
+        "5th percentile": f"{100 * widest['strict']['p05']:.1f}%",
+        "95th percentile": f"{100 * widest['strict']['p95']:.1f}%",
+        "null range under the permutation test":
+            f"{100 * widest['spread_test']['null_range_mean']:.1f}%",
+        "split-half reliability": f"{widest['reliability']['spearman_brown']:.2f}"}
 absent = [k for k, v in need.items() if v not in readme]
 if absent:
     sys.exit(f"the README is missing its own headline figures: {absent} "
              f"(expected {need})")
-print(f"the README states {n} wordings and a {need['widest range']} range, matching "
+print(f"the README states {n} wordings, mean {need['mean accuracy']}, sd "
+      f"{need['standard deviation']}, and the permutation null's own range, all matching "
       f"results/analysis.json")
 PY
     sed 's/^/        /' "$TMP/rm.log"; ok "the README's headline numbers match the results"

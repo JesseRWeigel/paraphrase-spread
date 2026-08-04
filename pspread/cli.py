@@ -140,9 +140,15 @@ as they are. Output only the English, one line.
 {text}"""
 
 _JUDGE = """Two instructions are below. Decide whether they ask for exactly the same thing, so
-that any correct response to one would be a correct response to the other. Differences in tone,
-length, politeness, or formatting do not matter. A difference in what is being asked, in what
-counts as an answer, or in the information provided does matter.
+that any correct response to one would be a correct response to the other.
+
+Differences in tone, length, politeness, register, or formatting do NOT matter.
+
+Answer DIFFERENT if any of these is true:
+- the candidate does not say which operation to perform, or names a different one
+- the candidate leaves out information the reference gives, or adds information
+- the candidate would accept an answer the reference would not, or the other way round
+- the candidate is truncated, ungrammatical to the point of ambiguity, or asks two things
 
 REFERENCE:
 {a}
@@ -155,32 +161,65 @@ Answer with one word, EQUIVALENT or DIFFERENT, then a semicolon, then a short re
 
 
 def cmd_equiv(args):
+    """Judge EVERY paraphrase against the canonical wording, not a sample of them.
+
+    The reason this is exhaustive is a wording the pool actually contained: "You are an
+    efficient processor. Give the result of the calculation as a raw integer with no commas or
+    non-numeric text: {a} and {b}". It never says which calculation. It scored 4% on qwen3:8b
+    because the model concatenated the two numbers, and counting that as a wording effect would
+    have inflated the headline range with a prompt that is not a paraphrase at all.
+
+    A sampled check would have reported a high equivalence rate and left the bad wording in the
+    distribution, so the sample is not enough. The back-translation round trip stays a sample,
+    because it costs three calls per wording and it is a check on the meaning surviving a
+    transform rather than a filter on the pool.
+    """
     task = tasks.get(args.task)
     meta, pairs = load_paraphrases(task.name)
+    canonical = task.canonical.replace("\n\n", " ")
+
+    def judge(job):
+        pid, text = job
+        try:
+            v = paraphrase.call_generator(
+                _JUDGE.format(a=canonical, b=text), temperature=0.0).strip()
+        except RuntimeError as exc:
+            return {"id": pid, "verdict": "UNJUDGED", "reason": str(exc)[:200], "text": text}
+        return {"id": pid, "verdict": v.split(";")[0].strip().upper()[:12],
+                "reason": v.split(";", 1)[1].strip()[:200] if ";" in v else "",
+                "text": text}
+
+    todo = [(pid, text) for pid, text in pairs if pid != 0]
+    judged = []
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        for i, res in enumerate(pool.map(judge, todo), 1):
+            judged.append(res)
+            if i % 50 == 0:
+                print(f"  judged {i}/{len(todo)}", flush=True)
+    judged.sort(key=lambda j: j["id"])
+
     rng = random.Random(args.seed)
-    sample = rng.sample([p for p in pairs if p[0] != 0], min(args.sample, len(pairs) - 1))
+    bt_sample = rng.sample(todo, min(args.backtranslate, len(todo)))
 
-    judged, backtranslated = [], []
-    for pid, text in sample:
-        verdict = paraphrase.call_generator(
-            _JUDGE.format(a=task.canonical.replace("\n\n", " "), b=text), temperature=0.0)
-        v = verdict.strip()
-        judged.append({"id": pid, "verdict": v.split(";")[0].strip().upper()[:12],
-                       "reason": v.split(";", 1)[1].strip()[:200] if ";" in v else "",
-                       "text": text})
+    def roundtrip(job):
+        pid, text = job
+        try:
+            es = paraphrase.call_generator(
+                _BACKTRANSLATE.format(text=text), temperature=0.0).strip()
+            en = paraphrase.call_generator(_FORWARD.format(text=es), temperature=0.0).strip()
+            v = paraphrase.call_generator(_JUDGE.format(a=text, b=en), temperature=0.0).strip()
+        except RuntimeError as exc:
+            return {"id": pid, "original": text, "verdict": "UNJUDGED",
+                    "reason": str(exc)[:200], "slots_survived": False}
+        return {"id": pid, "original": text, "spanish": es[:400], "back": en[:400],
+                "verdict": v.split(";")[0].strip().upper()[:12],
+                "slots_survived": paraphrase.validate(en, task) is None}
 
-    bt_sample = sample[:args.backtranslate]
-    for pid, text in bt_sample:
-        es = paraphrase.call_generator(_BACKTRANSLATE.format(text=text), temperature=0.0).strip()
-        en = paraphrase.call_generator(_FORWARD.format(text=es), temperature=0.0).strip()
-        verdict = paraphrase.call_generator(
-            _JUDGE.format(a=text, b=en), temperature=0.0).strip()
-        backtranslated.append({
-            "id": pid, "original": text, "spanish": es[:400], "back": en[:400],
-            "verdict": verdict.split(";")[0].strip().upper()[:12],
-            "slots_survived": paraphrase.validate(en, task) is None})
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        backtranslated = sorted(pool.map(roundtrip, bt_sample), key=lambda b: b["id"])
 
     equiv_n = sum(1 for j in judged if j["verdict"].startswith("EQUIV"))
+    unjudged = [j["id"] for j in judged if j["verdict"] == "UNJUDGED"]
     bt_ok = sum(1 for b in backtranslated if b["verdict"].startswith("EQUIV"))
     _write(RESULTS / f"equivalence_{task.name}.json", {
         "task": task.name,
@@ -188,20 +227,27 @@ def cmd_equiv(args):
         "judge_model": paraphrase.GENERATOR_MODEL,
         "method": (
             "Three checks. A deterministic structural check ran on every candidate at generation "
-            "time and is the reason the rejected list exists. A model judge compared a random "
-            "sample against the canonical wording. A round trip through Spanish and back, then "
+            "time and is the reason the rejected list exists. A model judge compared EVERY "
+            "wording against the canonical one, and the analysis uses only the wordings it "
+            "called equivalent. A round trip through Spanish and back, on a random sample, "
             "judged against its own original, tests whether the meaning survives a transform "
             "that does not preserve surface form."),
+        "reviewer_note": (
+            "The judge is a language model, and the spot-check of its verdicts was done by an "
+            "AI agent. No human read these wordings."),
         "judged": {"n": len(judged), "equivalent": equiv_n,
+                   "unjudged": len(unjudged),
                    "rate": equiv_n / len(judged) if judged else None},
         "backtranslation": {"n": len(backtranslated), "equivalent": bt_ok,
                             "rate": bt_ok / len(backtranslated) if backtranslated else None,
-                            "slots_survived": sum(b["slots_survived"] for b in backtranslated)},
+                            "slots_survived": sum(b["slots_survived"]
+                                                  for b in backtranslated)},
         "structural_rejections": len(meta["rejected"]),
+        "equivalent_ids": [0] + [j["id"] for j in judged if j["verdict"].startswith("EQUIV")],
         "judgements": judged,
         "backtranslations": backtranslated,
     })
-    print(f"judge: {equiv_n}/{len(judged)} equivalent. "
+    print(f"judge: {equiv_n}/{len(judged)} equivalent, {len(unjudged)} could not be judged. "
           f"back-translation: {bt_ok}/{len(backtranslated)} equivalent.")
 
 
@@ -213,6 +259,14 @@ def cmd_run(args):
     if args.max_paraphrases:
         pairs = pairs[:args.max_paraphrases]
     print(f"{task.name}: {len(pairs)} paraphrases x {len(task.items)} items on {args.model}")
+    # Written before the run rather than after, so a run that is interrupted still leaves the
+    # mapping from file-name slug back to the real model id. Without it the analysis labels a
+    # partial run with the slug, and the published model name is then subtly wrong.
+    meta_path = RAW / f"{task.name}__{runner.model_slug(args.model)}__meta.json"
+    meta = json.loads(meta_path.read_text()) if meta_path.exists() else {"runs": []}
+    meta.update({"task": task.name, "model": args.model, "options": runner.OPTIONS,
+                 "items": len(task.items)})
+    _write(meta_path, meta)
 
     def progress(n, total, rate, errors):
         eta = (total - n) / rate if rate else 0
@@ -223,10 +277,7 @@ def cmd_run(args):
     print(json.dumps(summary, indent=1))
     if args.unload:
         runner.unload(args.model)
-    meta_path = RAW / f"{task.name}__{runner.model_slug(args.model)}__meta.json"
-    meta = json.loads(meta_path.read_text()) if meta_path.exists() else {"runs": []}
-    meta.update({"task": task.name, "model": args.model, "options": runner.OPTIONS,
-                 "items": len(task.items)})
+    meta = json.loads(meta_path.read_text())
     meta["runs"].append({"at": _now(), **summary})
     _write(meta_path, meta)
 
@@ -267,8 +318,9 @@ def cmd_repeat(args):
 # --- analyze ----------------------------------------------------------------------------
 
 def analyse_one(task, model, permutations=1000, splits=200):
-    _, pairs = load_paraphrases(task.name)
+    meta, pairs = load_paraphrases(task.name)
     templates = dict(pairs)
+    styles = {p["id"]: p["style"] for p in meta["paraphrases"]}
     answers = {i.key: i.answer for i in task.items}
     item_keys = [i.key for i in task.items]
 
@@ -287,6 +339,27 @@ def analyse_one(task, model, permutations=1000, splits=200):
         graded[pid] = g
         per_paraphrase.append((pid, g["per_item"]))
 
+    all_ids, _ = stats.to_matrix(per_paraphrase, item_keys)
+    unfiltered = stats.describe([graded[pid]["strict_accuracy"] for pid in all_ids])
+
+    # Only wordings the equivalence judge cleared enter the headline distribution. A wording that
+    # dropped the operation is not a paraphrase, and leaving it in would credit the spread to
+    # wording when the cause is a changed question. The unfiltered figures stay in the output so
+    # the size of that correction is visible rather than quietly applied.
+    eq_path = RESULTS / f"equivalence_{task.name}.json"
+    if eq_path.exists():
+        eq = json.loads(eq_path.read_text(encoding="utf-8"))
+        verified = set(eq["equivalent_ids"])
+        equivalence_note = (
+            f"{eq['judged']['equivalent']} of {eq['judged']['n']} wordings were judged "
+            f"equivalent to the reference by {eq['judge_model']}; the rest are excluded here")
+    else:
+        verified = None
+        equivalence_note = ("no equivalence check has been run, so every wording is included "
+                            "and the spread may contain prompts that changed the question")
+
+    per_paraphrase = [(pid, pi) for pid, pi in per_paraphrase
+                      if verified is None or pid in verified]
     ids, rows = stats.to_matrix(per_paraphrase, item_keys)
     accs = [graded[pid]["strict_accuracy"] for pid in ids]
     lenient = [graded[pid]["lenient_accuracy"] for pid in ids]
@@ -316,6 +389,9 @@ def analyse_one(task, model, permutations=1000, splits=200):
     return {
         "task": task.name,
         "model": model,
+        "equivalence_note": equivalence_note,
+        "paraphrases_before_equivalence_filter": len(all_ids),
+        "unfiltered": unfiltered,
         "paraphrases_scored": len(ids),
         "items": len(item_keys),
         "responses": total_attempts,
@@ -328,7 +404,10 @@ def analyse_one(task, model, permutations=1000, splits=200):
         "strict": stats.describe(accs),
         "parsed_only": stats.describe(parsed),
         "lenient": stats.describe(lenient),
-        "histogram": stats.histogram(accs, bins=20),
+        # One bin per attainable score. With 24 items a wording can only land on one of
+        # 25 values, and binning them any other way invents structure.
+        "histogram": stats.histogram(accs, lo=-0.5 / len(item_keys),
+                                     hi=1 + 0.5 / len(item_keys), bins=len(item_keys) + 1),
         "canonical_accuracy": graded[0]["strict_accuracy"] if 0 in graded else None,
         "canonical_percentile": (
             sum(1 for a in accs if a <= graded[0]["strict_accuracy"]) / len(accs)
@@ -348,9 +427,7 @@ def analyse_one(task, model, permutations=1000, splits=200):
         "per_paraphrase": [
             {"id": pid, "accuracy": graded[pid]["strict_accuracy"],
              "parsed_accuracy": graded[pid]["parsed_accuracy"],
-             "unparseable": graded[pid]["unparseable"],
-             "style": next(p["style"] for p in load_paraphrases(task.name)[0]["paraphrases"]
-                           if p["id"] == pid)}
+             "unparseable": graded[pid]["unparseable"], "style": styles[pid]}
             for pid in ids],
     }
 
@@ -405,8 +482,8 @@ def main(argv=None):
 
     p = sub.add_parser("equiv")
     p.add_argument("--task", required=True)
-    p.add_argument("--sample", type=int, default=60)
-    p.add_argument("--backtranslate", type=int, default=25)
+    p.add_argument("--backtranslate", type=int, default=40)
+    p.add_argument("--workers", type=int, default=4)
     p.add_argument("--seed", type=int, default=17)
     p.set_defaults(fn=cmd_equiv)
 

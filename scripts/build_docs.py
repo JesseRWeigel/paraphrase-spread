@@ -63,6 +63,8 @@ th:first-child, td:first-child { text-align: left; }
 thead th { border-bottom: 2px solid var(--rule); font-size: .8rem; text-transform: uppercase;
            letter-spacing: .05em; color: var(--muted); }
 figure { margin: 1.5rem 0; }
+.chart { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.chart svg { min-width: 40rem; max-width: 100%; }
 figcaption { color: var(--muted); font-size: .88rem; margin-top: .5rem; max-width: 42rem; }
 svg { display: block; max-width: 100%; height: auto; }
 blockquote { margin: .6rem 0 1rem; padding: .7rem 1rem; background: var(--card);
@@ -121,8 +123,10 @@ def histogram_svg(runs, width=880, height=340):
         colour = colors[idx % len(colors)]
         pts = [f"{pad_l:.1f},{pad_t + plot_h:.1f}"]
         for i, c in enumerate(counts):
-            x0 = pad_l + plot_w * edges[i]
-            x1 = pad_l + plot_w * edges[i + 1]
+            # Bin edges sit half a bin outside 0..1 so each attainable score gets
+            # its own bin, so they are clamped back to the axis before drawing.
+            x0 = pad_l + plot_w * min(max(edges[i], 0.0), 1.0)
+            x1 = pad_l + plot_w * min(max(edges[i + 1], 0.0), 1.0)
             y = pad_t + plot_h - plot_h * c / peak
             pts.append(f"{x0:.1f},{y:.1f}")
             pts.append(f"{x1:.1f},{y:.1f}")
@@ -274,12 +278,12 @@ def build(analysis, repeat_checks, equivalence, pool_meta):
                f"from that range, and nothing in the number says which draw it was.</p>")
 
     out.append("<h2>The distribution</h2>")
-    out.append("<figure>" + histogram_svg(mult) +
+    out.append("<figure><div class='chart'>" + histogram_svg(mult) + "</div>"
                "<figcaption>Count of wordings at each accuracy, in 5-point bins. The dashed "
                "line marks the plain reference wording the paraphrases were generated from. "
                "It is one wording among many and it sits inside the spread, not above it."
                "</figcaption></figure>")
-    out.append("<figure>" + strip_svg(mult) +
+    out.append("<figure><div class='chart'>" + strip_svg(mult) + "</div>"
                "<figcaption>Full range, interquartile box, median, and the reference wording "
                "as a hollow circle. The bar is what a single-prompt benchmark number is drawn "
                "from.</figcaption></figure>")
@@ -342,6 +346,13 @@ def build(analysis, repeat_checks, equivalence, pool_meta):
 
     out.append("<h2>What this is a sample of</h2>")
     out.append("<ul>")
+    out.append(f"<li><strong>{primary['paraphrases_before_equivalence_filter']} wordings "
+               f"survived generation, and {primary['strict']['n']} of them are in the "
+               f"distribution above.</strong> {esc(primary['equivalence_note'])}. Without that "
+               f"filter the range on <code>{esc(primary['model'])}</code> would read "
+               f"{pct(primary['unfiltered']['range'], 0)} rather than "
+               f"{pct(primary['strict']['range'], 0)}, and the extra width would come from "
+               f"prompts that changed the question rather than the wording.</li>")
     out.append(f"<li>The wordings were written by <code>{esc(pool_meta['generator']['model'])}</code> "
                f"under {len(pool_meta['generator']['styles'])} style directives crossed with "
                f"{len(pool_meta['generator'].get('axes', []))} structural directives, all chosen "

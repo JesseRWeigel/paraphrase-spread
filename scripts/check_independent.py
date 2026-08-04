@@ -191,12 +191,24 @@ def main():
             problems.append(f"{task}/{model}: raw files hold {len(item_keys)} distinct items, "
                             f"analysis claims {expected_items}")
 
+        # The same inclusion rule the pipeline uses, applied from the same data file rather
+        # than by calling the pipeline: only wordings the equivalence judge cleared count, and
+        # a wording is only counted at all if it has a response for every item.
+        eq_path = os.path.join(results, f"equivalence_{task}.json")
+        verified = None
+        if os.path.exists(eq_path):
+            verified = set(json.load(open(eq_path, encoding="utf-8"))["equivalent_ids"])
+
         counts = {"correct": 0, "wrong": 0, "unparseable": 0, "error": 0}
         lenient_total = 0
         accs, matrix, complete = [], [], []
+        n_before_filter = 0
         for pid in sorted(by_pid):
             per_item = by_pid[pid]
             if len(per_item) < len(item_keys):
+                continue
+            n_before_filter += 1
+            if verified is not None and pid not in verified:
                 continue
             row, ncorrect, nscored, nlenient = [], 0, 0, 0
             for key in item_keys:
@@ -217,6 +229,7 @@ def main():
             accs.append(ncorrect / nscored)
 
         got = {
+            "paraphrases_before_equivalence_filter": n_before_filter,
             "paraphrases_scored": len(complete),
             "responses": sum(counts.values()),
             "mean": avg(accs),
@@ -227,6 +240,8 @@ def main():
             "cochran_q": cochran(matrix),
         }
         want = {
+            "paraphrases_before_equivalence_filter":
+                claimed["paraphrases_before_equivalence_filter"],
             "paraphrases_scored": claimed["paraphrases_scored"],
             "responses": claimed["responses"],
             "mean": claimed["strict"]["mean"],

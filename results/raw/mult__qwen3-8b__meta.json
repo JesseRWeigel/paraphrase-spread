@@ -1,0 +1,6 @@
+{
+ "task": "mult",
+ "model": "qwen3:8b",
+ "items": 24,
+ "runs": []
+}

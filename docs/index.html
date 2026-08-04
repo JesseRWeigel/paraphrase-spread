@@ -1,0 +1,158 @@
+<title>The accuracy distribution over 173 paraphrases of one task</title>
+<style>
+:root {
+  --bg: #fbfaf7; --fg: #1a1a1a; --muted: #5c5c5c; --rule: #e0ddd6;
+  --bar: #2f5d50; --bar2: #b5651d; --accent: #8a2b2b; --card: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #16171a; --fg: #e9e6e0; --muted: #9a978f; --rule: #2f3136;
+          --bar: #6fae9b; --bar2: #e0975a; --accent: #e07a7a; --card: #1d1f23; }
+}
+:root[data-theme="dark"] {
+  --bg: #16171a; --fg: #e9e6e0; --muted: #9a978f; --rule: #2f3136;
+  --bar: #6fae9b; --bar2: #e0975a; --accent: #e07a7a; --card: #1d1f23;
+}
+:root[data-theme="light"] {
+  --bg: #fbfaf7; --fg: #1a1a1a; --muted: #5c5c5c; --rule: #e0ddd6;
+  --bar: #2f5d50; --bar2: #b5651d; --accent: #8a2b2b; --card: #ffffff;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); margin: 0;
+  font: 16px/1.6 ui-serif, Georgia, "Times New Roman", serif; }
+main { max-width: 60rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+h1 { font-size: clamp(1.7rem, 5vw, 2.6rem); line-height: 1.15; margin: 0 0 .4rem; }
+h2 { font-size: 1.3rem; margin: 2.6rem 0 .8rem; padding-top: 1.2rem;
+     border-top: 1px solid var(--rule); }
+h3 { font-size: 1.05rem; margin: 1.6rem 0 .5rem; }
+p, li { max-width: 42rem; }
+.sub { color: var(--muted); margin: 0 0 2rem; }
+.big { font-size: clamp(2.4rem, 9vw, 4.2rem); line-height: 1; font-weight: 700;
+       color: var(--accent); letter-spacing: -0.02em; }
+.big small { display: block; font-size: 1rem; font-weight: 400; color: var(--muted);
+             letter-spacing: 0; margin-top: .5rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+         gap: .75rem; margin: 1.5rem 0; }
+.card { background: var(--card); border: 1px solid var(--rule); border-radius: 6px;
+        padding: .9rem 1rem; min-width: 0; }
+.card .k { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em;
+           color: var(--muted); }
+.card .v { font-size: 1.5rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1rem 0; }
+table { border-collapse: collapse; font-size: .9rem; min-width: 34rem; }
+th, td { text-align: right; padding: .4rem .6rem; border-bottom: 1px solid var(--rule);
+         white-space: nowrap; font-variant-numeric: tabular-nums; }
+th:first-child, td:first-child { text-align: left; }
+thead th { border-bottom: 2px solid var(--rule); font-size: .8rem; text-transform: uppercase;
+           letter-spacing: .05em; color: var(--muted); }
+figure { margin: 1.5rem 0; }
+.chart { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.chart svg { min-width: 40rem; max-width: 100%; }
+figcaption { color: var(--muted); font-size: .88rem; margin-top: .5rem; max-width: 42rem; }
+svg { display: block; max-width: 100%; height: auto; }
+blockquote { margin: .6rem 0 1rem; padding: .7rem 1rem; background: var(--card);
+             border-left: 3px solid var(--rule); font-size: .93rem; }
+blockquote.good { border-left-color: var(--bar); }
+blockquote.bad { border-left-color: var(--accent); }
+code { font: .88em ui-monospace, SFMono-Regular, Menlo, monospace;
+       background: var(--card); padding: .1em .3em; border-radius: 3px; }
+.note { color: var(--muted); font-size: .9rem; }
+footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
+         color: var(--muted); font-size: .88rem; }
+a { color: inherit; }
+</style>
+<main>
+<h1>One task, 173 wordings, and an accuracy range of 96%</h1>
+<p class='sub'>Every wording asks for the same thing. The same 24 multiplication problems go through all of them, at temperature 0. 4,152 model responses, all saved to disk.</p>
+<div class='cards'>
+<div class='card'><div class='k'>wordings tested</div><div class='v'>173</div></div>
+<div class='card'><div class='k'>worst wording</div><div class='v'>4%</div></div>
+<div class='card'><div class='k'>best wording</div><div class='v'>100%</div></div>
+<div class='card'><div class='k'>spread</div><div class='v'>96%</div></div>
+</div>
+<p>The widest range is on <code>qwen3:8b</code>. A benchmark that reports one number for this task and this model is reporting one draw from that range, and nothing in the number says which draw it was.</p>
+<h2>The distribution</h2>
+<figure><div class='chart'><svg viewBox="0 0 880 340" width="880" height="340" role="img" aria-label="Accuracy distribution over paraphrases">
+<line x1="52" y1="288.0" x2="864" y2="288.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="44" y="292.0" text-anchor="end" font-size="12" fill="var(--muted)">0</text>
+<line x1="52" y1="221.0" x2="864" y2="221.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="44" y="225.0" text-anchor="end" font-size="12" fill="var(--muted)">7</text>
+<line x1="52" y1="154.0" x2="864" y2="154.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="44" y="158.0" text-anchor="end" font-size="12" fill="var(--muted)">14</text>
+<line x1="52" y1="87.0" x2="864" y2="87.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="44" y="91.0" text-anchor="end" font-size="12" fill="var(--muted)">20</text>
+<line x1="52" y1="20.0" x2="864" y2="20.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="44" y="24.0" text-anchor="end" font-size="12" fill="var(--muted)">27</text>
+<text x="52.0" y="308" text-anchor="middle" font-size="12" fill="var(--muted)">0%</text>
+<text x="133.2" y="308" text-anchor="middle" font-size="12" fill="var(--muted)">10%</text>
+<text x="214.4" y="308" text-anchor="middle" font-size="12" fill="var(--muted)">20%</text>
+<text x="295.6" y="308" text-anchor="middle" font-size="12" fill="var(--muted)">30%</text>
+<text x="376.8" y="308" text-anchor="middle" font-size="12" fill="var(--muted)">40%</text>
+<text x="458.0" y="308" text-anchor="middle" font-size="12" fill="var(--muted)">50%</text>
+<text x="539.2" y="308" text-anchor="middle" font-size="12" fill="var(--muted)">60%</text>
+<text x="620.4" y="308" text-anchor="middle" font-size="12" fill="var(--muted)">70%</text>
+<text x="701.6" y="308" text-anchor="middle" font-size="12" fill="var(--muted)">80%</text>
+<text x="782.8" y="308" text-anchor="middle" font-size="12" fill="var(--muted)">90%</text>
+<text x="864.0" y="308" text-anchor="middle" font-size="12" fill="var(--muted)">100%</text>
+<text x="458.0" y="332" text-anchor="middle" font-size="13" fill="var(--muted)">accuracy of one wording, over the same 24 items</text>
+<polyline points="52.0,288.0 52.0,288.0 68.9,288.0 68.9,278.1 102.7,278.1 102.7,288.0 136.6,288.0 136.6,288.0 170.4,288.0 170.4,288.0 204.2,288.0 204.2,288.0 238.1,288.0 238.1,278.1 271.9,278.1 271.9,288.0 305.7,288.0 305.7,288.0 339.6,288.0 339.6,288.0 373.4,288.0 373.4,268.1 407.2,268.1 407.2,278.1 441.1,278.1 441.1,278.1 474.9,278.1 474.9,238.4 508.7,238.4 508.7,178.8 542.6,178.8 542.6,59.7 576.4,59.7 576.4,20.0 610.2,20.0 610.2,49.8 644.1,49.8 644.1,99.4 677.9,99.4 677.9,79.6 711.7,79.6 711.7,109.3 745.6,109.3 745.6,218.5 779.4,218.5 779.4,268.1 813.2,268.1 813.2,258.2 847.1,258.2 847.1,218.5 864.0,218.5 864.0,288.0" fill="var(--bar)" fill-opacity="0.16" stroke="var(--bar)" stroke-width="2" stroke-linejoin="round"/>
+<line x1="627.2" y1="20" x2="627.2" y2="288" stroke="var(--bar)" stroke-width="1.5" stroke-dasharray="5 4"/>
+<rect x="64" y="15" width="12" height="12" fill="var(--bar)" fill-opacity="0.35" stroke="var(--bar)"/>
+<text x="82" y="25" font-size="13" fill="var(--fg)">qwen3:8b</text>
+</svg></div><figcaption>Count of wordings at each accuracy, in 5-point bins. The dashed line marks the plain reference wording the paraphrases were generated from. It is one wording among many and it sits inside the spread, not above it.</figcaption></figure>
+<figure><div class='chart'><svg viewBox="0 0 880 106" width="880" height="106" role="img" aria-label="Range of accuracy per model">
+<line x1="130.0" y1="12" x2="130.0" y2="72" stroke="var(--rule)"/>
+<text x="130.0" y="94" text-anchor="middle" font-size="12" fill="var(--muted)">0%</text>
+<line x1="203.4" y1="12" x2="203.4" y2="72" stroke="var(--rule)"/>
+<text x="203.4" y="94" text-anchor="middle" font-size="12" fill="var(--muted)">10%</text>
+<line x1="276.8" y1="12" x2="276.8" y2="72" stroke="var(--rule)"/>
+<text x="276.8" y="94" text-anchor="middle" font-size="12" fill="var(--muted)">20%</text>
+<line x1="350.2" y1="12" x2="350.2" y2="72" stroke="var(--rule)"/>
+<text x="350.2" y="94" text-anchor="middle" font-size="12" fill="var(--muted)">30%</text>
+<line x1="423.6" y1="12" x2="423.6" y2="72" stroke="var(--rule)"/>
+<text x="423.6" y="94" text-anchor="middle" font-size="12" fill="var(--muted)">40%</text>
+<line x1="497.0" y1="12" x2="497.0" y2="72" stroke="var(--rule)"/>
+<text x="497.0" y="94" text-anchor="middle" font-size="12" fill="var(--muted)">50%</text>
+<line x1="570.4" y1="12" x2="570.4" y2="72" stroke="var(--rule)"/>
+<text x="570.4" y="94" text-anchor="middle" font-size="12" fill="var(--muted)">60%</text>
+<line x1="643.8" y1="12" x2="643.8" y2="72" stroke="var(--rule)"/>
+<text x="643.8" y="94" text-anchor="middle" font-size="12" fill="var(--muted)">70%</text>
+<line x1="717.2" y1="12" x2="717.2" y2="72" stroke="var(--rule)"/>
+<text x="717.2" y="94" text-anchor="middle" font-size="12" fill="var(--muted)">80%</text>
+<line x1="790.6" y1="12" x2="790.6" y2="72" stroke="var(--rule)"/>
+<text x="790.6" y="94" text-anchor="middle" font-size="12" fill="var(--muted)">90%</text>
+<line x1="864.0" y1="12" x2="864.0" y2="72" stroke="var(--rule)"/>
+<text x="864.0" y="94" text-anchor="middle" font-size="12" fill="var(--muted)">100%</text>
+<text x="120" y="49.0" text-anchor="end" font-size="13" fill="var(--fg)">qwen3:8b</text>
+<line x1="160.6" y1="45.0" x2="864.0" y2="45.0" stroke="var(--bar)" stroke-width="2"/>
+<rect x="588.8" y="34.0" width="122.3" height="22" fill="var(--bar)" fill-opacity="0.25" stroke="var(--bar)"/>
+<line x1="649.9" y1="32.0" x2="649.9" y2="58.0" stroke="var(--bar)" stroke-width="3"/>
+<line x1="160.6" y1="37.0" x2="160.6" y2="53.0" stroke="var(--bar)" stroke-width="2"/>
+<line x1="864.0" y1="37.0" x2="864.0" y2="53.0" stroke="var(--bar)" stroke-width="2"/>
+<circle cx="649.9" cy="45.0" r="4.5" fill="var(--bg)" stroke="var(--bar)" stroke-width="2"/>
+<text x="154.6" y="29.0" text-anchor="end" font-size="11" fill="var(--muted)">4%</text>
+<text x="870.0" y="29.0" font-size="11" fill="var(--muted)">100%</text>
+</svg></div><figcaption>Full range, interquartile box, median, and the reference wording as a hollow circle. The bar is what a single-prompt benchmark number is drawn from.</figcaption></figure>
+<div class='scroll'><table><thead><tr><th>model</th><th>wordings</th><th>responses</th><th>mean</th><th>median</th><th>sd</th><th>min</th><th>max</th><th>range</th><th>IQR</th><th>Cochran Q p</th><th>reliability</th></tr></thead><tbody><tr><td>qwen3:8b</td><td>173</td><td>4,152</td><td>71.8%</td><td>70.8%</td><td>13.1%</td><td>4.2%</td><td>100.0%</td><td><strong>95.8%</strong></td><td>16.7%</td><td>0.0099</td><td>0.78</td></tr></tbody></table></div>
+<h2>Is the spread real, or is it luck on 24 items?</h2>
+<p>Every call runs at temperature 0, so a wording's score on these 24 items is exact rather than estimated. The question worth asking is whether the same wording would still look good on different items. Two tests answer it.</p>
+<div class='scroll'><table><thead><tr><th>model</th><th>Cochran Q</th><th>p</th><th>observed sd</th><th>sd if wordings were equal</th><th>observed range</th><th>range if wordings were equal</th><th>split-half reliability</th></tr></thead><tbody><tr><td>qwen3:8b</td><td>638</td><td>0.0099</td><td>13.1%</td><td>6.8%</td><td>95.8%</td><td>36.6%</td><td>0.78</td></tr></tbody></table></div>
+<p class='note'>The two null columns come from 100 permutations that keep each item's difficulty fixed and shuffle only which wordings got it right. That null still produces a visible range, which is why the range on its own is not evidence. Reliability is the mean Spearman-Brown corrected correlation between a wording's score on one random half of the items and its score on the other half, over 200 splits.</p>
+<h2>The best and the worst wording</h2>
+<h3>qwen3:8b</h3>
+<blockquote class='good'><strong>100%</strong> &mdash; Please focus on the two provided numbers {a} and {b} and work out the product that results from multiplying them. When you are ready to provide the final answer, write it</blockquote>
+<blockquote class='bad'><strong>4%</strong> &mdash; You are an efficient processor. Give the result of the calculation as a raw integer with no commas or non-numeric text: {a} and {b}</blockquote>
+<h2>Where the responses went</h2>
+<p>A response the grader cannot read an answer out of is counted as unparseable and reported separately. It is not scored as a wrong answer without saying so, and a failed call is not scored at all.</p>
+<div class='scroll'><table><thead><tr><th>model</th><th>responses</th><th>correct</th><th>wrong</th><th>unparseable</th><th>call failed</th><th>strict mean</th><th>parsed-only mean</th></tr></thead><tbody><tr><td>qwen3:8b</td><td>4,152</td><td>2,983</td><td>1,169</td><td>0</td><td>0</td><td>71.8%</td><td>71.8%</td></tr></tbody></table></div>
+<h2>Which features of a wording track accuracy</h2>
+<p>On <code>qwen3:8b</code>, across 173 wordings. Spearman correlation between the feature and the wording's accuracy, with Holm correction across all 14 features. A star marks a corrected p below 0.05.</p>
+<div class='scroll'><table><thead><tr><th>feature</th><th>what it detects</th><th>share of wordings</th><th>Spearman &rho;</th><th>p (Holm)</th></tr></thead><tbody><tr><td><code>words</code></td><td>template length in whitespace words</td><td>varies</td><td>-0.178</td><td>0.318</td></tr><tr><td><code>chars</code></td><td>template length in characters</td><td>varies</td><td>-0.177</td><td>0.318</td></tr><tr><td><code>immediate_cue</code></td><td>demands an answer with no working</td><td>4%</td><td>+0.175</td><td>0.273</td></tr><tr><td><code>format_before_slot</code></td><td>the output-format requirement precedes the problem</td><td>6%</td><td>+0.125</td><td>1.000</td></tr><tr><td><code>format_instruction</code></td><td>states the output must be the answer alone</td><td>66%</td><td>-0.107</td><td>1.000</td></tr><tr><td><code>slot_position</code></td><td>where the first placeholder sits, 0 at the start and 1 at the end</td><td>varies</td><td>+0.087</td><td>1.000</td></tr><tr><td><code>think_cue</code></td><td>invites deliberation before answering</td><td>1%</td><td>-0.070</td><td>1.000</td></tr><tr><td><code>role_frame</code></td><td>opens with a role assignment</td><td>7%</td><td>+0.060</td><td>1.000</td></tr><tr><td><code>politeness</code></td><td>contains a politeness or hedging marker</td><td>18%</td><td>-0.057</td><td>1.000</td></tr><tr><td><code>sentences</code></td><td>count of . ? or ! followed by a space or end</td><td>varies</td><td>-0.034</td><td>1.000</td></tr><tr><td><code>is_question</code></td><td>contains a question mark</td><td>16%</td><td>+0.028</td><td>1.000</td></tr><tr><td><code>markdown</code></td><td>uses markdown emphasis or code marks</td><td>7%</td><td>-0.005</td><td>1.000</td></tr><tr><td><code>numbered_list</code></td><td>structured as numbered steps</td><td>0%</td><td>n/a</td><td>1.000</td></tr><tr><td><code>shouty_caps</code></td><td>two or more all-caps words of 3+ letters</td><td>0%</td><td>n/a</td><td>1.000</td></tr></tbody></table></div>
+<p class='note'>These features are not independent of each other, and they are measured inside one generator's output. Read them as descriptions of this pool, not as prompt-writing advice.</p>
+<h2>What this is a sample of</h2>
+<ul>
+<li>The wordings were written by <code>gemini-3-flash-preview</code> under 14 style directives crossed with 10 structural directives, all chosen by the author. They are a sample from that generator, not a random sample of how people write prompts.</li>
+<li>508 candidates were generated, 46 were rejected by a structural filter, and 0 were exact duplicates. Near-duplicates were kept, because thinning them would make the pool look more varied than the thing that produced it.</li>
+<li>24 items per wording. That is a small item set, which is why the spread is tested against a permutation null and a split-half reliability rather than presented on its own.</li>
+</ul>
+<footer>Built from <code>results/analysis.json</code> on 2026-08-04T00:10:30Z. Every raw model response is in <code>results/raw/</code>, so these numbers can be re-derived without running a model. Catalog task RSCH-046. <a href='https://github.com/JesseRWeigel/paraphrase-spread'>Source</a>.</footer>
+</main>

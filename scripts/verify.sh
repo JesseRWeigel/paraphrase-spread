@@ -221,7 +221,7 @@ if $PY scripts/build_docs.py >"$TMP/d.log" 2>&1; then
   # A page that rebuilds identically could still be a page with no numbers in it. This asserts
   # the published figures are present in the HTML, computed from the JSON rather than pasted.
   if $PY - <<'PY' >"$TMP/pg.log" 2>&1; then
-import json, pathlib, sys
+import json, pathlib, re, sys
 page = pathlib.Path("docs/index.html").read_text()
 a = json.loads(pathlib.Path("results/analysis.json").read_text())
 mult = [r for r in a["runs"] if r["task"] == "mult"]
@@ -238,6 +238,17 @@ if page.count("<polyline") < len(mult):
     sys.exit("the histogram has fewer traces than there are models, so the chart is not drawn")
 if "<script" in page:
     sys.exit("the page carries script, which can fail to parse and leave an empty chart")
+# Wide content has to scroll inside its own box rather than pushing the page sideways. Hiding
+# it with overflow-x on the body would both mask the problem and make any probe for it vacuous,
+# so the rule here is that every table sits in a container that scrolls.
+if "overflow-x: hidden" in page or "overflow-x:hidden" in page:
+    sys.exit("the page hides horizontal overflow, which conceals content rather than fixing it")
+loose = len(re.findall(r"<table", page)) - len(re.findall(r"<div class='scroll'><table", page))
+if loose:
+    sys.exit(f"{loose} table(s) are not inside a scrolling container and will push the page "
+             f"sideways on a narrow screen")
+if "max-width: 100%" not in page or "viewBox" not in page:
+    sys.exit("the SVGs are not set up to scale down, so the charts will overflow on mobile")
 bars = page.count("<polyline") + page.count("<rect")
 print(f"the page carries min {need[0]}, max {need[1]}, range {need[2]} over {need[3]} "
       f"wordings, drawn with {bars} SVG shapes and no JavaScript")

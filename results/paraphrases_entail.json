@@ -1,0 +1,937 @@
+{
+ "task": "entail",
+ "canonical": "{rule} {fact}\n\nDoes it follow that: {target}? Answer YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined. Answer with one of those three words and nothing else.",
+ "generated_at": "2026-08-03T23:59:23Z",
+ "generator": {
+  "model": "gemini-3-flash-preview",
+  "temperature": 1.0,
+  "styles": [
+   "terse and imperative, as short as you can make it while keeping every requirement",
+   "polite and slightly formal, the way a person asks a colleague for a favour",
+   "phrased as a direct question rather than a command",
+   "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "wordy and over-explained, at least three sentences",
+   "in a dry technical register, like a specification",
+   "casual and conversational, contractions allowed",
+   "with the output-format requirement stated first, before the problem",
+   "as a numbered list of instructions",
+   "using light markdown, such as bold on the key requirement",
+   "with an explicit invitation to think carefully before answering",
+   "with an explicit instruction to answer immediately without explanation",
+   "framed as a line from a larger worksheet or exam paper",
+   "with mild hedging, for example 'if you can' or 'when you get a chance'"
+  ],
+  "axes": [
+   "vary the opening word, and do not start with the same verb twice",
+   "avoid the word 'product' entirely",
+   "put the two quantities at the very end of the wording",
+   "put the two quantities at the very start of the wording",
+   "keep it to exactly one sentence",
+   "use at least three sentences",
+   "refer to the reader in the third person, or to nobody at all",
+   "give a brief reason why the output format matters",
+   "use a rhetorical framing, such as a challenge or an invitation",
+   "write it the way it would appear inside a longer document"
+  ],
+  "calls": 40,
+  "per_call_request": 15,
+  "avoid_list": "each call was shown 20 randomly chosen wordings already in the pool and told to differ from them"
+ },
+ "sampling_note": "These wordings come from one model under one list of style directives chosen by the author. They are a sample from that generator, not a random sample of the phrasings a person would write, and the spread reported downstream is the spread over this pool.",
+ "raw_candidates": 161,
+ "duplicates_dropped": 0,
+ "rejected": [
+  {
+   "text": "Based on these, does {target} follow, does its opposite follow, or is it just unknown? Give me a YES",
+   "reason": "placeholder {rule} appears 0 times"
+  },
+  {
+   "text": "Imagine you are a researcher, does it follow from {rule} and {fact} that {target}? Answer YES if it follows",
+   "reason": "does not name the option 'no'"
+  },
+  {
+   "text": "{rule} {fact}",
+   "reason": "length 13 outside 20..700"
+  },
+  {
+   "text": "{rule} {fact} Is {target} a logical result of what we know? Pick YES if it follows, NO if its negation follows,",
+   "reason": "does not name the option 'unknown'"
+  },
+  {
+   "text": "Given {rule} and {fact}, please let me know if {target} follows by",
+   "reason": "does not name the option 'yes'"
+  },
+  {
+   "text": "Review {rule}",
+   "reason": "length 13 outside 20..700"
+  },
+  {
+   "text": "Considering {rule} and {fact} with great care, decide if {target} is a necessary result and output YES if it follows, NO if its",
+   "reason": "does not name the option 'unknown'"
+  },
+  {
+   "text": "If it's not too much",
+   "reason": "placeholder {rule} appears 0 times"
+  },
+  {
+   "text": "You are an objective evaluator.",
+   "reason": "placeholder {rule} appears 0 times"
+  },
+  {
+   "text": "Looking at {rule} and {fact},",
+   "reason": "placeholder {target} appears 0 times"
+  },
+  {
+   "text": "Do {rule} and {fact} make {target} a certainty, requiring you to state YES if it follows,",
+   "reason": "does not name the option 'no'"
+  },
+  {
+   "text": "KNOWN if neither can be determined.\"",
+   "reason": "placeholder {rule} appears 0 times"
+  },
+  {
+   "text": "Wait, checking for existing sentences one more time.*",
+   "reason": "placeholder {rule} appears 0 times"
+  },
+  {
+   "text": "Existing 6: Given {rule} and {fact}, does {target} follow? ... -> Similar to some of mine. Let me tweak the \"Given\" structures.",
+   "reason": "does not name the option 'yes'"
+  },
+  {
+   "text": "Existing 19: Verify if {target} is implied...",
+   "reason": "placeholder {rule} appears 0 times"
+  },
+  {
+   "text": "Existing 20: Decide whether {target} is a consequence...",
+   "reason": "placeholder {rule} appears 0 times"
+  },
+  {
+   "text": "Existing 11: Analyze {rule} and {fact} to see if {target} is a consequence...",
+   "reason": "does not name the option 'yes'"
+  },
+  {
+   "text": "Re-checking Draft 9:* \"Determine if {target} is derived from {rule} and {fact}...\"",
+   "reason": "does not name the option 'yes'"
+  },
+  {
+   "text": "Re-checking Draft 10:* \"Ascertain whether",
+   "reason": "placeholder {rule} appears 0 times"
+  },
+  {
+   "text": "Is it the case that {target} is a necessary result? Reply YES if so, NO if its negation is the result, or UNKNOWN",
+   "reason": "placeholder {rule} appears 0 times"
+  },
+  {
+   "text": "Examine the statement {target} and provide a response of YES if it follows, NO if its negation follows",
+   "reason": "placeholder {rule} appears 0 times"
+  },
+  {
+   "text": "",
+   "reason": "empty"
+  },
+  {
+   "text": "State YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and nothing else, regarding whether {rule",
+   "reason": "placeholder {rule} appears 0 times"
+  },
+  {
+   "text": "Let's say",
+   "reason": "length 9 outside 20..700"
+  },
+  {
+   "text": "Can you demonstrate your logic skills by stating if {",
+   "reason": "placeholder {rule} appears 0 times"
+  },
+  {
+   "text": "Based on {rule} and {fact}, a determination is sought as to whether",
+   "reason": "placeholder {target} appears 0 times"
+  },
+  {
+   "text": "Within the following analytical framework, you are tasked with evaluating the logical relationship between specific provided assertions, namely the foundational principle stated as {rule} and the specific empirical observation designated as {fact}. Your objective is to determine with absolute precis",
+   "reason": "length 752 outside 20..700"
+  },
+  {
+   "text": "The system protocol requires a rigorous examination of the underlying logic where {rule} serves as the primary axiom and {fact} represents the secondary evidentiary input. Please conduct a thorough vetting of these components to",
+   "reason": "placeholder {target} appears 0 times"
+  },
+  {
+   "text": "{rule} {fact} Considering the provided information, does {target} follow? Write YES if it follows, NO if its",
+   "reason": "does not name the option 'unknown'"
+  },
+  {
+   "text": "If it is not too much trouble, determine if {target} is a conclusion from {rule}",
+   "reason": "placeholder {fact} appears 0 times"
+  },
+  {
+   "text": "Write only YES if {target} follows from {rule} and {fact}, NO if its negation follows,",
+   "reason": "does not name the option 'unknown'"
+  },
+  {
+   "text": "First, process {rule} and {fact}, second, assess if {target} is logically implied, and third, state YES",
+   "reason": "does not name the option 'no'"
+  },
+  {
+   "text": "Can you see if {target} is for real based on {rule} and",
+   "reason": "placeholder {fact} appears 0 times"
+  },
+  {
+   "text": "Would you be so kind as to verify whether {target} is implied by {rule} and {",
+   "reason": "placeholder {fact} appears 0 times"
+  },
+  {
+   "text": "{rule}",
+   "reason": "length 6 outside 20..700"
+  },
+  {
+   "text": "Acting as a careful proofreader, verify if {rule} and {fact} imply {target}",
+   "reason": "does not name the option 'yes'"
+  },
+  {
+   "text": "Analyze the statement {rule}. 2. Consider the condition {fact}. 3. Judge if the claim {target} must be true, providing only YES if it follows, NO if its negation",
+   "reason": "does not name the option 'unknown'"
+  },
+  {
+   "text": "If circumstances allow, please check whether {target} is a necessary result of {rule} and {fact}, yielding YES if it",
+   "reason": "does not name the option 'no'"
+  },
+  {
+   "text": "You should deliberate thoroughly before answering with YES if it follows, NO if its negation follows, or UNKNOWN if neither is the case, using exactly one word to address",
+   "reason": "placeholder {rule} appears 0 times"
+  },
+  {
+   "text": "Let a rigorous analysis of {rule} and {fact} reveal whether {target} is",
+   "reason": "does not name the option 'yes'"
+  },
+  {
+   "text": "Verify if {target} is a consequence of {rule}",
+   "reason": "placeholder {fact} appears 0 times"
+  }
+ ],
+ "paraphrases": [
+  {
+   "id": 0,
+   "style": "canonical reference wording",
+   "text": "{rule} {fact}\n\nDoes it follow that: {target}? Answer YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined. Answer with one of those three words and nothing else.",
+   "source": "author"
+  },
+  {
+   "id": 1,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Tell me if {target} follows, its negation follows, or if neither is certain; use YES for follows, NO for the negation, and UNKNOWN for neither. {rule} {fact}",
+   "source": "gemini"
+  },
+  {
+   "id": 2,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Does {target} have to be true, must its negation be true, or is it unclear? Reply with YES if it's true, NO if the negation's true, and UNKNOWN otherwise. {rule} {fact}",
+   "source": "gemini"
+  },
+  {
+   "id": 3,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Is {target} a logical consequence, its flip side a consequence, or is it a mystery? Say YES if it follows, NO if its negation follows, and UNKNOWN if neither. {rule} {fact}",
+   "source": "gemini"
+  },
+  {
+   "id": 4,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "As a careful assistant, analyze if {target} follows from {rule} and {fact}, then answer YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined using just one word.",
+   "source": "gemini"
+  },
+  {
+   "id": 5,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "Being a logical solver, determine if {target} is implied by {rule} and {fact} and respond with YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 6,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "Consider yourself a precise analyzer, then tell me if {target} follows from {rule} and {fact} by answering YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 7,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "{rule} {fact} Based on these premises, would you please determine if {target} follows? Please reply with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only one of those three words.",
+   "source": "gemini"
+  },
+  {
+   "id": 8,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "{rule} {fact} I would appreciate your help in verifying whether {target} holds. Kindly provide an answer of YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, and include no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 9,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "{rule} {fact} If you have the time, could you assess whether {target} is a necessary consequence? Please answer YES if it follows, NO if its negation follows, or UNKNOWN if it is indeterminate, with no additional words.",
+   "source": "gemini"
+  },
+  {
+   "id": 10,
+   "style": "casual and conversational, contractions allowed",
+   "text": "{rule} {fact} Hey, does {target} have to be true? Use YES if it follows, NO if its negation follows, or UNKNOWN if you cannot tell. Respond with only one word.",
+   "source": "gemini"
+  },
+  {
+   "id": 11,
+   "style": "casual and conversational, contractions allowed",
+   "text": "{rule} {fact} Do you think {target} is a sure thing based on that? Use YES if it follows, NO if its negation follows, and UNKNOWN if it is a mystery. One word only.",
+   "source": "gemini"
+  },
+  {
+   "id": 12,
+   "style": "casual and conversational, contractions allowed",
+   "text": "{rule} {fact} Does {target} definitely shake out from those two? Answer YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined. Just one word.",
+   "source": "gemini"
+  },
+  {
+   "id": 13,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Could you please evaluate whether {target} is logically derived from {rule} and {fact}, responding with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be confirmed, using only that single word?",
+   "source": "gemini"
+  },
+  {
+   "id": 14,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "I would be grateful if you could examine {rule} and {fact} to decide if {target} follows, then provide a single-word response of YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain.",
+   "source": "gemini"
+  },
+  {
+   "id": 15,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Would you mind checking if {target} is a consequence of {rule} and {fact}, answering with just YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined?",
+   "source": "gemini"
+  },
+  {
+   "id": 16,
+   "style": "as a numbered list of instructions",
+   "text": "Given {rule} and {fact}, does {target} follow? Please respond YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, and provide only that single word.",
+   "source": "gemini"
+  },
+  {
+   "id": 17,
+   "style": "as a numbered list of instructions",
+   "text": "Analyze {rule} and {fact} to see if {target} is a consequence. State YES if it follows, NO if its negation follows, and UNKNOWN if neither can be established, using no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 18,
+   "style": "as a numbered list of instructions",
+   "text": "Determine if {target} is implied by {rule} and {fact}. Reply with YES if it follows, NO if its negation follows, and UNKNOWN if neither is provable, and use just one word.",
+   "source": "gemini"
+  },
+  {
+   "id": 19,
+   "style": "as a numbered list of instructions",
+   "text": "From {rule} and {fact}, does it logically follow that {target}? Answer YES if it follows, NO if its negation follows, and UNKNOWN",
+   "source": "gemini"
+  },
+  {
+   "id": 20,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "If you don't mind, please look at {rule} and {fact}. Tell me if {target} follows, if its negation follows, or if neither is certain. Use YES for follows, NO for negation follows, and UNKNOWN for neither, with no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 21,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Please evaluate the relationship between {rule}, {fact}, and {target}. If you can spare a moment, determine if the statement follows, its negation follows, or if it is indeterminate. Reply with YES, NO, or UNKNOWN and nothing else.",
+   "source": "gemini"
+  },
+  {
+   "id": 22,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Consider the premises {rule} and {fact}. When you have an opportunity, state whether {target} follows, its negation follows, or neither is the case. Respond with YES, NO, or UNKNOWN using no other words.",
+   "source": "gemini"
+  },
+  {
+   "id": 23,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Think deeply about whether {target} follows from {rule} and {fact}, then provide a single word answer of YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 24,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Carefully analyze if {target} is a logical consequence of {rule} and {fact} and respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 25,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Take a moment to reflect on whether {rule} combined with {fact} implies {target}, answering only YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 26,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "I challenge you to determine, if you have a moment, whether {target} follows from {rule} and {fact}; answer YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined, using only one word.",
+   "source": "gemini"
+  },
+  {
+   "id": 27,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "I invite you to examine {rule} and {fact} when you have a chance to see if {target} is a consequence: respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be established, and nothing else.",
+   "source": "gemini"
+  },
+  {
+   "id": 28,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "See if you can figure out if {rule} and {fact} imply {target}, provided you have the time, by answering YES if it follows, NO if its negation follows, and UNKNOWN if neither is certain, using no other words.",
+   "source": "gemini"
+  },
+  {
+   "id": 29,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Determine if {target} follows from {rule} and {fact} by answering YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and nothing else.",
+   "source": "gemini"
+  },
+  {
+   "id": 30,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Decide whether {target} is a consequence of {rule} and {fact}, then reply YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only that word.",
+   "source": "gemini"
+  },
+  {
+   "id": 31,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Verify if {target} is implied by {rule} and {fact}, responding YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined, with no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 32,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Conclude whether {rule} and {fact} entail {target}, providing YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, as",
+   "source": "gemini"
+  },
+  {
+   "id": 33,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Hey, take a look at {rule} and {fact}. Does that mean {target} is definitely a thing? Type YES if it follows, NO if its negation follows, or UNKNOWN if you can't tell, and use no other words.",
+   "source": "gemini"
+  },
+  {
+   "id": 34,
+   "style": "casual and conversational, contractions allowed",
+   "text": "So, I've got these bits of info: {rule} and {fact}. Thinking about those, does it mean {target} is definitely true? Pick YES if it follows, NO if its negation follows, and UNKNOWN if it could go either way, without saying anything else.",
+   "source": "gemini"
+  },
+  {
+   "id": 35,
+   "style": "casual and conversational, contractions allowed",
+   "text": "I'm curious about whether {target} is a sure thing given {rule} and {fact}. What's your take on that? Answer YES if it follows, NO if its negation follows, or UNKNOWN if it's",
+   "source": "gemini"
+  },
+  {
+   "id": 36,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "{rule} {fact} Determine if {target} follows: output YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined; use one word only.",
+   "source": "gemini"
+  },
+  {
+   "id": 37,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Using {rule} and {fact}, decide if {target} is a consequence; respond YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and nothing else.",
+   "source": "gemini"
+  },
+  {
+   "id": 38,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "From {rule} and {fact}, judge if {target} is valid: state YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, with no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 39,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Assess if {target} is implied by {rule} and {fact}, replying YES if it follows, NO if its negation follows, or UNKNOWN if neither can",
+   "source": "gemini"
+  },
+  {
+   "id": 40,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a logical expert. Determine if {target} is a necessary conclusion; respond YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined using only one word, given {rule} {fact}",
+   "source": "gemini"
+  },
+  {
+   "id": 41,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "Act as a formal reasoning system. Please specify whether {target} is implied: respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, and nothing else, based on {rule} {fact}",
+   "source": "gemini"
+  },
+  {
+   "id": 42,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a helpful AI assistant. I need you to evaluate if {target} is a consequence, replying with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be established, using no other words, given {rule} {fact}",
+   "source": "gemini"
+  },
+  {
+   "id": 43,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Given {rule} and {fact}, examine whether {target} is a logical necessity; respond with **YES** if it follows, **NO** if its negation follows, or **UNKNOWN** if neither is certain, and provide only that word.",
+   "source": "gemini"
+  },
+  {
+   "id": 44,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Consider the premises {rule} and {fact} and determine the validity of {target}, replying with **YES** if it follows, **NO** if its negation follows, and **UNKNOWN** if it is undetermined, using no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 45,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Evaluate if {target} is a direct result of {rule} and {fact} by answering **YES** if it follows, **NO** if its negation follows, or **UNKNOWN** if neither case is provable, using only a single word.",
+   "source": "gemini"
+  },
+  {
+   "id": 46,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Please examine the statement {rule} alongside {fact} very carefully. Your task is to establish if {target} is a necessary logical result. Select YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and output only that word without explanation.",
+   "source": "gemini"
+  },
+  {
+   "id": 47,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Consider the implications of {rule} and {fact} together. I want to know if {target} is logically certain. Respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and provide no additional text in your reply.",
+   "source": "gemini"
+  },
+  {
+   "id": 48,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "First, take the premise {rule} and combine it with {fact}. Then, decide whether {target} must be true. Reply with YES if it follows, NO if its negation follows, or UNKNOWN if neither can",
+   "source": "gemini"
+  },
+  {
+   "id": 49,
+   "style": "phrased as a direct question rather than a command",
+   "text": "Can you indicate if {target} is a consequence of {rule} and {fact} by providing a single-word response of YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined?",
+   "source": "gemini"
+  },
+  {
+   "id": 50,
+   "style": "phrased as a direct question rather than a command",
+   "text": "Would {target} logically follow from {rule} and {fact} if you were to respond with only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined?",
+   "source": "gemini"
+  },
+  {
+   "id": 51,
+   "style": "phrased as a direct question rather than a command",
+   "text": "Should {target} be inferred from {rule} and {fact} given that you must reply with exactly one word, being YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined?",
+   "source": "gemini"
+  },
+  {
+   "id": 52,
+   "style": "as a numbered list of instructions",
+   "text": "Determine if {target} is a logical consequence, replying with YES if it follows, NO if its negation follows, or UNKNOWN if neither is the case, using no other words, based on {rule} {fact}",
+   "source": "gemini"
+  },
+  {
+   "id": 53,
+   "style": "as a numbered list of instructions",
+   "text": "Assess the validity of {target} and respond with YES if it holds, NO if its negation holds, or UNKNOWN if it is indeterminate, with only that single word, given {rule} {fact}",
+   "source": "gemini"
+  },
+  {
+   "id": 54,
+   "style": "as a numbered list of instructions",
+   "text": "State YES if {target} is implied, NO if its negation is implied, or UNKNOWN if neither applies, using exactly one of those words and nothing else, after considering {rule} {fact}",
+   "source": "gemini"
+  },
+  {
+   "id": 55,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "On this logic exam, determine if {target} is a necessity: answer YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and include no other text, given {rule} {fact}",
+   "source": "gemini"
+  },
+  {
+   "id": 56,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Regarding the assertion {target}, answer YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and provide no text besides that single word, based on {rule} {fact}",
+   "source": "gemini"
+  },
+  {
+   "id": 57,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Is {target} a logical consequence? Answer YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and include no words other than the choice, given {rule} {fact}",
+   "source": "gemini"
+  },
+  {
+   "id": 58,
+   "style": "as a numbered list of instructions",
+   "text": "Review the statement {rule} 2. Review the statement {fact} 3. Determine if {target} follows, responding with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only that word.",
+   "source": "gemini"
+  },
+  {
+   "id": 59,
+   "style": "as a numbered list of instructions",
+   "text": "Observe the premise {rule} 2. Observe the premise {fact} 3. Decide whether {target} is a logical consequence, answering YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, and nothing else.",
+   "source": "gemini"
+  },
+  {
+   "id": 60,
+   "style": "as a numbered list of instructions",
+   "text": "Consider {rule} 2. Consider {fact} 3. Evaluate if {target} is implied, then provide YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, with no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 61,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Respond with only one word, either YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, to indicate if {target} follows from {rule} and {fact}.",
+   "source": "gemini"
+  },
+  {
+   "id": 62,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Using only the words YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, answer this: given {rule} and {fact}, does {target} follow?",
+   "source": "gemini"
+  },
+  {
+   "id": 63,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Provide a single-word response (YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined) to the question of whether {target} is true based on {rule} and {fact}.",
+   "source": "gemini"
+  },
+  {
+   "id": 64,
+   "style": "casual and conversational, contractions allowed",
+   "text": "If you've got a second, look at {rule} and {fact} to see if {target} is a definite conclusion, then just say YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, with no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 65,
+   "style": "casual and conversational, contractions allowed",
+   "text": "I'm trying to figure out if {target} is a lock given {rule} and {fact}, so can you answer YES if it follows, NO if its negation follows, or UNKNOWN if neither is a sure thing, using only one word?",
+   "source": "gemini"
+  },
+  {
+   "id": 66,
+   "style": "casual and conversational, contractions allowed",
+   "text": "So if we take {rule} and {fact} as our baseline, does {target} actually follow? Just give me a YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, and nothing else.",
+   "source": "gemini"
+  },
+  {
+   "id": 67,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "We invite you to solve this logic puzzle by determining if {target} is a direct consequence of {rule} and {fact}, replying with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 68,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Take on the challenge of deciding if {target} is a logical deduction from {rule} and {fact}, then provide YES if it follows, NO if its negation follows, or UNKNOWN if neither is provable, using only that word.",
+   "source": "gemini"
+  },
+  {
+   "id": 69,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Your assignment for this section is to assess if {target} is implied by {rule} and {fact}; output YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, with no extra characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 70,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Given the premises {rule} and {fact}, one is kindly requested to determine if {target} is a logical consequence; please respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be established, using only one word.",
+   "source": "gemini"
+  },
+  {
+   "id": 71,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "An assessment of whether {target} is implied by {rule} and {fact} is needed, with the response restricted to YES if it follows, NO if its negation follows, or UNKNOWN if neither result is certain.",
+   "source": "gemini"
+  },
+  {
+   "id": 72,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "It would be appreciated if one could evaluate whether {target} follows from {rule} and {fact}, providing the single-word answer YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 73,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "{rule} {fact} Based on these, state YES if {target} follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only one word.",
+   "source": "gemini"
+  },
+  {
+   "id": 74,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "{rule} {fact} In light of these, determine if {target} must be true: reply with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and nothing else.",
+   "source": "gemini"
+  },
+  {
+   "id": 75,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "{rule} {fact} Reviewing these statements, identify if {target} is a logical consequence; provide YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 76,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "If you have a moment to spare, look at {rule} and {fact} and say if {target} is a result, using only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 77,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Perhaps you could evaluate whether {target} is a necessary outcome of {rule} and {fact}, providing only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 78,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "When you get a chance, check if {rule} plus {fact} means {target} is true, then reply with just YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 79,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Based on {rule} and {fact}, if {target} is a logical consequence, output YES; if its negation is a consequence, output NO; otherwise, output UNKNOWN, without any additional text.",
+   "source": "gemini"
+  },
+  {
+   "id": 80,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Does {target} follow from {rule} and {fact}? Respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only one word.",
+   "source": "gemini"
+  },
+  {
+   "id": 81,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Assess if {target} is implied by {rule} and {fact}, then provide a single-word answer of YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 82,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "An evaluation of whether {target} is a consequence of {rule} and {fact} is required; output YES if it follows, NO if its negation follows, or UNKNOWN",
+   "source": "gemini"
+  },
+  {
+   "id": 83,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Deduce if {target} is implied by {rule} and {fact}, answering only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 84,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Respond with only YES if {target} is a logical result of {rule} and {fact}, NO if its negation follows, or UNKNOWN if neither is certain.",
+   "source": "gemini"
+  },
+  {
+   "id": 85,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "State only YES if {rule} and {fact} necessitate {target}, NO if its negation follows, or UNKNOWN if neither is deducible.",
+   "source": "gemini"
+  },
+  {
+   "id": 86,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Provide only YES if {target} is implied by {rule} and {fact}, NO if its negation follows, or UNKNOWN if neither can be concluded.",
+   "source": "gemini"
+  },
+  {
+   "id": 87,
+   "style": "as a numbered list of instructions",
+   "text": "Examine the rule {rule}, consider the fact {fact}, determine whether the target {target} follows, and provide YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 88,
+   "style": "as a numbered list of instructions",
+   "text": "Start by reviewing {rule} and {fact}, then evaluate if {target} is a logical consequence, and finally respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 89,
+   "style": "as a numbered list of instructions",
+   "text": "Analyze the premise {rule} together with {fact}, decide if the assertion {target} is necessitated, and output YES if it follows, NO if its negation follows, or UNKNOWN if neither can be established.",
+   "source": "gemini"
+  },
+  {
+   "id": 90,
+   "style": "casual and conversational, contractions allowed",
+   "text": "I'm wondering if {target} is a given considering {rule} and {fact}, so could you reply with only YES if it follows, NO if its negation follows, or UNKNOWN if you can't tell?",
+   "source": "gemini"
+  },
+  {
+   "id": 91,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Check out {rule} and {fact} and let me know if {target} is a lock; just answer YES if it follows, NO if its negation follows, or UNKNOWN if it's not clear.",
+   "source": "gemini"
+  },
+  {
+   "id": 92,
+   "style": "casual and conversational, contractions allowed",
+   "text": "If you put {rule} and {fact} together, does {target} have to be true? Give me a YES if it follows, NO if its negation follows, or UNKNOWN if you aren't sure, and don't use any other words.",
+   "source": "gemini"
+  },
+  {
+   "id": 93,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Could you please look into whether {target} follows from {rule} and {fact}, and reply with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only that one word?",
+   "source": "gemini"
+  },
+  {
+   "id": 94,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Please analyze {rule} alongside {fact} to see if {target} is a logical consequence, responding with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 95,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Kindly assess if {target} is necessitated by {rule} and {fact}, then provide your answer as YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, using just one of those words.",
+   "source": "gemini"
+  },
+  {
+   "id": 96,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "{rule} {fact} Answer using only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined to indicate if {target} is a consequence.",
+   "source": "gemini"
+  },
+  {
+   "id": 97,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "{rule} {fact} By providing only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, state whether {target} is a logical necessity.",
+   "source": "gemini"
+  },
+  {
+   "id": 98,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "{rule} {fact} Use solely the word YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined to show if {target} is a result.",
+   "source": "gemini"
+  },
+  {
+   "id": 99,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "{rule} {fact} Picking from YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, identify if {target} is a direct entailment.",
+   "source": "gemini"
+  },
+  {
+   "id": 100,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a logic expert, so please determine if {target} is a necessary result of {rule} and {fact}, answering only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 101,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "As a rational thinker, assess whether {target} is derived from {rule} and {fact} by providing a single word: YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 102,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a deductive engine, so evaluate {rule} and {fact} to see if {target} is a certainty, replying YES if it follows, NO if its negation follows, or UNKNOWN if neither is established.",
+   "source": "gemini"
+  },
+  {
+   "id": 103,
+   "style": "in a dry technical register, like a specification",
+   "text": "Evaluate the logical validity of {target} given {rule} and {fact}, returning only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 104,
+   "style": "in a dry technical register, like a specification",
+   "text": "Determine the entailment status of {target} relative to {rule} and {fact}, responding with strictly YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 105,
+   "style": "in a dry technical register, like a specification",
+   "text": "Analyze {rule} and {fact} to establish if {target} is a necessary consequence, outputting solely YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 106,
+   "style": "in a dry technical register, like a specification",
+   "text": "Assess the derivation of {target} from the premises {rule} and {fact}, yielding exclusively YES if it follows, NO if its negation follows, or UNKNOWN if neither can",
+   "source": "gemini"
+  },
+  {
+   "id": 107,
+   "style": "as a numbered list of instructions",
+   "text": "Study the rule provided in {rule}. 2. Evaluate the specific fact given as {fact}. 3. Determine if {target} is a necessary consequence and answer only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 108,
+   "style": "as a numbered list of instructions",
+   "text": "Take the following rule: {rule}. 2. Incorporate the following fact: {fact}. 3. Assess whether {target} is logically implied, then respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, and include no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 109,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Perhaps one could identify if {target} follows logically from {rule} and {fact}, providing YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, as the only text.",
+   "source": "gemini"
+  },
+  {
+   "id": 110,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "If the opportunity arises, one should state whether {target} is a conclusion of {rule} and {fact}, replying YES if it follows, NO if its negation follows, or UNKNOWN if neither can be established.",
+   "source": "gemini"
+  },
+  {
+   "id": 111,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "It might be helpful to determine if {target} is inferred from {rule} and {fact}; please respond YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only one word.",
+   "source": "gemini"
+  },
+  {
+   "id": 112,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Think carefully and then respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only one word, regarding {rule} {fact} {target}",
+   "source": "gemini"
+  },
+  {
+   "id": 113,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Please reason through the logic with care and then provide YES if it follows, NO if its negation follows, or UNKNOWN if neither can be established, using nothing else, for {rule} {fact} {target}",
+   "source": "gemini"
+  },
+  {
+   "id": 114,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Analyze the following logic meticulously and state YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, with no extra text, concerning {rule} {fact} {target}",
+   "source": "gemini"
+  },
+  {
+   "id": 115,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "One should carefully evaluate {rule} and {fact} to decide if {target} follows, replying with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be established, using no other words.",
+   "source": "gemini"
+  },
+  {
+   "id": 116,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "A thoughtful examination of {rule} and {fact} is required to determine if {target} follows, with the output restricted to exactly YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  },
+  {
+   "id": 117,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "After reflecting deeply on {rule} and {fact}, the objective is to state YES if {target} follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only one word and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 118,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Consider if {target} is logically sound given {rule} and {fact}, when you get a chance, and respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only one word.",
+   "source": "gemini"
+  },
+  {
+   "id": 119,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Analyze whether {target} is a necessary result of {rule} and {fact} if you wouldn't mind, then provide YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, as a single word.",
+   "source": "gemini"
+  },
+  {
+   "id": 120,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Review the relationship between {rule} and {fact} to see if {target} follows, if you can, and please reply with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "source": "gemini"
+  }
+ ]
+}

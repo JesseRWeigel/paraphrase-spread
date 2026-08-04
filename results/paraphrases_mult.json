@@ -1,0 +1,3009 @@
+{
+ "task": "mult",
+ "canonical": "Compute the product of {a} and {b}. Give the final answer as a plain integer with no commas and no other text.",
+ "generated_at": "2026-08-03T21:01:27Z",
+ "generator": {
+  "model": "gemini-3-flash-preview",
+  "temperature": 1.0,
+  "styles": [
+   "terse and imperative, as short as you can make it while keeping every requirement",
+   "polite and slightly formal, the way a person asks a colleague for a favour",
+   "phrased as a direct question rather than a command",
+   "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "wordy and over-explained, at least three sentences",
+   "in a dry technical register, like a specification",
+   "casual and conversational, contractions allowed",
+   "with the output-format requirement stated first, before the problem",
+   "as a numbered list of instructions",
+   "using light markdown, such as bold on the key requirement",
+   "with an explicit invitation to think carefully before answering",
+   "with an explicit instruction to answer immediately without explanation",
+   "framed as a line from a larger worksheet or exam paper",
+   "with mild hedging, for example 'if you can' or 'when you get a chance'"
+  ],
+  "axes": [
+   "vary the opening word, and do not start with the same verb twice",
+   "avoid the word 'product' entirely",
+   "put the two quantities at the very end of the wording",
+   "put the two quantities at the very start of the wording",
+   "keep it to exactly one sentence",
+   "use at least three sentences",
+   "refer to the reader in the third person, or to nobody at all",
+   "give a brief reason why the output format matters",
+   "use a rhetorical framing, such as a challenge or an invitation",
+   "write it the way it would appear inside a longer document"
+  ],
+  "calls": 90,
+  "per_call_request": 20,
+  "avoid_list": "each call was shown 20 randomly chosen wordings already in the pool and told to differ from them"
+ },
+ "sampling_note": "These wordings come from one model under one list of style directives chosen by the author. They are a sample from that generator, not a random sample of the phrasings a person would write, and the spread reported downstream is the spread over this pool.",
+ "raw_candidates": 508,
+ "duplicates_dropped": 0,
+ "rejected": [
+  {
+   "text": "What",
+   "reason": "length 4 outside 20..700"
+  },
+  {
+   "text": "You",
+   "reason": "length 3 outside 20..700"
+  },
+  {
+   "text": "Identify the product resulting from {a",
+   "reason": "placeholder {a} appears 0 times"
+  },
+  {
+   "text": "Please give me the product of {a} and {b",
+   "reason": "placeholder {b} appears 0 times"
+  },
+  {
+   "text": "Respond with a",
+   "reason": "length 14 outside 20..700"
+  },
+  {
+   "text": "Give the product for the multiplication of {a}",
+   "reason": "placeholder {b} appears 0 times"
+  },
+  {
+   "text": "Determine the product of {",
+   "reason": "placeholder {a} appears 0 times"
+  },
+  {
+   "text": "Tell me the result of multiplying these as a plain integer without commas or extra talk: {a}",
+   "reason": "placeholder {b} appears 0 times"
+  },
+  {
+   "text": "Functioning as an arithmetic processor, determine the",
+   "reason": "placeholder {a} appears 0 times"
+  },
+  {
+   "text": "{a} and",
+   "reason": "length 7 outside 20..700"
+  },
+  {
+   "text": "Ensure you think through the problem before providing the product of",
+   "reason": "placeholder {a} appears 0 times"
+  },
+  {
+   "text": "Let's see if we can get this math right. What's the result of multiplying {",
+   "reason": "placeholder {a} appears 0 times"
+  },
+  {
+   "text": "You are a swift calculator. Find the",
+   "reason": "placeholder {a} appears 0 times"
+  },
+  {
+   "text": "Execute the multiplication for {a",
+   "reason": "placeholder {a} appears 0 times"
+  },
+  {
+   "text": "Should you determine {a} times {",
+   "reason": "placeholder {b} appears 0 times"
+  },
+  {
+   "text": "Solve for the product of {a} and {b",
+   "reason": "placeholder {b} appears 0 times"
+  },
+  {
+   "text": "State the product",
+   "reason": "length 17 outside 20..700"
+  },
+  {
+   "text": "Return the product",
+   "reason": "length 18 outside 20..700"
+  },
+  {
+   "text": "As a plain integer lacking commas or words, calculate the product of {a} and {b",
+   "reason": "placeholder {b} appears 0 times"
+  },
+  {
+   "text": "Let's get the product of {a} and {",
+   "reason": "placeholder {b} appears 0 times"
+  },
+  {
+   "text": "The following exercise is designed to evaluate your ability to execute basic arithmetic functions within",
+   "reason": "placeholder {a} appears 0 times"
+  },
+  {
+   "text": "Let's see the result for {a}",
+   "reason": "placeholder {b} appears 0 times"
+  },
+  {
+   "text": "As a",
+   "reason": "length 4 outside 20..700"
+  },
+  {
+   "text": "Calculate",
+   "reason": "length 9 outside 20..700"
+  },
+  {
+   "text": "Point one, compute the product of {a}",
+   "reason": "placeholder {b} appears 0 times"
+  },
+  {
+   "text": "If the model is able, it might return the product of {a}",
+   "reason": "placeholder {b} appears 0 times"
+  },
+  {
+   "text": "Deliberate on the multiplication and provide the product as an unadorned integer without",
+   "reason": "placeholder {a} appears 0 times"
+  },
+  {
+   "text": "After a thorough mental process, the product of {a}",
+   "reason": "placeholder {b} appears 0 times"
+  },
+  {
+   "text": "How about you calculate the multiplication of",
+   "reason": "placeholder {a} appears 0 times"
+  },
+  {
+   "text": "Output the product as a lone integer without commas or supplementary text, answering immediately without any explanation for",
+   "reason": "placeholder {a} appears 0 times"
+  },
+  {
+   "text": "Outputting a solitary integer with no",
+   "reason": "placeholder {a} appears 0 times"
+  },
+  {
+   "text": "What total do you get from multiplying {a} and {",
+   "reason": "placeholder {b} appears 0 times"
+  },
+  {
+   "text": "In this part of the assessment, you must demonstrate your ability to multiply numbers. Find the product of {",
+   "reason": "placeholder {a} appears 0 times"
+  },
+  {
+   "text": "Mind calculating the product of {a} and",
+   "reason": "placeholder {b} appears 0 times"
+  },
+  {
+   "text": "",
+   "reason": "empty"
+  },
+  {
+   "text": "Output the calculation of {a} times {b",
+   "reason": "placeholder {b} appears 0 times"
+  },
+  {
+   "text": "Using no commas or accompanying text, state the integer result of multiplying {a} by {",
+   "reason": "placeholder {b} appears 0 times"
+  },
+  {
+   "text": "Show the result of {a}",
+   "reason": "placeholder {b} appears 0 times"
+  },
+  {
+   "text": "To ensure automated scripts can parse the results without manual intervention or regex complexity, the output must be a pure integer.",
+   "reason": "placeholder {a} appears 0 times"
+  },
+  {
+   "text": "Multiply {",
+   "reason": "length 10 outside 20..700"
+  },
+  {
+   "text": "What's the product of {a",
+   "reason": "placeholder {a} appears 0 times"
+  },
+  {
+   "text": "In a format consisting of one integer with no commas or description, solve for the product of {",
+   "reason": "placeholder {a} appears 0 times"
+  },
+  {
+   "text": "Could you output the multiplication result as a simple integer without",
+   "reason": "placeholder {a} appears 0 times"
+  },
+  {
+   "text": "You are an accurate calculator. Give the product of {a} and",
+   "reason": "placeholder {b} appears 0 times"
+  },
+  {
+   "text": "It would be very",
+   "reason": "length 16 outside 20..700"
+  },
+  {
+   "text": "Produce the product of {a",
+   "reason": "placeholder {a} appears 0 times"
+  }
+ ],
+ "paraphrases": [
+  {
+   "id": 0,
+   "style": "canonical reference wording",
+   "text": "Compute the product of {a} and {b}. Give the final answer as a plain integer with no commas and no other text.",
+   "source": "author"
+  },
+  {
+   "id": 1,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Multiply {a} by {b} and output only the plain integer without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 2,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Give the product of {a} and {b} as a plain integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 3,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Calculate {a} times {b} and provide only the integer result without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 4,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Provide the product of {a} and {b} as an unformatted integer without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 5,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Return {a} multiplied by {b} as a plain integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 6,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Output the product {a}*{b} as a single integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 7,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Supply the result of {a} multiplied by {b} as a plain integer without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 8,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Find the product of {a} and {b} and output only the integer without",
+   "source": "gemini"
+  },
+  {
+   "id": 9,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Could you please calculate the product of {a} and {b} and provide the result as a single integer with no commas and no other text?",
+   "source": "gemini"
+  },
+  {
+   "id": 10,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "I would appreciate it if you could multiply {a} and {b} and return the final answer as a plain integer without commas or any additional text.",
+   "source": "gemini"
+  },
+  {
+   "id": 11,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Would you mind finding the product of {a} and {b} and sharing the numerical result as an integer alone, with no commas or extra words?",
+   "source": "gemini"
+  },
+  {
+   "id": 12,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Please determine the result of multiplying {a} and {b} and present the answer as an integer only, excluding any commas or surrounding text.",
+   "source": "gemini"
+  },
+  {
+   "id": 13,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "It would be very helpful if you could compute the product of {a} and {b} and give me the final number as a plain integer with no formatting or commentary.",
+   "source": "gemini"
+  },
+  {
+   "id": 14,
+   "style": "phrased as a direct question rather than a command",
+   "text": "What is the product of {a} and {b} expressed as a plain integer with no commas and no other text?",
+   "source": "gemini"
+  },
+  {
+   "id": 15,
+   "style": "phrased as a direct question rather than a command",
+   "text": "Can you calculate the product of {a} and {b} and provide the result as a plain integer with no commas and no other text?",
+   "source": "gemini"
+  },
+  {
+   "id": 16,
+   "style": "phrased as a direct question rather than a command",
+   "text": "What is the value of {a} multiplied by {b} shown as a plain integer with no commas and no other text?",
+   "source": "gemini"
+  },
+  {
+   "id": 17,
+   "style": "phrased as a direct question rather than a command",
+   "text": "If you multiply {a} by {b}, what is the integer result with no commas and no other text?",
+   "source": "gemini"
+  },
+  {
+   "id": 18,
+   "style": "phrased as a direct question rather than a command",
+   "text": "What is the result of multiplying {a} and {b} if it must be a plain integer with no commas and no other text?",
+   "source": "gemini"
+  },
+  {
+   "id": 19,
+   "style": "phrased as a direct question rather than a command",
+   "text": "Can you give the product of {a} and {b} as a plain integer with no commas and no other text?",
+   "source": "gemini"
+  },
+  {
+   "id": 20,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a careful assistant. Calculate the product of {a} and {b} and give the result as a plain integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 21,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are an expert mathematician. Multiply {a} and {b} and provide the answer as a plain integer without commas or any additional text.",
+   "source": "gemini"
+  },
+  {
+   "id": 22,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a precise calculator. Compute {a} times {b} and return the final answer as an integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 23,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a focused solver. Find the product of {a} and {b} and output only the integer result without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 24,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a helpful bot. Determine the result of {a} multiplied by {b} and provide the answer as a plain integer with no commas or other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 25,
+   "style": "wordy and over-explained, at least three sentences",
+   "text": "To calculate the result, multiply the value {a} by the value {b} to find their mathematical product. Once the calculation is complete, express the answer as a plain integer that does not include any commas. Ensure that the final response contains only the number itself and no additional words or characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 26,
+   "style": "wordy and over-explained, at least three sentences",
+   "text": "Your objective is to determine the product of {a} and {b} by performing a standard multiplication. After you have the result, please format it as a plain integer without any commas or separators. It is important that the final answer stands alone as a numeric value with no extra text or explanation.",
+   "source": "gemini"
+  },
+  {
+   "id": 27,
+   "style": "wordy and over-explained, at least three sentences",
+   "text": "Please focus on the two provided numbers {a} and {b} and work out the product that results from multiplying them. When you are ready to provide the final answer, write it",
+   "source": "gemini"
+  },
+  {
+   "id": 28,
+   "style": "in a dry technical register, like a specification",
+   "text": "Calculate the product of {a} and {b} and output the result as a raw integer without commas or additional text.",
+   "source": "gemini"
+  },
+  {
+   "id": 29,
+   "style": "in a dry technical register, like a specification",
+   "text": "Determine the mathematical product of {a} and {b} and provide the result as a single integer with no formatting or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 30,
+   "style": "in a dry technical register, like a specification",
+   "text": "Evaluate the multiplication of {a} and {b} and state the resulting integer without any non-numeric characters or separators.",
+   "source": "gemini"
+  },
+  {
+   "id": 31,
+   "style": "in a dry technical register, like a specification",
+   "text": "Perform the multiplication of {a} times {b} and return only the product as an integer devoid of commas or strings.",
+   "source": "gemini"
+  },
+  {
+   "id": 32,
+   "style": "in a dry technical register, like a specification",
+   "text": "Multiply {a} by {b} and supply the final answer as a plain integer without separators or accompanying language.",
+   "source": "gemini"
+  },
+  {
+   "id": 33,
+   "style": "in a dry technical register, like a specification",
+   "text": "Calculate {a} multiplied by {b} and display the result as a single integer string with no commas or commentary.",
+   "source": "gemini"
+  },
+  {
+   "id": 34,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Hey, can you multiply {a} by {b} and give me the result as just a plain integer without commas or text?",
+   "source": "gemini"
+  },
+  {
+   "id": 35,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Just calculate {a} times {b} and show me the number alone with no commas or extra words.",
+   "source": "gemini"
+  },
+  {
+   "id": 36,
+   "style": "casual and conversational, contractions allowed",
+   "text": "What's the product of {a} and {b} expressed as a single integer with no commas or other text?",
+   "source": "gemini"
+  },
+  {
+   "id": 37,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Go ahead and multiply {a} and {b} and provide only the plain number with no commas or extra text.",
+   "source": "gemini"
+  },
+  {
+   "id": 38,
+   "style": "casual and conversational, contractions allowed",
+   "text": "I need {a} multiplied by {b} as a standalone integer with no commas and no extra talk.",
+   "source": "gemini"
+  },
+  {
+   "id": 39,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Can you find what {a} times {b} is and give just the raw integer without any commas or text?",
+   "source": "gemini"
+  },
+  {
+   "id": 40,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Provide a plain integer with no commas and no other text for the product of {a} and {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 41,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Give the final result as a single integer without commas or text for the calculation of {a} times {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 42,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "State only the integer result of multiplying {a} and {b} without commas or additional wording.",
+   "source": "gemini"
+  },
+  {
+   "id": 43,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Write a single integer with no commas or extra characters representing the value of {a} times {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 44,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Return just the numeric product of {a} and {b} as a plain integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 45,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Show the result of {a} multiplied by {b} as a lone integer with no commas or other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 46,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Display a solitary integer with no commas or extra description for the product of {a} and {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 47,
+   "style": "as a numbered list of instructions",
+   "text": "Multiply {a} and {b} and provide the product as a plain integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 48,
+   "style": "as a numbered list of instructions",
+   "text": "Calculate the product of {a} and {b} and give the final answer as a single integer with no commas or other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 49,
+   "style": "as a numbered list of instructions",
+   "text": "Find the result of multiplying {a} by {b} and output a plain integer without commas or any additional text.",
+   "source": "gemini"
+  },
+  {
+   "id": 50,
+   "style": "as a numbered list of instructions",
+   "text": "What is the product of {a} and {b}? Return only the integer value with no commas or extra text.",
+   "source": "gemini"
+  },
+  {
+   "id": 51,
+   "style": "as a numbered list of instructions",
+   "text": "Determine the product of {a} and {b} and provide the answer as a solitary integer without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 52,
+   "style": "as a numbered list of instructions",
+   "text": "Compute {a} times {b} and return the result as a plain integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 53,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Multiply {a} by {b} and provide the result as a **plain integer** without commas or any additional text.",
+   "source": "gemini"
+  },
+  {
+   "id": 54,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Find the product of {a} times {b} and output only the **numerical value** as an integer with no formatting or words.",
+   "source": "gemini"
+  },
+  {
+   "id": 55,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Calculate the result of multiplying {a} and {b} then state the answer as a **single integer** with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 56,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "What is {a} multiplied by {b} and provide the answer as a **bare integer** with no extra characters or symbols.",
+   "source": "gemini"
+  },
+  {
+   "id": 57,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Perform the multiplication of {a} and {b} and return the product as a **plain number** devoid of commas and non-numeric text.",
+   "source": "gemini"
+  },
+  {
+   "id": 58,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Multiply these two numbers: {a} and {b} and ensure the final output is a **pure",
+   "source": "gemini"
+  },
+  {
+   "id": 59,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Think carefully and compute the product of {a} and {b}, giving only a plain integer without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 60,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Please reflect on the calculation of {a} times {b} and output the result as a standalone integer with no commas or other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 61,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Take time to think through the multiplication of {a} and {b} and provide the final integer answer with no commas or words.",
+   "source": "gemini"
+  },
+  {
+   "id": 62,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Carefully evaluate the product of {a} and {b} and return the answer as a plain integer with no commas or extra characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 63,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Deliberate on the math for {a} multiplied by {b} and state the result as a single integer without commas or any text.",
+   "source": "gemini"
+  },
+  {
+   "id": 64,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Think step-by-step about {a} times {b} and then provide the resulting product as",
+   "source": "gemini"
+  },
+  {
+   "id": 65,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Multiply {a} by {b} and provide only the resulting integer immediately without explanation or any other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 66,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Calculate the product of {a} and {b} and give the answer as a plain integer with no commas or words.",
+   "source": "gemini"
+  },
+  {
+   "id": 67,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "What is the product of {a} times {b}? Provide the result as a standalone integer with no explanation.",
+   "source": "gemini"
+  },
+  {
+   "id": 68,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Find the result of {a} multiplied by {b} and state only the raw integer with no additional text.",
+   "source": "gemini"
+  },
+  {
+   "id": 69,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Return only the numerical product of {a} and {b} as a plain integer without commas or commentary.",
+   "source": "gemini"
+  },
+  {
+   "id": 70,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Multiply {a} and {b} and output the integer result immediately with no extra characters or words.",
+   "source": "gemini"
+  },
+  {
+   "id": 71,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Provide the product of {a} and {b} as a single integer with no commas and no explanatory text",
+   "source": "gemini"
+  },
+  {
+   "id": 72,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Multiply {a} and {b} and report the product as a plain integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 73,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Calculate the product of {a} and {b} and state the resulting integer alone.",
+   "source": "gemini"
+  },
+  {
+   "id": 74,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Find the value of {a} multiplied by {b} and provide only the numeric answer without commas.",
+   "source": "gemini"
+  },
+  {
+   "id": 75,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Solve {a} x {b} and output the result as a single plain integer with no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 76,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "What is the product of {a} and {b} expressed as a raw integer without commas?",
+   "source": "gemini"
+  },
+  {
+   "id": 77,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Compute the total of {a} times {b} and give the answer as a plain number only.",
+   "source": "gemini"
+  },
+  {
+   "id": 78,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Multiply {a} by {b} and write the product as a single digit sequence with no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 79,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "If you have a moment, please compute the product of {a} and {b} and give the final answer as a plain integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 80,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "If you don't mind, compute the product of {a} and {b} and give the final answer as a plain integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 81,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "When you get a chance, please compute the product of {a} and {b} and give the final answer as a plain integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 82,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "If it's possible, compute the product of {a} and {b} and give the final answer as a plain integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 83,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "If you can, compute the product of {a} and {b} and give the final answer as",
+   "source": "gemini"
+  },
+  {
+   "id": 84,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Give me the total when you multiply these and keep the answer as a plain number without any commas or extra words: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 85,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Just shoot over the integer result for multiplying these, but don't include any commas or other text: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 86,
+   "style": "casual and conversational, contractions allowed",
+   "text": "What's the product of these two? Just give the number with no commas or chatting: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 87,
+   "style": "casual and conversational, contractions allowed",
+   "text": "I'm looking for the integer you get when multiplying these, so skip the commas and text and just provide: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 88,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Can you find the product for these and output only the digits without any commas or conversation: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 89,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "As a precise calculator, solve the multiplication of {a} and {b} by providing only the integer result without any text or commas.",
+   "source": "gemini"
+  },
+  {
+   "id": 90,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "Being a math-focused AI, evaluate the product of {a} and {b} and return a plain integer answer with no commas or words.",
+   "source": "gemini"
+  },
+  {
+   "id": 91,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "Acting as a numerical tool, calculate the total of {a} multiplied by {b} and show only the final integer without any commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 92,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "Imagine you are a math engine; compute {a} times {b} and output the product as a standalone integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 93,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "Assuming the role of a diligent accountant, find the product of {a} and {b} and list the result as a plain integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 94,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "{a} and {b} should be multiplied; would you please provide the resulting product as a plain integer without commas or extra text?",
+   "source": "gemini"
+  },
+  {
+   "id": 95,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "{a} multiplied by {b} is the value I need; kindly state the final product as a comma-free integer with no other words.",
+   "source": "gemini"
+  },
+  {
+   "id": 96,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "{a} and {b} are the factors to multiply; if you could, please supply the resulting product as a single integer devoid of commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 97,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "{a} times {b} needs to be calculated; I would appreciate the answer as a standalone integer with no commas and no additional characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 98,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "{a} and {b} are to be used to find their product; please output the numerical result as a plain integer with no commas or extra text.",
+   "source": "gemini"
+  },
+  {
+   "id": 99,
+   "style": "casual and conversational, contractions allowed",
+   "text": "{a} and {b} need to be multiplied, so just give me the answer as an integer without commas or any text.",
+   "source": "gemini"
+  },
+  {
+   "id": 100,
+   "style": "casual and conversational, contractions allowed",
+   "text": "{a} times {b} is the math problem here; just tell me the result as a plain number with no commas or words.",
+   "source": "gemini"
+  },
+  {
+   "id": 101,
+   "style": "casual and conversational, contractions allowed",
+   "text": "{a} and {b} are the numbers to multiply, so provide the product as a single integer and don't include any commas or talk.",
+   "source": "gemini"
+  },
+  {
+   "id": 102,
+   "style": "casual and conversational, contractions allowed",
+   "text": "{a} and {b} should be multiplied together, then you should output the answer as an unformatted integer with no extra text or commas.",
+   "source": "gemini"
+  },
+  {
+   "id": 103,
+   "style": "casual and conversational, contractions allowed",
+   "text": "{a} multiplied by {b} is what I'm looking for, so please just send back the integer result without commas or any other words.",
+   "source": "gemini"
+  },
+  {
+   "id": 104,
+   "style": "casual and conversational, contractions allowed",
+   "text": "{a} and {b} need their product calculated",
+   "source": "gemini"
+  },
+  {
+   "id": 105,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Would you kindly multiply {a} by {b} and return the result as a solitary integer without commas or text?",
+   "source": "gemini"
+  },
+  {
+   "id": 106,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Could you please calculate the product of {a} and {b} and provide only the integer answer without commas or words?",
+   "source": "gemini"
+  },
+  {
+   "id": 107,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "If you have a moment, please multiply {a} and {b} and state the resulting product as an integer with no commas or accompanying text.",
+   "source": "gemini"
+  },
+  {
+   "id": 108,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "I would appreciate it if you could multiply {a} by {b} and provide the answer as a plain integer with no commas or extra characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 109,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Please find the product of {a} and {b} and present the result solely as an integer without commas or any additional text.",
+   "source": "gemini"
+  },
+  {
+   "id": 110,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Kindly compute {a} times {b} and provide the resulting integer without commas or any surrounding words",
+   "source": "gemini"
+  },
+  {
+   "id": 111,
+   "style": "as a numbered list of instructions",
+   "text": "Multiply {a} by {b} and provide the result as a single integer without commas or any text.",
+   "source": "gemini"
+  },
+  {
+   "id": 112,
+   "style": "as a numbered list of instructions",
+   "text": "Find the result of {a} times {b} and output it as a plain integer with no commas or additional characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 113,
+   "style": "as a numbered list of instructions",
+   "text": "Calculate the total when you multiply {a} and {b} and return only the numeric integer without commas.",
+   "source": "gemini"
+  },
+  {
+   "id": 114,
+   "style": "as a numbered list of instructions",
+   "text": "Provide the integer result of {a} multiplied by {b} using no commas and no extra words.",
+   "source": "gemini"
+  },
+  {
+   "id": 115,
+   "style": "as a numbered list of instructions",
+   "text": "Perform the multiplication of {a} by {b} and give the answer as a lone integer without commas.",
+   "source": "gemini"
+  },
+  {
+   "id": 116,
+   "style": "as a numbered list of instructions",
+   "text": "State the numerical result of multiplying {a} with {b} as an integer with no commas or other symbols.",
+   "source": "gemini"
+  },
+  {
+   "id": 117,
+   "style": "as a numbered list of instructions",
+   "text": "Determine the outcome of {a} times {b} and output the plain integer only skipping commas and text",
+   "source": "gemini"
+  },
+  {
+   "id": 118,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "If you wouldn't mind, please take {a} and {b}. You should multiply these two values together. Provide the final product as a single integer with no commas or additional commentary.",
+   "source": "gemini"
+  },
+  {
+   "id": 119,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "When you have a moment, please consider the numbers {a} and {b}. We need you to calculate their product. Please ensure the response is just a plain integer without any commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 120,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "If it is not too much trouble, please find the product of {a} and {b}. This calculation is important for our current records. Please write only the integer result without commas or any other words.",
+   "source": "gemini"
+  },
+  {
+   "id": 121,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Perhaps you could assist us with the multiplication of {a} by {b}. We are looking for the numerical outcome of this operation. Just return the integer value with no commas or surrounding text.",
+   "source": "gemini"
+  },
+  {
+   "id": 122,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Take a moment to reflect and then multiply {a} by {b}, providing the final product as a lone integer without any commas or words.",
+   "source": "gemini"
+  },
+  {
+   "id": 123,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Think through the calculation carefully and provide the product of {a} and {b} as a solitary integer without commas or any other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 124,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Please reflect deeply on the multiplication of {a} and {b} and then output the final result as a plain integer with no commas or accompanying text.",
+   "source": "gemini"
+  },
+  {
+   "id": 125,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Considering the values carefully, calculate the product of {a} and {b} and report only the integer result without commas or commentary.",
+   "source": "gemini"
+  },
+  {
+   "id": 126,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Meditate on the numbers {a} and {b} to find their product, then state the answer as a single integer with no commas or extra characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 127,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "If you feel up to a quick challenge, find the value of {a} multiplied by {b} and provide the result as a raw integer with no commas or accompanying text.",
+   "source": "gemini"
+  },
+  {
+   "id": 128,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "I invite you to determine the product of {a} and {b} when you have a free moment and return the result as a bare integer without commas or extra words.",
+   "source": "gemini"
+  },
+  {
+   "id": 129,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "I am curious if you can perhaps figure out the result of {a} times {b} and deliver only the integer answer without any commas or extraneous characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 130,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Here is a small puzzle for you if it is not too much trouble: multiply {a} by {b} and show the solution as a lone integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 131,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Could you possibly assist me by calculating the product of {a} and {b} and outputting",
+   "source": "gemini"
+  },
+  {
+   "id": 132,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Output the product of {a} and {b} as a plain integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 133,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Report {a} times {b} as a bare integer without commas or extra characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 134,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Write the product of {a} and {b} as a solitary integer without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 135,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Express the product of {a} and {b} as a plain integer omitting commas and words.",
+   "source": "gemini"
+  },
+  {
+   "id": 136,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Determine {a} multiplied by {b} and provide only the integer result without commas.",
+   "source": "gemini"
+  },
+  {
+   "id": 137,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Yield the product of {a} and {b} as a single integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 138,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Format the result of {a} times {b} as a plain integer without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 139,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Record the product of {a} and {b} as an integer",
+   "source": "gemini"
+  },
+  {
+   "id": 140,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Hey, can you help me with a quick math problem? I need to know what you get when you multiply {a} by {b}. Just give me the plain integer answer with no commas or words.",
+   "source": "gemini"
+  },
+  {
+   "id": 141,
+   "style": "casual and conversational, contractions allowed",
+   "text": "I'm working on something and need the product of {a} and {b} really quick. Could you just write down the result as one single integer? Don't include any commas or other text in your reply.",
+   "source": "gemini"
+  },
+  {
+   "id": 142,
+   "style": "casual and conversational, contractions allowed",
+   "text": "So I've got these two numbers, {a} and {b}, and I need their product. Can you just send over the numerical answer as an integer? Make sure there aren't any commas or extra words in there.",
+   "source": "gemini"
+  },
+  {
+   "id": 143,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Output the product of {a} and {b} as an unformatted integer without any words.",
+   "source": "gemini"
+  },
+  {
+   "id": 144,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Give the result for {a} times {b} as a raw integer only, no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 145,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Multiply {a} and {b} then return the plain integer result without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 146,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Report the product of {a} and {b} using only a plain integer without commas.",
+   "source": "gemini"
+  },
+  {
+   "id": 147,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Compute {a} times {b} and state only the integer value without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 148,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "State the product of {a} and {b} as a comma-free integer with no other content.",
+   "source": "gemini"
+  },
+  {
+   "id": 149,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Calculate {a} multiplied by {b} and return just the integer with no formatting.",
+   "source": "gemini"
+  },
+  {
+   "id": 150,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Provide the integer result of {a} * {b} with no commas and no text",
+   "source": "gemini"
+  },
+  {
+   "id": 151,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a precise mathematician. Multiply these two values and return the product as a plain integer with no commas or extra text: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 152,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are an arithmetic expert. Provide the integer product without commas or any accompanying symbols for {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 153,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a calculation tool. Output the result of multiplying the following numbers as a plain integer without commas or prose: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 154,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a logic bot. State the product of these figures as a single integer with no commas or additional characters: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 155,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are an efficient processor. Give the result of the calculation as a raw integer with no commas or non-numeric text: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 156,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Please **calculate** the product of {a} and {b} and provide the result as a raw integer without commas or any accompanying symbols.",
+   "source": "gemini"
+  },
+  {
+   "id": 157,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Find the **numerical result** of {a} times {b} and output it as a single integer with no commas or additional commentary.",
+   "source": "gemini"
+  },
+  {
+   "id": 158,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Your task is to **multiply** {a} by {b} and present the final answer as a naked integer devoid of commas or words.",
+   "source": "gemini"
+  },
+  {
+   "id": 159,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Determine the **exact product** of {a} and {b} and express the output solely as a plain integer without separators or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 160,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Perform the **multiplication** of {a} and {b} and display the final solution as a solitary integer containing no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 161,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Identify the **product** of {a} and {b} and provide",
+   "source": "gemini"
+  },
+  {
+   "id": 162,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Perform the multiplication of {a} by {b} now. State the resulting value immediately without any additional commentary. Ensure the output is a single integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 163,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Start by taking {a} and multiplying it with {b}. You must provide the final product right away without any explanation. The answer should be a plain integer containing no commas or extra characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 164,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Identify the mathematical product of {a} times {b} at once. Deliver the numeric result alone with no introductory or concluding sentences. Only a solitary integer without commas is acceptable.",
+   "source": "gemini"
+  },
+  {
+   "id": 165,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Your objective is to multiply {a} and {b} together. Please output the numerical answer immediately with no descriptive words. Present this value as a single integer with no commas or symbols.",
+   "source": "gemini"
+  },
+  {
+   "id": 166,
+   "style": "phrased as a direct question rather than a command",
+   "text": "Would you compute the product of {a} and {b} and provide the result as a plain integer with no commas or other text?",
+   "source": "gemini"
+  },
+  {
+   "id": 167,
+   "style": "phrased as a direct question rather than a command",
+   "text": "Will you multiply {a} by {b} and output the answer as a single integer without commas or text?",
+   "source": "gemini"
+  },
+  {
+   "id": 168,
+   "style": "phrased as a direct question rather than a command",
+   "text": "How much is {a} times {b} if the result must be a plain integer with no commas or additional text?",
+   "source": "gemini"
+  },
+  {
+   "id": 169,
+   "style": "phrased as a direct question rather than a command",
+   "text": "Shall you find the product of {a} and {b} and display it as an integer with no commas or text?",
+   "source": "gemini"
+  },
+  {
+   "id": 170,
+   "style": "phrased as a direct question rather than a command",
+   "text": "Might you calculate the product of {a} and {b} and return a plain integer with no commas or text?",
+   "source": "gemini"
+  },
+  {
+   "id": 171,
+   "style": "phrased as a direct question rather than a command",
+   "text": "May the product of {a} and {b} be presented as a solitary integer with no commas or other text?",
+   "source": "gemini"
+  },
+  {
+   "id": 172,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Calculate the product of {a} and {b} and state only the resulting integer without commas or additional wording.",
+   "source": "gemini"
+  },
+  {
+   "id": 173,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Determine the product of {a} and {b} and record the answer as a single integer with no commas or other characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 174,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Report the result of multiplying {a} by {b} using only a plain integer devoid of commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 175,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Multiply the integers {a} and {b} and write down the product as a solitary number without any commas or prose.",
+   "source": "gemini"
+  },
+  {
+   "id": 176,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "State the product of {a} and {b} as an unadorned integer lacking commas or accompanying text.",
+   "source": "gemini"
+  },
+  {
+   "id": 177,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Use the numbers {a} and {b} to find their product and provide the final value as a lone integer without commas.",
+   "source": "gemini"
+  },
+  {
+   "id": 178,
+   "style": "as a numbered list of instructions",
+   "text": "Multiply the provided values and return the result as a raw integer with no commas or additional text: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 179,
+   "style": "as a numbered list of instructions",
+   "text": "Provide only the numeric result of the multiplication as an integer with no commas or other characters: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 180,
+   "style": "as a numbered list of instructions",
+   "text": "Determine the mathematical product and output the result as a single integer without any commas or text: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 181,
+   "style": "as a numbered list of instructions",
+   "text": "Calculate the product of these values and show the answer as a plain integer with no commas or words: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 182,
+   "style": "as a numbered list of instructions",
+   "text": "Perform the multiplication and return the product as a standalone integer with no commas or commentary: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 183,
+   "style": "as a numbered list of instructions",
+   "text": "Find the product and display the result as a plain integer excluding all commas and extra text: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 184,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Determine the result of multiplying the following two numbers and present the answer as a lone integer without commas or additional text: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 185,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Multiply these two values and display only the resulting integer without commas or any verbal explanation: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 186,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Provide the product of the following integers as a single number with no commas and no extra characters: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 187,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Perform the multiplication and output a bare integer with no commas and no descriptive words for {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 188,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Show the mathematical product as an unadorned integer without commas or labels for the quantities {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 189,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Calculate the total for the multiplication of the following and state only the numerical integer without commas or text: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 190,
+   "style": "as a numbered list of instructions",
+   "text": "Multiply {a} and {b} together and provide only the integer result with no commas or extra text.",
+   "source": "gemini"
+  },
+  {
+   "id": 191,
+   "style": "as a numbered list of instructions",
+   "text": "Please find the product of {a} and {b} and report the value as a plain integer without commas or labels.",
+   "source": "gemini"
+  },
+  {
+   "id": 192,
+   "style": "as a numbered list of instructions",
+   "text": "Determine the result of multiplying {a} by {b} and provide the answer as a single integer devoid of commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 193,
+   "style": "as a numbered list of instructions",
+   "text": "Provide the result of {a} times {b} as an integer with no commas or additional descriptions.",
+   "source": "gemini"
+  },
+  {
+   "id": 194,
+   "style": "as a numbered list of instructions",
+   "text": "What is the product of {a} and {b}? Express the answer as a plain integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 195,
+   "style": "as a numbered list of instructions",
+   "text": "Calculate {a} multiplied by {b} and display the integer product without any commas or words.",
+   "source": "gemini"
+  },
+  {
+   "id": 196,
+   "style": "as a numbered list of instructions",
+   "text": "We need the product of {a} and {b} shown as a single integer with",
+   "source": "gemini"
+  },
+  {
+   "id": 197,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Using only a plain integer with no commas and no other text, provide the product of {a} and {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 198,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "As an unformatted integer without commas or additional words, state the result of multiplying {a} and {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 199,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Without commas or any extra commentary, output the integer product of {a} and {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 200,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "In the form of a single integer with no commas or text, solve for the product of {a} and {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 201,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Using a solitary integer with no commas and no text, determine what {a} times {b} is.",
+   "source": "gemini"
+  },
+  {
+   "id": 202,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "With no commas and no other characters, give the integer result for the multiplication of {a} and {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 203,
+   "style": "casual and conversational, contractions allowed",
+   "text": "I'm trying to sort this out, so could you multiply {a} and {b} and just give me the integer result with no commas or words?",
+   "source": "gemini"
+  },
+  {
+   "id": 204,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Check what {a} times {b} equals and just put the final integer here without any commas or other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 205,
+   "style": "casual and conversational, contractions allowed",
+   "text": "I'd love to know the product of {a} and {b}, so please just give me the integer answer without commas or fluff.",
+   "source": "gemini"
+  },
+  {
+   "id": 206,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Can you handle multiplying {a} by {b} for me and just provide the plain integer result with no commas or text?",
+   "source": "gemini"
+  },
+  {
+   "id": 207,
+   "style": "casual and conversational, contractions allowed",
+   "text": "It would be a big help if you could find the product of {a} and {b} and just write the integer with no commas or extra talk.",
+   "source": "gemini"
+  },
+  {
+   "id": 208,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Challenge yourself to calculate the mathematical product of {a} and {b} and record the value as a solitary integer without commas or any text.",
+   "source": "gemini"
+  },
+  {
+   "id": 209,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "We invite you to determine the result of {a} multiplied by {b} and provide only the integer result without commas or extra characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 210,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Prove your arithmetic precision by finding the product of {a} and {b} then stating the resulting integer with no commas or prose.",
+   "source": "gemini"
+  },
+  {
+   "id": 211,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "See if you can identify the product of {a} and {b} and write the answer as a single integer devoid of commas or additional words.",
+   "source": "gemini"
+  },
+  {
+   "id": 212,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "You are invited to solve for the result of {a} times {b} and enter a plain integer with no commas or other language.",
+   "source": "gemini"
+  },
+  {
+   "id": 213,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Test your proficiency by finding the product of {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 214,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "It would be helpful if the product of {a} and {b} could be provided as a single integer with no commas or accompanying text.",
+   "source": "gemini"
+  },
+  {
+   "id": 215,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "The calculation of the product for {a} and {b} should be displayed as a plain integer without commas or any other words.",
+   "source": "gemini"
+  },
+  {
+   "id": 216,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "A plain integer representing the product of {a} and {b} is required, devoid of commas or additional commentary.",
+   "source": "gemini"
+  },
+  {
+   "id": 217,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "The task is to multiply {a} by {b} and present the outcome as a solitary integer without commas or extra text.",
+   "source": "gemini"
+  },
+  {
+   "id": 218,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "One should determine the product of {a} and {b} and return that value as an unformatted integer with no other characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 219,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "It is requested that the product of {a} and {b} be yielded as a single integer without commas or further description",
+   "source": "gemini"
+  },
+  {
+   "id": 220,
+   "style": "wordy and over-explained, at least three sentences",
+   "text": "In this section of the mathematical assessment, we focus on the fundamental operation of multiplication between two specific numerical variables. Your primary task is to calculate the product resulting from the interaction of {a} and {b} as defined in the preceding data set. Once the multiplication is completed, the output should be delivered exclusively as a plain integer with no commas or accompanying characters of any kind.",
+   "source": "gemini"
+  },
+  {
+   "id": 221,
+   "style": "wordy and over-explained, at least three sentences",
+   "text": "For the purposes of this quantitative analysis, we require the precise outcome of multiplying the first constant by the second constant. Please perform the calculation for the numbers {a} and {b} carefully to ensure that every digit in the final product is correct. The resulting figure must be presented as a standalone integer devoid of any comma separators or descriptive terminology.",
+   "source": "gemini"
+  },
+  {
+   "id": 222,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "{a} and {b} are the numbers you must multiply; state the final product as a lone integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 223,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "{a} and {b} need to be multiplied for this question; provide the result as an integer without any commas or words.",
+   "source": "gemini"
+  },
+  {
+   "id": 224,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "{a} and {b} are the factors provided; return the product as a plain integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 225,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "{a} and {b} should be multiplied to find the product; output only the integer result without any commas or characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 226,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "{a} and {b} are to be multiplied together; give the resulting integer without commas and with no additional text.",
+   "source": "gemini"
+  },
+  {
+   "id": 227,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "{a} and {b} must have their product calculated; show the final integer with no commas or accompanying words.",
+   "source": "gemini"
+  },
+  {
+   "id": 228,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "If you can, multiply {a} by {b} and provide only the resulting integer without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 229,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "When you get a chance, find the result of {a} times {b} and show a lone integer with no commas or other characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 230,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "If it is not too much trouble, calculate {a} multiplied by {b} and return the integer alone with no commas or words.",
+   "source": "gemini"
+  },
+  {
+   "id": 231,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Perhaps you could multiply {a} by {b} and output just the integer without any commas or accompanying language.",
+   "source": "gemini"
+  },
+  {
+   "id": 232,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "If you feel like it, determine {a} times {b} and write the answer as a single integer devoid of commas or extra text.",
+   "source": "gemini"
+  },
+  {
+   "id": 233,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Should you be able to, multiply {a} and {b} and provide the result as a plain integer without commas or prose",
+   "source": "gemini"
+  },
+  {
+   "id": 234,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "The product of {a} and {b} should be calculated and provided as a solitary integer without commas or text, answering immediately without explanation.",
+   "source": "gemini"
+  },
+  {
+   "id": 235,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "One must state the product of {a} times {b} as a raw integer only, with no commas or extra words and no explanation.",
+   "source": "gemini"
+  },
+  {
+   "id": 236,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "The agent is to return the product of {a} and {b} as a bare integer with no commas or text, provided immediately with no preamble.",
+   "source": "gemini"
+  },
+  {
+   "id": 237,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "The mathematical product of {a} and {b} must be shown as a single integer without commas or additional characters, skipping any explanation.",
+   "source": "gemini"
+  },
+  {
+   "id": 238,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "A standalone integer representing the product of {a} multiplied by {b} must be output without commas or text, provided immediately.",
+   "source": "gemini"
+  },
+  {
+   "id": 239,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "The result of {a} times {b} should be identified and presented",
+   "source": "gemini"
+  },
+  {
+   "id": 240,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "State the product of {a} and {b} as a plain integer without commas or extra characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 241,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Provide only the integer product of {a} and {b} excluding commas and words.",
+   "source": "gemini"
+  },
+  {
+   "id": 242,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Return the result of {a} multiplied by {b} as a single comma-free integer.",
+   "source": "gemini"
+  },
+  {
+   "id": 243,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Give the product for {a} and {b} as a raw integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 244,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Output the product of {a} times {b} as a lone integer without commas or descriptions.",
+   "source": "gemini"
+  },
+  {
+   "id": 245,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Multiply {a} by {b} and provide the answer as an unadorned integer without commas.",
+   "source": "gemini"
+  },
+  {
+   "id": 246,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Supply the integer product of {a} and {b} without commas or additional text.",
+   "source": "gemini"
+  },
+  {
+   "id": 247,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Write the product of {a} and {b} as",
+   "source": "gemini"
+  },
+  {
+   "id": 248,
+   "style": "as a numbered list of instructions",
+   "text": "Calculate the mathematical product of {a} and {b} then report the solution as a plain integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 249,
+   "style": "as a numbered list of instructions",
+   "text": "Multiply {a} by {b} and deliver the final result in the form of a single integer without commas or additional words.",
+   "source": "gemini"
+  },
+  {
+   "id": 250,
+   "style": "as a numbered list of instructions",
+   "text": "Determine the product of {a} times {b} and state the answer as a lone integer omitting commas and any extra characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 251,
+   "style": "as a numbered list of instructions",
+   "text": "Find the result of {a} multiplied by {b} and present the output as an unformatted integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 252,
+   "style": "as a numbered list of instructions",
+   "text": "Work out the value of {a} times {b} and provide the product as a solitary integer devoid of commas or explanation.",
+   "source": "gemini"
+  },
+  {
+   "id": 253,
+   "style": "as a numbered list of instructions",
+   "text": "Perform the multiplication of {a} and {b} and express the total as a basic integer with no commas or",
+   "source": "gemini"
+  },
+  {
+   "id": 254,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Could you multiply {a} by {b} and just send back the integer without any commas or chatter?",
+   "source": "gemini"
+  },
+  {
+   "id": 255,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Just give me the product of {a} and {b} as a bare integer with no commas or extra descriptions.",
+   "source": "gemini"
+  },
+  {
+   "id": 256,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Go ahead and multiply {a} and {b}, then just output the result as a raw number without any commas or talking.",
+   "source": "gemini"
+  },
+  {
+   "id": 257,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Hey, what's the product of {a} and {b} expressed as a simple integer with no commas or additional labels?",
+   "source": "gemini"
+  },
+  {
+   "id": 258,
+   "style": "casual and conversational, contractions allowed",
+   "text": "I just need the integer result of {a} times {b} without any commas or other stuff in the way.",
+   "source": "gemini"
+  },
+  {
+   "id": 259,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Mind telling me what {a} times {b} is as a lone integer with no commas or sentences?",
+   "source": "gemini"
+  },
+  {
+   "id": 260,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Would you be so kind as to find the product of {a} and {b} and present the final answer as a solitary integer with no commas or other text?",
+   "source": "gemini"
+  },
+  {
+   "id": 261,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Could you please determine the product of {a} and {b} and return the result as a raw integer without commas or accompanying words?",
+   "source": "gemini"
+  },
+  {
+   "id": 262,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Please calculate the result of {a} multiplied by {b} and supply only the integer with no commas or additional commentary.",
+   "source": "gemini"
+  },
+  {
+   "id": 263,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "If you have a moment, find the product of {a} and {b} and express the value as a single integer with no commas or other characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 264,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Kindly evaluate the product of {a} and {b} and output the resulting integer alone without any commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 265,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Perhaps you could yield the product of {a} and {b} as",
+   "source": "gemini"
+  },
+  {
+   "id": 266,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "{a} and {b}: as a plain integer with no commas and no other text, provide the product.",
+   "source": "gemini"
+  },
+  {
+   "id": 267,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "{a} and {b}: as a plain integer with no commas and no other text, calculate the product.",
+   "source": "gemini"
+  },
+  {
+   "id": 268,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "{a} and {b}: as a plain integer with no commas and no other text, state the product.",
+   "source": "gemini"
+  },
+  {
+   "id": 269,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "{a} and {b}: as a plain integer with no commas and no other text, find the product.",
+   "source": "gemini"
+  },
+  {
+   "id": 270,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "{a} and {b}: as a plain integer with no commas and no other text, compute the product.",
+   "source": "gemini"
+  },
+  {
+   "id": 271,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "{a} and {b}: as a plain integer with no commas and no other text, return the product.",
+   "source": "gemini"
+  },
+  {
+   "id": 272,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "{a} and {b}: as a plain integer with no commas and no other text,",
+   "source": "gemini"
+  },
+  {
+   "id": 273,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a precise calculator, so output the result of {a} multiplied by {b} as a single integer devoid of commas and any other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 274,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "Acting as a math processor, multiply {a} and {b} and then return only the integer product without any commas or non-numeric characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 275,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a diligent assistant, so please provide the product of {a} and {b} as a solitary integer that contains no commas or extra words.",
+   "source": "gemini"
+  },
+  {
+   "id": 276,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "In your role as a numerical expert, calculate what {a} times {b} equals and show only the final integer answer without any commas or textual additions.",
+   "source": "gemini"
+  },
+  {
+   "id": 277,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a focused solver, so determine the value of {a} multiplied by {b} and print only the resulting integer without commas or supplementary text.",
+   "source": "gemini"
+  },
+  {
+   "id": 278,
+   "style": "in a dry technical register, like a specification",
+   "text": "Provide the numerical product of {a} multiplied by {b} as a single integer devoid of commas or supplementary text.",
+   "source": "gemini"
+  },
+  {
+   "id": 279,
+   "style": "in a dry technical register, like a specification",
+   "text": "Generate the arithmetic product of {a} and {b} expressed as a lone integer omitting commas and all non-numeric characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 280,
+   "style": "in a dry technical register, like a specification",
+   "text": "The output must be the product of {a} and {b} formatted as a single integer with no commas or accompanying text.",
+   "source": "gemini"
+  },
+  {
+   "id": 281,
+   "style": "in a dry technical register, like a specification",
+   "text": "Specify the value representing the product of {a} and {b} exclusively as an integer without any commas or additional words.",
+   "source": "gemini"
+  },
+  {
+   "id": 282,
+   "style": "in a dry technical register, like a specification",
+   "text": "Execute the multiplication of {a} and {b} and deliver the result as a raw integer string lacking commas or other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 283,
+   "style": "in a dry technical register, like a specification",
+   "text": "Derive the product of {a} times {b} and report the solution as an individual integer without comma separators or extra text.",
+   "source": "gemini"
+  },
+  {
+   "id": 284,
+   "style": "in a dry technical register, like a specification",
+   "text": "Determine the final product of {a} and {b} and present the answer as a stand-alone integer with no commas or further description.",
+   "source": "gemini"
+  },
+  {
+   "id": 285,
+   "style": "as a numbered list of instructions",
+   "text": "First, multiply {a} and {b}. Second, format the resulting value as a plain integer without commas. Third, report only that integer result with no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 286,
+   "style": "as a numbered list of instructions",
+   "text": "Begin by calculating the product of {a} and {b}. Next, ensure the answer is a plain integer with no commas. Finally, provide only the resulting number and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 287,
+   "style": "as a numbered list of instructions",
+   "text": "Step one is to find the result of multiplying {a} and {b}. Step two is to strip all commas from the resulting integer. Step three is to return the plain integer value alone.",
+   "source": "gemini"
+  },
+  {
+   "id": 288,
+   "style": "as a numbered list of instructions",
+   "text": "Initially, determine the product of {a} and {b}. Then, express the output as a plain integer without commas. Lastly, provide the result as a single integer and nothing else.",
+   "source": "gemini"
+  },
+  {
+   "id": 289,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "If it is possible, one might compute the product of {a} and {b} and output the value as a plain integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 290,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Perhaps the calculation of {a} times {b} could be stated as a solitary integer without commas or prose.",
+   "source": "gemini"
+  },
+  {
+   "id": 291,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "If it is not a burden, the product of {a} and {b} should be delivered as a bare integer with no commas or additional strings.",
+   "source": "gemini"
+  },
+  {
+   "id": 292,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "When convenient, one could present the product of {a} and {b} as a plain integer omitting commas and any extra characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 293,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Should circumstances allow, let the product of {a} and {b} be shown as an unadorned integer with no commas or labels.",
+   "source": "gemini"
+  },
+  {
+   "id": 294,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Reflect on the multiplication of these two numbers and provide the product as a plain integer without commas or extra text: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 295,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Carefully deliberate on the multiplication of the following values and output the result as a single integer without commas or commentary: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 296,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Think intensely about the calculation of the product and return the integer value with no commas or surrounding text: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 297,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Ponder the result of multiplying the following numbers and display only the integer without commas or other characters: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 298,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "Evaluate the multiplication with care and provide the final total as a single integer lacking commas or text: {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 299,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "The system should think carefully then provide the product of {a} and {b} as a solitary integer without commas or extraneous text.",
+   "source": "gemini"
+  },
+  {
+   "id": 300,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "A diligent calculation of the product of {a} and {b} is requested, with the result appearing as a single comma-free integer.",
+   "source": "gemini"
+  },
+  {
+   "id": 301,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "The AI is invited to consider the multiplication of {a} and {b} with great care and output the final value as a plain integer minus commas and commentary.",
+   "source": "gemini"
+  },
+  {
+   "id": 302,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "One should take a moment to ponder the product of {a} and {b} and then return the answer as a lone integer with no commas.",
+   "source": "gemini"
+  },
+  {
+   "id": 303,
+   "style": "with an explicit invitation to think carefully before answering",
+   "text": "The model should carefully evaluate the product of {a} and {b} and state the result as a raw integer omitting commas and words.",
+   "source": "gemini"
+  },
+  {
+   "id": 304,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Calculate the product of {a} and {b} if you could, and return it as a plain integer with no commas or other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 305,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "If you do not mind, multiply {a} by {b} and provide the result as a lone integer without commas or any text.",
+   "source": "gemini"
+  },
+  {
+   "id": 306,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Whenever you have a moment, please find the product of {a} and {b} and state it as a single integer with no commas or added words.",
+   "source": "gemini"
+  },
+  {
+   "id": 307,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Should it be possible, output the result of {a} times {b} as a raw integer with no commas or accompanying characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 308,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Kindly evaluate the product of {a} and {b} when you can, giving the answer as a plain integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 309,
+   "style": "with mild hedging, for example 'if you can' or 'when you get a chance'",
+   "text": "Could you perhaps multiply {a} and {b} and return the",
+   "source": "gemini"
+  },
+  {
+   "id": 310,
+   "style": "as a numbered list of instructions",
+   "text": "I challenge you to first calculate the product of {a} and {b} and then provide the result as a plain integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 311,
+   "style": "as a numbered list of instructions",
+   "text": "Please accept this invitation to multiply {a} by {b} and then output the answer as a single integer without commas or extra words.",
+   "source": "gemini"
+  },
+  {
+   "id": 312,
+   "style": "as a numbered list of instructions",
+   "text": "Test your skills by determining the product of {a} and {b} and then reporting the value as a standalone integer with no commas or commentary.",
+   "source": "gemini"
+  },
+  {
+   "id": 313,
+   "style": "as a numbered list of instructions",
+   "text": "You are invited to compute the result of {a} times {b} and then present that value as a raw integer with no commas or additional prose.",
+   "source": "gemini"
+  },
+  {
+   "id": 314,
+   "style": "as a numbered list of instructions",
+   "text": "See if you can first find the product of {a} and {b} and then display the result as a solitary integer without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 315,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "State the product as a plain integer without commas or text, answering immediately and without any explanation for {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 316,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Provide the multiplication result as a standalone integer with no commas or additional words, skipping all explanation for {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 317,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Return the result as an unformatted integer with no commas or sentences, responding instantly and without any explanation for {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 318,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Write the final product as a single integer minus commas or other text, ensuring the answer stands alone without explanation for {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 319,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Determine the value and present it as a basic integer with no commas or words, providing only the number and no explanation for {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 320,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "As a single integer with no commas and no other text, please provide the product of {a} and {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 321,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "With the result shown only as a plain integer without commas or additional text, multiply {a} by {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 322,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Using a format of one lone integer with no commas or other text, calculate the product of {a} and {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 323,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "In the form of a comma-free integer with no other words or characters, compute the product of {a} and {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 324,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Displaying only the raw integer value and omitting all commas and extra text, state the product of {a} and {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 325,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Expressed as a single integer containing no commas and no surrounding text, find the product of {a} and {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 326,
+   "style": "phrased as a direct question rather than a command",
+   "text": "What is the result of multiplying {a} by {b} if you provide only a comma-free integer and nothing else?",
+   "source": "gemini"
+  },
+  {
+   "id": 327,
+   "style": "phrased as a direct question rather than a command",
+   "text": "Could you multiply {a} and {b} then return only the raw integer with no commas or accompanying characters?",
+   "source": "gemini"
+  },
+  {
+   "id": 328,
+   "style": "phrased as a direct question rather than a command",
+   "text": "If you multiply {a} by {b}, what is the resulting integer expressed without commas or any text?",
+   "source": "gemini"
+  },
+  {
+   "id": 329,
+   "style": "phrased as a direct question rather than a command",
+   "text": "What is {a} times {b} written as a solitary integer devoid of commas or supplementary wording?",
+   "source": "gemini"
+  },
+  {
+   "id": 330,
+   "style": "phrased as a direct question rather than a command",
+   "text": "Will you provide the result of {a} multiplied by {b} as an unadorned integer with no commas or other symbols?",
+   "source": "gemini"
+  },
+  {
+   "id": 331,
+   "style": "phrased as a direct question rather than a command",
+   "text": "Can you state the value of {a} times {b} using only a plain integer that lacks commas and extra text?",
+   "source": "gemini"
+  },
+  {
+   "id": 332,
+   "style": "as a numbered list of instructions",
+   "text": "Find the product of {a} and {b} and output it as a plain integer without commas or any text.",
+   "source": "gemini"
+  },
+  {
+   "id": 333,
+   "style": "as a numbered list of instructions",
+   "text": "Return the product of {a} and {b} as a solitary integer without commas or further explanation.",
+   "source": "gemini"
+  },
+  {
+   "id": 334,
+   "style": "as a numbered list of instructions",
+   "text": "Perform the multiplication of {a} and {b} and show the result as a raw integer lacking commas or additional words.",
+   "source": "gemini"
+  },
+  {
+   "id": 335,
+   "style": "as a numbered list of instructions",
+   "text": "Evaluate the multiplication of {a} times {b} and state only the comma-free integer result.",
+   "source": "gemini"
+  },
+  {
+   "id": 336,
+   "style": "as a numbered list of instructions",
+   "text": "Solve for the product of {a} and {b} and deliver the answer as a single integer with no commas or extra text.",
+   "source": "gemini"
+  },
+  {
+   "id": 337,
+   "style": "as a numbered list of instructions",
+   "text": "State the result of {a} multiplied by {b} as a plain integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 338,
+   "style": "as a numbered list of instructions",
+   "text": "Express the product of {a} and {b} as an un",
+   "source": "gemini"
+  },
+  {
+   "id": 339,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "For this specific section of the worksheet, please focus on the multiplication problem. Calculate the product of {a} and {b} to find the final result. Provide the answer as a plain integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 340,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "This arithmetic task requires you to find a single value for your exam paper. Determine the product of {a} and {b} using the values provided. Your final response should be a lone integer with no commas and no additional text.",
+   "source": "gemini"
+  },
+  {
+   "id": 341,
+   "style": "framed as a line from a larger worksheet or exam paper",
+   "text": "Please use your mathematical skills to solve the following multiplication problem. Work out the product of {a} and {b} and check your calculations. Output the result as a plain integer with no commas and no words.",
+   "source": "gemini"
+  },
+  {
+   "id": 342,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "The assistant must report the **product** of {a} and {b} as a plain integer with no commas or other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 343,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Display the result of **multiplying** {a} by {b} as a single integer devoid of commas and extra words.",
+   "source": "gemini"
+  },
+  {
+   "id": 344,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "A lone **integer** representing the product of {a} and {b} with no commas or additional characters is required.",
+   "source": "gemini"
+  },
+  {
+   "id": 345,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Compute the value of {a} **times** {b} and output it as a raw integer string with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 346,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "The **product** of {a} and {b} should be expressed as a solitary integer without commas or any other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 347,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Provide the result of the **multiplication** of {a} and {b} as a plain integer with no commas and",
+   "source": "gemini"
+  },
+  {
+   "id": 348,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Hey, can you multiply {a} by {b} and just give me the raw number with no commas or words?",
+   "source": "gemini"
+  },
+  {
+   "id": 349,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Tell me what {a} times {b} is, but just send back the plain integer with no commas or extra stuff.",
+   "source": "gemini"
+  },
+  {
+   "id": 350,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Just give me the product of {a} and {b} as a simple integer without any commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 351,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Wondering if you could find {a} times {b} and only write the answer as a comma-free integer.",
+   "source": "gemini"
+  },
+  {
+   "id": 352,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Go ahead and multiply {a} and {b}, then show the result as only a plain integer with no commas.",
+   "source": "gemini"
+  },
+  {
+   "id": 353,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Can you figure out {a} times {b} and output just the integer itself with no commas or text?",
+   "source": "gemini"
+  },
+  {
+   "id": 354,
+   "style": "wordy and over-explained, at least three sentences",
+   "text": "Please consider the numerical value {a} and the numerical value {b}. Your task is to perform the mathematical operation of multiplying these two numbers together carefully. When you have finished the calculation, state the resulting integer as a solitary number without any commas or any other words.",
+   "source": "gemini"
+  },
+  {
+   "id": 355,
+   "style": "wordy and over-explained, at least three sentences",
+   "text": "Start by taking the integer {a} and then proceed to multiply it by the integer {b}. It is essential that you calculate this total accurately and then present it clearly. The final output must be nothing but a single plain integer without any commas or surrounding commentary.",
+   "source": "gemini"
+  },
+  {
+   "id": 356,
+   "style": "wordy and over-explained, at least three sentences",
+   "text": "I would like you to focus on the numbers {a} and {b} for this specific arithmetic exercise. Calculate what the result is when you multiply the first number by the second number. Ensure that your response consists of only the raw integer with no",
+   "source": "gemini"
+  },
+  {
+   "id": 357,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "I would be most grateful if you could calculate the product of {a} and {b} and provide the result as a single integer with no commas or accompanying text.",
+   "source": "gemini"
+  },
+  {
+   "id": 358,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Could you please find the product of {a} and {b} and present the final value as a plain integer without commas or any additional words?",
+   "source": "gemini"
+  },
+  {
+   "id": 359,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "It would be a great help if you could multiply {a} and {b} and return the product as an unformatted integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 360,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "May I ask you to determine the product of {a} and {b} and provide the answer as a solitary integer without commas or extra characters?",
+   "source": "gemini"
+  },
+  {
+   "id": 361,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "I would appreciate it if you could compute the product of {a} and {b} and supply the result as a bare integer with no commas or words.",
+   "source": "gemini"
+  },
+  {
+   "id": 362,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Multiply** {a} by {b} and output the result as a plain integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 363,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Calculate** the product of {a} and {b} and provide the value as a solitary integer with no commas or additional text.",
+   "source": "gemini"
+  },
+  {
+   "id": 364,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Determine** the value of {a} times {b} and report it as a plain integer without commas or any **commentary**.",
+   "source": "gemini"
+  },
+  {
+   "id": 365,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Solve** the multiplication of {a} and {b} and output a single integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 366,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Output** the result of {a} multiplied by {b} as a plain integer with no commas or **explanatory text**.",
+   "source": "gemini"
+  },
+  {
+   "id": 367,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Write** the product of {a} and {b} as a standalone integer without commas or accompanying language.",
+   "source": "gemini"
+  },
+  {
+   "id": 368,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Find the product of {a} and {b} and state only the resulting integer without commas or other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 369,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Determine the result of {a} times {b} and provide only the plain integer with no commas or other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 370,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Solve for the product of {a} and {b} and return the result as a plain integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 371,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Evaluate {a} multiplied by {b} and output only the product as a plain integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 372,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Give the product of {a} and {b} as a single integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 373,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Report the result of multiplying {a} by {b} as a plain integer with no commas and no other text.",
+   "source": "gemini"
+  },
+  {
+   "id": 374,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "As a plain integer with no commas or other text, find the result of {a} times {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 375,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Use a standalone integer without commas or any other content to report the result of multiplying {a} and {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 376,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "In a single integer format with no commas and no other words, give the value of {a} times {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 377,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Display only a bare integer with no commas and no text for the calculation of {a} times {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 378,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Without using commas or any additional characters, provide the integer result of {a} multiplied by {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 379,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Expressed as a plain integer with no commas and no commentary, calculate the value of {a} times {b}.",
+   "source": "gemini"
+  },
+  {
+   "id": 380,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Please calculate the result of multiplying {a} with {b}. You should provide the **product** as a single integer. Do not include commas, text, or any other characters in your final response.",
+   "source": "gemini"
+  },
+  {
+   "id": 381,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "You need to determine the value of {a} multiplied by {b} immediately. The output must be the **integer** result only. Please ensure there are no commas or additional words provided in the output.",
+   "source": "gemini"
+  },
+  {
+   "id": 382,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Your task is to find the mathematical **product** of {a} and {b}. Display the final answer as a lone integer. Ensure that no commas or extra text are included in your submission.",
+   "source": "gemini"
+  },
+  {
+   "id": 383,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "I require you to multiply the two values {a} and {b} together. The result should be presented as a **standalone** integer. You must not include any commas,",
+   "source": "gemini"
+  },
+  {
+   "id": 384,
+   "style": "wordy and over-explained, at least three sentences",
+   "text": "In order to complete this mathematical exercise, you must first identify the two specific numbers {a} and {b} and then apply the operation of multiplication to them so that you can provide the resulting numerical value as a standalone integer that is not punctuated by commas and contains absolutely no additional linguistic characters or descriptive text.",
+   "source": "gemini"
+  },
+  {
+   "id": 385,
+   "style": "wordy and over-explained, at least three sentences",
+   "text": "Your objective is to focus on the multiplication of the first value {a} and the second value {b} and, after performing the necessary arithmetic calculations to determine their product, you must present the outcome as a single plain integer without any formatting commas or any accompanying words or sentences.",
+   "source": "gemini"
+  },
+  {
+   "id": 386,
+   "style": "wordy and over-explained, at least three sentences",
+   "text": "Given the numerical entities {a} and {b}, you are tasked with the specific requirement of calculating their product through the process of multiplication and subsequently reporting the resulting figure as an unadorned integer that is devoid",
+   "source": "gemini"
+  },
+  {
+   "id": 387,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Find the **product** of {a} and {b} and show only the numeric integer without commas or any added words.",
+   "source": "gemini"
+  },
+  {
+   "id": 388,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Multiply {a} by {b} and output the **integer result** without any commas or extra text.",
+   "source": "gemini"
+  },
+  {
+   "id": 389,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Provide the outcome of multiplying {a} and {b} as a **plain integer** excluding commas and any additional characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 390,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Calculate the product of {a} and {b} and return a **naked integer** with no commas and no commentary.",
+   "source": "gemini"
+  },
+  {
+   "id": 391,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Determine the result when {a} is multiplied by {b} and state the **integer** without commas or non-numeric text.",
+   "source": "gemini"
+  },
+  {
+   "id": 392,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Evaluate {a} times {b} and report the **final product** as a solitary integer with no commas or prose.",
+   "source": "gemini"
+  },
+  {
+   "id": 393,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a careful assistant. I invite you to calculate the product of {a} and {b} and output the result as a plain integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 394,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are an expert mathematician. I challenge you to determine the product of {a} and {b} and provide the single integer without commas or other words.",
+   "source": "gemini"
+  },
+  {
+   "id": 395,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a dedicated scholar. Can you please find the product of {a} and {b} and return only the integer answer without commas or text?",
+   "source": "gemini"
+  },
+  {
+   "id": 396,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a precise calculator. I dare you to compute the product of {a} and {b} and show the resulting integer with no commas and no extra text.",
+   "source": "gemini"
+  },
+  {
+   "id": 397,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a logical thinker. I encourage you to solve for the product of {a} and {b} and state the plain integer",
+   "source": "gemini"
+  },
+  {
+   "id": 398,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "To find the **product** of {a} and {b}, multiply them and provide only the integer without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 399,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Please determine the result of {a} multiplied by {b} and output it as a plain **integer** with no commas and no words.",
+   "source": "gemini"
+  },
+  {
+   "id": 400,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Calculate the product of {a} and {b} and display the final answer as a lone **numeric** integer with no commas or labels.",
+   "source": "gemini"
+  },
+  {
+   "id": 401,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Find the value of {a} times {b} and return a single **integer** string devoid of commas or extra characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 402,
+   "style": "using light markdown, such as bold on the key requirement",
+   "text": "Multiply {a} by {b} and provide the product as a raw **integer** with no commas and no additional text",
+   "source": "gemini"
+  },
+  {
+   "id": 403,
+   "style": "in a dry technical register, like a specification",
+   "text": "Perform the multiplication of {a} and {b} and present the numerical outcome as a single integer with no commas or extra text.",
+   "source": "gemini"
+  },
+  {
+   "id": 404,
+   "style": "in a dry technical register, like a specification",
+   "text": "Your challenge is to calculate the product of {a} and {b} and specify the result as a comma-free integer with no accompanying characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 405,
+   "style": "in a dry technical register, like a specification",
+   "text": "You are invited to derive the product of {a} multiplied by {b} and deliver the final value as an unadorned integer with no commas or prose.",
+   "source": "gemini"
+  },
+  {
+   "id": 406,
+   "style": "in a dry technical register, like a specification",
+   "text": "Execute the calculation of {a} times {b} and provide the resulting product as a standalone integer devoid of commas or additional text.",
+   "source": "gemini"
+  },
+  {
+   "id": 407,
+   "style": "in a dry technical register, like a specification",
+   "text": "Submit the product of {a} and {b} as a solitary integer without commas or any other textual information.",
+   "source": "gemini"
+  },
+  {
+   "id": 408,
+   "style": "in a dry technical register, like a specification",
+   "text": "Formulate the multiplication of {a} and {b} and report the solution as",
+   "source": "gemini"
+  },
+  {
+   "id": 409,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Multiply {a} by {b} and output a lone integer without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 410,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "State the result of {a} times {b} as a plain integer without commas or extra words.",
+   "source": "gemini"
+  },
+  {
+   "id": 411,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Provide {a} multiplied by {b} as a single integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 412,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Return the value of {a} times {b} as a solitary integer without commas or words.",
+   "source": "gemini"
+  },
+  {
+   "id": 413,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Calculate {a} multiplied by {b} and show a lone integer without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 414,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Write {a} times {b} as a plain integer devoid of commas and extra words.",
+   "source": "gemini"
+  },
+  {
+   "id": 415,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Give the result for {a} multiplied by {b} as a single integer without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 416,
+   "style": "terse and imperative, as short as you can make it while keeping every requirement",
+   "text": "Output {a} times {b} as a solitary integer omitting commas and words.",
+   "source": "gemini"
+  },
+  {
+   "id": 417,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Just multiply {a} and {b} and post a plain integer without any commas or extra words.",
+   "source": "gemini"
+  },
+  {
+   "id": 418,
+   "style": "casual and conversational, contractions allowed",
+   "text": "One should find the product of {a} and {b} and give a bare integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 419,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Multiplication of {a} and {b} results in a value that needs to be a lone integer without commas or descriptions.",
+   "source": "gemini"
+  },
+  {
+   "id": 420,
+   "style": "casual and conversational, contractions allowed",
+   "text": "It'd be nice to have {a} times {b} shown as a simple integer with no commas and no other chat.",
+   "source": "gemini"
+  },
+  {
+   "id": 421,
+   "style": "casual and conversational, contractions allowed",
+   "text": "Calculate {a} and {b} together as a product and write it as a naked integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 422,
+   "style": "casual and conversational, contractions allowed",
+   "text": "The system needs to multiply {a} and {b} and output a clean integer with no commas or additional words.",
+   "source": "gemini"
+  },
+  {
+   "id": 423,
+   "style": "as a numbered list of instructions",
+   "text": "Provide the mathematical result of multiplying {a} by {b} using only a digit-based integer with no commas or accompanying words.",
+   "source": "gemini"
+  },
+  {
+   "id": 424,
+   "style": "as a numbered list of instructions",
+   "text": "Calculate the total for {a} times {b} and present it as a solitary integer devoid of commas and extra phrasing.",
+   "source": "gemini"
+  },
+  {
+   "id": 425,
+   "style": "as a numbered list of instructions",
+   "text": "Multiply the values {a} and {b} together and return the final product as an unformatted integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 426,
+   "style": "as a numbered list of instructions",
+   "text": "Please calculate what {a} multiplied by {b} equals and show only the integer result without any commas or non-numeric characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 427,
+   "style": "as a numbered list of instructions",
+   "text": "Identify the product of {a} and {b} then respond with that integer alone omitting commas and any additional description.",
+   "source": "gemini"
+  },
+  {
+   "id": 428,
+   "style": "as a numbered list of instructions",
+   "text": "Calculate the numerical value of {a} times {b} and deliver it as a plain integer free of commas or additional",
+   "source": "gemini"
+  },
+  {
+   "id": 429,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "I challenge you to multiply {a} by {b} and reveal the product as a solitary integer without commas or extra words.",
+   "source": "gemini"
+  },
+  {
+   "id": 430,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "I invite you to find the product of {a} and {b} and display the result as an unformatted integer with no commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 431,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Prove your accuracy by calculating the product of {a} and {b} and providing the final integer with no commas or additional commentary.",
+   "source": "gemini"
+  },
+  {
+   "id": 432,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "See if you can determine the result of multiplying {a} and {b} and output it as a lone integer without commas or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 433,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Take on the task of finding the product of {a} and {b} and returning just the plain integer without commas or words.",
+   "source": "gemini"
+  },
+  {
+   "id": 434,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "I dare you to solve the multiplication of {a} and {b} and present the answer",
+   "source": "gemini"
+  },
+  {
+   "id": 435,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "As a plain integer without any commas or extra text, calculate the product of {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 436,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "In the form of an unformatted integer with no commas or additional words, determine the product of {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 437,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Using only a single integer lacking commas or accompanying characters, find the product of {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 438,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "With no commas or other labels besides a solitary integer, provide the result of multiplying {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 439,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Provided only as a bare integer without commas or supplementary text, compute the product of {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 440,
+   "style": "with the output-format requirement stated first, before the problem",
+   "text": "Outputting a comma-free integer and absolutely nothing else, state the product of {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 441,
+   "style": "phrased as a direct question rather than a command",
+   "text": "What is the product, written as a single integer with no commas or other text, of {a} and {b}?",
+   "source": "gemini"
+  },
+  {
+   "id": 442,
+   "style": "phrased as a direct question rather than a command",
+   "text": "Could you provide the result of multiplying the numbers as a plain integer without commas or text for {a} and {b}?",
+   "source": "gemini"
+  },
+  {
+   "id": 443,
+   "style": "phrased as a direct question rather than a command",
+   "text": "Will you return the calculation as a standalone integer with no commas or additional words for {a} and {b}?",
+   "source": "gemini"
+  },
+  {
+   "id": 444,
+   "style": "phrased as a direct question rather than a command",
+   "text": "Can you calculate the product and display it as a comma-free integer with no other text given {a} and {b}?",
+   "source": "gemini"
+  },
+  {
+   "id": 445,
+   "style": "phrased as a direct question rather than a command",
+   "text": "Would you show the result as an integer only, without commas or supplementary labels, between {a} and {b}?",
+   "source": "gemini"
+  },
+  {
+   "id": 446,
+   "style": "phrased as a direct question rather than a command",
+   "text": "Is it possible to get the product as a raw integer with no commas or explanations involving {a} and {b}?",
+   "source": "gemini"
+  },
+  {
+   "id": 447,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a helpful assistant. Provide the integer result of {a} multiplied by {b} without commas or any additional text.",
+   "source": "gemini"
+  },
+  {
+   "id": 448,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a calculation tool. State the product of {a} and {b} as a plain integer omitting all commas and extra words.",
+   "source": "gemini"
+  },
+  {
+   "id": 449,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a math specialist. Perform the multiplication of {a} and {b} and return only the numeric product as a comma-free integer.",
+   "source": "gemini"
+  },
+  {
+   "id": 450,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a precise bot. Show the result of {a} times {b} as a solitary integer without using commas or non-numeric characters.",
+   "source": "gemini"
+  },
+  {
+   "id": 451,
+   "style": "with a short role frame at the start, for example 'You are a careful assistant.'",
+   "text": "You are a reliable assistant. Calculate {a} times {b} and output the integer result solely, excluding any commas or commentary.",
+   "source": "gemini"
+  },
+  {
+   "id": 452,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Would you be so kind as to calculate the product and provide the result as a single integer without commas or any extra text for {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 453,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "I would appreciate it if you could determine the product and output only the unformatted integer with no commas or words for {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 454,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "If you have a moment, please multiply these values and state the final result as a lone integer with no commas or language for {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 455,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "Could you please perform the multiplication and return the outcome as a plain integer devoid of commas or extra characters for {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 456,
+   "style": "polite and slightly formal, the way a person asks a colleague for a favour",
+   "text": "I am requesting that you find the product and present the answer as a single integer without commas or any accompanying text for {a} and {b}",
+   "source": "gemini"
+  },
+  {
+   "id": 457,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Calculate the total resulting from multiplying {a} and {b} and provide only the raw integer result without commas or discourse.",
+   "source": "gemini"
+  },
+  {
+   "id": 458,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Output solely the integer product of {a} and {b} with no formatting such as commas and no surrounding language.",
+   "source": "gemini"
+  },
+  {
+   "id": 459,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Determine the product when {a} is multiplied by {b} and show the answer as an isolated integer with no punctuation or text.",
+   "source": "gemini"
+  },
+  {
+   "id": 460,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "Give the numerical solution for {a} times {b} as a single integer minus commas or any descriptive words.",
+   "source": "gemini"
+  },
+  {
+   "id": 461,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "State the outcome of {a} and {b} being multiplied together as just a plain integer without commas or any additional narration.",
+   "source": "gemini"
+  },
+  {
+   "id": 462,
+   "style": "with an explicit instruction to answer immediately without explanation",
+   "text": "What is the product of {a} and {b} expressed exclusively as a plain integer with no commas and no other text?",
+   "source": "gemini"
+  }
+ ]
+}

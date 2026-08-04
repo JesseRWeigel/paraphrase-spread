@@ -25,6 +25,7 @@ pass=0; fail=0
 ok()  { printf '  ok    %s\n' "$1"; pass=$((pass+1)); }
 bad() { printf '  FAIL  %s\n' "$1"; fail=$((fail+1)); }
 TMP="$(mktemp -d)"; trap 'rm -rf "$TMP"' EXIT
+SABOTEUR="$ROOT/scripts/_sabotage.py"
 
 # A pristine copy, used by every sabotage so attacks never touch the working tree.
 snapshot() {
@@ -259,119 +260,92 @@ else bad "the page could not be built"; tail -3 "$TMP/d.log" | sed 's/^/        
 
 echo
 echo "9. sabotage"
-# Each attack must be proved to have applied, and proved to have MOVED THE MEASUREMENT, before
-# a failing test counts as the check working. An attack that silently does nothing produces a
+# Each attack must be proved to have applied, and proved to have MOVED SOMETHING, before a
+# failing check counts as the check working. An attack that silently does nothing produces a
 # confident write-up about a gap that is not there.
-BASE="$($PY scripts/headline.py --task mult --model qwen3:8b 2>/dev/null)"
-printf '        baseline: %s\n' "$BASE"
+#
+# The probe is per attack rather than one shared headline number, because several of these
+# attacks cannot move the mult headline at all: that run had zero unparseable responses and zero
+# failed calls, so a grader change to either would look like a no-op and the check would report
+# a gap that does not exist. Each probe names exactly what its attack is supposed to change.
+#
+# Catching is then either the unit suite, or the independent re-derivation run against an
+# analysis rebuilt BY THE SABOTAGED CODE. That rebuild is what makes the second route work: the
+# checker shares no code with the pipeline, so it can only notice a sabotage once the sabotaged
+# pipeline has written its answer down.
 attack() {
-  local name="$1" file="$2" old="$3" new="$4"
+  local name="$1" file="$2" old="$3" new="$4" probe="$5"
   local dir="$TMP/a-$name"; snapshot "$dir"
-  if ! $PY - "$dir/$file" "$old" "$new" <<'PY'
-import pathlib, sys
-path, old, new = sys.argv[1], sys.argv[2], sys.argv[3]
-p = pathlib.Path(path); t = p.read_text()
-if old not in t:
-    sys.exit(f"SABOTAGE DID NOT APPLY: {old!r} absent from {path}")
-if old == new:
-    sys.exit("SABOTAGE IS A NO-OP")
-p.write_text(t.replace(old, new, 1))
-PY
-  then bad "sabotage \"$name\" did not apply, so it proves nothing"; return; fi
+  if ! $PY "$SABOTEUR" "$dir/$file" "$old" "$new"; then
+    bad "sabotage \"$name\" did not apply, so it proves nothing"; return
+  fi
 
-  local now urc irc
-  now="$( cd "$dir" && $PY scripts/headline.py --task mult --model qwen3:8b 2>/dev/null )"
-  set +e
-  ( cd "$dir" && $PY -m unittest discover -s tests -t . ) >"$TMP/$name-u.log" 2>&1; urc=$?
-  ( cd "$dir" && $PY scripts/check_independent.py ) >"$TMP/$name-i.log" 2>&1; irc=$?
-  set -e
-  if [ "$now" = "$BASE" ]; then
-    bad "sabotage \"$name\" applied but the measurement did not move, so it is a no-op"
+  local before after urc irc
+  before="$( $PY -c "$probe" 2>&1 | tail -1 )"
+  after="$( cd "$dir" && $PY -c "$probe" 2>&1 | tail -1 )"
+  if [ "$before" = "$after" ]; then
+    bad "sabotage \"$name\" applied but its probe still reports $before, so it is a no-op"
     return
   fi
-  printf '        %-28s now: %s\n' "$name" "$now"
+  set +e
+  ( cd "$dir" && $PY -m unittest discover -s tests -t . ) >"$TMP/$name-u.log" 2>&1; urc=$?
+  ( cd "$dir" && $PY -m pspread.cli analyze --permutations 40 --splits 20 ) \
+      >"$TMP/$name-a.log" 2>&1
+  ( cd "$dir" && $PY scripts/check_independent.py ) >"$TMP/$name-i.log" 2>&1; irc=$?
+  set -e
+  printf '        %-30s %s -> %s\n' "$name" "$before" "$after"
   if [ "$urc" -ne 0 ] || [ "$irc" -ne 0 ]; then
-    ok "sabotage \"$name\" moved the numbers and was caught (unit $urc, independent $irc)"
+    ok "sabotage \"$name\" moved its probe and was caught (unit $urc, independent $irc)"
   else
-    bad "sabotage \"$name\" moved the numbers and nothing noticed"
+    bad "sabotage \"$name\" moved its probe and nothing noticed"
   fi
 }
+
+G='import sys; sys.path.insert(0, "."); from pspread import grade, stats'
 
 # The grader reads the wrong end of the response.
 attack "grader-reads-first-number" "pspread/grade.py" \
-  "    pred = cands[-1]" "    pred = cands[0]"
+  "    pred = cands[-1]" "    pred = cands[0]" \
+  "$G; print(grade.grade_one('47 x 83 = 3901', '3901', 'integer')[0])"
 # Unparseable folded into wrong, which is the silent-failure pattern this project is about.
 attack "unparseable-scored-as-wrong" "pspread/grade.py" \
-  "        return UNPARSEABLE, False, None" "        return WRONG, False, None"
+  "        return UNPARSEABLE, False, None" "        return WRONG, False, None" \
+  "$G; print(grade.grade_group([('a', 'no digits here')], {'a': '1'}, 'integer')['unparseable'])"
 # A failed call scored as a wrong answer, which would let a flaky server look like a bad wording.
 attack "failed-call-scored-as-wrong" "pspread/grade.py" \
-  "        return ERROR, False, None" "        return WRONG, False, None"
+  "        return ERROR, False, None" "        return WRONG, False, None" \
+  "$G; print(grade.grade_group([('a', None)], {'a': '1'}, 'integer')['error'])"
 # Substring matching, the version of the label rule that fires on the word "not".
 attack "lenient-substring-matching" "pspread/grade.py" \
   '_LABEL = re.compile(r"(?<![0-9A-Za-z_])(yes|no|unknown)(?![0-9A-Za-z_])")' \
-  '_LABEL = re.compile(r"(yes|no|unknown)")'
+  '_LABEL = re.compile(r"(yes|no|unknown)")' \
+  "$G; print(grade.candidates('it is not the case', 'label'))"
 # The spread itself: a sample standard deviation inflates it.
 attack "sample-sd-inflates-the-spread" "pspread/stats.py" \
   "    return math.sqrt(sum((x - m) ** 2 for x in xs) / len(xs))" \
-  "    return math.sqrt(sum((x - m) ** 2 for x in xs) / (len(xs) - 1))"
-# Cochran's Q with the wrong leading constant, which changes the statistic the page prints.
+  "    return math.sqrt(sum((x - m) ** 2 for x in xs) / (len(xs) - 1))" \
+  "$G; print(round(stats.stdev([0.0, 1.0]), 6))"
+# Cochran's Q with the wrong leading constant. The unit suite cannot see this one, because the
+# permutation null uses the same formula and the p-value comes out unchanged. Only the
+# independent re-derivation of Q catches it, which is the reason that layer exists.
 attack "cochran-q-wrong-constant" "pspread/stats.py" \
   "    num = k * (k - 1) * sum((g - gbar) ** 2 for g in col_totals)" \
-  "    num = k * sum((g - gbar) ** 2 for g in col_totals)"
-
-# Two attacks on the statistics that do not change the grade, so they are checked by the suite
-# rather than by the headline probe.
-stat_attack() {
-  local name="$1" file="$2" old="$3" new="$4" probe="$5"
-  local dir="$TMP/s-$name"; snapshot "$dir"
-  if ! $PY - "$dir/$file" "$old" "$new" <<'PY'
-import pathlib, sys
-path, old, new = sys.argv[1], sys.argv[2], sys.argv[3]
-p = pathlib.Path(path); t = p.read_text()
-if old not in t:
-    sys.exit(f"SABOTAGE DID NOT APPLY: {old!r} absent from {path}")
-p.write_text(t.replace(old, new, 1))
-PY
-  then bad "sabotage \"$name\" did not apply, so it proves nothing"; return; fi
-  local before after urc
-  before="$( $PY -c "$probe" 2>&1 | tail -1 )"
-  after="$( cd "$dir" && $PY -c "$probe" 2>&1 | tail -1 )"
-  set +e
-  ( cd "$dir" && $PY -m unittest discover -s tests -t . ) >"$TMP/$name-u.log" 2>&1; urc=$?
-  set -e
-  if [ "$before" = "$after" ]; then
-    bad "sabotage \"$name\" applied but its probe did not move, so it is a no-op"
-    return
-  fi
-  printf '        %-28s %s -> %s\n' "$name" "$before" "$after"
-  if [ "$urc" -ne 0 ]; then
-    ok "sabotage \"$name\" moved the statistic and the suite caught it"
-  else
-    bad "sabotage \"$name\" moved the statistic and nothing noticed"
-  fi
-}
-
-# A p-value that is always 1 would let the project report "no spread found" forever, and a
-# p-value that is always 0 would call the null world a discovery. Both must be caught.
-stat_attack "p-value-always-one" "pspread/stats.py" \
+  "    num = k * sum((g - gbar) ** 2 for g in col_totals)" \
+  "$G; print(round(stats.cochran_q([[1,1,1,1]]*2 + [[0,0,0,0]]*2), 6))"
+# A p-value that is always 1 reports "no spread found" whatever the data says.
+attack "p-value-always-one" "pspread/stats.py" \
   "    ge = sum(1 for v in null_values if v >= observed)
     return (ge + 1) / (len(null_values) + 1)" \
   "    return 1.0" \
-  'import sys; sys.path.insert(0, "."); from pspread import stats;
-print(round(stats._upper_p(9.0, [1.0, 2.0, 3.0]), 4))'
-stat_attack "reliability-always-perfect" "pspread/stats.py" \
-  '    return {
-        "splits": len(raws),
-        "half_correlation": mean(raws),' \
-  '    return {
-        "splits": len(raws),
-        "half_correlation": 1.0,' \
-  'import sys, random; sys.path.insert(0, "."); from pspread import stats;
-rng = random.Random(1);
-rows = [[1 if rng.random() < d else 0 for d in [0.2, 0.5, 0.8, 0.4, 0.6, 0.3]] for _ in range(40)];
-print(round(stats.split_half_reliability(rows, reps=20, seed=2)["half_correlation"], 4))'
+  "$G; print(round(stats._upper_p(9.0, [1.0, 2.0, 3.0]), 6))"
+# A reliability that is always perfect would make item-set luck look like a real effect.
+attack "reliability-always-perfect" "pspread/stats.py" \
+  '        "spearman_brown": mean(c for c in corrected if c == c),' \
+  '        "spearman_brown": 1.0,' \
+  "$G; import random; rng = random.Random(1);
+rows = [[1 if rng.random() < d else 0 for d in [0.2,0.5,0.8,0.4,0.6,0.3]] for _ in range(40)];
+print(round(stats.split_half_reliability(rows, reps=20, seed=2)['spearman_brown'], 6))"
 
-echo
 echo "10. hygiene"
 if git -C "$ROOT" rev-parse --git-dir >/dev/null 2>&1; then
   hits=$(git -C "$ROOT" grep -In -e "/home/$(id -un)" -- . 2>/dev/null \

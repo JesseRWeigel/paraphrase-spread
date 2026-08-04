@@ -1,0 +1,3532 @@
+{
+ "task": "mult",
+ "checked_at": "2026-08-04T00:18:59Z",
+ "judge_model": "gemini-3-flash-preview",
+ "method": "Three checks. A deterministic structural check ran on every candidate at generation time and is the reason the rejected list exists. A model judge compared EVERY wording against the canonical one, and the analysis uses only the wordings it called equivalent. A round trip through Spanish and back, on a random sample, judged against its own original, tests whether the meaning survives a transform that does not preserve surface form.",
+ "reviewer_note": "The judge is a language model, and the spot-check of its verdicts was done by an AI agent. No human read these wordings.",
+ "judged": {
+  "n": 462,
+  "equivalent": 413,
+  "unjudged": 0,
+  "rate": 0.8939393939393939
+ },
+ "backtranslation": {
+  "n": 40,
+  "equivalent": 40,
+  "rate": 1.0,
+  "slots_survived": 40
+ },
+ "structural_rejections": 46,
+ "equivalent_ids": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  28,
+  29,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  59,
+  60,
+  61,
+  62,
+  63,
+  66,
+  68,
+  69,
+  70,
+  71,
+  72,
+  74,
+  79,
+  80,
+  81,
+  82,
+  84,
+  85,
+  86,
+  88,
+  89,
+  90,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  101,
+  102,
+  103,
+  105,
+  106,
+  107,
+  108,
+  109,
+  110,
+  111,
+  112,
+  113,
+  114,
+  115,
+  117,
+  118,
+  119,
+  120,
+  121,
+  122,
+  123,
+  124,
+  125,
+  126,
+  127,
+  128,
+  129,
+  130,
+  132,
+  133,
+  134,
+  135,
+  136,
+  137,
+  138,
+  140,
+  141,
+  142,
+  143,
+  144,
+  145,
+  146,
+  147,
+  148,
+  149,
+  150,
+  151,
+  152,
+  153,
+  154,
+  156,
+  157,
+  158,
+  159,
+  160,
+  162,
+  163,
+  164,
+  165,
+  166,
+  167,
+  168,
+  169,
+  170,
+  172,
+  173,
+  174,
+  175,
+  176,
+  177,
+  178,
+  179,
+  180,
+  181,
+  182,
+  183,
+  184,
+  185,
+  186,
+  188,
+  189,
+  190,
+  191,
+  192,
+  193,
+  194,
+  195,
+  197,
+  198,
+  199,
+  200,
+  201,
+  202,
+  203,
+  204,
+  205,
+  206,
+  207,
+  208,
+  209,
+  210,
+  211,
+  212,
+  214,
+  215,
+  216,
+  217,
+  218,
+  219,
+  220,
+  221,
+  222,
+  223,
+  224,
+  225,
+  226,
+  227,
+  228,
+  229,
+  230,
+  231,
+  232,
+  233,
+  234,
+  235,
+  236,
+  237,
+  238,
+  240,
+  241,
+  242,
+  243,
+  244,
+  245,
+  246,
+  248,
+  249,
+  250,
+  251,
+  252,
+  254,
+  255,
+  256,
+  257,
+  258,
+  259,
+  260,
+  261,
+  262,
+  263,
+  264,
+  266,
+  267,
+  268,
+  269,
+  270,
+  271,
+  273,
+  274,
+  275,
+  276,
+  277,
+  278,
+  279,
+  280,
+  281,
+  282,
+  283,
+  284,
+  285,
+  286,
+  287,
+  288,
+  289,
+  290,
+  291,
+  293,
+  294,
+  295,
+  296,
+  297,
+  298,
+  299,
+  301,
+  302,
+  303,
+  304,
+  305,
+  306,
+  307,
+  308,
+  310,
+  311,
+  312,
+  313,
+  314,
+  315,
+  316,
+  318,
+  320,
+  321,
+  322,
+  323,
+  324,
+  325,
+  326,
+  327,
+  328,
+  329,
+  330,
+  331,
+  332,
+  333,
+  334,
+  335,
+  336,
+  337,
+  339,
+  340,
+  341,
+  342,
+  343,
+  344,
+  345,
+  346,
+  348,
+  349,
+  350,
+  351,
+  352,
+  353,
+  354,
+  355,
+  357,
+  358,
+  359,
+  360,
+  361,
+  362,
+  363,
+  364,
+  365,
+  366,
+  367,
+  368,
+  369,
+  370,
+  371,
+  372,
+  373,
+  374,
+  375,
+  376,
+  377,
+  378,
+  379,
+  380,
+  381,
+  382,
+  384,
+  385,
+  387,
+  388,
+  389,
+  390,
+  391,
+  392,
+  393,
+  394,
+  395,
+  396,
+  398,
+  399,
+  400,
+  401,
+  402,
+  403,
+  404,
+  405,
+  406,
+  407,
+  409,
+  410,
+  411,
+  412,
+  413,
+  414,
+  415,
+  416,
+  417,
+  418,
+  419,
+  420,
+  421,
+  422,
+  423,
+  424,
+  425,
+  426,
+  427,
+  429,
+  430,
+  431,
+  432,
+  433,
+  435,
+  436,
+  437,
+  438,
+  439,
+  440,
+  441,
+  442,
+  444,
+  447,
+  448,
+  449,
+  451,
+  452,
+  453,
+  454,
+  455,
+  456,
+  457,
+  458,
+  459,
+  460,
+  461,
+  462
+ ],
+ "judgements": [
+  {
+   "id": 1,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same output format.",
+   "text": "Multiply {a} by {b} and output only the plain integer without commas or text."
+  },
+  {
+   "id": 2,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting requirements.",
+   "text": "Give the product of {a} and {b} as a plain integer with no commas or text."
+  },
+  {
+   "id": 3,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the two variables and specify the same formatting constraints for the output.",
+   "text": "Calculate {a} times {b} and provide only the integer result without commas or text."
+  },
+  {
+   "id": 4,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or additional text.",
+   "text": "Provide the product of {a} and {b} as an unformatted integer without commas or text."
+  },
+  {
+   "id": 5,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Return {a} multiplied by {b} as a plain integer with no commas or text."
+  },
+  {
+   "id": 6,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be formatted as an integer without commas or additional text.",
+   "text": "Output the product {a}*{b} as a single integer with no commas or text."
+  },
+  {
+   "id": 7,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting constraints.",
+   "text": "Supply the result of {a} multiplied by {b} as a plain integer without commas or text."
+  },
+  {
+   "id": 8,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction is truncated and ends abruptly, making it incomplete compared to the reference.",
+   "text": "Find the product of {a} and {b} and output only the integer without"
+  },
+  {
+   "id": 9,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting requirements.",
+   "text": "Could you please calculate the product of {a} and {b} and provide the result as a single integer with no commas and no other text?"
+  },
+  {
+   "id": 10,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same variables with identical formatting constraints.",
+   "text": "I would appreciate it if you could multiply {a} and {b} and return the final answer as a plain integer without commas or any additional text."
+  },
+  {
+   "id": 11,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Would you mind finding the product of {a} and {b} and sharing the numerical result as an integer alone, with no commas or extra words?"
+  },
+  {
+   "id": 12,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions request the product of the same two variables and specify the exact same formatting for the output.",
+   "text": "Please determine the result of multiplying {a} and {b} and present the answer as an integer only, excluding any commas or surrounding text."
+  },
+  {
+   "id": 13,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output constraints (a plain integer with no additional text, formatting, or commentary).",
+   "text": "It would be very helpful if you could compute the product of {a} and {b} and give me the final number as a plain integer with no formatting or commentary."
+  },
+  {
+   "id": 14,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting constraints for the output.",
+   "text": "What is the product of {a} and {b} expressed as a plain integer with no commas and no other text?"
+  },
+  {
+   "id": 15,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and specify the exact same formatting constraints for the output.",
+   "text": "Can you calculate the product of {a} and {b} and provide the result as a plain integer with no commas and no other text?"
+  },
+  {
+   "id": 16,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting constraints for the output.",
+   "text": "What is the value of {a} multiplied by {b} shown as a plain integer with no commas and no other text?"
+  },
+  {
+   "id": 17,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting requirements for the output.",
+   "text": "If you multiply {a} by {b}, what is the integer result with no commas and no other text?"
+  },
+  {
+   "id": 18,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the exact same formatting constraints.",
+   "text": "What is the result of multiplying {a} and {b} if it must be a plain integer with no commas and no other text?"
+  },
+  {
+   "id": 19,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same variables and specify the exact same formatting requirements.",
+   "text": "Can you give the product of {a} and {b} as a plain integer with no commas and no other text?"
+  },
+  {
+   "id": 20,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting for the output.",
+   "text": "You are a careful assistant. Calculate the product of {a} and {b} and give the result as a plain integer with no commas and no other text."
+  },
+  {
+   "id": 21,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables with identical formatting constraints.",
+   "text": "You are an expert mathematician. Multiply {a} and {b} and provide the answer as a plain integer without commas or any additional text."
+  },
+  {
+   "id": 22,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and specify the same output format (an integer with no commas or extra text).",
+   "text": "You are a precise calculator. Compute {a} times {b} and return the final answer as an integer with no commas and no other text."
+  },
+  {
+   "id": 23,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "You are a focused solver. Find the product of {a} and {b} and output only the integer result without commas or text."
+  },
+  {
+   "id": 24,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and require the output to be a plain integer with no commas or additional text.",
+   "text": "You are a helpful bot. Determine the result of {a} multiplied by {b} and provide the answer as a plain integer with no commas or other text."
+  },
+  {
+   "id": 25,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions specify the same mathematical operation and the same strict formatting requirements for the output.",
+   "text": "To calculate the result, multiply the value {a} by the value {b} to find their mathematical product. Once the calculation is complete, express the answer as a plain integer that does not include any commas. Ensure that the final response contains only the number itself and no additional words or characters."
+  },
+  {
+   "id": 26,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be calculated and formatted as a plain integer without commas or any additional text.",
+   "text": "Your objective is to determine the product of {a} and {b} by performing a standard multiplication. After you have the result, please format it as a plain integer without any commas or separators. It is important that the final answer stands alone as a numeric value with no extra text or explanation."
+  },
+  {
+   "id": 27,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate is truncated and omits the specific formatting constraints (plain integer, no commas, no other text) required by the reference.",
+   "text": "Please focus on the two provided numbers {a} and {b} and work out the product that results from multiplying them. When you are ready to provide the final answer, write it"
+  },
+  {
+   "id": 28,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same variables and specify the exact same formatting constraints for the output.",
+   "text": "Calculate the product of {a} and {b} and output the result as a raw integer without commas or additional text."
+  },
+  {
+   "id": 29,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (a plain integer without additional text or formatting).",
+   "text": "Determine the mathematical product of {a} and {b} and provide the result as a single integer with no formatting or text."
+  },
+  {
+   "id": 30,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate's instruction to exclude \"non-numeric characters\" would require removing the negative sign from a negative product, whereas the reference's instruction to provide a \"plain integer\" with ",
+   "text": "Evaluate the multiplication of {a} and {b} and state the resulting integer without any non-numeric characters or separators."
+  },
+  {
+   "id": 31,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or any additional text.",
+   "text": "Perform the multiplication of {a} times {b} and return only the product as an integer devoid of commas or strings."
+  },
+  {
+   "id": 32,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (a plain integer without separators or additional text).",
+   "text": "Multiply {a} by {b} and supply the final answer as a plain integer without separators or accompanying language."
+  },
+  {
+   "id": 33,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or additional text.",
+   "text": "Calculate {a} multiplied by {b} and display the result as a single integer string with no commas or commentary."
+  },
+  {
+   "id": 34,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting requirements for the output.",
+   "text": "Hey, can you multiply {a} by {b} and give me the result as just a plain integer without commas or text?"
+  },
+  {
+   "id": 35,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a single number without commas or additional text.",
+   "text": "Just calculate {a} times {b} and show me the number alone with no commas or extra words."
+  },
+  {
+   "id": 36,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables to be formatted as an integer without commas or additional text.",
+   "text": "What's the product of {a} and {b} expressed as a single integer with no commas or other text?"
+  },
+  {
+   "id": 37,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting requirements for the output.",
+   "text": "Go ahead and multiply {a} and {b} and provide only the plain number with no commas or extra text."
+  },
+  {
+   "id": 38,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "I need {a} multiplied by {b} as a standalone integer with no commas and no extra talk."
+  },
+  {
+   "id": 39,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and specify the same output format (a plain integer without commas or additional text).",
+   "text": "Can you find what {a} times {b} is and give just the raw integer without any commas or text?"
+  },
+  {
+   "id": 40,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer with no commas or additional text.",
+   "text": "Provide a plain integer with no commas and no other text for the product of {a} and {b}."
+  },
+  {
+   "id": 41,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a single integer without commas or additional text.",
+   "text": "Give the final result as a single integer without commas or text for the calculation of {a} times {b}."
+  },
+  {
+   "id": 42,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (integer only, no commas, no extra text).",
+   "text": "State only the integer result of multiplying {a} and {b} without commas or additional wording."
+  },
+  {
+   "id": 43,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a single integer without commas or additional text.",
+   "text": "Write a single integer with no commas or extra characters representing the value of {a} times {b}."
+  },
+  {
+   "id": 44,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Return just the numeric product of {a} and {b} as a plain integer with no commas or text."
+  },
+  {
+   "id": 45,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting requirements for the output.",
+   "text": "Show the result of {a} multiplied by {b} as a lone integer with no commas or other text."
+  },
+  {
+   "id": 46,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be output as a single integer without commas or additional text.",
+   "text": "Display a solitary integer with no commas or extra description for the product of {a} and {b}."
+  },
+  {
+   "id": 47,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same variables and specify the exact same output format.",
+   "text": "Multiply {a} and {b} and provide the product as a plain integer with no commas and no other text."
+  },
+  {
+   "id": 48,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify identical formatting constraints for the output.",
+   "text": "Calculate the product of {a} and {b} and give the final answer as a single integer with no commas or other text."
+  },
+  {
+   "id": 49,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format.",
+   "text": "Find the result of multiplying {a} by {b} and output a plain integer without commas or any additional text."
+  },
+  {
+   "id": 50,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "What is the product of {a} and {b}? Return only the integer value with no commas or extra text."
+  },
+  {
+   "id": 51,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the exact same formatting constraints for the output.",
+   "text": "Determine the product of {a} and {b} and provide the answer as a solitary integer without commas or text."
+  },
+  {
+   "id": 52,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and specify the exact same output format.",
+   "text": "Compute {a} times {b} and return the result as a plain integer with no commas and no other text."
+  },
+  {
+   "id": 53,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting requirements for the output.",
+   "text": "Multiply {a} by {b} and provide the result as a **plain integer** without commas or any additional text."
+  },
+  {
+   "id": 54,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without any additional text or formatting.",
+   "text": "Find the product of {a} times {b} and output only the **numerical value** as an integer with no formatting or words."
+  },
+  {
+   "id": 55,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (integer, no commas, no extra text).",
+   "text": "Calculate the result of multiplying {a} and {b} then state the answer as a **single integer** with no commas or text."
+  },
+  {
+   "id": 56,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (a single integer with no additional text or formatting).",
+   "text": "What is {a} multiplied by {b} and provide the answer as a **bare integer** with no extra characters or symbols."
+  },
+  {
+   "id": 57,
+   "verdict": "DIFFERENT",
+   "reason": "The reference specifies that the result must be an \"integer,\" which is a more specific requirement than the candidate's request for a \"number.\" If the product of {a} and {b} were a non-integer (e.g., ",
+   "text": "Perform the multiplication of {a} and {b} and return the product as a **plain number** devoid of commas and non-numeric text."
+  },
+  {
+   "id": 58,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction is truncated and does not specify the full formatting requirements.",
+   "text": "Multiply these two numbers: {a} and {b} and ensure the final output is a **pure"
+  },
+  {
+   "id": 59,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Think carefully and compute the product of {a} and {b}, giving only a plain integer without commas or text."
+  },
+  {
+   "id": 60,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a single integer without commas or additional text.",
+   "text": "Please reflect on the calculation of {a} times {b} and output the result as a standalone integer with no commas or other text."
+  },
+  {
+   "id": 61,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "Take time to think through the multiplication of {a} and {b} and provide the final integer answer with no commas or words."
+  },
+  {
+   "id": 62,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or any additional text.",
+   "text": "Carefully evaluate the product of {a} and {b} and return the answer as a plain integer with no commas or extra characters."
+  },
+  {
+   "id": 63,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the two variables and specify the same formatting requirements for the output.",
+   "text": "Deliberate on the math for {a} multiplied by {b} and state the result as a single integer without commas or any text."
+  },
+  {
+   "id": 64,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate is truncated and omits the specific formatting constraints (plain integer, no commas, no other text) required by the reference.",
+   "text": "Think step-by-step about {a} times {b} and then provide the resulting product as"
+  },
+  {
+   "id": 65,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate leaves out the specific instruction that the integer should contain no commas, which is a constraint present in the reference. Therefore, the candidate would accept a response with comma",
+   "text": "Multiply {a} by {b} and provide only the resulting integer immediately without explanation or any other text."
+  },
+  {
+   "id": 66,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same variables and specify the same formatting constraints (plain integer, no commas, and no extra text/words).",
+   "text": "Calculate the product of {a} and {b} and give the answer as a plain integer with no commas or words."
+  },
+  {
+   "id": 67,
+   "verdict": "DIFFERENT",
+   "reason": "The reference explicitly forbids commas in the output, whereas the candidate does not, meaning the candidate would accept a formatted integer that the reference would reject.",
+   "text": "What is the product of {a} times {b}? Provide the result as a standalone integer with no explanation."
+  },
+  {
+   "id": 68,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the two variables and specify the same output format (an unformatted integer with no additional text). The term \"raw integer\" in the candidate is synonymous wi",
+   "text": "Find the result of {a} multiplied by {b} and state only the raw integer with no additional text."
+  },
+  {
+   "id": 69,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Return only the numerical product of {a} and {b} as a plain integer without commas or commentary."
+  },
+  {
+   "id": 70,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (an integer with no additional text or characters).",
+   "text": "Multiply {a} and {b} and output the integer result immediately with no extra characters or words."
+  },
+  {
+   "id": 71,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or any additional text.",
+   "text": "Provide the product of {a} and {b} as a single integer with no commas and no explanatory text"
+  },
+  {
+   "id": 72,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same output format.",
+   "text": "Multiply {a} and {b} and report the product as a plain integer with no commas and no other text."
+  },
+  {
+   "id": 73,
+   "verdict": "DIFFERENT",
+   "reason": "The reference explicitly specifies that the integer must have no commas, while the candidate does not include this constraint.",
+   "text": "Calculate the product of {a} and {b} and state the resulting integer alone."
+  },
+  {
+   "id": 74,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of two variables, {a} and {b}, and specify the same output constraints: a numeric format without commas and without any additional text. While the reference uses ",
+   "text": "Find the value of {a} multiplied by {b} and provide only the numeric answer without commas."
+  },
+  {
+   "id": 75,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate leaves out the specific instruction \"no commas\" which is present in the reference. While \"plain integer\" might imply no formatting to some, the reference's explicit constraint \"no commas",
+   "text": "Solve {a} x {b} and output the result as a single plain integer with no other text."
+  },
+  {
+   "id": 76,
+   "verdict": "DIFFERENT",
+   "reason": "The reference explicitly forbids any text other than the integer (\"no other text\"), whereas the candidate does not, meaning the candidate would accept a conversational response that the reference woul",
+   "text": "What is the product of {a} and {b} expressed as a raw integer without commas?"
+  },
+  {
+   "id": 77,
+   "verdict": "DIFFERENT",
+   "reason": "The reference specifies that the answer must be an integer and explicitly forbids commas, whereas the candidate asks for a \"number\" (which includes non-integers) and does not specify the exclusion of ",
+   "text": "Compute the total of {a} times {b} and give the answer as a plain number only."
+  },
+  {
+   "id": 78,
+   "verdict": "DIFFERENT",
+   "reason": "The term \"plain integer\" in the reference includes negative signs for negative products, whereas \"digit sequence\" in the candidate technically refers only to the digits 0-9 and would exclude a negativ",
+   "text": "Multiply {a} by {b} and write the product as a single digit sequence with no other text."
+  },
+  {
+   "id": 79,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting for the output.",
+   "text": "If you have a moment, please compute the product of {a} and {b} and give the final answer as a plain integer with no commas and no other text."
+  },
+  {
+   "id": 80,
+   "verdict": "EQUIVALENT",
+   "reason": "The core task and formatting requirements are identical, and the added politeness in the candidate does not change the instruction.",
+   "text": "If you don't mind, compute the product of {a} and {b} and give the final answer as a plain integer with no commas and no other text."
+  },
+  {
+   "id": 81,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same variables and specify the exact same formatting constraints for the output.",
+   "text": "When you get a chance, please compute the product of {a} and {b} and give the final answer as a plain integer with no commas and no other text."
+  },
+  {
+   "id": 82,
+   "verdict": "EQUIVALENT",
+   "reason": "The core instruction and formatting requirements are identical; \"If it's possible\" is a conditional qualifier that does not change the task or the expected output for valid inputs.",
+   "text": "If it's possible, compute the product of {a} and {b} and give the final answer as a plain integer with no commas and no other text."
+  },
+  {
+   "id": 83,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction is truncated and omits the specific formatting requirements (plain integer, no commas, no other text) specified in the reference.",
+   "text": "If you can, compute the product of {a} and {b} and give the final answer as"
+  },
+  {
+   "id": 84,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the two variables and specify the same formatting constraints (no commas, no extra text).",
+   "text": "Give me the total when you multiply these and keep the answer as a plain number without any commas or extra words: {a} and {b}"
+  },
+  {
+   "id": 85,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (plain integer, no commas, no extra text).",
+   "text": "Just shoot over the integer result for multiplying these, but don't include any commas or other text: {a} and {b}"
+  },
+  {
+   "id": 86,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (no commas and no additional text).",
+   "text": "What's the product of these two? Just give the number with no commas or chatting: {a} and {b}"
+  },
+  {
+   "id": 87,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate asks to provide the numbers themselves (\"just provide: {a} and {b}\") rather than their product, whereas the reference asks for the product.",
+   "text": "I'm looking for the integer you get when multiplying these, so skip the commas and text and just provide: {a} and {b}"
+  },
+  {
+   "id": 88,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (only digits, no commas, and no additional text).",
+   "text": "Can you find the product for these and output only the digits without any commas or conversation: {a} and {b}"
+  },
+  {
+   "id": 89,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "As a precise calculator, solve the multiplication of {a} and {b} by providing only the integer result without any text or commas."
+  },
+  {
+   "id": 90,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Being a math-focused AI, evaluate the product of {a} and {b} and return a plain integer answer with no commas or words."
+  },
+  {
+   "id": 91,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of {a} and {b} and specify the same output format of a plain integer without commas or additional text.",
+   "text": "Acting as a numerical tool, calculate the total of {a} multiplied by {b} and show only the final integer without any commas or text."
+  },
+  {
+   "id": 92,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting constraints for the output.",
+   "text": "Imagine you are a math engine; compute {a} times {b} and output the product as a standalone integer with no commas or text."
+  },
+  {
+   "id": 93,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions request the product of the same variables and specify the exact same output format, with the persona being a matter of tone or register.",
+   "text": "Assuming the role of a diligent accountant, find the product of {a} and {b} and list the result as a plain integer with no commas or text."
+  },
+  {
+   "id": 94,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or additional text.",
+   "text": "{a} and {b} should be multiplied; would you please provide the resulting product as a plain integer without commas or extra text?"
+  },
+  {
+   "id": 95,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer without commas or additional text.",
+   "text": "{a} multiplied by {b} is the value I need; kindly state the final product as a comma-free integer with no other words."
+  },
+  {
+   "id": 96,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of {a} and {b} to be returned as an integer without commas or additional text.",
+   "text": "{a} and {b} are the factors to multiply; if you could, please supply the resulting product as a single integer devoid of commas or text."
+  },
+  {
+   "id": 97,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or extra text.",
+   "text": "{a} times {b} needs to be calculated; I would appreciate the answer as a standalone integer with no commas and no additional characters."
+  },
+  {
+   "id": 98,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be output as a plain integer without commas or additional text.",
+   "text": "{a} and {b} are to be used to find their product; please output the numerical result as a plain integer with no commas or extra text."
+  },
+  {
+   "id": 99,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting requirements for the output.",
+   "text": "{a} and {b} need to be multiplied, so just give me the answer as an integer without commas or any text."
+  },
+  {
+   "id": 100,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate asks for a \"plain number\" while the reference specifies a \"plain integer,\" which is more restrictive. Additionally, the candidate's constraint \"no words\" is less restrictive than the ref",
+   "text": "{a} times {b} is the math problem here; just tell me the result as a plain number with no commas or words."
+  },
+  {
+   "id": 101,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (integer, no commas, and no extra text).",
+   "text": "{a} and {b} are the numbers to multiply, so provide the product as a single integer and don't include any commas or talk."
+  },
+  {
+   "id": 102,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "{a} and {b} should be multiplied together, then you should output the answer as an unformatted integer with no extra text or commas."
+  },
+  {
+   "id": 103,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same output format.",
+   "text": "{a} multiplied by {b} is what I'm looking for, so please just send back the integer result without commas or any other words."
+  },
+  {
+   "id": 104,
+   "verdict": "DIFFERENT",
+   "reason": "The reference specifies a strict output format (plain integer, no commas, no other text), while the candidate does not specify any formatting constraints. Therefore, the candidate would accept respons",
+   "text": "{a} and {b} need their product calculated"
+  },
+  {
+   "id": 105,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "Would you kindly multiply {a} by {b} and return the result as a solitary integer without commas or text?"
+  },
+  {
+   "id": 106,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and specify the same output format (an integer with no commas or additional text).",
+   "text": "Could you please calculate the product of {a} and {b} and provide only the integer answer without commas or words?"
+  },
+  {
+   "id": 107,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions request the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "If you have a moment, please multiply {a} and {b} and state the resulting product as an integer with no commas or accompanying text."
+  },
+  {
+   "id": 108,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting requirements for the output.",
+   "text": "I would appreciate it if you could multiply {a} by {b} and provide the answer as a plain integer with no commas or extra characters."
+  },
+  {
+   "id": 109,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and specify the same formatting requirements (integer, no commas, no additional text).",
+   "text": "Please find the product of {a} and {b} and present the result solely as an integer without commas or any additional text."
+  },
+  {
+   "id": 110,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the two variables and specify the same output format (a plain integer without commas or extra text).",
+   "text": "Kindly compute {a} times {b} and provide the resulting integer without commas or any surrounding words"
+  },
+  {
+   "id": 111,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting for the output.",
+   "text": "Multiply {a} by {b} and provide the result as a single integer without commas or any text."
+  },
+  {
+   "id": 112,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same output format.",
+   "text": "Find the result of {a} times {b} and output it as a plain integer with no commas or additional characters."
+  },
+  {
+   "id": 113,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (integer, no commas, no additional text).",
+   "text": "Calculate the total when you multiply {a} and {b} and return only the numeric integer without commas."
+  },
+  {
+   "id": 114,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or additional text.",
+   "text": "Provide the integer result of {a} multiplied by {b} using no commas and no extra words."
+  },
+  {
+   "id": 115,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (an integer with no commas or additional text).",
+   "text": "Perform the multiplication of {a} by {b} and give the answer as a lone integer without commas."
+  },
+  {
+   "id": 116,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate replaces the reference's requirement of \"no other text\" with \"no other symbols,\" which are different constraints regarding the allowed output format.",
+   "text": "State the numerical result of multiplying {a} with {b} as an integer with no commas or other symbols."
+  },
+  {
+   "id": 117,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and specify the same output format (a plain integer without commas or additional text).",
+   "text": "Determine the outcome of {a} times {b} and output the plain integer only skipping commas and text"
+  },
+  {
+   "id": 118,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting requirements for the output.",
+   "text": "If you wouldn't mind, please take {a} and {b}. You should multiply these two values together. Provide the final product as a single integer with no commas or additional commentary."
+  },
+  {
+   "id": 119,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the exact same output format.",
+   "text": "When you have a moment, please consider the numbers {a} and {b}. We need you to calculate their product. Please ensure the response is just a plain integer without any commas or text."
+  },
+  {
+   "id": 120,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the exact same output format (integer, no commas, no additional text).",
+   "text": "If it is not too much trouble, please find the product of {a} and {b}. This calculation is important for our current records. Please write only the integer result without commas or any other words."
+  },
+  {
+   "id": 121,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify the exact same formatting constraints for the output.",
+   "text": "Perhaps you could assist us with the multiplication of {a} by {b}. We are looking for the numerical outcome of this operation. Just return the integer value with no commas or surrounding text."
+  },
+  {
+   "id": 122,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of {a} and {b} formatted as an integer without commas or additional text.",
+   "text": "Take a moment to reflect and then multiply {a} by {b}, providing the final product as a lone integer without any commas or words."
+  },
+  {
+   "id": 123,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same output format (a single integer with no commas or extra text).",
+   "text": "Think through the calculation carefully and provide the product of {a} and {b} as a solitary integer without commas or any other text."
+  },
+  {
+   "id": 124,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Please reflect deeply on the multiplication of {a} and {b} and then output the final result as a plain integer with no commas or accompanying text."
+  },
+  {
+   "id": 125,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify identical formatting requirements for the output.",
+   "text": "Considering the values carefully, calculate the product of {a} and {b} and report only the integer result without commas or commentary."
+  },
+  {
+   "id": 126,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the two numbers and specify the same formatting requirements (integer, no commas, no extra text).",
+   "text": "Meditate on the numbers {a} and {b} to find their product, then state the answer as a single integer with no commas or extra characters."
+  },
+  {
+   "id": 127,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer without commas or additional text.",
+   "text": "If you feel up to a quick challenge, find the value of {a} multiplied by {b} and provide the result as a raw integer with no commas or accompanying text."
+  },
+  {
+   "id": 128,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify the same formatting constraints (plain integer, no commas, no additional text).",
+   "text": "I invite you to determine the product of {a} and {b} when you have a free moment and return the result as a bare integer without commas or extra words."
+  },
+  {
+   "id": 129,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "I am curious if you can perhaps figure out the result of {a} times {b} and deliver only the integer answer without any commas or extraneous characters."
+  },
+  {
+   "id": 130,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a single integer without commas or any additional text.",
+   "text": "Here is a small puzzle for you if it is not too much trouble: multiply {a} by {b} and show the solution as a lone integer with no commas or text."
+  },
+  {
+   "id": 131,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction is truncated and fails to specify the required output format.",
+   "text": "Could you possibly assist me by calculating the product of {a} and {b} and outputting"
+  },
+  {
+   "id": 132,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables to be formatted as a plain integer without commas or additional text.",
+   "text": "Output the product of {a} and {b} as a plain integer with no commas or text."
+  },
+  {
+   "id": 133,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting requirements for the output.",
+   "text": "Report {a} times {b} as a bare integer without commas or extra characters."
+  },
+  {
+   "id": 134,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a single integer without commas or any additional text.",
+   "text": "Write the product of {a} and {b} as a solitary integer without commas or text."
+  },
+  {
+   "id": 135,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or additional text.",
+   "text": "Express the product of {a} and {b} as a plain integer omitting commas and words."
+  },
+  {
+   "id": 136,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (an integer with no commas or additional text).",
+   "text": "Determine {a} multiplied by {b} and provide only the integer result without commas."
+  },
+  {
+   "id": 137,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or additional text.",
+   "text": "Yield the product of {a} and {b} as a single integer with no commas or text."
+  },
+  {
+   "id": 138,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be formatted as a plain integer without commas or additional text.",
+   "text": "Format the result of {a} times {b} as a plain integer without commas or text."
+  },
+  {
+   "id": 139,
+   "verdict": "DIFFERENT",
+   "reason": "The reference specifies strict formatting constraints (no commas and no other text) that the candidate does not, meaning the candidate would accept responses that the reference would reject.",
+   "text": "Record the product of {a} and {b} as an integer"
+  },
+  {
+   "id": 140,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Hey, can you help me with a quick math problem? I need to know what you get when you multiply {a} by {b}. Just give me the plain integer answer with no commas or words."
+  },
+  {
+   "id": 141,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting constraints (single integer, no commas, no additional text).",
+   "text": "I'm working on something and need the product of {a} and {b} really quick. Could you just write down the result as one single integer? Don't include any commas or other text in your reply."
+  },
+  {
+   "id": 142,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or any additional text.",
+   "text": "So I've got these two numbers, {a} and {b}, and I need their product. Can you just send over the numerical answer as an integer? Make sure there aren't any commas or extra words in there."
+  },
+  {
+   "id": 143,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables to be returned as a plain integer without any additional formatting or text.",
+   "text": "Output the product of {a} and {b} as an unformatted integer without any words."
+  },
+  {
+   "id": 144,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or any additional text.",
+   "text": "Give the result for {a} times {b} as a raw integer only, no commas or text."
+  },
+  {
+   "id": 145,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format.",
+   "text": "Multiply {a} and {b} then return the plain integer result without commas or text."
+  },
+  {
+   "id": 146,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify identical formatting constraints (plain integer, no commas, and no additional text).",
+   "text": "Report the product of {a} and {b} using only a plain integer without commas."
+  },
+  {
+   "id": 147,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting for the output.",
+   "text": "Compute {a} times {b} and state only the integer value without commas or text."
+  },
+  {
+   "id": 148,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer without commas or any additional text.",
+   "text": "State the product of {a} and {b} as a comma-free integer with no other content."
+  },
+  {
+   "id": 149,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of two variables and specify the same output constraints (a raw integer with no additional text or formatting).",
+   "text": "Calculate {a} multiplied by {b} and return just the integer with no formatting."
+  },
+  {
+   "id": 150,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer with no commas or additional text.",
+   "text": "Provide the integer result of {a} * {b} with no commas and no text"
+  },
+  {
+   "id": 151,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions require calculating the product of the same two variables and formatting the output as a plain integer without commas or additional text.",
+   "text": "You are a precise mathematician. Multiply these two values and return the product as a plain integer with no commas or extra text: {a} and {b}"
+  },
+  {
+   "id": 152,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or additional text.",
+   "text": "You are an arithmetic expert. Provide the integer product without commas or any accompanying symbols for {a} and {b}"
+  },
+  {
+   "id": 153,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two numbers to be formatted as a plain integer without commas or additional text.",
+   "text": "You are a calculation tool. Output the result of multiplying the following numbers as a plain integer without commas or prose: {a} and {b}"
+  },
+  {
+   "id": 154,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "You are a logic bot. State the product of these figures as a single integer with no commas or additional characters: {a} and {b}"
+  },
+  {
+   "id": 155,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate does not specify which operation to perform (e.g., addition, multiplication), whereas the reference explicitly asks for the product.",
+   "text": "You are an efficient processor. Give the result of the calculation as a raw integer with no commas or non-numeric text: {a} and {b}"
+  },
+  {
+   "id": 156,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or any additional text.",
+   "text": "Please **calculate** the product of {a} and {b} and provide the result as a raw integer without commas or any accompanying symbols."
+  },
+  {
+   "id": 157,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or any additional text.",
+   "text": "Find the **numerical result** of {a} times {b} and output it as a single integer with no commas or additional commentary."
+  },
+  {
+   "id": 158,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be formatted as an integer without commas or additional text.",
+   "text": "Your task is to **multiply** {a} by {b} and present the final answer as a naked integer devoid of commas or words."
+  },
+  {
+   "id": 159,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Determine the **exact product** of {a} and {b} and express the output solely as a plain integer without separators or text."
+  },
+  {
+   "id": 160,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify the exact same output format.",
+   "text": "Perform the **multiplication** of {a} and {b} and display the final solution as a solitary integer containing no commas or text."
+  },
+  {
+   "id": 161,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction is truncated and fails to specify the required output format.",
+   "text": "Identify the **product** of {a} and {b} and provide"
+  },
+  {
+   "id": 162,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify the exact same output format (integer only, no commas, no text).",
+   "text": "Perform the multiplication of {a} by {b} now. State the resulting value immediately without any additional commentary. Ensure the output is a single integer with no commas or text."
+  },
+  {
+   "id": 163,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or any additional text.",
+   "text": "Start by taking {a} and multiplying it with {b}. You must provide the final product right away without any explanation. The answer should be a plain integer containing no commas or extra characters."
+  },
+  {
+   "id": 164,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and specify the same formatting requirements (a single integer with no commas or extra text).",
+   "text": "Identify the mathematical product of {a} times {b} at once. Deliver the numeric result alone with no introductory or concluding sentences. Only a solitary integer without commas is acceptable."
+  },
+  {
+   "id": 165,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the two variables and specify the same output format: a single integer with no commas or additional text.",
+   "text": "Your objective is to multiply {a} and {b} together. Please output the numerical answer immediately with no descriptive words. Present this value as a single integer with no commas or symbols."
+  },
+  {
+   "id": 166,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting for the output.",
+   "text": "Would you compute the product of {a} and {b} and provide the result as a plain integer with no commas or other text?"
+  },
+  {
+   "id": 167,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "Will you multiply {a} by {b} and output the answer as a single integer without commas or text?"
+  },
+  {
+   "id": 168,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and specify the same formatting constraints for the output.",
+   "text": "How much is {a} times {b} if the result must be a plain integer with no commas or additional text?"
+  },
+  {
+   "id": 169,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of {a} and {b} to be provided as an integer without commas or additional text.",
+   "text": "Shall you find the product of {a} and {b} and display it as an integer with no commas or text?"
+  },
+  {
+   "id": 170,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify the exact same formatting constraints for the output.",
+   "text": "Might you calculate the product of {a} and {b} and return a plain integer with no commas or text?"
+  },
+  {
+   "id": 171,
+   "verdict": "DIFFERENT",
+   "reason": "The reference is a command to perform a calculation, while the candidate is a yes/no question asking for permission or confirmation regarding formatting.",
+   "text": "May the product of {a} and {b} be presented as a solitary integer with no commas or other text?"
+  },
+  {
+   "id": 172,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same variables and specify the same formatting constraints (integer only, no commas, no extra text).",
+   "text": "Calculate the product of {a} and {b} and state only the resulting integer without commas or additional wording."
+  },
+  {
+   "id": 173,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify identical formatting constraints for the output.",
+   "text": "Determine the product of {a} and {b} and record the answer as a single integer with no commas or other characters."
+  },
+  {
+   "id": 174,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions request the product of the same two variables and specify the same output format.",
+   "text": "Report the result of multiplying {a} by {b} using only a plain integer devoid of commas or text."
+  },
+  {
+   "id": 175,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions request the product of the same two variables and specify the same formatting constraints (no commas, no additional text).",
+   "text": "Multiply the integers {a} and {b} and write down the product as a solitary number without any commas or prose."
+  },
+  {
+   "id": 176,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer without commas or any additional text.",
+   "text": "State the product of {a} and {b} as an unadorned integer lacking commas or accompanying text."
+  },
+  {
+   "id": 177,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting requirements (an integer with no commas or additional text).",
+   "text": "Use the numbers {a} and {b} to find their product and provide the final value as a lone integer without commas."
+  },
+  {
+   "id": 178,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (integer, no commas, no extra text).",
+   "text": "Multiply the provided values and return the result as a raw integer with no commas or additional text: {a} and {b}"
+  },
+  {
+   "id": 179,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two numbers to be returned as a plain integer without commas or any additional text.",
+   "text": "Provide only the numeric result of the multiplication as an integer with no commas or other characters: {a} and {b}"
+  },
+  {
+   "id": 180,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (integer, no commas, no text).",
+   "text": "Determine the mathematical product and output the result as a single integer without any commas or text: {a} and {b}"
+  },
+  {
+   "id": 181,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (plain integer, no commas, and no extra text).",
+   "text": "Calculate the product of these values and show the answer as a plain integer with no commas or words: {a} and {b}"
+  },
+  {
+   "id": 182,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables to be returned as an integer without commas or additional text.",
+   "text": "Perform the multiplication and return the product as a standalone integer with no commas or commentary: {a} and {b}"
+  },
+  {
+   "id": 183,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions request the product of the same two variables and specify identical formatting constraints for the output.",
+   "text": "Find the product and display the result as a plain integer excluding all commas and extra text: {a} and {b}"
+  },
+  {
+   "id": 184,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same output format (a plain integer without commas or additional text).",
+   "text": "Determine the result of multiplying the following two numbers and present the answer as a lone integer without commas or additional text: {a} and {b}"
+  },
+  {
+   "id": 185,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the same formatting constraints (integer, no commas, no additional text).",
+   "text": "Multiply these two values and display only the resulting integer without commas or any verbal explanation: {a} and {b}"
+  },
+  {
+   "id": 186,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (no commas, no extra text).",
+   "text": "Provide the product of the following integers as a single number with no commas and no extra characters: {a} and {b}"
+  },
+  {
+   "id": 187,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate's requirement of \"no descriptive words for {a} and {b}\" is less restrictive than the reference's requirement of \"no other text,\" meaning the candidate would potentially accept responses ",
+   "text": "Perform the multiplication and output a bare integer with no commas and no descriptive words for {a} and {b}"
+  },
+  {
+   "id": 188,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of two variables {a} and {b} to be returned as a single integer without any formatting (commas) or additional text/labels.",
+   "text": "Show the mathematical product as an unadorned integer without commas or labels for the quantities {a} and {b}"
+  },
+  {
+   "id": 189,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same output format.",
+   "text": "Calculate the total for the multiplication of the following and state only the numerical integer without commas or text: {a} and {b}"
+  },
+  {
+   "id": 190,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "Multiply {a} and {b} together and provide only the integer result with no commas or extra text."
+  },
+  {
+   "id": 191,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Please find the product of {a} and {b} and report the value as a plain integer without commas or labels."
+  },
+  {
+   "id": 192,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "Determine the result of multiplying {a} by {b} and provide the answer as a single integer devoid of commas or text."
+  },
+  {
+   "id": 193,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or extra text.",
+   "text": "Provide the result of {a} times {b} as an integer with no commas or additional descriptions."
+  },
+  {
+   "id": 194,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same variables and specify the exact same formatting for the output.",
+   "text": "What is the product of {a} and {b}? Express the answer as a plain integer with no commas or text."
+  },
+  {
+   "id": 195,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify the exact same formatting constraints for the output.",
+   "text": "Calculate {a} multiplied by {b} and display the integer product without any commas or words."
+  },
+  {
+   "id": 196,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction is truncated and incomplete.",
+   "text": "We need the product of {a} and {b} shown as a single integer with"
+  },
+  {
+   "id": 197,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or additional text.",
+   "text": "Using only a plain integer with no commas and no other text, provide the product of {a} and {b}."
+  },
+  {
+   "id": 198,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (a plain integer without commas or extra text).",
+   "text": "As an unformatted integer without commas or additional words, state the result of multiplying {a} and {b}."
+  },
+  {
+   "id": 199,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions request the product of {a} and {b} formatted as an integer without commas or additional text.",
+   "text": "Without commas or any extra commentary, output the integer product of {a} and {b}."
+  },
+  {
+   "id": 200,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the exact same formatting constraints for the output.",
+   "text": "In the form of a single integer with no commas or text, solve for the product of {a} and {b}."
+  },
+  {
+   "id": 201,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a single integer without commas or additional text.",
+   "text": "Using a solitary integer with no commas and no text, determine what {a} times {b} is."
+  },
+  {
+   "id": 202,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "With no commas and no other characters, give the integer result for the multiplication of {a} and {b}."
+  },
+  {
+   "id": 203,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the same output format (integer only, no commas, no text).",
+   "text": "I'm trying to sort this out, so could you multiply {a} and {b} and just give me the integer result with no commas or words?"
+  },
+  {
+   "id": 204,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (an integer with no commas or extra text).",
+   "text": "Check what {a} times {b} equals and just put the final integer here without any commas or other text."
+  },
+  {
+   "id": 205,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer without commas or additional text.",
+   "text": "I'd love to know the product of {a} and {b}, so please just give me the integer answer without commas or fluff."
+  },
+  {
+   "id": 206,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Can you handle multiplying {a} by {b} for me and just provide the plain integer result with no commas or text?"
+  },
+  {
+   "id": 207,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "It would be a big help if you could find the product of {a} and {b} and just write the integer with no commas or extra talk."
+  },
+  {
+   "id": 208,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the same formatting for the output.",
+   "text": "Challenge yourself to calculate the mathematical product of {a} and {b} and record the value as a solitary integer without commas or any text."
+  },
+  {
+   "id": 209,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "We invite you to determine the result of {a} multiplied by {b} and provide only the integer result without commas or extra characters."
+  },
+  {
+   "id": 210,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer with no commas or additional text.",
+   "text": "Prove your arithmetic precision by finding the product of {a} and {b} then stating the resulting integer with no commas or prose."
+  },
+  {
+   "id": 211,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer without commas or any additional text.",
+   "text": "See if you can identify the product of {a} and {b} and write the answer as a single integer devoid of commas or additional words."
+  },
+  {
+   "id": 212,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or additional text.",
+   "text": "You are invited to solve for the result of {a} times {b} and enter a plain integer with no commas or other language."
+  },
+  {
+   "id": 213,
+   "verdict": "DIFFERENT",
+   "reason": "The reference specifies a strict output format (plain integer, no commas, and no other text) that the candidate does not require.",
+   "text": "Test your proficiency by finding the product of {a} and {b}"
+  },
+  {
+   "id": 214,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of {a} and {b} formatted as an integer without commas or additional text.",
+   "text": "It would be helpful if the product of {a} and {b} could be provided as a single integer with no commas or accompanying text."
+  },
+  {
+   "id": 215,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or additional text.",
+   "text": "The calculation of the product for {a} and {b} should be displayed as a plain integer without commas or any other words."
+  },
+  {
+   "id": 216,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or additional text.",
+   "text": "A plain integer representing the product of {a} and {b} is required, devoid of commas or additional commentary."
+  },
+  {
+   "id": 217,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be formatted as a single integer without commas or additional text.",
+   "text": "The task is to multiply {a} by {b} and present the outcome as a solitary integer without commas or extra text."
+  },
+  {
+   "id": 218,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without any additional text or formatting.",
+   "text": "One should determine the product of {a} and {b} and return that value as an unformatted integer with no other characters."
+  },
+  {
+   "id": 219,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer without commas or any additional text.",
+   "text": "It is requested that the product of {a} and {b} be yielded as a single integer without commas or further description"
+  },
+  {
+   "id": 220,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions require calculating the product of {a} and {b} and formatting the result as a plain integer without commas or additional text.",
+   "text": "In this section of the mathematical assessment, we focus on the fundamental operation of multiplication between two specific numerical variables. Your primary task is to calculate the product resulting from the interaction of {a} and {b} as defined in the preceding data set. Once the multiplication is completed, the output should be delivered exclusively as a plain integer with no commas or accompanying characters of any kind."
+  },
+  {
+   "id": 221,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of {a} and {b} and specify the same formatting constraints: a plain integer with no commas or additional text.",
+   "text": "For the purposes of this quantitative analysis, we require the precise outcome of multiplying the first constant by the second constant. Please perform the calculation for the numbers {a} and {b} carefully to ensure that every digit in the final product is correct. The resulting figure must be presented as a standalone integer devoid of any comma separators or descriptive terminology."
+  },
+  {
+   "id": 222,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two numbers and specify the exact same output format.",
+   "text": "{a} and {b} are the numbers you must multiply; state the final product as a lone integer with no commas or text."
+  },
+  {
+   "id": 223,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer with no commas or additional text.",
+   "text": "{a} and {b} need to be multiplied for this question; provide the result as an integer without any commas or words."
+  },
+  {
+   "id": 224,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "{a} and {b} are the factors provided; return the product as a plain integer with no commas and no other text."
+  },
+  {
+   "id": 225,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "{a} and {b} should be multiplied to find the product; output only the integer result without any commas or characters."
+  },
+  {
+   "id": 226,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify the exact same formatting for the output.",
+   "text": "{a} and {b} are to be multiplied together; give the resulting integer without commas and with no additional text."
+  },
+  {
+   "id": 227,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions specify the same mathematical operation (product) on the same variables and require the same output format (integer, no commas, no additional text).",
+   "text": "{a} and {b} must have their product calculated; show the final integer with no commas or accompanying words."
+  },
+  {
+   "id": 228,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "If you can, multiply {a} by {b} and provide only the resulting integer without commas or text."
+  },
+  {
+   "id": 229,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a single integer without commas or additional text.",
+   "text": "When you get a chance, find the result of {a} times {b} and show a lone integer with no commas or other characters."
+  },
+  {
+   "id": 230,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "If it is not too much trouble, calculate {a} multiplied by {b} and return the integer alone with no commas or words."
+  },
+  {
+   "id": 231,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify the exact same formatting constraints for the output.",
+   "text": "Perhaps you could multiply {a} by {b} and output just the integer without any commas or accompanying language."
+  },
+  {
+   "id": 232,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be formatted as an integer without commas or additional text.",
+   "text": "If you feel like it, determine {a} times {b} and write the answer as a single integer devoid of commas or extra text."
+  },
+  {
+   "id": 233,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting requirements (plain integer, no commas, no additional text).",
+   "text": "Should you be able to, multiply {a} and {b} and provide the result as a plain integer without commas or prose"
+  },
+  {
+   "id": 234,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (integer only, no commas, no text).",
+   "text": "The product of {a} and {b} should be calculated and provided as a solitary integer without commas or text, answering immediately without explanation."
+  },
+  {
+   "id": 235,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify identical formatting constraints (integer only, no commas, and no additional text).",
+   "text": "One must state the product of {a} times {b} as a raw integer only, with no commas or extra words and no explanation."
+  },
+  {
+   "id": 236,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify the same formatting constraints (integer only, no commas, no additional text).",
+   "text": "The agent is to return the product of {a} and {b} as a bare integer with no commas or text, provided immediately with no preamble."
+  },
+  {
+   "id": 237,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a single integer without commas or any additional text.",
+   "text": "The mathematical product of {a} and {b} must be shown as a single integer without commas or additional characters, skipping any explanation."
+  },
+  {
+   "id": 238,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of {a} and {b} formatted as a single integer without commas or additional text.",
+   "text": "A standalone integer representing the product of {a} multiplied by {b} must be output without commas or text, provided immediately."
+  },
+  {
+   "id": 239,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate lacks the specific formatting constraints (plain integer, no commas, no other text) required by the reference.",
+   "text": "The result of {a} times {b} should be identified and presented"
+  },
+  {
+   "id": 240,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be formatted as a plain integer without commas or any additional text.",
+   "text": "State the product of {a} and {b} as a plain integer without commas or extra characters."
+  },
+  {
+   "id": 241,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (integer only, no commas, no extra text).",
+   "text": "Provide only the integer product of {a} and {b} excluding commas and words."
+  },
+  {
+   "id": 242,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the two variables to be returned as an integer without commas or additional text.",
+   "text": "Return the result of {a} multiplied by {b} as a single comma-free integer."
+  },
+  {
+   "id": 243,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables to be formatted as an integer without commas or additional text.",
+   "text": "Give the product for {a} and {b} as a raw integer with no commas or text."
+  },
+  {
+   "id": 244,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables to be formatted as a single integer without commas or additional text.",
+   "text": "Output the product of {a} times {b} as a lone integer without commas or descriptions."
+  },
+  {
+   "id": 245,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (integer, no commas, no extra text).",
+   "text": "Multiply {a} by {b} and provide the answer as an unadorned integer without commas."
+  },
+  {
+   "id": 246,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same variables and specify the same formatting constraints (integer, no commas, no extra text).",
+   "text": "Supply the integer product of {a} and {b} without commas or additional text."
+  },
+  {
+   "id": 247,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction is truncated and lacks the specific formatting constraints (plain integer, no commas, no other text) required by the reference.",
+   "text": "Write the product of {a} and {b} as"
+  },
+  {
+   "id": 248,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and specify the same output format (plain integer, no commas, no other text).",
+   "text": "Calculate the mathematical product of {a} and {b} then report the solution as a plain integer with no commas and no other text."
+  },
+  {
+   "id": 249,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify identical formatting constraints (integer, no commas, and no extra text).",
+   "text": "Multiply {a} by {b} and deliver the final result in the form of a single integer without commas or additional words."
+  },
+  {
+   "id": 250,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting (integer only, no commas, no extra text).",
+   "text": "Determine the product of {a} times {b} and state the answer as a lone integer omitting commas and any extra characters."
+  },
+  {
+   "id": 251,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "Find the result of {a} multiplied by {b} and present the output as an unformatted integer with no commas or text."
+  },
+  {
+   "id": 252,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (integer, no commas, and no additional text).",
+   "text": "Work out the value of {a} times {b} and provide the product as a solitary integer devoid of commas or explanation."
+  },
+  {
+   "id": 253,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction is truncated and ends mid-sentence, making it incomplete compared to the reference.",
+   "text": "Perform the multiplication of {a} and {b} and express the total as a basic integer with no commas or"
+  },
+  {
+   "id": 254,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (integer, no commas, no extra text).",
+   "text": "Could you multiply {a} by {b} and just send back the integer without any commas or chatter?"
+  },
+  {
+   "id": 255,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (integer, no commas, no extra text).",
+   "text": "Just give me the product of {a} and {b} as a bare integer with no commas or extra descriptions."
+  },
+  {
+   "id": 256,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (no commas and no additional text).",
+   "text": "Go ahead and multiply {a} and {b}, then just output the result as a raw number without any commas or talking."
+  },
+  {
+   "id": 257,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (plain integer, no commas, no extra text).",
+   "text": "Hey, what's the product of {a} and {b} expressed as a simple integer with no commas or additional labels?"
+  },
+  {
+   "id": 258,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or any additional text.",
+   "text": "I just need the integer result of {a} times {b} without any commas or other stuff in the way."
+  },
+  {
+   "id": 259,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (a single integer, no commas, and no additional text/sentences).",
+   "text": "Mind telling me what {a} times {b} is as a lone integer with no commas or sentences?"
+  },
+  {
+   "id": 260,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a single integer without commas or additional text.",
+   "text": "Would you be so kind as to find the product of {a} and {b} and present the final answer as a solitary integer with no commas or other text?"
+  },
+  {
+   "id": 261,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the same formatting constraints (raw integer, no commas, no additional text).",
+   "text": "Could you please determine the product of {a} and {b} and return the result as a raw integer without commas or accompanying words?"
+  },
+  {
+   "id": 262,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify identical formatting constraints (integer only, no commas, no extra text).",
+   "text": "Please calculate the result of {a} multiplied by {b} and supply only the integer with no commas or additional commentary."
+  },
+  {
+   "id": 263,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or additional text.",
+   "text": "If you have a moment, find the product of {a} and {b} and express the value as a single integer with no commas or other characters."
+  },
+  {
+   "id": 264,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or any additional text.",
+   "text": "Kindly evaluate the product of {a} and {b} and output the resulting integer alone without any commas or text."
+  },
+  {
+   "id": 265,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate is truncated and lacks the specific formatting constraints (plain integer, no commas, no other text) required by the reference.",
+   "text": "Perhaps you could yield the product of {a} and {b} as"
+  },
+  {
+   "id": 266,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer with no commas or additional text.",
+   "text": "{a} and {b}: as a plain integer with no commas and no other text, provide the product."
+  },
+  {
+   "id": 267,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting constraints.",
+   "text": "{a} and {b}: as a plain integer with no commas and no other text, calculate the product."
+  },
+  {
+   "id": 268,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or additional text.",
+   "text": "{a} and {b}: as a plain integer with no commas and no other text, state the product."
+  },
+  {
+   "id": 269,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting requirements.",
+   "text": "{a} and {b}: as a plain integer with no commas and no other text, find the product."
+  },
+  {
+   "id": 270,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be formatted as a plain integer without commas or additional text.",
+   "text": "{a} and {b}: as a plain integer with no commas and no other text, compute the product."
+  },
+  {
+   "id": 271,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer with no commas or additional text.",
+   "text": "{a} and {b}: as a plain integer with no commas and no other text, return the product."
+  },
+  {
+   "id": 272,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate does not specify which operation to perform (product), whereas the reference explicitly asks for the product.",
+   "text": "{a} and {b}: as a plain integer with no commas and no other text,"
+  },
+  {
+   "id": 273,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be output as an integer without commas or any additional text.",
+   "text": "You are a precise calculator, so output the result of {a} multiplied by {b} as a single integer devoid of commas and any other text."
+  },
+  {
+   "id": 274,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (plain integer, no commas, no extra text).",
+   "text": "Acting as a math processor, multiply {a} and {b} and then return only the integer product without any commas or non-numeric characters."
+  },
+  {
+   "id": 275,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a single integer without commas or any additional text.",
+   "text": "You are a diligent assistant, so please provide the product of {a} and {b} as a solitary integer that contains no commas or extra words."
+  },
+  {
+   "id": 276,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "In your role as a numerical expert, calculate what {a} times {b} equals and show only the final integer answer without any commas or textual additions."
+  },
+  {
+   "id": 277,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "You are a focused solver, so determine the value of {a} multiplied by {b} and print only the resulting integer without commas or supplementary text."
+  },
+  {
+   "id": 278,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify the exact same formatting constraints for the output.",
+   "text": "Provide the numerical product of {a} multiplied by {b} as a single integer devoid of commas or supplementary text."
+  },
+  {
+   "id": 279,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the same mathematical operation (the product of two variables) and specify identical formatting constraints: the result must be a single integer, without commas, and without ",
+   "text": "Generate the arithmetic product of {a} and {b} expressed as a lone integer omitting commas and all non-numeric characters."
+  },
+  {
+   "id": 280,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify the exact same formatting constraints.",
+   "text": "The output must be the product of {a} and {b} formatted as a single integer with no commas or accompanying text."
+  },
+  {
+   "id": 281,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer with no commas or additional text.",
+   "text": "Specify the value representing the product of {a} and {b} exclusively as an integer without any commas or additional words."
+  },
+  {
+   "id": 282,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the multiplication of the same two variables and specify the exact same output format.",
+   "text": "Execute the multiplication of {a} and {b} and deliver the result as a raw integer string lacking commas or other text."
+  },
+  {
+   "id": 283,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a single integer without commas or any additional text.",
+   "text": "Derive the product of {a} times {b} and report the solution as an individual integer without comma separators or extra text."
+  },
+  {
+   "id": 284,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be formatted as an integer without commas or additional text.",
+   "text": "Determine the final product of {a} and {b} and present the answer as a stand-alone integer with no commas or further description."
+  },
+  {
+   "id": 285,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions require calculating the product of the same two variables and formatting the output as a plain integer with no commas or additional text.",
+   "text": "First, multiply {a} and {b}. Second, format the resulting value as a plain integer without commas. Third, report only that integer result with no other text."
+  },
+  {
+   "id": 286,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions require calculating the product of {a} and {b} and formatting the output as a plain integer without commas or additional text.",
+   "text": "Begin by calculating the product of {a} and {b}. Next, ensure the answer is a plain integer with no commas. Finally, provide only the resulting number and no other text."
+  },
+  {
+   "id": 287,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or any additional text.",
+   "text": "Step one is to find the result of multiplying {a} and {b}. Step two is to strip all commas from the resulting integer. Step three is to return the plain integer value alone."
+  },
+  {
+   "id": 288,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer with no commas and no additional text.",
+   "text": "Initially, determine the product of {a} and {b}. Then, express the output as a plain integer without commas. Lastly, provide the result as a single integer and nothing else."
+  },
+  {
+   "id": 289,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions specify the same mathematical operation (product of {a} and {b}) and the same formatting constraints (plain integer, no commas, no additional text). The phrases \"If it is possible\" a",
+   "text": "If it is possible, one might compute the product of {a} and {b} and output the value as a plain integer with no commas or text."
+  },
+  {
+   "id": 290,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a single integer without commas or any additional text.",
+   "text": "Perhaps the calculation of {a} times {b} could be stated as a solitary integer without commas or prose."
+  },
+  {
+   "id": 291,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of {a} and {b} formatted as an integer without commas or additional text.",
+   "text": "If it is not a burden, the product of {a} and {b} should be delivered as a bare integer with no commas or additional strings."
+  },
+  {
+   "id": 292,
+   "verdict": "DIFFERENT",
+   "reason": "The reference is a direct command to compute a value and format it strictly, while the candidate is a descriptive statement about how one could potentially present a value and does not explicitly inst",
+   "text": "When convenient, one could present the product of {a} and {b} as a plain integer omitting commas and any extra characters."
+  },
+  {
+   "id": 293,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer without commas or additional text.",
+   "text": "Should circumstances allow, let the product of {a} and {b} be shown as an unadorned integer with no commas or labels."
+  },
+  {
+   "id": 294,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two numbers and specify the exact same formatting constraints for the output.",
+   "text": "Reflect on the multiplication of these two numbers and provide the product as a plain integer without commas or extra text: {a} and {b}"
+  },
+  {
+   "id": 295,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the two variables and specify the same output format (a single integer with no commas or additional text).",
+   "text": "Carefully deliberate on the multiplication of the following values and output the result as a single integer without commas or commentary: {a} and {b}"
+  },
+  {
+   "id": 296,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (integer, no commas, no extra text).",
+   "text": "Think intensely about the calculation of the product and return the integer value with no commas or surrounding text: {a} and {b}"
+  },
+  {
+   "id": 297,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (a plain integer with no commas or extra text).",
+   "text": "Ponder the result of multiplying the following numbers and display only the integer without commas or other characters: {a} and {b}"
+  },
+  {
+   "id": 298,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the two numbers to be provided as a single integer without commas or additional text.",
+   "text": "Evaluate the multiplication with care and provide the final total as a single integer lacking commas or text: {a} and {b}"
+  },
+  {
+   "id": 299,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify the exact same output format (a single integer with no commas or additional text).",
+   "text": "The system should think carefully then provide the product of {a} and {b} as a solitary integer without commas or extraneous text."
+  },
+  {
+   "id": 300,
+   "verdict": "DIFFERENT",
+   "reason": "The reference explicitly specifies that there should be \"no other text\" in the response, whereas the candidate lacks this negative constraint, meaning it would accept a response containing conversatio",
+   "text": "A diligent calculation of the product of {a} and {b} is requested, with the result appearing as a single comma-free integer."
+  },
+  {
+   "id": 301,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be output as a plain integer without commas or additional text.",
+   "text": "The AI is invited to consider the multiplication of {a} and {b} with great care and output the final value as a plain integer minus commas and commentary."
+  },
+  {
+   "id": 302,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or any additional text.",
+   "text": "One should take a moment to ponder the product of {a} and {b} and then return the answer as a lone integer with no commas."
+  },
+  {
+   "id": 303,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer without commas or additional text.",
+   "text": "The model should carefully evaluate the product of {a} and {b} and state the result as a raw integer omitting commas and words."
+  },
+  {
+   "id": 304,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Calculate the product of {a} and {b} if you could, and return it as a plain integer with no commas or other text."
+  },
+  {
+   "id": 305,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting requirements for the output.",
+   "text": "If you do not mind, multiply {a} by {b} and provide the result as a lone integer without commas or any text."
+  },
+  {
+   "id": 306,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or additional text.",
+   "text": "Whenever you have a moment, please find the product of {a} and {b} and state it as a single integer with no commas or added words."
+  },
+  {
+   "id": 307,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of two variables, {a} and {b}, and specify the same formatting constraints: the result must be a plain/raw integer without commas or any additional text/character",
+   "text": "Should it be possible, output the result of {a} times {b} as a raw integer with no commas or accompanying characters."
+  },
+  {
+   "id": 308,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Kindly evaluate the product of {a} and {b} when you can, giving the answer as a plain integer with no commas or text."
+  },
+  {
+   "id": 309,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate is truncated and lacks the specific formatting instructions (plain integer, no commas, no other text) required by the reference.",
+   "text": "Could you perhaps multiply {a} and {b} and return the"
+  },
+  {
+   "id": 310,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting requirements for the output.",
+   "text": "I challenge you to first calculate the product of {a} and {b} and then provide the result as a plain integer with no commas and no other text."
+  },
+  {
+   "id": 311,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be output as an integer without commas or additional text.",
+   "text": "Please accept this invitation to multiply {a} by {b} and then output the answer as a single integer without commas or extra words."
+  },
+  {
+   "id": 312,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (integer only, no commas, no text).",
+   "text": "Test your skills by determining the product of {a} and {b} and then reporting the value as a standalone integer with no commas or commentary."
+  },
+  {
+   "id": 313,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer without commas or additional text.",
+   "text": "You are invited to compute the result of {a} times {b} and then present that value as a raw integer with no commas or additional prose."
+  },
+  {
+   "id": 314,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be formatted as a single integer without commas or additional text.",
+   "text": "See if you can first find the product of {a} and {b} and then display the result as a solitary integer without commas or text."
+  },
+  {
+   "id": 315,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or any additional text.",
+   "text": "State the product as a plain integer without commas or text, answering immediately and without any explanation for {a} and {b}"
+  },
+  {
+   "id": 316,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a single integer without commas or any additional text.",
+   "text": "Provide the multiplication result as a standalone integer with no commas or additional words, skipping all explanation for {a} and {b}"
+  },
+  {
+   "id": 317,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate fails to specify the mathematical operation (product) to be performed on the variables.",
+   "text": "Return the result as an unformatted integer with no commas or sentences, responding instantly and without any explanation for {a} and {b}"
+  },
+  {
+   "id": 318,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a single integer without commas or additional text.",
+   "text": "Write the final product as a single integer minus commas or other text, ensuring the answer stands alone without explanation for {a} and {b}"
+  },
+  {
+   "id": 319,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate does not specify which operation to perform (product), whereas the reference explicitly asks for the product.",
+   "text": "Determine the value and present it as a basic integer with no commas or words, providing only the number and no explanation for {a} and {b}"
+  },
+  {
+   "id": 320,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer with no commas or additional text.",
+   "text": "As a single integer with no commas and no other text, please provide the product of {a} and {b}."
+  },
+  {
+   "id": 321,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same output format.",
+   "text": "With the result shown only as a plain integer without commas or additional text, multiply {a} by {b}."
+  },
+  {
+   "id": 322,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the exact same output format (a single integer with no commas or additional text).",
+   "text": "Using a format of one lone integer with no commas or other text, calculate the product of {a} and {b}."
+  },
+  {
+   "id": 323,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions request the product of the same two variables and specify the same output format (an integer without commas or additional text).",
+   "text": "In the form of a comma-free integer with no other words or characters, compute the product of {a} and {b}."
+  },
+  {
+   "id": 324,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and specify the same formatting constraints (plain integer, no commas, no extra text).",
+   "text": "Displaying only the raw integer value and omitting all commas and extra text, state the product of {a} and {b}."
+  },
+  {
+   "id": 325,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the same formatting constraints.",
+   "text": "Expressed as a single integer containing no commas and no surrounding text, find the product of {a} and {b}."
+  },
+  {
+   "id": 326,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or any additional text.",
+   "text": "What is the result of multiplying {a} by {b} if you provide only a comma-free integer and nothing else?"
+  },
+  {
+   "id": 327,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the same formatting requirements for the output.",
+   "text": "Could you multiply {a} and {b} then return only the raw integer with no commas or accompanying characters?"
+  },
+  {
+   "id": 328,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting requirements for the output.",
+   "text": "If you multiply {a} by {b}, what is the resulting integer expressed without commas or any text?"
+  },
+  {
+   "id": 329,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a single integer without commas or additional text.",
+   "text": "What is {a} times {b} written as a solitary integer devoid of commas or supplementary wording?"
+  },
+  {
+   "id": 330,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of two variables formatted as a single integer without any additional characters or formatting.",
+   "text": "Will you provide the result of {a} multiplied by {b} as an unadorned integer with no commas or other symbols?"
+  },
+  {
+   "id": 331,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or additional text.",
+   "text": "Can you state the value of {a} times {b} using only a plain integer that lacks commas and extra text?"
+  },
+  {
+   "id": 332,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be formatted as a plain integer without commas or any additional text.",
+   "text": "Find the product of {a} and {b} and output it as a plain integer without commas or any text."
+  },
+  {
+   "id": 333,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or any additional text.",
+   "text": "Return the product of {a} and {b} as a solitary integer without commas or further explanation."
+  },
+  {
+   "id": 334,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the multiplication of the same variables and specify the same formatting constraints for the output.",
+   "text": "Perform the multiplication of {a} and {b} and show the result as a raw integer lacking commas or additional words."
+  },
+  {
+   "id": 335,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (a plain integer without commas or additional text).",
+   "text": "Evaluate the multiplication of {a} times {b} and state only the comma-free integer result."
+  },
+  {
+   "id": 336,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (integer, no commas, no extra text).",
+   "text": "Solve for the product of {a} and {b} and deliver the answer as a single integer with no commas or extra text."
+  },
+  {
+   "id": 337,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same output format.",
+   "text": "State the result of {a} multiplied by {b} as a plain integer with no commas and no other text."
+  },
+  {
+   "id": 338,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction is truncated and incomplete.",
+   "text": "Express the product of {a} and {b} as an un"
+  },
+  {
+   "id": 339,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting constraints for the output. The additional text in the candidate is merely contextual and does not",
+   "text": "For this specific section of the worksheet, please focus on the multiplication problem. Calculate the product of {a} and {b} to find the final result. Provide the answer as a plain integer with no commas and no other text."
+  },
+  {
+   "id": 340,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting constraints for the output.",
+   "text": "This arithmetic task requires you to find a single value for your exam paper. Determine the product of {a} and {b} using the values provided. Your final response should be a lone integer with no commas and no additional text."
+  },
+  {
+   "id": 341,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and require the output to be a plain integer with no commas or additional text.",
+   "text": "Please use your mathematical skills to solve the following multiplication problem. Work out the product of {a} and {b} and check your calculations. Output the result as a plain integer with no commas and no words."
+  },
+  {
+   "id": 342,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions specify the same mathematical operation (product) and the same formatting constraints (plain integer, no commas, no other text).",
+   "text": "The assistant must report the **product** of {a} and {b} as a plain integer with no commas or other text."
+  },
+  {
+   "id": 343,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or additional text.",
+   "text": "Display the result of **multiplying** {a} by {b} as a single integer devoid of commas and extra words."
+  },
+  {
+   "id": 344,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions specify the same mathematical operation (product of {a} and {b}) and the same formatting constraints (a plain integer with no commas or additional text).",
+   "text": "A lone **integer** representing the product of {a} and {b} with no commas or additional characters is required."
+  },
+  {
+   "id": 345,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or additional text.",
+   "text": "Compute the value of {a} **times** {b} and output it as a raw integer string with no commas or text."
+  },
+  {
+   "id": 346,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions require calculating the product of the same two variables and specify the exact same formatting constraints for the output.",
+   "text": "The **product** of {a} and {b} should be expressed as a solitary integer without commas or any other text."
+  },
+  {
+   "id": 347,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction is truncated and ends mid-sentence.",
+   "text": "Provide the result of the **multiplication** of {a} and {b} as a plain integer with no commas and"
+  },
+  {
+   "id": 348,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting (no commas, no additional text).",
+   "text": "Hey, can you multiply {a} by {b} and just give me the raw number with no commas or words?"
+  },
+  {
+   "id": 349,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (a plain integer with no commas or extra text).",
+   "text": "Tell me what {a} times {b} is, but just send back the plain integer with no commas or extra stuff."
+  },
+  {
+   "id": 350,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or additional text.",
+   "text": "Just give me the product of {a} and {b} as a simple integer without any commas or text."
+  },
+  {
+   "id": 351,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer without commas or any additional text.",
+   "text": "Wondering if you could find {a} times {b} and only write the answer as a comma-free integer."
+  },
+  {
+   "id": 352,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting for the output.",
+   "text": "Go ahead and multiply {a} and {b}, then show the result as only a plain integer with no commas."
+  },
+  {
+   "id": 353,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Can you figure out {a} times {b} and output just the integer itself with no commas or text?"
+  },
+  {
+   "id": 354,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the two numbers to be provided as a single integer without commas or any additional text.",
+   "text": "Please consider the numerical value {a} and the numerical value {b}. Your task is to perform the mathematical operation of multiplying these two numbers together carefully. When you have finished the calculation, state the resulting integer as a solitary number without any commas or any other words."
+  },
+  {
+   "id": 355,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and require the output to be a plain integer with no commas or additional text.",
+   "text": "Start by taking the integer {a} and then proceed to multiply it by the integer {b}. It is essential that you calculate this total accurately and then present it clearly. The final output must be nothing but a single plain integer without any commas or surrounding commentary."
+  },
+  {
+   "id": 356,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction is truncated at the end.",
+   "text": "I would like you to focus on the numbers {a} and {b} for this specific arithmetic exercise. Calculate what the result is when you multiply the first number by the second number. Ensure that your response consists of only the raw integer with no"
+  },
+  {
+   "id": 357,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (integer, no commas, no additional text).",
+   "text": "I would be most grateful if you could calculate the product of {a} and {b} and provide the result as a single integer with no commas or accompanying text."
+  },
+  {
+   "id": 358,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Could you please find the product of {a} and {b} and present the final value as a plain integer without commas or any additional words?"
+  },
+  {
+   "id": 359,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "It would be a great help if you could multiply {a} and {b} and return the product as an unformatted integer with no commas or text."
+  },
+  {
+   "id": 360,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify the same output format (an integer with no commas or additional text).",
+   "text": "May I ask you to determine the product of {a} and {b} and provide the answer as a solitary integer without commas or extra characters?"
+  },
+  {
+   "id": 361,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the same formatting constraints (integer only, no commas, no extra text).",
+   "text": "I would appreciate it if you could compute the product of {a} and {b} and supply the result as a bare integer with no commas or words."
+  },
+  {
+   "id": 362,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same output format.",
+   "text": "Multiply** {a} by {b} and output the result as a plain integer with no commas and no other text."
+  },
+  {
+   "id": 363,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer with no commas or additional text.",
+   "text": "Calculate** the product of {a} and {b} and provide the value as a solitary integer with no commas or additional text."
+  },
+  {
+   "id": 364,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Determine** the value of {a} times {b} and report it as a plain integer without commas or any **commentary**."
+  },
+  {
+   "id": 365,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the two variables and specify the same formatting requirements for the output.",
+   "text": "Solve** the multiplication of {a} and {b} and output a single integer with no commas and no other text."
+  },
+  {
+   "id": 366,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or any additional text.",
+   "text": "Output** the result of {a} multiplied by {b} as a plain integer with no commas or **explanatory text**."
+  },
+  {
+   "id": 367,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer without commas or any additional text.",
+   "text": "Write** the product of {a} and {b} as a standalone integer without commas or accompanying language."
+  },
+  {
+   "id": 368,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the exact same formatting constraints for the output.",
+   "text": "Find the product of {a} and {b} and state only the resulting integer without commas or other text."
+  },
+  {
+   "id": 369,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and specify the same output format (plain integer, no commas, no extra text).",
+   "text": "Determine the result of {a} times {b} and provide only the plain integer with no commas or other text."
+  },
+  {
+   "id": 370,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same variables and specify the exact same output format.",
+   "text": "Solve for the product of {a} and {b} and return the result as a plain integer with no commas and no other text."
+  },
+  {
+   "id": 371,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be output as a plain integer without commas or additional text.",
+   "text": "Evaluate {a} multiplied by {b} and output only the product as a plain integer with no commas and no other text."
+  },
+  {
+   "id": 372,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting constraints.",
+   "text": "Give the product of {a} and {b} as a single integer with no commas and no other text."
+  },
+  {
+   "id": 373,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same output format.",
+   "text": "Report the result of multiplying {a} by {b} as a plain integer with no commas and no other text."
+  },
+  {
+   "id": 374,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "As a plain integer with no commas or other text, find the result of {a} times {b}."
+  },
+  {
+   "id": 375,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or additional text.",
+   "text": "Use a standalone integer without commas or any other content to report the result of multiplying {a} and {b}."
+  },
+  {
+   "id": 376,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a single integer without commas or additional text.",
+   "text": "In a single integer format with no commas and no other words, give the value of {a} times {b}."
+  },
+  {
+   "id": 377,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Display only a bare integer with no commas and no text for the calculation of {a} times {b}."
+  },
+  {
+   "id": 378,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or any additional text.",
+   "text": "Without using commas or any additional characters, provide the integer result of {a} multiplied by {b}."
+  },
+  {
+   "id": 379,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Expressed as a plain integer with no commas and no commentary, calculate the value of {a} times {b}."
+  },
+  {
+   "id": 380,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a single integer without commas or additional text.",
+   "text": "Please calculate the result of multiplying {a} with {b}. You should provide the **product** as a single integer. Do not include commas, text, or any other characters in your final response."
+  },
+  {
+   "id": 381,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and specify the same output format: a plain integer with no commas or additional text.",
+   "text": "You need to determine the value of {a} multiplied by {b} immediately. The output must be the **integer** result only. Please ensure there are no commas or additional words provided in the output."
+  },
+  {
+   "id": 382,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and specify the same formatting constraints (lone integer, no commas, no extra text).",
+   "text": "Your task is to find the mathematical **product** of {a} and {b}. Display the final answer as a lone integer. Ensure that no commas or extra text are included in your submission."
+  },
+  {
+   "id": 383,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction is truncated, as evidenced by the trailing comma at the end of the text.",
+   "text": "I require you to multiply the two values {a} and {b} together. The result should be presented as a **standalone** integer. You must not include any commas,"
+  },
+  {
+   "id": 384,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions require calculating the product of {a} and {b} and formatting the result as a plain integer without commas or additional text.",
+   "text": "In order to complete this mathematical exercise, you must first identify the two specific numbers {a} and {b} and then apply the operation of multiplication to them so that you can provide the resulting numerical value as a standalone integer that is not punctuated by commas and contains absolutely no additional linguistic characters or descriptive text."
+  },
+  {
+   "id": 385,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of {a} and {b} and specify the same output format: a plain integer with no commas or additional text.",
+   "text": "Your objective is to focus on the multiplication of the first value {a} and the second value {b} and, after performing the necessary arithmetic calculations to determine their product, you must present the outcome as a single plain integer without any formatting commas or any accompanying words or sentences."
+  },
+  {
+   "id": 386,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction is truncated and ends mid-sentence.",
+   "text": "Given the numerical entities {a} and {b}, you are tasked with the specific requirement of calculating their product through the process of multiplication and subsequently reporting the resulting figure as an unadorned integer that is devoid"
+  },
+  {
+   "id": 387,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify identical formatting constraints for the output.",
+   "text": "Find the **product** of {a} and {b} and show only the numeric integer without commas or any added words."
+  },
+  {
+   "id": 388,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "Multiply {a} by {b} and output the **integer result** without any commas or extra text."
+  },
+  {
+   "id": 389,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or additional text.",
+   "text": "Provide the outcome of multiplying {a} and {b} as a **plain integer** excluding commas and any additional characters."
+  },
+  {
+   "id": 390,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or additional text.",
+   "text": "Calculate the product of {a} and {b} and return a **naked integer** with no commas and no commentary."
+  },
+  {
+   "id": 391,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting requirements (integer, no commas, no extra text).",
+   "text": "Determine the result when {a} is multiplied by {b} and state the **integer** without commas or non-numeric text."
+  },
+  {
+   "id": 392,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a single integer without commas or additional text.",
+   "text": "Evaluate {a} times {b} and report the **final product** as a solitary integer with no commas or prose."
+  },
+  {
+   "id": 393,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "You are a careful assistant. I invite you to calculate the product of {a} and {b} and output the result as a plain integer with no commas or text."
+  },
+  {
+   "id": 394,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a single integer without commas or any additional text.",
+   "text": "You are an expert mathematician. I challenge you to determine the product of {a} and {b} and provide the single integer without commas or other words."
+  },
+  {
+   "id": 395,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the same output format (integer, no commas, no text).",
+   "text": "You are a dedicated scholar. Can you please find the product of {a} and {b} and return only the integer answer without commas or text?"
+  },
+  {
+   "id": 396,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the exact same formatting requirements.",
+   "text": "You are a precise calculator. I dare you to compute the product of {a} and {b} and show the resulting integer with no commas and no extra text."
+  },
+  {
+   "id": 397,
+   "verdict": "DIFFERENT",
+   "reason": "The reference explicitly forbids commas and any additional text, whereas the candidate is less restrictive and would likely accept responses containing them.",
+   "text": "You are a logical thinker. I encourage you to solve for the product of {a} and {b} and state the plain integer"
+  },
+  {
+   "id": 398,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same output format (integer, no commas, no text).",
+   "text": "To find the **product** of {a} and {b}, multiply them and provide only the integer without commas or text."
+  },
+  {
+   "id": 399,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of two variables and specify the same output format: a plain integer without commas or additional characters (text/words). While \"no other text\" and \"no words\" us",
+   "text": "Please determine the result of {a} multiplied by {b} and output it as a plain **integer** with no commas and no words."
+  },
+  {
+   "id": 400,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify identical formatting requirements (an integer with no commas or additional text).",
+   "text": "Calculate the product of {a} and {b} and display the final answer as a lone **numeric** integer with no commas or labels."
+  },
+  {
+   "id": 401,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify the same output format (a plain integer without commas or additional text).",
+   "text": "Find the value of {a} times {b} and return a single **integer** string devoid of commas or extra characters."
+  },
+  {
+   "id": 402,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the two variables to be formatted as an integer without commas or additional text.",
+   "text": "Multiply {a} by {b} and provide the product as a raw **integer** with no commas and no additional text"
+  },
+  {
+   "id": 403,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the multiplication of the same two variables and specify the same formatting for the output (an integer without commas or additional text).",
+   "text": "Perform the multiplication of {a} and {b} and present the numerical outcome as a single integer with no commas or extra text."
+  },
+  {
+   "id": 404,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer without commas or any additional text.",
+   "text": "Your challenge is to calculate the product of {a} and {b} and specify the result as a comma-free integer with no accompanying characters."
+  },
+  {
+   "id": 405,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "You are invited to derive the product of {a} multiplied by {b} and deliver the final value as an unadorned integer with no commas or prose."
+  },
+  {
+   "id": 406,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of {a} and {b} formatted as a plain integer without commas or additional text.",
+   "text": "Execute the calculation of {a} times {b} and provide the resulting product as a standalone integer devoid of commas or additional text."
+  },
+  {
+   "id": 407,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer without commas or additional text.",
+   "text": "Submit the product of {a} and {b} as a solitary integer without commas or any other textual information."
+  },
+  {
+   "id": 408,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction is truncated and fails to specify the required output format.",
+   "text": "Formulate the multiplication of {a} and {b} and report the solution as"
+  },
+  {
+   "id": 409,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "Multiply {a} by {b} and output a lone integer without commas or text."
+  },
+  {
+   "id": 410,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or additional text.",
+   "text": "State the result of {a} times {b} as a plain integer without commas or extra words."
+  },
+  {
+   "id": 411,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables to be returned as an integer without commas or additional text.",
+   "text": "Provide {a} multiplied by {b} as a single integer with no commas or text."
+  },
+  {
+   "id": 412,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (a single integer with no commas or additional text).",
+   "text": "Return the value of {a} times {b} as a solitary integer without commas or words."
+  },
+  {
+   "id": 413,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same output format.",
+   "text": "Calculate {a} multiplied by {b} and show a lone integer without commas or text."
+  },
+  {
+   "id": 414,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the two numbers to be formatted as a plain integer without commas or additional text.",
+   "text": "Write {a} times {b} as a plain integer devoid of commas and extra words."
+  },
+  {
+   "id": 415,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the two variables and specify the same formatting requirements for the output.",
+   "text": "Give the result for {a} multiplied by {b} as a single integer without commas or text."
+  },
+  {
+   "id": 416,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a single integer without commas or any additional text.",
+   "text": "Output {a} times {b} as a solitary integer omitting commas and words."
+  },
+  {
+   "id": 417,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "Just multiply {a} and {b} and post a plain integer without any commas or extra words."
+  },
+  {
+   "id": 418,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same variables and specify the same formatting constraints (integer, no commas, no text).",
+   "text": "One should find the product of {a} and {b} and give a bare integer with no commas or text."
+  },
+  {
+   "id": 419,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions specify the same mathematical operation (multiplication) on the same variables and require the output to be formatted as a single integer without commas or additional text.",
+   "text": "Multiplication of {a} and {b} results in a value that needs to be a lone integer without commas or descriptions."
+  },
+  {
+   "id": 420,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer without commas or additional text.",
+   "text": "It'd be nice to have {a} times {b} shown as a simple integer with no commas and no other chat."
+  },
+  {
+   "id": 421,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be formatted as an integer without commas or additional text.",
+   "text": "Calculate {a} and {b} together as a product and write it as a naked integer with no commas or text."
+  },
+  {
+   "id": 422,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions specify the same mathematical operation and the same strict formatting requirements for the output.",
+   "text": "The system needs to multiply {a} and {b} and output a clean integer with no commas or additional words."
+  },
+  {
+   "id": 423,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as an integer without commas or additional text.",
+   "text": "Provide the mathematical result of multiplying {a} by {b} using only a digit-based integer with no commas or accompanying words."
+  },
+  {
+   "id": 424,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a single integer without commas or additional text.",
+   "text": "Calculate the total for {a} times {b} and present it as a solitary integer devoid of commas and extra phrasing."
+  },
+  {
+   "id": 425,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (a plain integer without commas or additional text).",
+   "text": "Multiply the values {a} and {b} together and return the final product as an unformatted integer with no commas or text."
+  },
+  {
+   "id": 426,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints: an integer result with no commas and no additional text or characters.",
+   "text": "Please calculate what {a} multiplied by {b} equals and show only the integer result without any commas or non-numeric characters."
+  },
+  {
+   "id": 427,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting requirements (integer only, no commas, no extra text).",
+   "text": "Identify the product of {a} and {b} then respond with that integer alone omitting commas and any additional description."
+  },
+  {
+   "id": 428,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction is truncated and ends abruptly, making it incomplete compared to the reference.",
+   "text": "Calculate the numerical value of {a} times {b} and deliver it as a plain integer free of commas or additional"
+  },
+  {
+   "id": 429,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "I challenge you to multiply {a} by {b} and reveal the product as a solitary integer without commas or extra words."
+  },
+  {
+   "id": 430,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting constraints for the output.",
+   "text": "I invite you to find the product of {a} and {b} and display the result as an unformatted integer with no commas or text."
+  },
+  {
+   "id": 431,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a plain integer without commas or additional text.",
+   "text": "Prove your accuracy by calculating the product of {a} and {b} and providing the final integer with no commas or additional commentary."
+  },
+  {
+   "id": 432,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "See if you can determine the result of multiplying {a} and {b} and output it as a lone integer without commas or text."
+  },
+  {
+   "id": 433,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Take on the task of finding the product of {a} and {b} and returning just the plain integer without commas or words."
+  },
+  {
+   "id": 434,
+   "verdict": "DIFFERENT",
+   "reason": "The reference specifies a strict output format (plain integer, no commas, no other text), while the candidate does not.",
+   "text": "I dare you to solve the multiplication of {a} and {b} and present the answer"
+  },
+  {
+   "id": 435,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting requirements for the output.",
+   "text": "As a plain integer without any commas or extra text, calculate the product of {a} and {b}"
+  },
+  {
+   "id": 436,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "In the form of an unformatted integer with no commas or additional words, determine the product of {a} and {b}"
+  },
+  {
+   "id": 437,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a single integer without commas or any additional text.",
+   "text": "Using only a single integer lacking commas or accompanying characters, find the product of {a} and {b}"
+  },
+  {
+   "id": 438,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "With no commas or other labels besides a solitary integer, provide the result of multiplying {a} and {b}"
+  },
+  {
+   "id": 439,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as an integer without commas or additional text.",
+   "text": "Provided only as a bare integer without commas or supplementary text, compute the product of {a} and {b}"
+  },
+  {
+   "id": 440,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting constraints (a plain integer with no commas or additional text).",
+   "text": "Outputting a comma-free integer and absolutely nothing else, state the product of {a} and {b}"
+  },
+  {
+   "id": 441,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the product of the same two variables and specify the exact same formatting constraints for the output.",
+   "text": "What is the product, written as a single integer with no commas or other text, of {a} and {b}?"
+  },
+  {
+   "id": 442,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the exact same formatting requirements for the output.",
+   "text": "Could you provide the result of multiplying the numbers as a plain integer without commas or text for {a} and {b}?"
+  },
+  {
+   "id": 443,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate does not specify which operation to perform (the product), whereas the reference does.",
+   "text": "Will you return the calculation as a standalone integer with no commas or additional words for {a} and {b}?"
+  },
+  {
+   "id": 444,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or any additional text.",
+   "text": "Can you calculate the product and display it as a comma-free integer with no other text given {a} and {b}?"
+  },
+  {
+   "id": 445,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate fails to specify the mathematical operation (product) to be performed on the two numbers.",
+   "text": "Would you show the result as an integer only, without commas or supplementary labels, between {a} and {b}?"
+  },
+  {
+   "id": 446,
+   "verdict": "DIFFERENT",
+   "reason": "The reference is a direct command to perform a calculation, whereas the candidate is a yes/no question asking if it is possible to provide the result in a specific format.",
+   "text": "Is it possible to get the product as a raw integer with no commas or explanations involving {a} and {b}?"
+  },
+  {
+   "id": 447,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "You are a helpful assistant. Provide the integer result of {a} multiplied by {b} without commas or any additional text."
+  },
+  {
+   "id": 448,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "You are a calculation tool. State the product of {a} and {b} as a plain integer omitting all commas and extra words."
+  },
+  {
+   "id": 449,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions require the product of {a} and {b} to be returned as a comma-free integer with no additional text.",
+   "text": "You are a math specialist. Perform the multiplication of {a} and {b} and return only the numeric product as a comma-free integer."
+  },
+  {
+   "id": 450,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate's requirement for \"no non-numeric characters\" is more restrictive than the reference's \"no other text,\" as it would technically exclude the minus sign for negative integers and whitespac",
+   "text": "You are a precise bot. Show the result of {a} times {b} as a solitary integer without using commas or non-numeric characters."
+  },
+  {
+   "id": 451,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and specify the same output format: a plain integer with no commas or additional text.",
+   "text": "You are a reliable assistant. Calculate {a} times {b} and output the integer result solely, excluding any commas or commentary."
+  },
+  {
+   "id": 452,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} and specify the same formatting requirements for the output.",
+   "text": "Would you be so kind as to calculate the product and provide the result as a single integer without commas or any extra text for {a} and {b}"
+  },
+  {
+   "id": 453,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "I would appreciate it if you could determine the product and output only the unformatted integer with no commas or words for {a} and {b}"
+  },
+  {
+   "id": 454,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "If you have a moment, please multiply these values and state the final result as a lone integer with no commas or language for {a} and {b}"
+  },
+  {
+   "id": 455,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a plain integer without commas or additional text.",
+   "text": "Could you please perform the multiplication and return the outcome as a plain integer devoid of commas or extra characters for {a} and {b}"
+  },
+  {
+   "id": 456,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be returned as a single integer without commas or additional text.",
+   "text": "I am requesting that you find the product and present the answer as a single integer without commas or any accompanying text for {a} and {b}"
+  },
+  {
+   "id": 457,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints (integer, no commas, no additional text).",
+   "text": "Calculate the total resulting from multiplying {a} and {b} and provide only the raw integer result without commas or discourse."
+  },
+  {
+   "id": 458,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions request the product of {a} and {b} formatted as a plain integer without commas or additional text.",
+   "text": "Output solely the integer product of {a} and {b} with no formatting such as commas and no surrounding language."
+  },
+  {
+   "id": 459,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same output format (an integer with no formatting or additional text).",
+   "text": "Determine the product when {a} is multiplied by {b} and show the answer as an isolated integer with no punctuation or text."
+  },
+  {
+   "id": 460,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of {a} and {b} to be provided as a single integer without commas or additional text.",
+   "text": "Give the numerical solution for {a} times {b} as a single integer minus commas or any descriptive words."
+  },
+  {
+   "id": 461,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same two variables and specify the same formatting constraints for the output.",
+   "text": "State the outcome of {a} and {b} being multiplied together as just a plain integer without commas or any additional narration."
+  },
+  {
+   "id": 462,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the product of the same variables and specify the exact same formatting constraints.",
+   "text": "What is the product of {a} and {b} expressed exclusively as a plain integer with no commas and no other text?"
+  }
+ ],
+ "backtranslations": [
+  {
+   "id": 14,
+   "original": "What is the product of {a} and {b} expressed as a plain integer with no commas and no other text?",
+   "spanish": "¿Cuál es el producto de {a} y {b} expresado como un número entero sin comas y sin ningún otro texto?",
+   "back": "What is the product of {a} and {b} expressed as an integer without commas and without any other text?",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 32,
+   "original": "Multiply {a} by {b} and supply the final answer as a plain integer without separators or accompanying language.",
+   "spanish": "Multiplica {a} por {b} y proporciona el resultado final como un número entero sin separadores ni texto adicional.",
+   "back": "Multiply {a} by {b} and provide the final result as an integer without separators or additional text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 57,
+   "original": "Perform the multiplication of {a} and {b} and return the product as a **plain number** devoid of commas and non-numeric text.",
+   "spanish": "Realiza la multiplicación de {a} y {b} y devuelve el producto como un **número simple** sin comas ni texto no numérico.",
+   "back": "Perform the multiplication of {a} and {b} and return the product as a **simple number** without commas or non-numeric text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 71,
+   "original": "Provide the product of {a} and {b} as a single integer with no commas and no explanatory text",
+   "spanish": "Proporcione el producto de {a} y {b} como un único número entero sin comas y sin texto explicativo.",
+   "back": "Provide the product of {a} and {b} as a single integer without commas and without explanatory text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 72,
+   "original": "Multiply {a} and {b} and report the product as a plain integer with no commas and no other text.",
+   "spanish": "Multiplica {a} y {b} y reporta el producto como un número entero sin comas y sin ningún otro texto.",
+   "back": "Multiply {a} and {b} and report the product as an integer without commas and without any other text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 78,
+   "original": "Multiply {a} by {b} and write the product as a single digit sequence with no other text.",
+   "spanish": "Multiplica {a} por {b} y escribe el producto como una sola secuencia de dígitos sin ningún otro texto.",
+   "back": "Multiply {a} by {b} and write the product as a single sequence of digits without any other text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 90,
+   "original": "Being a math-focused AI, evaluate the product of {a} and {b} and return a plain integer answer with no commas or words.",
+   "spanish": "Como IA enfocada en las matemáticas, evalúa el producto de {a} y {b} y devuelve una respuesta de número entero simple sin comas ni palabras.",
+   "back": "As a math-focused AI, evaluate the product of {a} and {b} and return a simple integer response without commas or words.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 101,
+   "original": "{a} and {b} are the numbers to multiply, so provide the product as a single integer and don't include any commas or talk.",
+   "spanish": "{a} y {b} son los números a multiplicar, así que proporciona el producto como un único número entero y no incluyas comas ni texto adicional.",
+   "back": "{a} and {b} are the numbers to multiply, so provide the product as a single integer and do not include commas or additional text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 128,
+   "original": "I invite you to determine the product of {a} and {b} when you have a free moment and return the result as a bare integer without commas or extra words.",
+   "spanish": "Te invito a determinar el producto de {a} y {b} cuando tengas un momento libre y a devolver el resultado como un número entero sin comas ni palabras adicionales.",
+   "back": "I invite you to determine the product of {a} and {b} when you have a free moment and to return the result as an integer without commas or additional words.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 130,
+   "original": "Here is a small puzzle for you if it is not too much trouble: multiply {a} by {b} and show the solution as a lone integer with no commas or text.",
+   "spanish": "Aquí tienes un pequeño acertijo si no es mucha molestia: multiplica {a} por {b} y muestra el resultado como un único número entero sin comas ni texto.",
+   "back": "Here is a little riddle if it's not too much trouble: multiply {a} by {b} and show the result as a single integer without commas or text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 143,
+   "original": "Output the product of {a} and {b} as an unformatted integer without any words.",
+   "spanish": "Muestra el producto de {a} y {b} como un entero sin formato sin ninguna palabra.",
+   "back": "Show the product of {a} and {b} as an unformatted integer without any words.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 149,
+   "original": "Calculate {a} multiplied by {b} and return just the integer with no formatting.",
+   "spanish": "Calcula {a} multiplicado por {b} y devuelve solo el entero sin formato.",
+   "back": "Calculate {a} multiplied by {b} and return only the integer without formatting.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 156,
+   "original": "Please **calculate** the product of {a} and {b} and provide the result as a raw integer without commas or any accompanying symbols.",
+   "spanish": "Por favor, **calcula** el producto de {a} y {b} y proporciona el resultado como un número entero sin comas ni símbolos adicionales.",
+   "back": "Please calculate the product of {a} and {b} and provide the result as an integer without commas or additional symbols.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 163,
+   "original": "Start by taking {a} and multiplying it with {b}. You must provide the final product right away without any explanation. The answer should be a plain integer containing no commas or extra characters.",
+   "spanish": "Comienza tomando {a} y multiplicándolo por {b}. Debes proporcionar el producto final de inmediato sin ninguna explicación. La respuesta debe ser un número entero simple sin comas ni caracteres adicionales.",
+   "back": "Start by taking {a} and multiplying it by {b}. You must provide the final product immediately without any explanation. The answer must be a simple integer without commas or additional characters.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 188,
+   "original": "Show the mathematical product as an unadorned integer without commas or labels for the quantities {a} and {b}",
+   "spanish": "Muestra el producto matemático como un número entero sin formato, sin comas ni etiquetas para las cantidades {a} y {b}.",
+   "back": "Show the mathematical product as an unformatted integer, without commas or labels for the quantities {a} and {b}.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 197,
+   "original": "Using only a plain integer with no commas and no other text, provide the product of {a} and {b}.",
+   "spanish": "Utilizando solo un número entero sin comas y sin ningún otro texto, proporcione el producto de {a} y {b}.",
+   "back": "Using only an integer without commas and without any other text, provide the product of {a} and {b}.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 206,
+   "original": "Can you handle multiplying {a} by {b} for me and just provide the plain integer result with no commas or text?",
+   "spanish": "¿Podrías multiplicar {a} por {b} y darme solo el resultado entero, sin comas ni texto?",
+   "back": "Could you multiply {a} by {b} and give me only the integer result, without commas or text?",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 213,
+   "original": "Test your proficiency by finding the product of {a} and {b}",
+   "spanish": "Pon a prueba tu destreza calculando el producto de {a} y {b}.",
+   "back": "Test your skill by calculating the product of {a} and {b}.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 215,
+   "original": "The calculation of the product for {a} and {b} should be displayed as a plain integer without commas or any other words.",
+   "spanish": "El cálculo del producto de {a} y {b} debe mostrarse como un número entero sin comas ni ninguna otra palabra.",
+   "back": "The calculation of the product of {a} and {b} must be displayed as an integer without commas or any other words.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 257,
+   "original": "Hey, what's the product of {a} and {b} expressed as a simple integer with no commas or additional labels?",
+   "spanish": "Oye, ¿cuál es el producto de {a} y {b} expresado como un número entero simple, sin comas ni etiquetas adicionales?",
+   "back": "Hey, what is the product of {a} and {b} expressed as a simple integer, without commas or additional labels?",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 268,
+   "original": "{a} and {b}: as a plain integer with no commas and no other text, state the product.",
+   "spanish": "{a} y {b}: como un número entero simple sin comas y sin ningún otro texto, indica el producto.",
+   "back": "{a} and {b}: as a simple integer without commas and without any other text, indicate the product.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 277,
+   "original": "You are a focused solver, so determine the value of {a} multiplied by {b} and print only the resulting integer without commas or supplementary text.",
+   "spanish": "Eres un solucionador enfocado, así que determina el valor de {a} multiplicado por {b} y muestra solo el número entero resultante sin comas ni texto adicional.",
+   "back": "You are a focused solver, so determine the value of {a} multiplied by {b} and show only the resulting integer without commas or additional text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 283,
+   "original": "Derive the product of {a} times {b} and report the solution as an individual integer without comma separators or extra text.",
+   "spanish": "Calcula el producto de {a} por {b} y proporciona el resultado como un número entero único sin comas ni texto adicional.",
+   "back": "Calculate the product of {a} and {b} and provide the result as a single integer without commas or additional text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 328,
+   "original": "If you multiply {a} by {b}, what is the resulting integer expressed without commas or any text?",
+   "spanish": "Si multiplicas {a} por {b}, ¿cuál es el entero resultante expresado sin comas ni ningún texto?",
+   "back": "If you multiply {a} by {b}, what is the resulting integer expressed without commas or any text?",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 339,
+   "original": "For this specific section of the worksheet, please focus on the multiplication problem. Calculate the product of {a} and {b} to find the final result. Provide the answer as a plain integer with no commas and no other text.",
+   "spanish": "Para esta sección específica de la hoja de trabajo, por favor concéntrate en el problema de multiplicación. Calcula el producto de {a} y {b} para encontrar el resultado final. Proporciona la respuesta como un número entero sin comas y sin ningún otro texto.",
+   "back": "For this specific section of the worksheet, please focus on the multiplication problem. Calculate the product of {a} and {b} to find the final result. Provide the answer as an integer without commas and without any other text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 351,
+   "original": "Wondering if you could find {a} times {b} and only write the answer as a comma-free integer.",
+   "spanish": "¿Podrías calcular {a} por {b} y escribir solo el resultado como un número entero sin comas?",
+   "back": "Could you calculate {a} times {b} and write only the result as an integer without commas?",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 361,
+   "original": "I would appreciate it if you could compute the product of {a} and {b} and supply the result as a bare integer with no commas or words.",
+   "spanish": "Le agradecería que calculara el producto de {a} y {b} y proporcionara el resultado como un número entero simple, sin comas ni palabras.",
+   "back": "I would appreciate it if you would calculate the product of {a} and {b} and provide the result as a simple integer, without commas or words.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 362,
+   "original": "Multiply** {a} by {b} and output the result as a plain integer with no commas and no other text.",
+   "spanish": "Multiplica {a} por {b} y muestra el resultado como un número entero simple, sin comas y sin ningún otro texto.",
+   "back": "Multiply {a} by {b} and show the result as a simple integer, without commas and without any other text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 371,
+   "original": "Evaluate {a} multiplied by {b} and output only the product as a plain integer with no commas and no other text.",
+   "spanish": "Evalúa {a} multiplicado por {b} y muestra solo el producto como un número entero sin comas y sin ningún otro texto.",
+   "back": "Evaluate {a} multiplied by {b} and show only the product as an integer without commas and without any other text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 383,
+   "original": "I require you to multiply the two values {a} and {b} together. The result should be presented as a **standalone** integer. You must not include any commas,",
+   "spanish": "Requiero que multiplique los dos valores {a} y {b}. El resultado debe presentarse como un número entero **independiente**. No debe incluir ninguna coma,",
+   "back": "I require you to multiply the two values {a} and {b}. The result must be presented as a **standalone** integer. It must not include any commas,",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 393,
+   "original": "You are a careful assistant. I invite you to calculate the product of {a} and {b} and output the result as a plain integer with no commas or text.",
+   "spanish": "Eres un asistente cuidadoso. Te invito a calcular el producto de {a} y {b} y a mostrar el resultado como un número entero simple, sin comas ni texto.",
+   "back": "You are a careful assistant. I invite you to calculate the product of {a} and {b} and to show the result as a simple integer, without commas or text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 406,
+   "original": "Execute the calculation of {a} times {b} and provide the resulting product as a standalone integer devoid of commas or additional text.",
+   "spanish": "Ejecuta el cálculo de {a} por {b} y proporciona el producto resultante como un número entero independiente, sin comas ni texto adicional.",
+   "back": "Execute the calculation of {a} by {b} and provide the resulting product as a standalone integer, without commas or additional text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 411,
+   "original": "Provide {a} multiplied by {b} as a single integer with no commas or text.",
+   "spanish": "Proporcione {a} multiplicado por {b} como un único número entero sin comas ni texto.",
+   "back": "Provide {a} multiplied by {b} as a single integer without commas or text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 414,
+   "original": "Write {a} times {b} as a plain integer devoid of commas and extra words.",
+   "spanish": "Escribe {a} por {b} como un número entero sin comas ni palabras adicionales.",
+   "back": "Write {a} times {b} as an integer without commas or additional words.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 417,
+   "original": "Just multiply {a} and {b} and post a plain integer without any commas or extra words.",
+   "spanish": "Solo multiplica {a} y {b} y publica un número entero sin comas ni palabras adicionales.",
+   "back": "Just multiply {a} and {b} and output an integer without commas or additional words.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 418,
+   "original": "One should find the product of {a} and {b} and give a bare integer with no commas or text.",
+   "spanish": "Se debe hallar el producto de {a} y {b} y proporcionar un número entero sin comas ni texto.",
+   "back": "Find the product of {a} and {b} and provide an integer without commas or text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 434,
+   "original": "I dare you to solve the multiplication of {a} and {b} and present the answer",
+   "spanish": "Te desafío a resolver la multiplicación de {a} y {b} y presentar la respuesta.",
+   "back": "I challenge you to solve the multiplication of {a} and {b} and present the answer.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 441,
+   "original": "What is the product, written as a single integer with no commas or other text, of {a} and {b}?",
+   "spanish": "¿Cuál es el producto de {a} y {b}, escrito como un solo número entero sin comas ni otro texto?",
+   "back": "What is the product of {a} and {b}, written as a single integer without commas or other text?",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 449,
+   "original": "You are a math specialist. Perform the multiplication of {a} and {b} and return only the numeric product as a comma-free integer.",
+   "spanish": "Eres un especialista en matemáticas. Realiza la multiplicación de {a} y {b} y devuelve solo el producto numérico como un entero sin comas.",
+   "back": "You are a mathematics specialist. Perform the multiplication of {a} and {b} and return only the numerical product as an integer without commas.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 452,
+   "original": "Would you be so kind as to calculate the product and provide the result as a single integer without commas or any extra text for {a} and {b}",
+   "spanish": "¿Sería tan amable de calcular el producto y proporcionar el resultado como un único número entero sin comas ni texto adicional para {a} y {b}?",
+   "back": "Would you be so kind as to calculate the product and provide the result as a single integer without commas or additional text for {a} and {b}?",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  }
+ ]
+}

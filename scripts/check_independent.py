@@ -207,26 +207,28 @@ def main():
             per_item = by_pid[pid]
             if len(per_item) < len(item_keys):
                 continue
-            n_before_filter += 1
-            if verified is not None and pid not in verified:
-                continue
-            row, ncorrect, nscored, nlenient = [], 0, 0, 0
+            # Grade first, then decide. A paraphrase with any failed call is excluded whole,
+            # because the correctness matrix has no way to represent a missing cell and an
+            # errored one would enter it as a wrong answer.
+            row, ncorrect, verdicts = [], 0, []
             for key in item_keys:
                 ans, kind = answer_for(key)
                 v, lenient = verdict(per_item[key], ans, kind)
-                counts[v] += 1
-                lenient_total += int(lenient)
+                verdicts.append((v, lenient))
                 row.append(1 if v == "correct" else 0)
-                if v != "error":
-                    nscored += 1
-                    nlenient += int(lenient)
                 if v == "correct":
                     ncorrect += 1
-            if nscored == 0:
+            if any(v == "error" for v, _ in verdicts):
                 continue
+            n_before_filter += 1
+            if verified is not None and pid not in verified:
+                continue
+            for v, lenient in verdicts:
+                counts[v] += 1
+                lenient_total += int(lenient)
             complete.append(pid)
             matrix.append(row)
-            accs.append(ncorrect / nscored)
+            accs.append(ncorrect / len(item_keys))
 
         got = {
             "paraphrases_before_equivalence_filter": n_before_filter,

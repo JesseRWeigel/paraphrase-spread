@@ -1,58 +1,75 @@
 {
- "generated_at": "2026-08-04T00:10:30Z",
+ "generated_at": "2026-08-04T00:24:10Z",
  "runs": [
   {
    "task": "mult",
    "model": "qwen3:8b",
-   "paraphrases_scored": 173,
+   "equivalence_note": "413 of 462 wordings were judged equivalent to the reference by gemini-3-flash-preview; the rest are excluded here",
+   "paraphrases_dropped_for_failed_calls": 0,
+   "paraphrases_before_equivalence_filter": 302,
+   "unfiltered": {
+    "n": 302,
+    "mean": 0.7185430463576159,
+    "sd": 0.14265230486135722,
+    "min": 0.0,
+    "max": 1.0,
+    "range": 1.0,
+    "p05": 0.5,
+    "p25": 0.625,
+    "median": 0.7083333333333334,
+    "p75": 0.7916666666666666,
+    "p95": 0.9979166666666662,
+    "iqr": 0.16666666666666663
+   },
+   "paraphrases_scored": 269,
    "items": 24,
-   "responses": 4152,
+   "responses": 6456,
    "accounting": {
-    "correct": 2983,
-    "wrong": 1169,
+    "correct": 4592,
+    "wrong": 1864,
     "unparseable": 0,
     "error": 0
    },
    "strict": {
-    "n": 173,
-    "mean": 0.7184489402697496,
-    "sd": 0.13068339515511812,
-    "min": 0.041666666666666664,
+    "n": 269,
+    "mean": 0.711276332094176,
+    "sd": 0.12330160704804928,
+    "min": 0.25,
     "max": 1.0,
-    "range": 0.9583333333333334,
-    "p05": 0.5416666666666666,
+    "range": 0.75,
+    "p05": 0.5,
     "p25": 0.625,
     "median": 0.7083333333333334,
     "p75": 0.7916666666666666,
-    "p95": 0.9583333333333335,
+    "p95": 0.9166666666666665,
     "iqr": 0.16666666666666663
    },
    "parsed_only": {
-    "n": 173,
-    "mean": 0.7184489402697496,
-    "sd": 0.13068339515511812,
-    "min": 0.041666666666666664,
+    "n": 269,
+    "mean": 0.711276332094176,
+    "sd": 0.12330160704804928,
+    "min": 0.25,
     "max": 1.0,
-    "range": 0.9583333333333334,
-    "p05": 0.5416666666666666,
+    "range": 0.75,
+    "p05": 0.5,
     "p25": 0.625,
     "median": 0.7083333333333334,
     "p75": 0.7916666666666666,
-    "p95": 0.9583333333333335,
+    "p95": 0.9166666666666665,
     "iqr": 0.16666666666666663
    },
    "lenient": {
-    "n": 173,
-    "mean": 0.7189306358381503,
-    "sd": 0.13056837980115574,
-    "min": 0.041666666666666664,
+    "n": 269,
+    "mean": 0.7117410161090458,
+    "sd": 0.12352498023596978,
+    "min": 0.25,
     "max": 1.0,
-    "range": 0.9583333333333334,
-    "p05": 0.5416666666666666,
+    "range": 0.75,
+    "p05": 0.5,
     "p25": 0.625,
     "median": 0.7083333333333334,
     "p75": 0.7916666666666666,
-    "p95": 0.9583333333333335,
+    "p95": 0.9416666666666664,
     "iqr": 0.16666666666666663
    },
    "histogram": {
@@ -86,152 +103,152 @@
     ],
     "counts": [
      0,
+     0,
+     0,
+     0,
+     0,
+     0,
      1,
-     0,
-     0,
-     0,
-     0,
-     1,
-     0,
      0,
      0,
      2,
-     1,
      1,
      5,
-     11,
-     23,
+     6,
+     10,
+     15,
+     37,
+     41,
+     41,
+     29,
      27,
-     24,
-     19,
-     21,
-     18,
-     7,
-     2,
+     26,
+     11,
+     4,
      3,
-     7
+     10
     ]
    },
    "canonical_accuracy": 0.7083333333333334,
-   "canonical_percentile": 0.5549132947976878,
+   "canonical_percentile": 0.5910780669144982,
    "best": {
-    "id": 27,
+    "id": 36,
     "accuracy": 1.0,
-    "text": "Please focus on the two provided numbers {a} and {b} and work out the product that results from multiplying them. When you are ready to provide the final answer, write it"
+    "text": "What's the product of {a} and {b} expressed as a single integer with no commas or other text?"
    },
    "worst": {
-    "id": 155,
-    "accuracy": 0.041666666666666664,
-    "text": "You are an efficient processor. Give the result of the calculation as a raw integer with no commas or non-numeric text: {a} and {b}"
+    "id": 135,
+    "accuracy": 0.25,
+    "text": "Express the product of {a} and {b} as a plain integer omitting commas and words."
    },
    "spread_test": {
-    "k_paraphrases": 173,
+    "k_paraphrases": 269,
     "b_items": 24,
-    "cochran_q": 638.1387705723719,
+    "cochran_q": 875.7882316538601,
     "q_p_value": 0.009900990099009901,
-    "observed_sd": 0.13068339515511812,
-    "null_sd_mean": 0.06839738888084582,
-    "null_sd_p95": 0.07442129699538479,
+    "observed_sd": 0.12330160704804928,
+    "null_sd_mean": 0.068117895221477,
+    "null_sd_p95": 0.07309106579099056,
     "sd_p_value": 0.009900990099009901,
-    "observed_range": 0.9583333333333334,
-    "null_range_mean": 0.36583333333333334,
-    "null_range_p95": 0.4166666666666667,
+    "observed_range": 0.75,
+    "null_range_mean": 0.3795833333333334,
+    "null_range_p95": 0.4583333333333333,
     "range_p_value": 0.009900990099009901,
     "permutations": 100
    },
    "reliability": {
     "splits": 40,
-    "half_correlation": 0.6377516334116731,
-    "spearman_brown": 0.776401011726967
+    "half_correlation": 0.5907066985295639,
+    "spearman_brown": 0.7398911391848899
    },
    "features": [
     {
      "name": "chars",
      "description": "template length in characters",
-     "spearman": -0.17685988379265732,
-     "p_raw": 0.02448775612193903,
-     "p_holm": 0.31834082958520743,
+     "spearman": -0.12750863078975838,
+     "p_raw": 0.04147926036981509,
+     "p_holm": 0.49775112443778113,
      "share_with_feature": null
     },
     {
      "name": "words",
      "description": "template length in whitespace words",
-     "spearman": -0.17756469300703592,
-     "p_raw": 0.025487256371814093,
-     "p_holm": 0.31834082958520743,
+     "spearman": -0.1378595283886603,
+     "p_raw": 0.02848575712143928,
+     "p_holm": 0.3703148425787106,
      "share_with_feature": null
     },
     {
      "name": "sentences",
      "description": "count of . ? or ! followed by a space or end",
-     "spearman": -0.033970169961907944,
-     "p_raw": 0.6531734132933533,
+     "spearman": 0.06315974631331195,
+     "p_raw": 0.2798600699650175,
      "p_holm": 1.0,
      "share_with_feature": null
     },
     {
      "name": "is_question",
      "description": "contains a question mark",
-     "spearman": 0.027935299962961905,
-     "p_raw": 0.7141429285357321,
+     "spearman": 0.03587530710245934,
+     "p_raw": 0.545727136431784,
      "p_holm": 1.0,
-     "share_with_feature": 0.15606936416184972
+     "share_with_feature": 0.11895910780669144
     },
     {
      "name": "role_frame",
      "description": "opens with a role assignment",
-     "spearman": 0.05962552111322346,
-     "p_raw": 0.4397801099450275,
-     "p_holm": 1.0,
-     "share_with_feature": 0.06936416184971098
+     "spearman": 0.12031711149070941,
+     "p_raw": 0.04547726136931534,
+     "p_holm": 0.5002498750624688,
+     "share_with_feature": 0.05947955390334572
     },
     {
      "name": "think_cue",
      "description": "invites deliberation before answering",
-     "spearman": -0.07031355531536944,
-     "p_raw": 0.3818090954522739,
+     "spearman": 0.0424490557485987,
+     "p_raw": 0.5237381309345327,
      "p_holm": 1.0,
-     "share_with_feature": 0.011560693641618497
+     "share_with_feature": 0.011152416356877323
     },
     {
      "name": "immediate_cue",
      "description": "demands an answer with no working",
-     "spearman": 0.17535333502932934,
-     "p_raw": 0.019490254872563718,
-     "p_holm": 0.272863568215892,
-     "share_with_feature": 0.04046242774566474
+     "spearman": 0.10773228502108444,
+     "p_raw": 0.07796101949025487,
+     "p_holm": 0.7796101949025487,
+     "share_with_feature": 0.03345724907063197
     },
     {
      "name": "format_instruction",
      "description": "states the output must be the answer alone",
-     "spearman": -0.10713199909835679,
-     "p_raw": 0.17341329335332334,
+     "spearman": -0.0950311983925852,
+     "p_raw": 0.12593703148425786,
      "p_holm": 1.0,
-     "share_with_feature": 0.6647398843930635
+     "share_with_feature": 0.6319702602230484
     },
     {
      "name": "politeness",
      "description": "contains a politeness or hedging marker",
-     "spearman": -0.05717455998371331,
-     "p_raw": 0.46326836581709147,
+     "spearman": -0.02682683678972508,
+     "p_raw": 0.6506746626686657,
      "p_holm": 1.0,
-     "share_with_feature": 0.18497109826589594
+     "share_with_feature": 0.15985130111524162
     },
     {
      "name": "markdown",
      "description": "uses markdown emphasis or code marks",
-     "spearman": -0.005045236401888139,
-     "p_raw": 0.9465267366316842,
+     "spearman": -0.04395048443646231,
+     "p_raw": 0.46926536731634183,
      "p_holm": 1.0,
-     "share_with_feature": 0.06936416184971098
+     "share_with_feature": 0.03345724907063197
     },
     {
      "name": "numbered_list",
      "description": "structured as numbered steps",
-     "spearman": null,
-     "p_raw": 1.0,
+     "spearman": -0.02929962581891598,
+     "p_raw": 0.8430784607696152,
      "p_holm": 1.0,
-     "share_with_feature": 0.0
+     "share_with_feature": 0.0037174721189591076
     },
     {
      "name": "shouty_caps",
@@ -244,18 +261,18 @@
     {
      "name": "slot_position",
      "description": "where the first placeholder sits, 0 at the start and 1 at the end",
-     "spearman": 0.08716433999592746,
-     "p_raw": 0.26686656671664166,
-     "p_holm": 1.0,
+     "spearman": 0.14615799956765846,
+     "p_raw": 0.014492753623188406,
+     "p_holm": 0.2028985507246377,
      "share_with_feature": null
     },
     {
      "name": "format_before_slot",
      "description": "the output-format requirement precedes the problem",
-     "spearman": 0.12536256061871998,
-     "p_raw": 0.10444777611194403,
+     "spearman": 0.08953859610286209,
+     "p_raw": 0.12843578210894552,
      "p_holm": 1.0,
-     "share_with_feature": 0.06358381502890173
+     "share_with_feature": 0.09665427509293681
     }
    ],
    "per_paraphrase": [
@@ -312,13 +329,6 @@
      "id": 7,
      "accuracy": 0.75,
      "parsed_accuracy": 0.75,
-     "unparseable": 0,
-     "style": "terse and imperative, as short as you can make it while keeping every requirement"
-    },
-    {
-     "id": 8,
-     "accuracy": 0.7916666666666666,
-     "parsed_accuracy": 0.7916666666666666,
      "unparseable": 0,
      "style": "terse and imperative, as short as you can make it while keeping every requirement"
     },
@@ -449,13 +459,6 @@
      "style": "wordy and over-explained, at least three sentences"
     },
     {
-     "id": 27,
-     "accuracy": 1.0,
-     "parsed_accuracy": 1.0,
-     "unparseable": 0,
-     "style": "wordy and over-explained, at least three sentences"
-    },
-    {
      "id": 28,
      "accuracy": 0.625,
      "parsed_accuracy": 0.625,
@@ -466,13 +469,6 @@
      "id": 29,
      "accuracy": 0.5416666666666666,
      "parsed_accuracy": 0.5416666666666666,
-     "unparseable": 0,
-     "style": "in a dry technical register, like a specification"
-    },
-    {
-     "id": 30,
-     "accuracy": 0.7083333333333334,
-     "parsed_accuracy": 0.7083333333333334,
      "unparseable": 0,
      "style": "in a dry technical register, like a specification"
     },
@@ -659,20 +655,6 @@
      "style": "using light markdown, such as bold on the key requirement"
     },
     {
-     "id": 57,
-     "accuracy": 0.6666666666666666,
-     "parsed_accuracy": 0.6666666666666666,
-     "unparseable": 0,
-     "style": "using light markdown, such as bold on the key requirement"
-    },
-    {
-     "id": 58,
-     "accuracy": 1.0,
-     "parsed_accuracy": 1.0,
-     "unparseable": 0,
-     "style": "using light markdown, such as bold on the key requirement"
-    },
-    {
      "id": 59,
      "accuracy": 0.75,
      "parsed_accuracy": 0.75,
@@ -708,30 +690,9 @@
      "style": "with an explicit invitation to think carefully before answering"
     },
     {
-     "id": 64,
-     "accuracy": 0.4166666666666667,
-     "parsed_accuracy": 0.4166666666666667,
-     "unparseable": 0,
-     "style": "with an explicit invitation to think carefully before answering"
-    },
-    {
-     "id": 65,
-     "accuracy": 0.8333333333333334,
-     "parsed_accuracy": 0.8333333333333334,
-     "unparseable": 0,
-     "style": "with an explicit instruction to answer immediately without explanation"
-    },
-    {
      "id": 66,
      "accuracy": 0.5833333333333334,
      "parsed_accuracy": 0.5833333333333334,
-     "unparseable": 0,
-     "style": "with an explicit instruction to answer immediately without explanation"
-    },
-    {
-     "id": 67,
-     "accuracy": 0.6666666666666666,
-     "parsed_accuracy": 0.6666666666666666,
      "unparseable": 0,
      "style": "with an explicit instruction to answer immediately without explanation"
     },
@@ -771,44 +732,9 @@
      "style": "framed as a line from a larger worksheet or exam paper"
     },
     {
-     "id": 73,
-     "accuracy": 0.9166666666666666,
-     "parsed_accuracy": 0.9166666666666666,
-     "unparseable": 0,
-     "style": "framed as a line from a larger worksheet or exam paper"
-    },
-    {
      "id": 74,
      "accuracy": 0.7083333333333334,
      "parsed_accuracy": 0.7083333333333334,
-     "unparseable": 0,
-     "style": "framed as a line from a larger worksheet or exam paper"
-    },
-    {
-     "id": 75,
-     "accuracy": 0.75,
-     "parsed_accuracy": 0.75,
-     "unparseable": 0,
-     "style": "framed as a line from a larger worksheet or exam paper"
-    },
-    {
-     "id": 76,
-     "accuracy": 1.0,
-     "parsed_accuracy": 1.0,
-     "unparseable": 0,
-     "style": "framed as a line from a larger worksheet or exam paper"
-    },
-    {
-     "id": 77,
-     "accuracy": 0.5416666666666666,
-     "parsed_accuracy": 0.5416666666666666,
-     "unparseable": 0,
-     "style": "framed as a line from a larger worksheet or exam paper"
-    },
-    {
-     "id": 78,
-     "accuracy": 0.75,
-     "parsed_accuracy": 0.75,
      "unparseable": 0,
      "style": "framed as a line from a larger worksheet or exam paper"
     },
@@ -841,13 +767,6 @@
      "style": "with mild hedging, for example 'if you can' or 'when you get a chance'"
     },
     {
-     "id": 83,
-     "accuracy": 0.875,
-     "parsed_accuracy": 0.875,
-     "unparseable": 0,
-     "style": "with mild hedging, for example 'if you can' or 'when you get a chance'"
-    },
-    {
      "id": 84,
      "accuracy": 0.7083333333333334,
      "parsed_accuracy": 0.7083333333333334,
@@ -865,13 +784,6 @@
      "id": 86,
      "accuracy": 0.875,
      "parsed_accuracy": 0.875,
-     "unparseable": 0,
-     "style": "casual and conversational, contractions allowed"
-    },
-    {
-     "id": 87,
-     "accuracy": 0.7916666666666666,
-     "parsed_accuracy": 0.7916666666666666,
      "unparseable": 0,
      "style": "casual and conversational, contractions allowed"
     },
@@ -960,13 +872,6 @@
      "style": "casual and conversational, contractions allowed"
     },
     {
-     "id": 100,
-     "accuracy": 0.8333333333333334,
-     "parsed_accuracy": 0.8333333333333334,
-     "unparseable": 0,
-     "style": "casual and conversational, contractions allowed"
-    },
-    {
      "id": 101,
      "accuracy": 0.5833333333333334,
      "parsed_accuracy": 0.5833333333333334,
@@ -984,13 +889,6 @@
      "id": 103,
      "accuracy": 0.7083333333333334,
      "parsed_accuracy": 0.7083333333333334,
-     "unparseable": 0,
-     "style": "casual and conversational, contractions allowed"
-    },
-    {
-     "id": 104,
-     "accuracy": 0.9583333333333334,
-     "parsed_accuracy": 0.9583333333333334,
      "unparseable": 0,
      "style": "casual and conversational, contractions allowed"
     },
@@ -1068,13 +966,6 @@
      "id": 115,
      "accuracy": 1.0,
      "parsed_accuracy": 1.0,
-     "unparseable": 0,
-     "style": "as a numbered list of instructions"
-    },
-    {
-     "id": 116,
-     "accuracy": 0.5833333333333334,
-     "parsed_accuracy": 0.5833333333333334,
      "unparseable": 0,
      "style": "as a numbered list of instructions"
     },
@@ -1177,13 +1068,6 @@
      "style": "with mild hedging, for example 'if you can' or 'when you get a chance'"
     },
     {
-     "id": 131,
-     "accuracy": 1.0,
-     "parsed_accuracy": 1.0,
-     "unparseable": 0,
-     "style": "with mild hedging, for example 'if you can' or 'when you get a chance'"
-    },
-    {
      "id": 132,
      "accuracy": 0.7916666666666666,
      "parsed_accuracy": 0.7916666666666666,
@@ -1229,13 +1113,6 @@
      "id": 138,
      "accuracy": 0.7083333333333334,
      "parsed_accuracy": 0.7083333333333334,
-     "unparseable": 0,
-     "style": "terse and imperative, as short as you can make it while keeping every requirement"
-    },
-    {
-     "id": 139,
-     "accuracy": 1.0,
-     "parsed_accuracy": 1.0,
      "unparseable": 0,
      "style": "terse and imperative, as short as you can make it while keeping every requirement"
     },
@@ -1345,13 +1222,6 @@
      "style": "with a short role frame at the start, for example 'You are a careful assistant.'"
     },
     {
-     "id": 155,
-     "accuracy": 0.041666666666666664,
-     "parsed_accuracy": 0.041666666666666664,
-     "unparseable": 0,
-     "style": "with a short role frame at the start, for example 'You are a careful assistant.'"
-    },
-    {
      "id": 156,
      "accuracy": 0.9583333333333334,
      "parsed_accuracy": 0.9583333333333334,
@@ -1383,13 +1253,6 @@
      "id": 160,
      "accuracy": 0.625,
      "parsed_accuracy": 0.625,
-     "unparseable": 0,
-     "style": "using light markdown, such as bold on the key requirement"
-    },
-    {
-     "id": 161,
-     "accuracy": 0.9583333333333334,
-     "parsed_accuracy": 0.9583333333333334,
      "unparseable": 0,
      "style": "using light markdown, such as bold on the key requirement"
     },
@@ -1457,18 +1320,844 @@
      "style": "phrased as a direct question rather than a command"
     },
     {
-     "id": 171,
-     "accuracy": 0.75,
-     "parsed_accuracy": 0.75,
-     "unparseable": 0,
-     "style": "phrased as a direct question rather than a command"
-    },
-    {
      "id": 172,
      "accuracy": 0.75,
      "parsed_accuracy": 0.75,
      "unparseable": 0,
      "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 173,
+     "accuracy": 0.9166666666666666,
+     "parsed_accuracy": 0.9166666666666666,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 174,
+     "accuracy": 0.7916666666666666,
+     "parsed_accuracy": 0.7916666666666666,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 175,
+     "accuracy": 0.6666666666666666,
+     "parsed_accuracy": 0.6666666666666666,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 176,
+     "accuracy": 0.6666666666666666,
+     "parsed_accuracy": 0.6666666666666666,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 177,
+     "accuracy": 1.0,
+     "parsed_accuracy": 1.0,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 178,
+     "accuracy": 0.8333333333333334,
+     "parsed_accuracy": 0.8333333333333334,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 179,
+     "accuracy": 0.75,
+     "parsed_accuracy": 0.75,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 180,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 181,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 182,
+     "accuracy": 0.6666666666666666,
+     "parsed_accuracy": 0.6666666666666666,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 183,
+     "accuracy": 0.5416666666666666,
+     "parsed_accuracy": 0.5416666666666666,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 184,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 185,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 186,
+     "accuracy": 0.625,
+     "parsed_accuracy": 0.625,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 188,
+     "accuracy": 1.0,
+     "parsed_accuracy": 1.0,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 189,
+     "accuracy": 0.75,
+     "parsed_accuracy": 0.75,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 190,
+     "accuracy": 0.7916666666666666,
+     "parsed_accuracy": 0.7916666666666666,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 191,
+     "accuracy": 0.9583333333333334,
+     "parsed_accuracy": 0.9583333333333334,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 192,
+     "accuracy": 0.625,
+     "parsed_accuracy": 0.625,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 193,
+     "accuracy": 0.875,
+     "parsed_accuracy": 0.875,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 194,
+     "accuracy": 0.625,
+     "parsed_accuracy": 0.625,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 195,
+     "accuracy": 0.625,
+     "parsed_accuracy": 0.625,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 197,
+     "accuracy": 0.8333333333333334,
+     "parsed_accuracy": 0.8333333333333334,
+     "unparseable": 0,
+     "style": "with the output-format requirement stated first, before the problem"
+    },
+    {
+     "id": 198,
+     "accuracy": 0.8333333333333334,
+     "parsed_accuracy": 0.8333333333333334,
+     "unparseable": 0,
+     "style": "with the output-format requirement stated first, before the problem"
+    },
+    {
+     "id": 199,
+     "accuracy": 0.875,
+     "parsed_accuracy": 0.875,
+     "unparseable": 0,
+     "style": "with the output-format requirement stated first, before the problem"
+    },
+    {
+     "id": 200,
+     "accuracy": 0.7916666666666666,
+     "parsed_accuracy": 0.7916666666666666,
+     "unparseable": 0,
+     "style": "with the output-format requirement stated first, before the problem"
+    },
+    {
+     "id": 201,
+     "accuracy": 0.6666666666666666,
+     "parsed_accuracy": 0.6666666666666666,
+     "unparseable": 0,
+     "style": "with the output-format requirement stated first, before the problem"
+    },
+    {
+     "id": 202,
+     "accuracy": 0.8333333333333334,
+     "parsed_accuracy": 0.8333333333333334,
+     "unparseable": 0,
+     "style": "with the output-format requirement stated first, before the problem"
+    },
+    {
+     "id": 203,
+     "accuracy": 0.75,
+     "parsed_accuracy": 0.75,
+     "unparseable": 0,
+     "style": "casual and conversational, contractions allowed"
+    },
+    {
+     "id": 204,
+     "accuracy": 0.875,
+     "parsed_accuracy": 0.875,
+     "unparseable": 0,
+     "style": "casual and conversational, contractions allowed"
+    },
+    {
+     "id": 205,
+     "accuracy": 0.8333333333333334,
+     "parsed_accuracy": 0.8333333333333334,
+     "unparseable": 0,
+     "style": "casual and conversational, contractions allowed"
+    },
+    {
+     "id": 206,
+     "accuracy": 0.7916666666666666,
+     "parsed_accuracy": 0.7916666666666666,
+     "unparseable": 0,
+     "style": "casual and conversational, contractions allowed"
+    },
+    {
+     "id": 207,
+     "accuracy": 0.625,
+     "parsed_accuracy": 0.625,
+     "unparseable": 0,
+     "style": "casual and conversational, contractions allowed"
+    },
+    {
+     "id": 208,
+     "accuracy": 0.875,
+     "parsed_accuracy": 0.875,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 209,
+     "accuracy": 0.5833333333333334,
+     "parsed_accuracy": 0.5833333333333334,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 210,
+     "accuracy": 0.6666666666666666,
+     "parsed_accuracy": 0.6666666666666666,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 211,
+     "accuracy": 0.625,
+     "parsed_accuracy": 0.625,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 212,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 214,
+     "accuracy": 0.625,
+     "parsed_accuracy": 0.625,
+     "unparseable": 0,
+     "style": "polite and slightly formal, the way a person asks a colleague for a favour"
+    },
+    {
+     "id": 215,
+     "accuracy": 0.4583333333333333,
+     "parsed_accuracy": 0.4583333333333333,
+     "unparseable": 0,
+     "style": "polite and slightly formal, the way a person asks a colleague for a favour"
+    },
+    {
+     "id": 216,
+     "accuracy": 0.7916666666666666,
+     "parsed_accuracy": 0.7916666666666666,
+     "unparseable": 0,
+     "style": "polite and slightly formal, the way a person asks a colleague for a favour"
+    },
+    {
+     "id": 217,
+     "accuracy": 0.6666666666666666,
+     "parsed_accuracy": 0.6666666666666666,
+     "unparseable": 0,
+     "style": "polite and slightly formal, the way a person asks a colleague for a favour"
+    },
+    {
+     "id": 218,
+     "accuracy": 0.4583333333333333,
+     "parsed_accuracy": 0.4583333333333333,
+     "unparseable": 0,
+     "style": "polite and slightly formal, the way a person asks a colleague for a favour"
+    },
+    {
+     "id": 219,
+     "accuracy": 0.625,
+     "parsed_accuracy": 0.625,
+     "unparseable": 0,
+     "style": "polite and slightly formal, the way a person asks a colleague for a favour"
+    },
+    {
+     "id": 220,
+     "accuracy": 0.5,
+     "parsed_accuracy": 0.5,
+     "unparseable": 0,
+     "style": "wordy and over-explained, at least three sentences"
+    },
+    {
+     "id": 221,
+     "accuracy": 1.0,
+     "parsed_accuracy": 1.0,
+     "unparseable": 0,
+     "style": "wordy and over-explained, at least three sentences"
+    },
+    {
+     "id": 222,
+     "accuracy": 0.5,
+     "parsed_accuracy": 0.5,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 223,
+     "accuracy": 0.6666666666666666,
+     "parsed_accuracy": 0.6666666666666666,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 224,
+     "accuracy": 0.5833333333333334,
+     "parsed_accuracy": 0.5833333333333334,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 225,
+     "accuracy": 0.5,
+     "parsed_accuracy": 0.5,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 226,
+     "accuracy": 0.4583333333333333,
+     "parsed_accuracy": 0.4583333333333333,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 227,
+     "accuracy": 0.5833333333333334,
+     "parsed_accuracy": 0.5833333333333334,
+     "unparseable": 0,
+     "style": "framed as a line from a larger worksheet or exam paper"
+    },
+    {
+     "id": 228,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "with mild hedging, for example 'if you can' or 'when you get a chance'"
+    },
+    {
+     "id": 229,
+     "accuracy": 0.75,
+     "parsed_accuracy": 0.75,
+     "unparseable": 0,
+     "style": "with mild hedging, for example 'if you can' or 'when you get a chance'"
+    },
+    {
+     "id": 230,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "with mild hedging, for example 'if you can' or 'when you get a chance'"
+    },
+    {
+     "id": 231,
+     "accuracy": 0.8333333333333334,
+     "parsed_accuracy": 0.8333333333333334,
+     "unparseable": 0,
+     "style": "with mild hedging, for example 'if you can' or 'when you get a chance'"
+    },
+    {
+     "id": 232,
+     "accuracy": 0.625,
+     "parsed_accuracy": 0.625,
+     "unparseable": 0,
+     "style": "with mild hedging, for example 'if you can' or 'when you get a chance'"
+    },
+    {
+     "id": 233,
+     "accuracy": 0.5,
+     "parsed_accuracy": 0.5,
+     "unparseable": 0,
+     "style": "with mild hedging, for example 'if you can' or 'when you get a chance'"
+    },
+    {
+     "id": 234,
+     "accuracy": 0.6666666666666666,
+     "parsed_accuracy": 0.6666666666666666,
+     "unparseable": 0,
+     "style": "with an explicit instruction to answer immediately without explanation"
+    },
+    {
+     "id": 235,
+     "accuracy": 0.75,
+     "parsed_accuracy": 0.75,
+     "unparseable": 0,
+     "style": "with an explicit instruction to answer immediately without explanation"
+    },
+    {
+     "id": 236,
+     "accuracy": 0.6666666666666666,
+     "parsed_accuracy": 0.6666666666666666,
+     "unparseable": 0,
+     "style": "with an explicit instruction to answer immediately without explanation"
+    },
+    {
+     "id": 237,
+     "accuracy": 0.4583333333333333,
+     "parsed_accuracy": 0.4583333333333333,
+     "unparseable": 0,
+     "style": "with an explicit instruction to answer immediately without explanation"
+    },
+    {
+     "id": 238,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "with an explicit instruction to answer immediately without explanation"
+    },
+    {
+     "id": 240,
+     "accuracy": 0.5416666666666666,
+     "parsed_accuracy": 0.5416666666666666,
+     "unparseable": 0,
+     "style": "terse and imperative, as short as you can make it while keeping every requirement"
+    },
+    {
+     "id": 241,
+     "accuracy": 0.6666666666666666,
+     "parsed_accuracy": 0.6666666666666666,
+     "unparseable": 0,
+     "style": "terse and imperative, as short as you can make it while keeping every requirement"
+    },
+    {
+     "id": 242,
+     "accuracy": 1.0,
+     "parsed_accuracy": 1.0,
+     "unparseable": 0,
+     "style": "terse and imperative, as short as you can make it while keeping every requirement"
+    },
+    {
+     "id": 243,
+     "accuracy": 0.75,
+     "parsed_accuracy": 0.75,
+     "unparseable": 0,
+     "style": "terse and imperative, as short as you can make it while keeping every requirement"
+    },
+    {
+     "id": 244,
+     "accuracy": 0.75,
+     "parsed_accuracy": 0.75,
+     "unparseable": 0,
+     "style": "terse and imperative, as short as you can make it while keeping every requirement"
+    },
+    {
+     "id": 245,
+     "accuracy": 0.9166666666666666,
+     "parsed_accuracy": 0.9166666666666666,
+     "unparseable": 0,
+     "style": "terse and imperative, as short as you can make it while keeping every requirement"
+    },
+    {
+     "id": 246,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "terse and imperative, as short as you can make it while keeping every requirement"
+    },
+    {
+     "id": 248,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 249,
+     "accuracy": 0.625,
+     "parsed_accuracy": 0.625,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 250,
+     "accuracy": 0.9166666666666666,
+     "parsed_accuracy": 0.9166666666666666,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 251,
+     "accuracy": 0.625,
+     "parsed_accuracy": 0.625,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 252,
+     "accuracy": 0.5416666666666666,
+     "parsed_accuracy": 0.5416666666666666,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 254,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "casual and conversational, contractions allowed"
+    },
+    {
+     "id": 255,
+     "accuracy": 0.8333333333333334,
+     "parsed_accuracy": 0.8333333333333334,
+     "unparseable": 0,
+     "style": "casual and conversational, contractions allowed"
+    },
+    {
+     "id": 256,
+     "accuracy": 0.75,
+     "parsed_accuracy": 0.75,
+     "unparseable": 0,
+     "style": "casual and conversational, contractions allowed"
+    },
+    {
+     "id": 257,
+     "accuracy": 1.0,
+     "parsed_accuracy": 1.0,
+     "unparseable": 0,
+     "style": "casual and conversational, contractions allowed"
+    },
+    {
+     "id": 258,
+     "accuracy": 0.75,
+     "parsed_accuracy": 0.75,
+     "unparseable": 0,
+     "style": "casual and conversational, contractions allowed"
+    },
+    {
+     "id": 259,
+     "accuracy": 0.7916666666666666,
+     "parsed_accuracy": 0.7916666666666666,
+     "unparseable": 0,
+     "style": "casual and conversational, contractions allowed"
+    },
+    {
+     "id": 260,
+     "accuracy": 0.5833333333333334,
+     "parsed_accuracy": 0.5833333333333334,
+     "unparseable": 0,
+     "style": "polite and slightly formal, the way a person asks a colleague for a favour"
+    },
+    {
+     "id": 261,
+     "accuracy": 0.6666666666666666,
+     "parsed_accuracy": 0.6666666666666666,
+     "unparseable": 0,
+     "style": "polite and slightly formal, the way a person asks a colleague for a favour"
+    },
+    {
+     "id": 262,
+     "accuracy": 0.75,
+     "parsed_accuracy": 0.75,
+     "unparseable": 0,
+     "style": "polite and slightly formal, the way a person asks a colleague for a favour"
+    },
+    {
+     "id": 263,
+     "accuracy": 0.875,
+     "parsed_accuracy": 0.875,
+     "unparseable": 0,
+     "style": "polite and slightly formal, the way a person asks a colleague for a favour"
+    },
+    {
+     "id": 264,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "polite and slightly formal, the way a person asks a colleague for a favour"
+    },
+    {
+     "id": 266,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "with the output-format requirement stated first, before the problem"
+    },
+    {
+     "id": 267,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "with the output-format requirement stated first, before the problem"
+    },
+    {
+     "id": 268,
+     "accuracy": 0.6666666666666666,
+     "parsed_accuracy": 0.6666666666666666,
+     "unparseable": 0,
+     "style": "with the output-format requirement stated first, before the problem"
+    },
+    {
+     "id": 269,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "with the output-format requirement stated first, before the problem"
+    },
+    {
+     "id": 270,
+     "accuracy": 0.6666666666666666,
+     "parsed_accuracy": 0.6666666666666666,
+     "unparseable": 0,
+     "style": "with the output-format requirement stated first, before the problem"
+    },
+    {
+     "id": 271,
+     "accuracy": 0.6666666666666666,
+     "parsed_accuracy": 0.6666666666666666,
+     "unparseable": 0,
+     "style": "with the output-format requirement stated first, before the problem"
+    },
+    {
+     "id": 273,
+     "accuracy": 0.75,
+     "parsed_accuracy": 0.75,
+     "unparseable": 0,
+     "style": "with a short role frame at the start, for example 'You are a careful assistant.'"
+    },
+    {
+     "id": 274,
+     "accuracy": 0.625,
+     "parsed_accuracy": 0.625,
+     "unparseable": 0,
+     "style": "with a short role frame at the start, for example 'You are a careful assistant.'"
+    },
+    {
+     "id": 275,
+     "accuracy": 0.8333333333333334,
+     "parsed_accuracy": 0.8333333333333334,
+     "unparseable": 0,
+     "style": "with a short role frame at the start, for example 'You are a careful assistant.'"
+    },
+    {
+     "id": 276,
+     "accuracy": 0.8333333333333334,
+     "parsed_accuracy": 0.8333333333333334,
+     "unparseable": 0,
+     "style": "with a short role frame at the start, for example 'You are a careful assistant.'"
+    },
+    {
+     "id": 277,
+     "accuracy": 0.6666666666666666,
+     "parsed_accuracy": 0.6666666666666666,
+     "unparseable": 0,
+     "style": "with a short role frame at the start, for example 'You are a careful assistant.'"
+    },
+    {
+     "id": 278,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "in a dry technical register, like a specification"
+    },
+    {
+     "id": 279,
+     "accuracy": 0.8333333333333334,
+     "parsed_accuracy": 0.8333333333333334,
+     "unparseable": 0,
+     "style": "in a dry technical register, like a specification"
+    },
+    {
+     "id": 280,
+     "accuracy": 0.75,
+     "parsed_accuracy": 0.75,
+     "unparseable": 0,
+     "style": "in a dry technical register, like a specification"
+    },
+    {
+     "id": 281,
+     "accuracy": 0.625,
+     "parsed_accuracy": 0.625,
+     "unparseable": 0,
+     "style": "in a dry technical register, like a specification"
+    },
+    {
+     "id": 282,
+     "accuracy": 0.375,
+     "parsed_accuracy": 0.375,
+     "unparseable": 0,
+     "style": "in a dry technical register, like a specification"
+    },
+    {
+     "id": 283,
+     "accuracy": 0.5833333333333334,
+     "parsed_accuracy": 0.5833333333333334,
+     "unparseable": 0,
+     "style": "in a dry technical register, like a specification"
+    },
+    {
+     "id": 284,
+     "accuracy": 0.5416666666666666,
+     "parsed_accuracy": 0.5416666666666666,
+     "unparseable": 0,
+     "style": "in a dry technical register, like a specification"
+    },
+    {
+     "id": 285,
+     "accuracy": 0.6666666666666666,
+     "parsed_accuracy": 0.6666666666666666,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 286,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 287,
+     "accuracy": 1.0,
+     "parsed_accuracy": 1.0,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 288,
+     "accuracy": 0.5416666666666666,
+     "parsed_accuracy": 0.5416666666666666,
+     "unparseable": 0,
+     "style": "as a numbered list of instructions"
+    },
+    {
+     "id": 289,
+     "accuracy": 0.5416666666666666,
+     "parsed_accuracy": 0.5416666666666666,
+     "unparseable": 0,
+     "style": "with mild hedging, for example 'if you can' or 'when you get a chance'"
+    },
+    {
+     "id": 290,
+     "accuracy": 1.0,
+     "parsed_accuracy": 1.0,
+     "unparseable": 0,
+     "style": "with mild hedging, for example 'if you can' or 'when you get a chance'"
+    },
+    {
+     "id": 291,
+     "accuracy": 0.375,
+     "parsed_accuracy": 0.375,
+     "unparseable": 0,
+     "style": "with mild hedging, for example 'if you can' or 'when you get a chance'"
+    },
+    {
+     "id": 293,
+     "accuracy": 0.9583333333333334,
+     "parsed_accuracy": 0.9583333333333334,
+     "unparseable": 0,
+     "style": "with mild hedging, for example 'if you can' or 'when you get a chance'"
+    },
+    {
+     "id": 294,
+     "accuracy": 0.7916666666666666,
+     "parsed_accuracy": 0.7916666666666666,
+     "unparseable": 0,
+     "style": "with an explicit invitation to think carefully before answering"
+    },
+    {
+     "id": 295,
+     "accuracy": 0.75,
+     "parsed_accuracy": 0.75,
+     "unparseable": 0,
+     "style": "with an explicit invitation to think carefully before answering"
+    },
+    {
+     "id": 296,
+     "accuracy": 0.7916666666666666,
+     "parsed_accuracy": 0.7916666666666666,
+     "unparseable": 0,
+     "style": "with an explicit invitation to think carefully before answering"
+    },
+    {
+     "id": 297,
+     "accuracy": 0.7083333333333334,
+     "parsed_accuracy": 0.7083333333333334,
+     "unparseable": 0,
+     "style": "with an explicit invitation to think carefully before answering"
+    },
+    {
+     "id": 298,
+     "accuracy": 0.5,
+     "parsed_accuracy": 0.5,
+     "unparseable": 0,
+     "style": "with an explicit invitation to think carefully before answering"
+    },
+    {
+     "id": 299,
+     "accuracy": 0.625,
+     "parsed_accuracy": 0.625,
+     "unparseable": 0,
+     "style": "with an explicit invitation to think carefully before answering"
+    },
+    {
+     "id": 301,
+     "accuracy": 1.0,
+     "parsed_accuracy": 1.0,
+     "unparseable": 0,
+     "style": "with an explicit invitation to think carefully before answering"
     }
    ]
   }

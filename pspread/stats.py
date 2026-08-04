@@ -68,6 +68,12 @@ def histogram(xs, lo=0.0, hi=1.0, bins=20):
 
 def describe(xs):
     xs = list(xs)
+    if not xs:
+        # An empty input is "could not measure", which is a different fact from a measurement
+        # of zero, and collapsing the two is the silent-failure pattern.
+        return {"n": 0, "mean": None, "sd": None, "min": None, "max": None, "range": None,
+                "p05": None, "p25": None, "median": None, "p75": None, "p95": None,
+                "iqr": None}
     return {
         "n": len(xs),
         "mean": mean(xs),

@@ -331,13 +331,24 @@ def analyse_one(task, model, permutations=1000, splits=200):
     for r in records:
         by_pid.setdefault(r["p"], []).append((r["i"], r.get("r")))
 
-    graded, per_paraphrase = {}, []
+    # A paraphrase is only usable if it has a response for every item AND none of those calls
+    # failed. The correctness matrix has one column per item and no way to say "no data", so an
+    # errored cell would enter it as a wrong answer and count against the wording for a reason
+    # that has nothing to do with the wording. Dropping the whole row keeps every paraphrase
+    # scored on exactly the same 24 items, and the number dropped is reported rather than
+    # absorbed.
+    graded, per_paraphrase, dropped_for_failed_calls = {}, [], []
     for pid, recs in sorted(by_pid.items()):
         if len(recs) < len(item_keys):
             continue
         g = grade.grade_group(recs, answers, task.answer_kind)
+        if g["error"]:
+            dropped_for_failed_calls.append(pid)
+            continue
         graded[pid] = g
         per_paraphrase.append((pid, g["per_item"]))
+    if not per_paraphrase:
+        return None
 
     all_ids, _ = stats.to_matrix(per_paraphrase, item_keys)
     unfiltered = stats.describe([graded[pid]["strict_accuracy"] for pid in all_ids])
@@ -390,6 +401,7 @@ def analyse_one(task, model, permutations=1000, splits=200):
         "task": task.name,
         "model": model,
         "equivalence_note": equivalence_note,
+        "paraphrases_dropped_for_failed_calls": len(dropped_for_failed_calls),
         "paraphrases_before_equivalence_filter": len(all_ids),
         "unfiltered": unfiltered,
         "paraphrases_scored": len(ids),
@@ -446,9 +458,10 @@ def cmd_analyze(args):
     _write(RESULTS / "analysis.json", out)
     for r in out["runs"]:
         s = r["strict"]
+        q_p = r["spread_test"]["q_p_value"]
         print(f"  {r['task']:8s} {r['model']:14s} n={s['n']:4d} mean={s['mean']:.3f} "
               f"sd={s['sd']:.3f} range={s['min']:.3f}..{s['max']:.3f} "
-              f"q_p={r['spread_test']['q_p_value']:.4f} "
+              f"q_p={'undefined' if q_p is None else format(q_p, '.4f')} "
               f"rel={r['reliability']['spearman_brown']:.2f}")
 
 

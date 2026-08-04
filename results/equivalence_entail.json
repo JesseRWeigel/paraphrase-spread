@@ -1,0 +1,1091 @@
+{
+ "task": "entail",
+ "checked_at": "2026-08-04T00:23:51Z",
+ "judge_model": "gemini-3-flash-preview",
+ "method": "Three checks. A deterministic structural check ran on every candidate at generation time and is the reason the rejected list exists. A model judge compared EVERY wording against the canonical one, and the analysis uses only the wordings it called equivalent. A round trip through Spanish and back, on a random sample, judged against its own original, tests whether the meaning survives a transform that does not preserve surface form.",
+ "reviewer_note": "The judge is a language model, and the spot-check of its verdicts was done by an AI agent. No human read these wordings.",
+ "judged": {
+  "n": 120,
+  "equivalent": 104,
+  "unjudged": 0,
+  "rate": 0.8666666666666667
+ },
+ "backtranslation": {
+  "n": 30,
+  "equivalent": 30,
+  "rate": 1.0,
+  "slots_survived": 30
+ },
+ "structural_rejections": 41,
+ "equivalent_ids": [
+  0,
+  4,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  20,
+  21,
+  22,
+  23,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  33,
+  34,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  49,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  67,
+  68,
+  69,
+  70,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  83,
+  84,
+  85,
+  86,
+  89,
+  90,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106,
+  107,
+  108,
+  109,
+  110,
+  111,
+  112,
+  113,
+  114,
+  115,
+  116,
+  117,
+  118,
+  119
+ ],
+ "judgements": [
+  {
+   "id": 1,
+   "verdict": "DIFFERENT",
+   "reason": "The reference includes a strict negative constraint (\"and nothing else\") that limits the response to exactly one word. The candidate lacks this constraint, meaning it would accept responses that inclu",
+   "text": "Tell me if {target} follows, its negation follows, or if neither is certain; use YES for follows, NO for the negation, and UNKNOWN for neither. {rule} {fact}"
+  },
+  {
+   "id": 2,
+   "verdict": "DIFFERENT",
+   "reason": "The reference contains a strict output constraint (\"nothing else\") that the candidate lacks, meaning the candidate would accept responses (such as \"YES, it follows\") that the reference would not.",
+   "text": "Does {target} have to be true, must its negation be true, or is it unclear? Reply with YES if it's true, NO if the negation's true, and UNKNOWN otherwise. {rule} {fact}"
+  },
+  {
+   "id": 3,
+   "verdict": "DIFFERENT",
+   "reason": "The reference specifies a strict output constraint (\"and nothing else\") that the candidate lacks, meaning the candidate would accept responses (e.g., \"YES, it follows\") that the reference would not.",
+   "text": "Is {target} a logical consequence, its flip side a consequence, or is it a mystery? Say YES if it follows, NO if its negation follows, and UNKNOWN if neither. {rule} {fact}"
+  },
+  {
+   "id": 4,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction task with the same three possible outputs (YES, NO, UNKNOWN) based on the same criteria and the same single-word formatting constraint.",
+   "text": "As a careful assistant, analyze if {target} follows from {rule} and {fact}, then answer YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined using just one word."
+  },
+  {
+   "id": 5,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction omits the negative constraint \"and nothing else,\" which means it would accept responses containing additional text or explanations that the reference instruction would reject",
+   "text": "Being a logical solver, determine if {target} is implied by {rule} and {fact} and respond with YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 6,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask the user to determine the logical relationship between a rule/fact and a target statement, providing the same three options (YES, NO, UNKNOWN) with the same definitions for each.",
+   "text": "Consider yourself a precise analyzer, then tell me if {target} follows from {rule} and {fact} by answering YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 7,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask to determine the logical relationship between the premises and the target, using the same three labels (YES, NO, UNKNOWN) under the same conditions and with the same one-word out",
+   "text": "{rule} {fact} Based on these premises, would you please determine if {target} follows? Please reply with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only one of those three words."
+  },
+  {
+   "id": 8,
+   "verdict": "EQUIVALENT",
+   "reason": "Both prompts ask for the same logical deduction task with the same three possible outputs and the same formatting constraint.",
+   "text": "{rule} {fact} I would appreciate your help in verifying whether {target} holds. Kindly provide an answer of YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, and include no other text."
+  },
+  {
+   "id": 9,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction task with the same three possible answers (YES, NO, UNKNOWN) and the same formatting constraint.",
+   "text": "{rule} {fact} If you have the time, could you assess whether {target} is a necessary consequence? Please answer YES if it follows, NO if its negation follows, or UNKNOWN if it is indeterminate, with no additional words."
+  },
+  {
+   "id": 10,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction task with the same three output options (YES, NO, UNKNOWN) and the same single-word constraint.",
+   "text": "{rule} {fact} Hey, does {target} have to be true? Use YES if it follows, NO if its negation follows, or UNKNOWN if you cannot tell. Respond with only one word."
+  },
+  {
+   "id": 11,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions describe the same logical deduction task and require the same three possible outputs (YES, NO, UNKNOWN) under the same conditions.",
+   "text": "{rule} {fact} Do you think {target} is a sure thing based on that? Use YES if it follows, NO if its negation follows, and UNKNOWN if it is a mystery. One word only."
+  },
+  {
+   "id": 12,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction based on the provided rule and fact, and they require the same three specific response options (YES, NO, UNKNOWN) with a one-word constraint.",
+   "text": "{rule} {fact} Does {target} definitely shake out from those two? Answer YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined. Just one word."
+  },
+  {
+   "id": 13,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for a logical evaluation of the same inputs with the same three possible outputs and a one-word constraint.",
+   "text": "Could you please evaluate whether {target} is logically derived from {rule} and {fact}, responding with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be confirmed, using only that single word?"
+  },
+  {
+   "id": 14,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction based on the provided rule, fact, and target, and both require the output to be a single word chosen from the same three options (YES, NO, or UNKNO",
+   "text": "I would be grateful if you could examine {rule} and {fact} to decide if {target} follows, then provide a single-word response of YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain."
+  },
+  {
+   "id": 15,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for a logical deduction based on the same inputs and specify the same three possible answers (YES, NO, UNKNOWN) with a single-word output constraint.",
+   "text": "Would you mind checking if {target} is a consequence of {rule} and {fact}, answering with just YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined?"
+  },
+  {
+   "id": 16,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction task based on the same inputs and require the same three-word output format.",
+   "text": "Given {rule} and {fact}, does {target} follow? Please respond YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, and provide only that single word."
+  },
+  {
+   "id": 17,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the same logical deduction and require the same single-word output format (YES, NO, or UNKNOWN).",
+   "text": "Analyze {rule} and {fact} to see if {target} is a consequence. State YES if it follows, NO if its negation follows, and UNKNOWN if neither can be established, using no other text."
+  },
+  {
+   "id": 18,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction based on the same inputs and require the same three possible one-word responses (YES, NO, UNKNOWN).",
+   "text": "Determine if {target} is implied by {rule} and {fact}. Reply with YES if it follows, NO if its negation follows, and UNKNOWN if neither is provable, and use just one word."
+  },
+  {
+   "id": 19,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate is truncated and omits the specific instruction to answer with \"nothing else.\"",
+   "text": "From {rule} and {fact}, does it logically follow that {target}? Answer YES if it follows, NO if its negation follows, and UNKNOWN"
+  },
+  {
+   "id": 20,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the same logical deduction task and require the same single-word output format (YES, NO, or UNKNOWN).",
+   "text": "If you don't mind, please look at {rule} and {fact}. Tell me if {target} follows, if its negation follows, or if neither is certain. Use YES for follows, NO for negation follows, and UNKNOWN for neither, with no other text."
+  },
+  {
+   "id": 21,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction based on the provided rule and fact, and they require the same three specific output options (YES, NO, or UNKNOWN) with the same formatting constra",
+   "text": "Please evaluate the relationship between {rule}, {fact}, and {target}. If you can spare a moment, determine if the statement follows, its negation follows, or if it is indeterminate. Reply with YES, NO, or UNKNOWN and nothing else."
+  },
+  {
+   "id": 22,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the same logical deduction task based on the same premises and require the same three specific output options (YES, NO, or UNKNOWN) with identical constraints on the response",
+   "text": "Consider the premises {rule} and {fact}. When you have an opportunity, state whether {target} follows, its negation follows, or neither is the case. Respond with YES, NO, or UNKNOWN using no other words."
+  },
+  {
+   "id": 23,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions require the same logical evaluation of the relationship between the rule, fact, and target, and both restrict the output to a single word from the same set of options (YES, NO, UNKNO",
+   "text": "Think deeply about whether {target} follows from {rule} and {fact}, then provide a single word answer of YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 24,
+   "verdict": "DIFFERENT",
+   "reason": "The reference includes a strict constraint to \"Answer with one of those three words and nothing else,\" whereas the candidate does not explicitly forbid additional text in the response. Therefore, the ",
+   "text": "Carefully analyze if {target} is a logical consequence of {rule} and {fact} and respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 25,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for a logical deduction (YES, NO, or UNKNOWN) based on the provided rule and fact, and both restrict the output to only those three words.",
+   "text": "Take a moment to reflect on whether {rule} combined with {fact} implies {target}, answering only YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 26,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask the user to determine the logical relationship between a rule/fact and a target, providing the same three options (YES, NO, UNKNOWN) and restricting the output to a single word.",
+   "text": "I challenge you to determine, if you have a moment, whether {target} follows from {rule} and {fact}; answer YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined, using only one word."
+  },
+  {
+   "id": 27,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical inference based on the provided rule and fact, and they require the same three-word output format.",
+   "text": "I invite you to examine {rule} and {fact} when you have a chance to see if {target} is a consequence: respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be established, and nothing else."
+  },
+  {
+   "id": 28,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the same logical determination based on the same inputs and require the same output format (YES, NO, or UNKNOWN).",
+   "text": "See if you can figure out if {rule} and {fact} imply {target}, provided you have the time, by answering YES if it follows, NO if its negation follows, and UNKNOWN if neither is certain, using no other words."
+  },
+  {
+   "id": 29,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask to determine the logical relationship between the same premises and target, using the same three-way classification (YES, NO, UNKNOWN) and the same \"nothing else\" constraint.",
+   "text": "Determine if {target} follows from {rule} and {fact} by answering YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and nothing else."
+  },
+  {
+   "id": 30,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical determination based on the same inputs and require the same single-word output format (YES, NO, or UNKNOWN).",
+   "text": "Decide whether {target} is a consequence of {rule} and {fact}, then reply YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only that word."
+  },
+  {
+   "id": 31,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical evaluation of the relationship between the premises and the target, with identical output options and formatting constraints.",
+   "text": "Verify if {target} is implied by {rule} and {fact}, responding YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined, with no other text."
+  },
+  {
+   "id": 32,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction is truncated, ending abruptly with the word \"as\".",
+   "text": "Conclude whether {rule} and {fact} entail {target}, providing YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, as"
+  },
+  {
+   "id": 33,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the same logical deduction task with identical output constraints and conditions for YES, NO, and UNKNOWN.",
+   "text": "Hey, take a look at {rule} and {fact}. Does that mean {target} is definitely a thing? Type YES if it follows, NO if its negation follows, or UNKNOWN if you can't tell, and use no other words."
+  },
+  {
+   "id": 34,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction task with the same three possible outputs (YES, NO, UNKNOWN) based on the same conditions and the same formatting constraints.",
+   "text": "So, I've got these bits of info: {rule} and {fact}. Thinking about those, does it mean {target} is definitely true? Pick YES if it follows, NO if its negation follows, and UNKNOWN if it could go either way, without saying anything else."
+  },
+  {
+   "id": 35,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate instruction is truncated at the end (\"or UNKNOWN if it's\").",
+   "text": "I'm curious about whether {target} is a sure thing given {rule} and {fact}. What's your take on that? Answer YES if it follows, NO if its negation follows, or UNKNOWN if it's"
+  },
+  {
+   "id": 36,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction and restrict the output to the same three words.",
+   "text": "{rule} {fact} Determine if {target} follows: output YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined; use one word only."
+  },
+  {
+   "id": 37,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions require the same logical deduction task using the same inputs and specify the same three possible outputs (YES, NO, UNKNOWN) with a strict \"nothing else\" constraint.",
+   "text": "Using {rule} and {fact}, decide if {target} is a consequence; respond YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and nothing else."
+  },
+  {
+   "id": 38,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask to determine the logical relationship between the same set of premises and a target statement, using the same three-way classification (YES, NO, UNKNOWN) and the same constraint ",
+   "text": "From {rule} and {fact}, judge if {target} is valid: state YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, with no other text."
+  },
+  {
+   "id": 39,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical assessment (YES, NO, or UNKNOWN) based on the same inputs and require a single-word response.",
+   "text": "Assess if {target} is implied by {rule} and {fact}, replying YES if it follows, NO if its negation follows, or UNKNOWN if neither can"
+  },
+  {
+   "id": 40,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask the user to perform the same logical deduction task (determining if a target follows, its negation follows, or neither) and require the same one-word output format (YES, NO, or U",
+   "text": "You are a logical expert. Determine if {target} is a necessary conclusion; respond YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined using only one word, given {rule} {fact}"
+  },
+  {
+   "id": 41,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the same logical deduction task using the same inputs and the same three-word output format.",
+   "text": "Act as a formal reasoning system. Please specify whether {target} is implied: respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, and nothing else, based on {rule} {fact}"
+  },
+  {
+   "id": 42,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions require the same logical evaluation of a target based on a rule and fact, using the same three output labels (YES, NO, UNKNOWN) under the same conditions, and both strictly forbid an",
+   "text": "You are a helpful AI assistant. I need you to evaluate if {target} is a consequence, replying with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be established, using no other words, given {rule} {fact}"
+  },
+  {
+   "id": 43,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions require the same logical evaluation and restrict the output to the same three specific words (YES, NO, or UNKNOWN) with no additional text.",
+   "text": "Given {rule} and {fact}, examine whether {target} is a logical necessity; respond with **YES** if it follows, **NO** if its negation follows, or **UNKNOWN** if neither is certain, and provide only that word."
+  },
+  {
+   "id": 44,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask to determine the logical relationship between the premises and the target and require the same three-word output format with no additional text.",
+   "text": "Consider the premises {rule} and {fact} and determine the validity of {target}, replying with **YES** if it follows, **NO** if its negation follows, and **UNKNOWN** if it is undetermined, using no other text."
+  },
+  {
+   "id": 45,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction based on the provided rule and fact, use the same three response options (YES, NO, UNKNOWN) with the same criteria, and require a single-word outpu",
+   "text": "Evaluate if {target} is a direct result of {rule} and {fact} by answering **YES** if it follows, **NO** if its negation follows, or **UNKNOWN** if neither case is provable, using only a single word."
+  },
+  {
+   "id": 46,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction task based on the provided rule and fact, use the same criteria for the three possible outputs (YES, NO, UNKNOWN), and require the same single-word",
+   "text": "Please examine the statement {rule} alongside {fact} very carefully. Your task is to establish if {target} is a necessary logical result. Select YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and output only that word without explanation."
+  },
+  {
+   "id": 47,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the same logical deduction task and require the same output format (YES, NO, or UNKNOWN) with no additional text.",
+   "text": "Consider the implications of {rule} and {fact} together. I want to know if {target} is logically certain. Respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and provide no additional text in your reply."
+  },
+  {
+   "id": 48,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate is truncated at the end and omits the \"and nothing else\" constraint.",
+   "text": "First, take the premise {rule} and combine it with {fact}. Then, decide whether {target} must be true. Reply with YES if it follows, NO if its negation follows, or UNKNOWN if neither can"
+  },
+  {
+   "id": 49,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions describe the same logical deduction task using the same variables ({rule}, {fact}, and {target}) and require the same output format (a single-word response of YES, NO, or UNKNOWN) ba",
+   "text": "Can you indicate if {target} is a consequence of {rule} and {fact} by providing a single-word response of YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined?"
+  },
+  {
+   "id": 50,
+   "verdict": "DIFFERENT",
+   "reason": "The reference requires a three-way classification (YES if it follows, NO if the negation follows, and UNKNOWN if neither follows). The candidate asks a binary question (\"Would {target} logically follo",
+   "text": "Would {target} logically follow from {rule} and {fact} if you were to respond with only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined?"
+  },
+  {
+   "id": 51,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask the user to perform the same logical inference task based on a provided rule, fact, and target. They both specify the same three possible outputs (YES, NO, or UNKNOWN) based on t",
+   "text": "Should {target} be inferred from {rule} and {fact} given that you must reply with exactly one word, being YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined?"
+  },
+  {
+   "id": 52,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical determination (YES, NO, or UNKNOWN) based on the same inputs and require the same single-word output format.",
+   "text": "Determine if {target} is a logical consequence, replying with YES if it follows, NO if its negation follows, or UNKNOWN if neither is the case, using no other words, based on {rule} {fact}"
+  },
+  {
+   "id": 53,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction task using the same input variables and the same three-word output constraint.",
+   "text": "Assess the validity of {target} and respond with YES if it holds, NO if its negation holds, or UNKNOWN if it is indeterminate, with only that single word, given {rule} {fact}"
+  },
+  {
+   "id": 54,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical inference task based on the same inputs and require the same output format (YES, NO, or UNKNOWN).",
+   "text": "State YES if {target} is implied, NO if its negation is implied, or UNKNOWN if neither applies, using exactly one of those words and nothing else, after considering {rule} {fact}"
+  },
+  {
+   "id": 55,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask to determine the logical relationship between the provided premises and the target statement, using the same three-option scale (YES, NO, UNKNOWN) and the same constraint to prov",
+   "text": "On this logic exam, determine if {target} is a necessity: answer YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and include no other text, given {rule} {fact}"
+  },
+  {
+   "id": 56,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical determination based on the same inputs and require the same single-word output format.",
+   "text": "Regarding the assertion {target}, answer YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and provide no text besides that single word, based on {rule} {fact}"
+  },
+  {
+   "id": 57,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical determination (YES, NO, or UNKNOWN) based on the same provided information and require the same output format.",
+   "text": "Is {target} a logical consequence? Answer YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and include no words other than the choice, given {rule} {fact}"
+  },
+  {
+   "id": 58,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction task based on the provided rule, fact, and target, requiring the same three specific output options (YES, NO, or UNKNOWN) and the same constraint t",
+   "text": "Review the statement {rule} 2. Review the statement {fact} 3. Determine if {target} follows, responding with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only that word."
+  },
+  {
+   "id": 59,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate adds specific instructional phrases (\"Observe the premise\") and numbering (\"2.\", \"3.\") that are not present in the reference.",
+   "text": "Observe the premise {rule} 2. Observe the premise {fact} 3. Decide whether {target} is a logical consequence, answering YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, and nothing else."
+  },
+  {
+   "id": 60,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate adds extra text (\"Consider\", \"2.\", and \"3.\") that is not present in the reference, which violates the rule against adding information.",
+   "text": "Consider {rule} 2. Consider {fact} 3. Evaluate if {target} is implied, then provide YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, with no other text."
+  },
+  {
+   "id": 61,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask the user to determine the logical relationship between a rule/fact and a target, providing the same three options (YES, NO, UNKNOWN) under the same conditions and requiring a sin",
+   "text": "Respond with only one word, either YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, to indicate if {target} follows from {rule} and {fact}."
+  },
+  {
+   "id": 62,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical determination based on the same inputs and require the same single-word output format (YES, NO, or UNKNOWN).",
+   "text": "Using only the words YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, answer this: given {rule} and {fact}, does {target} follow?"
+  },
+  {
+   "id": 63,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for a single-word logical deduction (YES, NO, or UNKNOWN) based on the same criteria and inputs ({rule}, {fact}, and {target}). The logic for assigning each word is identical in ",
+   "text": "Provide a single-word response (YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined) to the question of whether {target} is true based on {rule} and {fact}."
+  },
+  {
+   "id": 64,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the same logical deduction based on the same inputs and require the same three-word output format with no additional text.",
+   "text": "If you've got a second, look at {rule} and {fact} to see if {target} is a definite conclusion, then just say YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, with no other text."
+  },
+  {
+   "id": 65,
+   "verdict": "EQUIVALENT",
+   "reason": "Both prompts ask for the same logical deduction (YES, NO, or UNKNOWN) based on the provided rule and fact, and both require the response to be limited to a single word from that set.",
+   "text": "I'm trying to figure out if {target} is a lock given {rule} and {fact}, so can you answer YES if it follows, NO if its negation follows, or UNKNOWN if neither is a sure thing, using only one word?"
+  },
+  {
+   "id": 66,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the same logical determination based on the same inputs and require the same output format.",
+   "text": "So if we take {rule} and {fact} as our baseline, does {target} actually follow? Just give me a YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, and nothing else."
+  },
+  {
+   "id": 67,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask to determine the logical relationship between the provided rule/fact and the target, using the same three labels (YES, NO, UNKNOWN) under the same conditions and requiring a sing",
+   "text": "We invite you to solve this logic puzzle by determining if {target} is a direct consequence of {rule} and {fact}, replying with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and no other text."
+  },
+  {
+   "id": 68,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction task based on the same inputs, with identical output options (YES, NO, UNKNOWN) and the same formatting constraint (one word only).",
+   "text": "Take on the challenge of deciding if {target} is a logical deduction from {rule} and {fact}, then provide YES if it follows, NO if its negation follows, or UNKNOWN if neither is provable, using only that word."
+  },
+  {
+   "id": 69,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions require the same logical deduction task using the same inputs and restrict the output to the same three words (YES, NO, UNKNOWN) under the same conditions.",
+   "text": "Your assignment for this section is to assess if {target} is implied by {rule} and {fact}; output YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, with no extra characters."
+  },
+  {
+   "id": 70,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for a one-word logical determination (YES, NO, or UNKNOWN) based on the same premises and target, with identical definitions for each response.",
+   "text": "Given the premises {rule} and {fact}, one is kindly requested to determine if {target} is a logical consequence; please respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be established, using only one word."
+  },
+  {
+   "id": 71,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions require the same logical assessment of whether a target follows from a given rule and fact, with the same three output options (YES, NO, UNKNOWN) and the same conditions for each. Th",
+   "text": "An assessment of whether {target} is implied by {rule} and {fact} is needed, with the response restricted to YES if it follows, NO if its negation follows, or UNKNOWN if neither result is certain."
+  },
+  {
+   "id": 72,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the same logical evaluation of a target based on a rule and a fact, and both require the same single-word output (YES, NO, or UNKNOWN) based on identical criteria.",
+   "text": "It would be appreciated if one could evaluate whether {target} follows from {rule} and {fact}, providing the single-word answer YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 73,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions require the same logical deduction task based on the provided rule and fact, and both restrict the output to a single word (YES, NO, or UNKNOWN) based on the same criteria.",
+   "text": "{rule} {fact} Based on these, state YES if {target} follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only one word."
+  },
+  {
+   "id": 74,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction task and require the same three-word output format (YES, NO, or UNKNOWN) with no additional text.",
+   "text": "{rule} {fact} In light of these, determine if {target} must be true: reply with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and nothing else."
+  },
+  {
+   "id": 75,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction task and require the same three specific output options (YES, NO, UNKNOWN) with no additional text.",
+   "text": "{rule} {fact} Reviewing these statements, identify if {target} is a logical consequence; provide YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and no other text."
+  },
+  {
+   "id": 76,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction task based on the provided rule and fact, requiring the same three specific output options (YES, NO, UNKNOWN) under the same constraints.",
+   "text": "If you have a moment to spare, look at {rule} and {fact} and say if {target} is a result, using only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 77,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask to determine the logical relationship between the provided rule/fact and the target conclusion, using the same three-way classification (YES if it follows, NO if the negation fol",
+   "text": "Perhaps you could evaluate whether {target} is a necessary outcome of {rule} and {fact}, providing only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 78,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction task and require the same single-word output format (YES, NO, or UNKNOWN).",
+   "text": "When you get a chance, check if {rule} plus {fact} means {target} is true, then reply with just YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 79,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions require the same logical deduction based on the provided rule and fact, and they specify the same output format (YES, NO, or UNKNOWN) with no additional text.",
+   "text": "Based on {rule} and {fact}, if {target} is a logical consequence, output YES; if its negation is a consequence, output NO; otherwise, output UNKNOWN, without any additional text."
+  },
+  {
+   "id": 80,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask to determine the logical relationship between the same inputs and require the same single-word output format (YES, NO, or UNKNOWN).",
+   "text": "Does {target} follow from {rule} and {fact}? Respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only one word."
+  },
+  {
+   "id": 81,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for a logical assessment of whether a target follows from a rule and a fact, using the same three-way classification (YES, NO, UNKNOWN) and the same single-word output constraint",
+   "text": "Assess if {target} is implied by {rule} and {fact}, then provide a single-word answer of YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 82,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate leaves out the specific condition for the UNKNOWN response (\"if neither can be determined\") and omits the \"nothing else\" constraint, meaning it would accept responses containing extra te",
+   "text": "An evaluation of whether {target} is a consequence of {rule} and {fact} is required; output YES if it follows, NO if its negation follows, or UNKNOWN"
+  },
+  {
+   "id": 83,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the same logical deduction based on the same inputs and require the same three-option output format (YES, NO, or UNKNOWN) with a strict constraint on providing only that word",
+   "text": "Deduce if {target} is implied by {rule} and {fact}, answering only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 84,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask the model to perform the same logical deduction task based on the provided rule, fact, and target, and they both require the same single-word output (YES, NO, or UNKNOWN) based o",
+   "text": "Respond with only YES if {target} is a logical result of {rule} and {fact}, NO if its negation follows, or UNKNOWN if neither is certain."
+  },
+  {
+   "id": 85,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions require the same logical deduction and restrict the output to a single word (YES, NO, or UNKNOWN) based on the same criteria.",
+   "text": "State only YES if {rule} and {fact} necessitate {target}, NO if its negation follows, or UNKNOWN if neither is deducible."
+  },
+  {
+   "id": 86,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction task (determining if a target follows from a rule and a fact) and require the same output format (YES, NO, or UNKNOWN, and nothing else). The diffe",
+   "text": "Provide only YES if {target} is implied by {rule} and {fact}, NO if its negation follows, or UNKNOWN if neither can be concluded."
+  },
+  {
+   "id": 87,
+   "verdict": "DIFFERENT",
+   "reason": "The candidate leaves out the negative constraint \"Answer with one of those three words and nothing else\" found in the reference. This means the candidate would accept responses containing additional t",
+   "text": "Examine the rule {rule}, consider the fact {fact}, determine whether the target {target} follows, and provide YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 88,
+   "verdict": "DIFFERENT",
+   "reason": "The reference requires a one-word answer (\"and nothing else\"), whereas the candidate does not impose this constraint.",
+   "text": "Start by reviewing {rule} and {fact}, then evaluate if {target} is a logical consequence, and finally respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 89,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions describe the same logical inference task (NLI) using the same input variables ({rule}, {fact}, {target}) and the same output labels (YES, NO, UNKNOWN) based on the same logical condi",
+   "text": "Analyze the premise {rule} together with {fact}, decide if the assertion {target} is necessitated, and output YES if it follows, NO if its negation follows, or UNKNOWN if neither can be established."
+  },
+  {
+   "id": 90,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for a logical deduction based on the same rule and fact, with identical output constraints and definitions for YES, NO, and UNKNOWN.",
+   "text": "I'm wondering if {target} is a given considering {rule} and {fact}, so could you reply with only YES if it follows, NO if its negation follows, or UNKNOWN if you can't tell?"
+  },
+  {
+   "id": 91,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask the user to determine the logical relationship between a target and a set of premises (rule and fact) and to provide a single-word response (YES, NO, or UNKNOWN) based on the sam",
+   "text": "Check out {rule} and {fact} and let me know if {target} is a lock; just answer YES if it follows, NO if its negation follows, or UNKNOWN if it's not clear."
+  },
+  {
+   "id": 92,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction task based on the provided rule and fact, with identical output constraints (YES, NO, or UNKNOWN).",
+   "text": "If you put {rule} and {fact} together, does {target} have to be true? Give me a YES if it follows, NO if its negation follows, or UNKNOWN if you aren't sure, and don't use any other words."
+  },
+  {
+   "id": 93,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask to determine the logical relationship between the same premises and target, using the same three-word scale (YES, NO, UNKNOWN) and the same single-word output constraint.",
+   "text": "Could you please look into whether {target} follows from {rule} and {fact}, and reply with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only that one word?"
+  },
+  {
+   "id": 94,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions require the same logical analysis of the provided inputs and mandate the same three specific output options (YES, NO, UNKNOWN) with a strict \"no other text\" constraint.",
+   "text": "Please analyze {rule} alongside {fact} to see if {target} is a logical consequence, responding with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and no other text."
+  },
+  {
+   "id": 95,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the same logical deduction based on the same inputs and require the same single-word output format.",
+   "text": "Kindly assess if {target} is necessitated by {rule} and {fact}, then provide your answer as YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, using just one of those words."
+  },
+  {
+   "id": 96,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask to determine if a target follows from a rule and fact, using the same three labels (YES, NO, UNKNOWN) under the same conditions and restricting the output to just those words.",
+   "text": "{rule} {fact} Answer using only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined to indicate if {target} is a consequence."
+  },
+  {
+   "id": 97,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the same logical deduction task and require the same three-word output format (YES, NO, or UNKNOWN) based on the same criteria.",
+   "text": "{rule} {fact} By providing only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, state whether {target} is a logical necessity."
+  },
+  {
+   "id": 98,
+   "verdict": "EQUIVALENT",
+   "reason": "Both prompts ask for the same logical deduction based on the provided rule and fact, and they both restrict the output to the same three words (YES, NO, or UNKNOWN) under the same conditions.",
+   "text": "{rule} {fact} Use solely the word YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined to show if {target} is a result."
+  },
+  {
+   "id": 99,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask the user to perform a logical inference task based on a provided rule and fact to determine the status of a target statement. They both define the same three possible answers (YE",
+   "text": "{rule} {fact} Picking from YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, identify if {target} is a direct entailment."
+  },
+  {
+   "id": 100,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for a logical deduction based on the same inputs and require the same three-word output format (YES, NO, or UNKNOWN) with the same definitions for each.",
+   "text": "You are a logic expert, so please determine if {target} is a necessary result of {rule} and {fact}, answering only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 101,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical assessment based on the provided rule and fact, and they require the same single-word output (YES, NO, or UNKNOWN) based on identical criteria.",
+   "text": "As a rational thinker, assess whether {target} is derived from {rule} and {fact} by providing a single word: YES if it follows, NO if its negation follows, and UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 102,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions require the same deductive reasoning task using the provided rule, fact, and target, and they specify the same three possible outputs (YES, NO, UNKNOWN) with a strict one-word format",
+   "text": "You are a deductive engine, so evaluate {rule} and {fact} to see if {target} is a certainty, replying YES if it follows, NO if its negation follows, or UNKNOWN if neither is established."
+  },
+  {
+   "id": 103,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the same logical evaluation of a target statement based on a rule and a fact, with identical output options (YES, NO, UNKNOWN) and the same constraint to provide only the sin",
+   "text": "Evaluate the logical validity of {target} given {rule} and {fact}, returning only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 104,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical entailment task using the same inputs and require the same three specific output words (YES, NO, or UNKNOWN) with a one-word constraint.",
+   "text": "Determine the entailment status of {target} relative to {rule} and {fact}, responding with strictly YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 105,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions require the same logical analysis of the provided inputs and mandate the same three specific output words (YES, NO, UNKNOWN) under identical conditions and formatting constraints.",
+   "text": "Analyze {rule} and {fact} to establish if {target} is a necessary consequence, outputting solely YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 106,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for a logical derivation from the same premises to the same target, with the same three possible outputs (YES, NO, UNKNOWN) under the same conditions and the same formatting cons",
+   "text": "Assess the derivation of {target} from the premises {rule} and {fact}, yielding exclusively YES if it follows, NO if its negation follows, or UNKNOWN if neither can"
+  },
+  {
+   "id": 107,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions describe the same logical deduction task using the same input variables ({rule}, {fact}, {target}) and require the same output format (YES, NO, or UNKNOWN). The candidate's use of a ",
+   "text": "Study the rule provided in {rule}. 2. Evaluate the specific fact given as {fact}. 3. Determine if {target} is a necessary consequence and answer only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 108,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions require the same logical deduction task and restrict the output to the same three specific words (YES, NO, or UNKNOWN) with no additional text.",
+   "text": "Take the following rule: {rule}. 2. Incorporate the following fact: {fact}. 3. Assess whether {target} is logically implied, then respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, and include no other text."
+  },
+  {
+   "id": 109,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction based on the same inputs and require the same output format (YES, NO, or UNKNOWN as the only text).",
+   "text": "Perhaps one could identify if {target} follows logically from {rule} and {fact}, providing YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, as the only text."
+  },
+  {
+   "id": 110,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions describe the same logical task (determining if a target follows from a rule and a fact), specify the same three possible labels (YES, NO, UNKNOWN), and require a single-word response",
+   "text": "If the opportunity arises, one should state whether {target} is a conclusion of {rule} and {fact}, replying YES if it follows, NO if its negation follows, or UNKNOWN if neither can be established."
+  },
+  {
+   "id": 111,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask to determine the logical relationship between the provided rule/fact and the target, using the same three response options (YES, NO, UNKNOWN) and a one-word constraint.",
+   "text": "It might be helpful to determine if {target} is inferred from {rule} and {fact}; please respond YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only one word."
+  },
+  {
+   "id": 112,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical inference task based on the provided rule, fact, and target, and both require the response to be a single word chosen from the same three options (YES, NO, o",
+   "text": "Think carefully and then respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only one word, regarding {rule} {fact} {target}"
+  },
+  {
+   "id": 113,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask the model to perform the same logical task (determine if a target follows from a rule and a fact) and provide the same three-option output (YES, NO, or UNKNOWN) with a strict \"no",
+   "text": "Please reason through the logic with care and then provide YES if it follows, NO if its negation follows, or UNKNOWN if neither can be established, using nothing else, for {rule} {fact} {target}"
+  },
+  {
+   "id": 114,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the same logical deduction task (YES, NO, or UNKNOWN) based on the same input variables and require the same single-word output format.",
+   "text": "Analyze the following logic meticulously and state YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, with no extra text, concerning {rule} {fact} {target}"
+  },
+  {
+   "id": 115,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction based on the provided rule and fact, and they require the same three-word output format (YES, NO, or UNKNOWN) with no additional text.",
+   "text": "One should carefully evaluate {rule} and {fact} to decide if {target} follows, replying with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be established, using no other words."
+  },
+  {
+   "id": 116,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions ask for the same logical deduction task using the same inputs ({rule}, {fact}, and {target}) and require the same three specific output options (YES, NO, or UNKNOWN) under the same l",
+   "text": "A thoughtful examination of {rule} and {fact} is required to determine if {target} follows, with the output restricted to exactly YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined."
+  },
+  {
+   "id": 117,
+   "verdict": "EQUIVALENT",
+   "reason": "Both instructions require the same logical inference task based on the provided rule, fact, and target, and they both mandate the same three possible one-word responses (YES, NO, or UNKNOWN) with no a",
+   "text": "After reflecting deeply on {rule} and {fact}, the objective is to state YES if {target} follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only one word and no other text."
+  },
+  {
+   "id": 118,
+   "verdict": "EQUIVALENT",
+   "reason": "Both prompts ask to determine the logical relationship between the same inputs (rule, fact, and target) and require the same single-word output (YES, NO, or UNKNOWN) based on the same criteria.",
+   "text": "Consider if {target} is logically sound given {rule} and {fact}, when you get a chance, and respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only one word."
+  },
+  {
+   "id": 119,
+   "verdict": "EQUIVALENT",
+   "reason": "both instructions ask for the same logical deduction based on the provided rule and fact, with identical conditions for the outputs YES, NO, and UNKNOWN, and the same single-word constraint.",
+   "text": "Analyze whether {target} is a necessary result of {rule} and {fact} if you wouldn't mind, then provide YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, as a single word."
+  },
+  {
+   "id": 120,
+   "verdict": "DIFFERENT",
+   "reason": "The reference includes a strict constraint (\"Answer with one of those three words and nothing else\") that the candidate lacks. Therefore, the candidate would accept responses containing additional tex",
+   "text": "Review the relationship between {rule} and {fact} to see if {target} follows, if you can, and please reply with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined."
+  }
+ ],
+ "backtranslations": [
+  {
+   "id": 4,
+   "original": "As a careful assistant, analyze if {target} follows from {rule} and {fact}, then answer YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined using just one word.",
+   "spanish": "Como asistente cuidadoso, analiza si {target} se deduce de {rule} y {fact}, luego responde SÍ si se deduce, NO si se deduce su negación o DESCONOCIDO si no se puede determinar ninguno de los dos, usando solo una palabra.",
+   "back": "As a careful assistant, analyze whether {target} follows from {rule} and {fact}, then answer YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only one word.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 8,
+   "original": "{rule} {fact} I would appreciate your help in verifying whether {target} holds. Kindly provide an answer of YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, and include no other text.",
+   "spanish": "{rule} {fact} Le agradecería su ayuda para verificar si se cumple {target}. Por favor, responda SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si ninguna de las dos es segura, y no incluya ningún otro texto.",
+   "back": "{rule} {fact} I would appreciate your help to verify if {target} holds. Please respond YES if it is inferred, NO if its negation is inferred, or UNKNOWN if neither is certain, and do not include any other text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 15,
+   "original": "Would you mind checking if {target} is a consequence of {rule} and {fact}, answering with just YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined?",
+   "spanish": "¿Te importaría comprobar si {target} es una consecuencia de {rule} y {fact}, respondiendo solo SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no se puede determinar ninguna de las dos?",
+   "back": "Would you mind checking if {target} is a consequence of {rule} and {fact}, answering only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined?",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 18,
+   "original": "Determine if {target} is implied by {rule} and {fact}. Reply with YES if it follows, NO if its negation follows, and UNKNOWN if neither is provable, and use just one word.",
+   "spanish": "Determine si {target} se deduce de {rule} y {fact}. Responda con SÍ si se deduce, NO si se deduce su negación y DESCONOCIDO si ninguno es demostrable, y use solo una palabra.",
+   "back": "Determine if {target} follows from {rule} and {fact}. Answer with YES if it follows, NO if its negation follows, and UNKNOWN if neither is provable, and use only one word.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 23,
+   "original": "Think deeply about whether {target} follows from {rule} and {fact}, then provide a single word answer of YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "spanish": "Reflexiona profundamente sobre si {target} se deduce de {rule} y {fact}, y luego responde con una sola palabra: SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no se puede determinar ninguna de las dos.",
+   "back": "Reflect deeply on whether {target} follows from {rule} and {fact}, and then respond with a single word: YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 32,
+   "original": "Conclude whether {rule} and {fact} entail {target}, providing YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, as",
+   "spanish": "Concluya si {rule} y {fact} implican {target}, indicando SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no se puede determinar ninguna de las dos, como",
+   "back": "Conclude whether {rule} and {fact} imply {target}, indicating YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, as",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 33,
+   "original": "Hey, take a look at {rule} and {fact}. Does that mean {target} is definitely a thing? Type YES if it follows, NO if its negation follows, or UNKNOWN if you can't tell, and use no other words.",
+   "spanish": "Oye, echa un vistazo a {rule} y {fact}. ¿Significa eso que {target} es definitivamente cierto? Escribe SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no puedes saberlo, y no uses ninguna otra palabra.",
+   "back": "Hey, take a look at {rule} and {fact}. Does that mean that {target} is definitely true? Write YES if it follows, NO if its negation follows, or UNKNOWN if you cannot tell, and do not use any other words.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 36,
+   "original": "{rule} {fact} Determine if {target} follows: output YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined; use one word only.",
+   "spanish": "{rule} {fact} Determine si {target} se deduce: responda SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no se puede determinar ninguna; use solo una palabra.",
+   "back": "{rule} {fact} Determine if {target} follows: answer YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined; use only one word.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 38,
+   "original": "From {rule} and {fact}, judge if {target} is valid: state YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, with no other text.",
+   "spanish": "A partir de {rule} y {fact}, determine si {target} es válido: indique SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no se puede determinar ninguno, sin ningún otro texto.",
+   "back": "Based on {rule} and {fact}, determine if {target} is valid: indicate YES if it is inferred, NO if its negation is inferred, or UNKNOWN if neither can be determined, without any other text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 39,
+   "original": "Assess if {target} is implied by {rule} and {fact}, replying YES if it follows, NO if its negation follows, or UNKNOWN if neither can",
+   "spanish": "Evalúe si {target} está implicado por {rule} y {fact}, respondiendo SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no se puede determinar ninguna de las dos.",
+   "back": "Evaluate whether {target} is implied by {rule} and {fact}, responding YES if it is inferred, NO if its negation is inferred, or UNKNOWN if neither can be determined.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 41,
+   "original": "Act as a formal reasoning system. Please specify whether {target} is implied: respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, and nothing else, based on {rule} {fact}",
+   "spanish": "Actúa como un sistema de razonamiento formal. Por favor, especifica si se implica {target}: responde SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si ninguna es segura, y nada más, basándote en {rule} {fact}.",
+   "back": "Act as a formal reasoning system. Please specify if {target} is implied: respond YES if it is deduced, NO if its negation is deduced, or UNKNOWN if neither is certain, and nothing else, based on {rule} {fact}.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 47,
+   "original": "Consider the implications of {rule} and {fact} together. I want to know if {target} is logically certain. Respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and provide no additional text in your reply.",
+   "spanish": "Considere las implicaciones de {rule} y {fact} en conjunto. Quiero saber si {target} es lógicamente cierto. Responda con SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no se puede determinar ninguna de las dos, y no proporcione texto adicional en su respuesta.",
+   "back": "Consider the implications of {rule} and {fact} together. I want to know if {target} is logically true. Respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and do not provide additional text in your response.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 50,
+   "original": "Would {target} logically follow from {rule} and {fact} if you were to respond with only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined?",
+   "spanish": "¿Se deduciría lógicamente {target} de {rule} y {fact} si respondieras únicamente SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no se puede determinar ninguna de las dos?",
+   "back": "Would {target} be logically deduced from {rule} and {fact} if you answered only YES if it is deduced, NO if its negation is deduced, or UNKNOWN if neither can be determined?",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 52,
+   "original": "Determine if {target} is a logical consequence, replying with YES if it follows, NO if its negation follows, or UNKNOWN if neither is the case, using no other words, based on {rule} {fact}",
+   "spanish": "Determine si {target} es una consecuencia lógica, respondiendo con SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no es ninguno de los casos, sin usar otras palabras, basándose en {rule} {fact}",
+   "back": "Determine if {target} is a logical consequence, responding with YES if it is deduced, NO if its negation is deduced, or UNKNOWN if neither is the case, without using other words, based on {rule} {fact}",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 54,
+   "original": "State YES if {target} is implied, NO if its negation is implied, or UNKNOWN if neither applies, using exactly one of those words and nothing else, after considering {rule} {fact}",
+   "spanish": "Indique SÍ si se implica {target}, NO si se implica su negación, o DESCONOCIDO si no se aplica ninguna de las dos, utilizando exactamente una de esas palabras y nada más, tras considerar {rule} {fact}.",
+   "back": "Indicate YES if {target} is implied, NO if its negation is implied, or UNKNOWN if neither applies, using exactly one of those words and nothing else, after considering {rule} {fact}.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 65,
+   "original": "I'm trying to figure out if {target} is a lock given {rule} and {fact}, so can you answer YES if it follows, NO if its negation follows, or UNKNOWN if neither is a sure thing, using only one word?",
+   "spanish": "Estoy intentando determinar si {target} es una certeza dados {rule} y {fact}, así que responde SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si ninguna es segura, usando solo una palabra.",
+   "back": "I am trying to determine if {target} is a certainty given {rule} and {fact}, so respond YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, using only one word.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 67,
+   "original": "We invite you to solve this logic puzzle by determining if {target} is a direct consequence of {rule} and {fact}, replying with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and no other text.",
+   "spanish": "Le invitamos a resolver este acertijo lógico determinando si {target} es una consecuencia directa de {rule} y {fact}, respondiendo con SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no se puede determinar ninguna de las dos, y ningún otro texto.",
+   "back": "We invite you to solve this logic puzzle by determining if {target} is a direct consequence of {rule} and {fact}, responding with YES if it is deduced, NO if its negation is deduced, or UNKNOWN if neither can be determined, and no other text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 70,
+   "original": "Given the premises {rule} and {fact}, one is kindly requested to determine if {target} is a logical consequence; please respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be established, using only one word.",
+   "spanish": "Dadas las premisas {rule} y {fact}, se le solicita amablemente determinar si {target} es una consecuencia lógica; por favor, responda con SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no se puede establecer ninguna de las dos, utilizando solo una palabra.",
+   "back": "Given the premises {rule} and {fact}, you are kindly requested to determine if {target} is a logical consequence; please respond with YES if it is deduced, NO if its negation is deduced, or UNKNOWN if neither can be established, using only one word.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 71,
+   "original": "An assessment of whether {target} is implied by {rule} and {fact} is needed, with the response restricted to YES if it follows, NO if its negation follows, or UNKNOWN if neither result is certain.",
+   "spanish": "Se requiere una evaluación de si {target} se deduce de {rule} y {fact}, con la respuesta restringida a SÍ si se infiere, NO si se infiere su negación, o DESCONOCIDO si ningún resultado es seguro.",
+   "back": "An evaluation is required of whether {target} is deduced from {rule} and {fact}, with the answer restricted to YES if it is inferred, NO if its negation is inferred, or UNKNOWN if no result is certain.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 82,
+   "original": "An evaluation of whether {target} is a consequence of {rule} and {fact} is required; output YES if it follows, NO if its negation follows, or UNKNOWN",
+   "spanish": "Se requiere evaluar si {target} es una consecuencia de {rule} y {fact}; responda SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO.",
+   "back": "It is required to evaluate whether {target} is a consequence of {rule} and {fact}; respond YES if it is deduced, NO if its negation is deduced, or UNKNOWN.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 85,
+   "original": "State only YES if {rule} and {fact} necessitate {target}, NO if its negation follows, or UNKNOWN if neither is deducible.",
+   "spanish": "Responde solo SÍ si {rule} y {fact} implican {target}, NO si se deduce su negación, o DESCONOCIDO si ninguno es deducible.",
+   "back": "Answer only YES if {rule} and {fact} imply {target}, NO if its negation is inferred, or UNKNOWN if neither is deducible.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 88,
+   "original": "Start by reviewing {rule} and {fact}, then evaluate if {target} is a logical consequence, and finally respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "spanish": "Comience revisando {rule} y {fact}, luego evalúe si {target} es una consecuencia lógica y, finalmente, responda con SÍ si se deduce, NO si se deduce su negación o DESCONOCIDO si no se puede determinar ninguna de las dos.",
+   "back": "Start by reviewing {rule} and {fact}, then evaluate whether {target} is a logical consequence and, finally, respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 91,
+   "original": "Check out {rule} and {fact} and let me know if {target} is a lock; just answer YES if it follows, NO if its negation follows, or UNKNOWN if it's not clear.",
+   "spanish": "Revisa {rule} y {fact} y dime si {target} es seguro; responde solo SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no está claro.",
+   "back": "Review {rule} and {fact} and tell me if {target} is safe; respond only YES if it is deduced, NO if its negation is deduced, or UNKNOWN if it is not clear.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 93,
+   "original": "Could you please look into whether {target} follows from {rule} and {fact}, and reply with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only that one word?",
+   "spanish": "¿Podría investigar si {target} se deduce de {rule} y {fact}, y responder con SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no se puede determinar ninguna de las dos, utilizando únicamente esa palabra?",
+   "back": "Could you investigate if {target} is deduced from {rule} and {fact}, and respond with YES if it is deduced, NO if its negation is deduced, or UNKNOWN if neither can be determined, using only that word?",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 94,
+   "original": "Please analyze {rule} alongside {fact} to see if {target} is a logical consequence, responding with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, and no other text.",
+   "spanish": "Por favor, analice {rule} junto con {fact} para ver si {target} es una consecuencia lógica, respondiendo con SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no se puede determinar ninguna de las dos, y ningún otro texto.",
+   "back": "Please analyze {rule} together with {fact} to see if {target} is a logical consequence, responding with YES if it is deduced, NO if its negation is deduced, or UNKNOWN if neither can be determined, and no other text.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 96,
+   "original": "{rule} {fact} Answer using only YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined to indicate if {target} is a consequence.",
+   "spanish": "{rule} {fact} Responde solo SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no se puede determinar ninguna para indicar si {target} es una consecuencia.",
+   "back": "{rule} {fact} Answer only YES if it is inferred, NO if its negation is inferred, or UNKNOWN if neither can be determined to indicate whether {target} is a consequence.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 99,
+   "original": "{rule} {fact} Picking from YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, identify if {target} is a direct entailment.",
+   "spanish": "{rule} {fact} Seleccionando entre SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no se puede determinar ninguna de las dos, identifique si {target} es una implicación directa.",
+   "back": "{rule} {fact} Selecting from YES if it is deduced, NO if its negation is deduced, or UNKNOWN if neither can be determined, identify if {target} is a direct implication.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 104,
+   "original": "Determine the entailment status of {target} relative to {rule} and {fact}, responding with strictly YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined.",
+   "spanish": "Determine el estado de implicación de {target} con respecto a {rule} y {fact}, respondiendo estrictamente con SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no se puede determinar ninguna de las dos.",
+   "back": "Determine the entailment status of {target} with respect to {rule} and {fact}, responding strictly with YES if it is inferred, NO if its negation is inferred, or UNKNOWN if neither can be determined.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 112,
+   "original": "Think carefully and then respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only one word, regarding {rule} {fact} {target}",
+   "spanish": "Piensa detenidamente y luego responde con SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si no se puede determinar ninguna de las dos, usando solo una palabra, con respecto a {rule} {fact} {target}.",
+   "back": "Think carefully and then respond with YES if it follows, NO if its negation follows, or UNKNOWN if neither can be determined, using only one word, with respect to {rule} {fact} {target}.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  },
+  {
+   "id": 119,
+   "original": "Analyze whether {target} is a necessary result of {rule} and {fact} if you wouldn't mind, then provide YES if it follows, NO if its negation follows, or UNKNOWN if neither is certain, as a single word.",
+   "spanish": "Analiza si {target} es un resultado necesario de {rule} y {fact} si no te importa, y luego indica SÍ si se deduce, NO si se deduce su negación, o DESCONOCIDO si nada es seguro, en una sola palabra.",
+   "back": "Analyze if {target} is a necessary result of {rule} and {fact} if you don't mind, and then indicate YES if it follows, NO if its negation follows, or UNKNOWN if nothing is certain, in a single word.",
+   "verdict": "EQUIVALENT",
+   "slots_survived": true
+  }
+ ]
+}

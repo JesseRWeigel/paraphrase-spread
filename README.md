@@ -224,7 +224,88 @@ Ten layers. The ones that do work:
 
 ```
 $ bash scripts/verify.sh
-STATUS_BLOCK_PLACEHOLDER
+0. environment
+        Python 3.12.3
+  ok    python present
+
+1. unit suite
+  ok    56 unit tests passed
+
+2. every test has a negative control
+        56 tests, 28 of them negative controls, every pair complete
+  ok    the pairing rule holds
+
+3. the raw responses are on disk and complete
+        entail  qwen3:8b      2,904 responses, 121 complete wordings, 105 of them equivalence-verified, 0 partial and excluded, 0 failed calls
+        mult    gemma4:e4b   11,112 responses, 463 complete wordings, 414 of them equivalence-verified, 0 partial and excluded, 0 failed calls
+        mult    qwen3.5:9b   11,112 responses, 463 complete wordings, 414 of them equivalence-verified, 0 partial and excluded, 0 failed calls
+        mult    qwen3:8b     11,112 responses, 463 complete wordings, 414 of them equivalence-verified, 0 partial and excluded, 0 failed calls
+  ok    every published number has its raw responses behind it
+
+4. analysis.json rebuilds from the raw responses
+        analysing mult on qwen3:8b ...
+        wrote results/analysis.json (295,767 bytes)
+          entail   qwen3:8b       n= 105 mean=0.652 sd=0.218 range=0.042..1.000 q_p=0.0010 rel=0.88
+          mult     gemma4:e4b     n= 414 mean=0.923 sd=0.085 range=0.000..1.000 q_p=0.0010 rel=0.86
+          mult     qwen3.5:9b     n= 414 mean=0.988 sd=0.059 range=0.042..1.000 q_p=0.0010 rel=0.90
+          mult     qwen3:8b       n= 414 mean=0.709 sd=0.128 range=0.000..1.000 q_p=0.0010 rel=0.76
+        the rebuild is identical to the committed file in every field but the timestamp
+  ok    the committed analysis is what the raw data produces
+
+5. the headline numbers re-derived by independent code
+          entail/qwen3:8b: 2,520 responses re-graded, 105 paraphrases, mean 0.6516, sd 0.2176, range 0.0417..1.0000, Q 666.1
+          mult/gemma4:e4b: 9,936 responses re-graded, 414 paraphrases, mean 0.9231, sd 0.0846, range 0.0000..1.0000, Q 2278.7
+          mult/qwen3.5:9b: 9,936 responses re-graded, 414 paraphrases, mean 0.9875, sd 0.0589, range 0.0417..1.0000, Q 2884.1
+          mult/qwen3:8b: 9,936 responses re-graded, 414 paraphrases, mean 0.7086, sd 0.1276, range 0.0000..1.0000, Q 1447.3
+        every headline number re-derived from the raw responses agrees exactly
+  ok    the independent re-derivation agrees exactly
+
+6. the checker really is independent
+        imports only argparse, json, os, sys, none of which is pspread, and no dynamic import
+  ok    no shared code with the pipeline
+
+7. and the checker fails when the grader is broken
+          entail/qwen3:8b: mean re-derived as 0.6515873015873016, analysis.json says 0.6456349206349207
+  ok    a broken grader makes the re-derivation disagree, so its agreement means something
+
+8. the page is built from the results
+        wrote docs/index.html (24,450 bytes)
+  ok    docs/index.html is exactly what the results produce
+        the page carries mean 70.9%, sd 12.8%, 5th-95th 50.0% to 91.7% over 414 wordings, drawn with 9 SVG shapes and no JavaScript
+  ok    the page shows the real numbers
+
+9. sabotage
+        grader-reads-first-number      correct -> wrong
+  ok    sabotage "grader-reads-first-number" moved its probe and was caught (unit 1, independent 1)
+        unparseable-scored-as-wrong    1 -> 0
+  ok    sabotage "unparseable-scored-as-wrong" moved its probe and was caught (unit 1, independent 1)
+        failed-call-scored-as-wrong    1 -> 0
+  ok    sabotage "failed-call-scored-as-wrong" moved its probe and was caught (unit 1, independent 0)
+        lenient-substring-matching     [] -> ['no']
+  ok    sabotage "lenient-substring-matching" moved its probe and was caught (unit 1, independent 1)
+        sample-sd-inflates-the-spread  0.5 -> 0.707107
+  ok    sabotage "sample-sd-inflates-the-spread" moved its probe and was caught (unit 1, independent 1)
+        cochran-q-wrong-constant       12.0 -> 4.0
+  ok    sabotage "cochran-q-wrong-constant" moved its probe and was caught (unit 1, independent 1)
+        p-value-always-one             0.25 -> 1.0
+  ok    sabotage "p-value-always-one" moved its probe and was caught (unit 1, independent 0)
+        reliability-always-perfect     -0.275866 -> 1.0
+  ok    sabotage "reliability-always-perfect" moved its probe and was caught (unit 1, independent 0)
+10. hygiene
+  ok    no absolute home paths in tracked files
+  ok    no credential-shaped strings
+  ok    no tracked file over 800 KB
+        39 tracked files, none contain NUL
+  ok    no tracked file is binary to the secret scan
+  ok    README has a Status section with a real result
+        no TODO in the README prose, outside 3 fenced block(s)
+  ok    README has no TODO left in it
+  ok    the README's test count still matches the suite (56)
+        the README states 414 wordings, mean 70.9%, sd 12.8%, and the permutation null's own range, all matching results/analysis.json
+  ok    the README's headline numbers match the results
+
+26 passed, 0 failed
+VERIFY OK
 ```
 
 ## What is not done

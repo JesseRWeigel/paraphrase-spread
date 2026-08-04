@@ -397,8 +397,21 @@ if [ -f README.md ]; then
     if grep -q "VERIFY OK" README.md; then ok "README has a Status section with a real result"
     else bad "README Status section does not contain the verify success line"; fi
   else bad "README has no ## Status section"; fi
-  if grep -q "TODO" README.md; then bad "README still contains TODO"
-  else ok "README has no TODO left in it"; fi
+  # Searched outside fenced code blocks only. The Status section pastes this script's own
+  # output, which includes the line reporting that no TODO is left, so a plain grep matches its
+  # own success message and the check fails on a correct README. Found the hard way.
+  if $PY - <<'PY' >"$TMP/todo.log" 2>&1; then
+import pathlib, re, sys
+text = pathlib.Path("README.md").read_text()
+prose = re.sub(r"```.*?```", "", text, flags=re.S)
+hits = [ln.strip() for ln in prose.splitlines() if "TODO" in ln]
+if hits:
+    sys.exit("README prose still contains TODO: " + hits[0][:80])
+fenced = len(re.findall(r"```", text)) // 2
+print(f"no TODO in the README prose, outside {fenced} fenced block(s)")
+PY
+    sed 's/^/        /' "$TMP/todo.log"; ok "README has no TODO left in it"
+  else bad "$(cat "$TMP/todo.log")"; fi
   # The counts in the README go stale the moment a test is added, so they are asserted here.
   if [ "$NTESTS" -gt 0 ] && grep -qE "\*\*$NTESTS\*\* unit tests" README.md; then
     ok "the README's test count still matches the suite ($NTESTS)"

@@ -6,8 +6,15 @@ through every one of them, at temperature 0.
 **[The distribution](https://jesserweigel.github.io/paraphrase-spread/)**
 
 On `qwen3:8b`, accuracy on those 414 wordings has a mean of **70.9%** and a standard deviation of
-**12.8%**. The middle 90% of wordings run from **50.0%** to **91.7%**. The full range is 0% to
-100%.
+**12.8%**. The middle 90% of wordings run from **50.0%** to **91.7%**.
+
+That spread is roughly **double what wording-independence would produce**. A permutation test that
+holds each item's difficulty fixed and shuffles only which wordings got it right gives a standard
+deviation of **6.8%**, against the observed 12.8%, with Cochran Q = 1447 at p = 0.001 and a
+split-half reliability of **0.76**. The excess over that null is the result.
+
+The full range is 0% to 100%, and on its own it means nothing: the same null produces a 39.8%
+range by luck alone. Read the standard deviation and the middle 90%, not the extremes.
 
 A benchmark that reports one number for this task and this model is reporting one draw from that
 spread, and nothing in the number tells you which draw you got.

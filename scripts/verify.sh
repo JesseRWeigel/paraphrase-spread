@@ -134,7 +134,9 @@ if $PY -m pspread.cli analyze >"$TMP/an.log" 2>&1; then
   if $PY - "$TMP/analysis_committed.json" results/analysis.json <<'PY' >"$TMP/cmp.log" 2>&1; then
 import json, sys
 a = json.load(open(sys.argv[1])); b = json.load(open(sys.argv[2]))
-a.pop("generated_at"); b.pop("generated_at")
+# Nothing is popped any more: the analysis no longer carries a timestamp, so the
+# whole file has to reproduce byte for byte.
+a.pop("generated_at", None); b.pop("generated_at", None)
 if a != b:
     diffs = []
     for ra, rb in zip(a["runs"], b["runs"]):

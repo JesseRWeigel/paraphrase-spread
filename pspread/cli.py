@@ -445,7 +445,13 @@ def analyse_one(task, model, permutations=1000, splits=200):
 
 
 def cmd_analyze(args):
-    out = {"generated_at": _now(), "runs": []}
+    # NO TIMESTAMP ON THE ANALYSIS. The corpus keeps its `generated_at`, because when the model
+    # outputs were collected is real provenance and nothing can recompute it. The analysis is a
+    # pure re-derivation from that committed corpus, so a timestamp on it records only when
+    # somebody last ran the command, and it made `analysis.json` come back modified after every
+    # run. `scripts/verify.sh` had to pop the field before comparing, which is the shape of a
+    # problem being worked around rather than fixed.
+    out = {"runs": []}
     for task_name, model in _discover_runs():
         task = tasks.get(task_name)
         print(f"analysing {task_name} on {model} ...", flush=True)
